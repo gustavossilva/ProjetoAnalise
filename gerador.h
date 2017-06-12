@@ -15,6 +15,7 @@ int geraAleatorio(int*, int);
 void exibeVetor(int*, int);
 int crescente (const void * , const void * );
 int decrescente (const void * , const void * );
+void desordenaVetor(int *, int, float);
 
 
 #endif //PROJETOANALISE_GERADOR_H
