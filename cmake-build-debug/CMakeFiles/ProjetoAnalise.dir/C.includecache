@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gustavovm/CLionProjects/ProjetoAnalise/gerador.h
+stdio.h
+-
+
+/home/gustavovm/CLionProjects/ProjetoAnalise/main.c
+main.h
+/home/gustavovm/CLionProjects/ProjetoAnalise/main.h
+
+/home/gustavovm/CLionProjects/ProjetoAnalise/main.h
+gerador.h
+/home/gustavovm/CLionProjects/ProjetoAnalise/gerador.h
+stdio.h
+-
+

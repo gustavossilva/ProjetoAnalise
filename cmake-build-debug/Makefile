@@ -150,6 +150,33 @@ algs.c.s:
 	$(MAKE) -f CMakeFiles/ProjetoAnalise.dir/build.make CMakeFiles/ProjetoAnalise.dir/algs.c.s
 .PHONY : algs.c.s
 
+gerador.o: gerador.c.o
+
+.PHONY : gerador.o
+
+# target to build an object file
+gerador.c.o:
+	$(MAKE) -f CMakeFiles/ProjetoAnalise.dir/build.make CMakeFiles/ProjetoAnalise.dir/gerador.c.o
+.PHONY : gerador.c.o
+
+gerador.i: gerador.c.i
+
+.PHONY : gerador.i
+
+# target to preprocess a source file
+gerador.c.i:
+	$(MAKE) -f CMakeFiles/ProjetoAnalise.dir/build.make CMakeFiles/ProjetoAnalise.dir/gerador.c.i
+.PHONY : gerador.c.i
+
+gerador.s: gerador.c.s
+
+.PHONY : gerador.s
+
+# target to generate assembly for a file
+gerador.c.s:
+	$(MAKE) -f CMakeFiles/ProjetoAnalise.dir/build.make CMakeFiles/ProjetoAnalise.dir/gerador.c.s
+.PHONY : gerador.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -189,6 +216,9 @@ help:
 	@echo "... algs.o"
 	@echo "... algs.i"
 	@echo "... algs.s"
+	@echo "... gerador.o"
+	@echo "... gerador.i"
+	@echo "... gerador.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

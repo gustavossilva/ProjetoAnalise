@@ -3,5 +3,6 @@ project(ProjetoAnalise)
 
 set(CMAKE_C_STANDARD 99)
 
-set(SOURCE_FILES main.c algs.c)
+set(SOURCE_FILES main.c algs.c gerador.h gerador.c main.h)
+
 add_executable(ProjetoAnalise ${SOURCE_FILES})
