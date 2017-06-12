@@ -5,12 +5,12 @@
 #include <math.h>
 
 
-int main() {
-    int v[10] = {1,7,5,654,12,3,48,7,5,6};
-    int p = 10/2;
-    int r = 10;
-    ordena_intercala(v,p,r);
-}
+//int main() {
+//    int v[10] = {1,7,5,654,12,3,48,7,5,6};
+//    int p = 10/2;
+//    int r = 10;
+//    ordena_intercala(v,p,r);
+//}
 
 void ordena_intercala(int * v,int p,int r)
 {

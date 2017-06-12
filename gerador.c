@@ -66,7 +66,6 @@ int geraAleatorio(int* vetor,int tam){
     int i;
     for(i=0;i<tam;i++){
         vetor[i] = rand()%5000;
-        printf("%d\n",vetor[i]);
     }
     return 0;
 }
