@@ -3,5 +3,5 @@ project(ProjetoAnalise)
 
 set(CMAKE_C_STANDARD 99)
 
-set(SOURCE_FILES main.c)
+set(SOURCE_FILES main.c algs.c)
 add_executable(ProjetoAnalise ${SOURCE_FILES})

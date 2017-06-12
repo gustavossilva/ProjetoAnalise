@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/gustavovm/Downloads/clion-2017.1.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/guilherme/Downloads/clion-2017.1.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/gustavovm/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/guilherme/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gustavovm/CLionProjects/ProjetoAnalise
+CMAKE_SOURCE_DIR = /home/guilherme/Documents/ProjetoAnalise
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gustavovm/CLionProjects/ProjetoAnalise/cmake-build-debug
+CMAKE_BINARY_DIR = /home/guilherme/Documents/ProjetoAnalise/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/gustavovm/CLionProjects/ProjetoAnalise/cmake-build-debu
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/gustavovm/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/guilherme/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/gustavovm/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/guilherme/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gustavovm/CLionProjects/ProjetoAnalise/cmake-build-debug/CMakeFiles /home/gustavovm/CLionProjects/ProjetoAnalise/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guilherme/Documents/ProjetoAnalise/cmake-build-debug/CMakeFiles /home/guilherme/Documents/ProjetoAnalise/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gustavovm/CLionProjects/ProjetoAnalise/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guilherme/Documents/ProjetoAnalise/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,33 @@ ProjetoAnalise/fast:
 	$(MAKE) -f CMakeFiles/ProjetoAnalise.dir/build.make CMakeFiles/ProjetoAnalise.dir/build
 .PHONY : ProjetoAnalise/fast
 
+algs.o: algs.c.o
+
+.PHONY : algs.o
+
+# target to build an object file
+algs.c.o:
+	$(MAKE) -f CMakeFiles/ProjetoAnalise.dir/build.make CMakeFiles/ProjetoAnalise.dir/algs.c.o
+.PHONY : algs.c.o
+
+algs.i: algs.c.i
+
+.PHONY : algs.i
+
+# target to preprocess a source file
+algs.c.i:
+	$(MAKE) -f CMakeFiles/ProjetoAnalise.dir/build.make CMakeFiles/ProjetoAnalise.dir/algs.c.i
+.PHONY : algs.c.i
+
+algs.s: algs.c.s
+
+.PHONY : algs.s
+
+# target to generate assembly for a file
+algs.c.s:
+	$(MAKE) -f CMakeFiles/ProjetoAnalise.dir/build.make CMakeFiles/ProjetoAnalise.dir/algs.c.s
+.PHONY : algs.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ProjetoAnalise"
+	@echo "... algs.o"
+	@echo "... algs.i"
+	@echo "... algs.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
