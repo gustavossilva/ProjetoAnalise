@@ -1,1 +1,1 @@
-/usr/bin/cc  -g   CMakeFiles/ProjetoAnalise.dir/main.c.o  -o ProjetoAnalise 
+/usr/bin/cc  -g   CMakeFiles/ProjetoAnalise.dir/main.c.o CMakeFiles/ProjetoAnalise.dir/gerador.c.o  -o ProjetoAnalise 

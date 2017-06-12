@@ -86,7 +86,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/gustavovm/CLionProjects/ProjetoAnalise/gerador.c">
+			<Option target="ProjetoAnalise"/>
+		</Unit>
+		<Unit filename="/home/gustavovm/CLionProjects/ProjetoAnalise/gerador.h">
+			<Option target="ProjetoAnalise"/>
+		</Unit>
 		<Unit filename="/home/gustavovm/CLionProjects/ProjetoAnalise/main.c">
+			<Option target="ProjetoAnalise"/>
+		</Unit>
+		<Unit filename="/home/gustavovm/CLionProjects/ProjetoAnalise/main.h">
 			<Option target="ProjetoAnalise"/>
 		</Unit>
 		<Unit filename="/home/gustavovm/CLionProjects/ProjetoAnalise/CMakeLists.txt">
