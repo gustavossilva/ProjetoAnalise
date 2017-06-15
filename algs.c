@@ -68,3 +68,17 @@ void insertion(int *v)
         }
     }
 }
+
+void heap(int *v){
+
+}
+
+void quick(int *v){
+
+}
+
+void radix(int *v){
+
+}
+
+
