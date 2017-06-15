@@ -89,6 +89,9 @@
 		<Unit filename="/home/gustavovm/CLionProjects/ProjetoAnalise/algs.c">
 			<Option target="ProjetoAnalise"/>
 		</Unit>
+		<Unit filename="/home/gustavovm/CLionProjects/ProjetoAnalise/algs.h">
+			<Option target="ProjetoAnalise"/>
+		</Unit>
 		<Unit filename="/home/gustavovm/CLionProjects/ProjetoAnalise/gerador.c">
 			<Option target="ProjetoAnalise"/>
 		</Unit>

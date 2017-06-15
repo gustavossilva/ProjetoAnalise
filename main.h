@@ -6,5 +6,6 @@
 #define PROJETOANALISE_MAIN_H
 
 #include "gerador.h"
+#include "algs.h"
 
 #endif //PROJETOANALISE_MAIN_H
