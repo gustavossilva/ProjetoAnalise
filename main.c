@@ -366,7 +366,7 @@ int main() {
     vv[155] = v156;
 
     //Vetores criados
-    for(int i=0;i<=156;i++){
+    for(int i=0;i<156;i++){
         for(int j=0;j<3;j++){
             //tempo_ini = pega tempo incial
             //algoritmodeordena(vv[i]);
@@ -374,12 +374,18 @@ int main() {
             //tempo_med += tempo_fim-tempo_ini;
         }
         //tempo_med = tempo_med/3;
-        printf("Tempo para vetor : %f",tempo_med);
+        printf("Tempo para vetor[%d] : %f",i+1,tempo_med);
+        //Printa o vetor i+1 (v1,v2,v3,v4,v5) e o tempo dele
+        //Para saber qual tipo de vetor é, é só olhar pra cima nas definições das variaveis
+        //int v1 //Aleatorios (v1 é 1 vetor aleatorio)
+        //a quantidade de elementos está na função de geração
+        //v1 = gerarVetor(v1,3,0); então é esse 3, logo v1 tem tamanho 2^3 (o segundo argumento é o K)
         tempo_med = 0;
     }
     /*for(i =1;i<pow(2,14);i++){
         fprintf(f,"%d %d %f %f %f\n",1,i,log2(i),i*log2(i),pow(i,2));
     }*/
+    //TODO Pegar como calcula no C o tempo e calcular e depois testar o algoritmo (ordenar algum);
 
     return 0;
 }
