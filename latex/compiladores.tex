@@ -1,0 +1,492 @@
+\documentclass[12pt,a4paper,twoside]{report}
+% -------------------------------------------------------------------- %
+% Pacotes
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage[fixlanguage]{babelbib}
+\usepackage[pdftex]{graphicx}      % usamos arquivos pdf/png como figuras
+\usepackage{setspace}              % espaçamento flexvel
+\usepackage{indentfirst}           % indentação do primeiro parágrafo
+\usepackage{makeidx}               % índice remissivo
+\usepackage[nottoc]{tocbibind}     % acrescentamos a bibliografia/indice/conteudo no Table of Contents
+\usepackage{courier}               % usa o Adobe Courier no lugar de Computer Modern Typewriter
+\usepackage{type1cm}               % fontes realmente escaláveis
+\usepackage{titletoc}
+\usepackage{ucs}
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
+\usepackage[usenames,svgnames,dvipsnames]{xcolor}
+\usepackage[a4paper,top=2.54cm,bottom=2.0cm,left=2.0cm,right=2.54cm]{geometry} % margens
+\usepackage{amsmath} 
+
+\usepackage[pdftex,plainpages=false,pdfpagelabels,pagebackref,colorlinks=true,citecolor=DarkGreen,
+linkcolor=NavyBlue,urlcolor=DarkRed,filecolor=green,bookmarksopen=true]{hyperref} % links coloridos
+\usepackage[all]{hypcap}                % soluciona o problema com o hyperref e capítulos
+\usepackage[square,sort,nonamebreak,comma]{natbib}  % citação bibliográfica alpha
+\fontsize{60}{62}\usefont{OT1}{cmr}{m}{n}{\selectfont}
+\usepackage{upquote}                    % formata apóstrofes '
+\usepackage{textcomp}
+
+% Para formatar corretamente as URLs
+\usepackage{url}
+% -------------------------------------------------------------------- %
+% Cabeçalhos similares ao TAOCP de Donald E. Knuth
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}
+\renewcommand{\sectionmark}[1]{\markright{\MakeUppercase{#1}}{}}
+\renewcommand{\headrulewidth}{0pt}
+
+% -------------------------------------------------------------------- %
+\graphicspath{{./imagens/}}        % caminho das figuras
+\frenchspacing                     % arruma o espaço: id est (i.e.) e exempli gratia (e.g.)
+\urlstyle{same}                    % URL com o mesmo estilo do texto e no mono-spaced
+\makeindex                         % para o índice remissivo
+\raggedbottom                      % para no permitir espaços extras no texto
+\fontsize{60}{62}\usefont{OT1}{cmr}{m}{n}{\selectfont}
+\cleardoublepage
+\normalsize
+
+% -------------------------------------------------------------------- %
+% Cores para formatação de código
+\usepackage{color}
+\definecolor{vermelho}{rgb}{0.6,0,0} % para strings
+\definecolor{verde}{rgb}{0.25,0.5,0.35} % para comentários
+\definecolor{roxo}{rgb}{0.5,0,0.35} % para palavras-chaves
+\definecolor{azul}{rgb}{0.25,0.35,0.75} % para strings
+\definecolor{cinza-claro}{gray}{0.95}
+% -------------------------------------------------------------------- %
+% Opções de listagem usados para o código fonte
+% Ref: http://en.wikibooks.org/wiki/LaTeX/Packages/Listings
+
+
+
+\usepackage{listings}           % para formatar código-fonte (ex. em Java)
+
+
+\lstset{ %
+language=[Objective]Caml,  % seleciona a linguagem do código (aqui em lstlang0.sty
+basicstyle=\footnotesize\ttfamily, % o tamanho da fonte usado no código
+commentstyle=\color{verde}\bfseries,  % formatação de comentários
+stringstyle=\color{azul},    % formatação de strings
+upquote=true,
+numbers=left,                   % onde colocar os números de linha
+numberstyle=\tiny,  % o tamanho da fonte usada para a numeração das linhas
+stepnumber=1,                   % o intervalo entre dois números de linhas. Se for 1, numera cada uma.
+numbersep=5pt,                  % how far the line-numbers are from the code
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+keywordstyle=\color{roxo}\bfseries,
+keywordstyle=[1]\color{roxo}\bfseries,
+keywordstyle=[2]\color{verde}\bfseries,
+%        keywordstyle=[3]\textbf,    %
+%        keywordstyle=[4]\textbf,   \sqrt{\sqrt{}} %
+frame=b,                   % adds a frame around the code
+framerule=0.6pt,
+tabsize=2,                      % sets default tabsize to 2 spaces
+captionpos=t,                   % sets the caption-position to top
+breaklines=true,                % sets automatic line breaking
+breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+escapeinside={\%*}{*)},         % if you want to add a comment within your code
+backgroundcolor=\color[rgb]{1.0,1.0,1.0}, % choose the background color.
+rulecolor=\color[rgb]{0.8,0.8,0.8},
+extendedchars=true,
+xleftmargin=10pt,
+xrightmargin=10pt,
+framexleftmargin=10pt,
+framexrightmargin=10pt,
+literate={â}{{\^{a}}}1  % para formatar corretamente os acentos do Português ao usar utf8
+    {ê}{{\^{e}}}1
+    {ô}{{\^{o}}}1  
+    {Â}{{\^{A}}}1
+    {Ê}{{\^{E}}}1
+    {Ô}{{\^{O}}}1
+    {á}{{\'{a}}}1
+    {é}{{\'{e}}}1
+    {í}{{\'{i}}}1
+    {ó}{{\'{o}}}1
+    {ú}{{\'{u}}}1
+    {Á}{{\'{A}}}1
+    {É}{{\'{E}}}1
+    {Í}{{\'{I}}}1
+    {Ó}{{\'{O}}}1
+    {Ú}{{\'{U}}}1
+    {à}{{\`{a}}}1
+    {À}{{\`{A}}}1
+    {ã}{{\~{a}}}1
+    {õ}{{\~{o}}}1
+    {Ã}{{\~{A}}}1
+    {Õ}{{\~{O}}}1
+    {ç}{{\c{c}}}1
+    {Ç}{{\c{C}}}1
+    {ü}{{\"u}}1
+    {Ü}{{\"U}}1
+}
+
+\renewcommand{\lstlistingname}{Listagem}
+\renewcommand{\lstlistlistingname}{Lista de Listagens}
+
+% Definição de novos estilos
+\lstdefinestyle{Bash}
+    {language=bash,frame=single,numbers=none,basicstyle=\footnotesize\ttfamily,
+     morekeywords={cp,mkdir,sudo,tar}}
+
+% Definição de novos ambientes
+\lstnewenvironment{terminal}
+  {\lstset{style=Bash}}
+  {}
+
+\lstnewenvironment{ocaml}
+  {\lstset{basicstyle=\scriptsize\ttfamily,
+           frame=single,
+           frameround=tttt,
+           framerule=2pt,
+           numbers=none,
+           rulecolor=\color{Salmon}}}
+  {}
+
+\lstnewenvironment{xml}
+   {\lstset{language=XML,frame=single,numbers=none}}
+   {}
+
+\lstnewenvironment{interprete}
+  {\lstset{frame=single,
+            frameround=tttt,
+            numbers=none,
+            basicstyle=\ttfamily,
+            framerule=2pt,
+            rulecolor=\color{CadetBlue}}}
+  {}
+% Formata o caption da listagem
+% \DeclareCaptionFont{blue}{\color{blue}} 
+
+% \captionsetup[lstlisting]{singlelinecheck=false, labelfont={blue}, textfont={blue}}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
+
+\newcommand{\ListingsPath}{./codigos}
+% Inclui o nome do arquivo como Caption 
+\newcommand{\filelisting}[2][]{%
+    \lstinputlisting[caption={\texttt{\detokenize{#2}}},#1]{\ListingsPath/#2}%
+}
+
+% ---------------------------------------------------------------------------- %
+
+% ---------------------------------------------------------------------------- %
+
+\title{Construção de um compilador de MiniC para LLVM usando Objective Caml}
+\date{}
+\author{Gustavo de Souza Silva \\
+\texttt{\small \url{xgustavossilva@gmail.com}}\\
+\vspace{1cm} \\
+Faculdade de Computação \\
+Universidade Federal de Uberlândia
+}
+\date{\today}
+
+%\includeonly{cap-clojure,magical,short}
+\begin{document}
+  \maketitle
+% -------------------------------------------------------------------- %
+% Listas de figuras, tabelas e códigos criadas automaticamente
+%\listoffigures            
+%\listoftables            
+\lstlistoflistings
+% -------------------------------------------------------------------- %
+
+% -------------------------------------------------------------------- %
+% Sumário
+\tableofcontents    
+
+% Capítulos do trabalho
+
+% cabeçalho para as páginas de todos os capítulos
+\fancyhead[RE,LO]{\thesection}
+
+%\singlespacing              % espaçamento simples
+\setlength{\parskip}{0.15in} % espaçamento entre paragráfos
+
+\chapter{Introdução}
+Este documento foi escrito como relatório de uma tarefa com objetivo de aumentar minhas experiências de uso da linguagem fonte MiniC, possibilitar uma compreensão mais aprofundada dos códigos Assembly da plataforma LLVM (Low Level Virtual Machine) e desenvolver habilidade de uso das ferrramentas para a plataforma LLVM.
+
+\section{LLVM}
+Desenvolvida para otimizar em tempo de compilação, ligação(linker) e execução de programas escritos em várias linguagems de programação, LLVM (Low Level Virtual Machine) é uma infraescrutura de compilador escrita em C++. Inicialmente foi feita para C e C++, porém foi expandida para Java, Python, Ruby, Haskell e muitas outra linguagens.
+
+\section{LLVM IR}
+LLVM IR (LLVM Intermediate Representation) É o aspecto mais importante de um projeto, ele é a forma como é representado o código no compilador. Ele é o código intermediário do compilador, foi projetado para analisar e otimizar o código que foi compilado.
+
+\section{Instalação}
+Alguns pacotes devem ser instalados no linux Ubuntu para que seja feita a compilação e geração do código Assembly da LLVM.
+
+\begin{terminal}
+> sudo apt-get install llvm
+> sudo apt-get install clang
+\end{terminal}
+
+Com o primeiro comando a llvm é instalada no sistema operacional, no segundo comando é instalada a interface clang, que faz o front-end do C para LLVM
+
+Agora, podemos também instalar o OCAML, linguagem que será utilizada para fazermos o compilador, para isto digite:
+\begin{terminal}
+> sudo apt-get install ocaml
+> sudo apt-get install rlwrap
+\end{terminal}
+
+O primeiro comando instala o ocaml no computador, já o segundo instala o rlwrap, que salva comandos executados no terminal e se faz muito útil neste documento.
+
+\section{Compilando C em LLVM-IR e execuntado}
+Para que seja feita a conversão de um código em linguagem C para LLVM-IR, deve ser feito o seguinte comando no terminal:
+
+\begin{terminal}
+> clang -S -emit-llvm nome.c -o nome.ll
+\end{terminal}
+Onde nome.c é o nome do arquivo c e nome.ll é o nome do arquivo de saída no código Assembly da LLVM.
+
+Para que seja feita a execução na LLVM, os seguintes comandos devem ser seguidos:
+\begin{terminal}
+> llvm-as nome.ll
+> lli nome.bc
+\end{terminal}
+Onde o primeiro comando cria o arquivo binário, e o segundo o executa na llvm.
+
+Para criar o arquivo obj, utilizando o arquivo .bc do llvm, o seguinte comando é necessário:
+\begin{terminal}
+> llc -filetype=obj nome.bc
+\end{terminal}
+
+Após a criação do arquivo obj com o llc, o arquivo executável pode ser criado utilizando o GCC.
+\begin{terminal}
+> gcc nome.o
+> ./a.out
+\end{terminal}
+
+Como nota de observação, temos que podemos gerar um arquivo executavel em C diretamente pelo GCC utilizando os comandos:
+\begin{terminal}
+> gcc nome.c -o nome.o
+> ./nome
+\end{terminal}
+O primeiro comanda cria o arquivo .o (executavel) e o segundo faz sua execução.
+
+\chapter{Programas de Teste}
+
+A seguir, os programas em C, seguidos por sua tradução para Assembly da LLVM, no fim deste capítulo, é póssivel encontrar uma "tradução" para as intruções do assembly:
+
+\section{Nano Programas}
+\lstinputlisting[label={arq:prog1.c}, language=C, caption={Módulo Mínimo C}]{codigos/MiniC/prog1.c}
+\lstinputlisting[label={arq:prog1.ll}, language=llvm, caption={Módulo Mínimo LLVM}]{codigos/LLVM-IR/prog1.ll}
+Não é possível ver muita coisa ainda neste exemplo, temos apenas a definição no assembly para a MAIN do arquivo C, e um retorno (criado automaticamente pelo assembler). Podemos ainda ver um dos tipos primitivos da linguagem utilizada pela LLVM (i32) que representa o int do C.
+
+\lstinputlisting[label={arq:prog2.c}, language=C, caption={Declaração de uma variável C}]{codigos/MiniC/prog2.c}
+\lstinputlisting[label={arq:prog2.ll}, language=llvm, caption={Declaração de uma variável LLVM}]{codigos/LLVM-IR/prog2.ll}
+Já neste segundo exemplo é possível ver a alocação de espaço para a variável que foi declarada com o tamanho do tipo que foi atribuído a ela (no caso i32 que é referente ao int do C).
+
+\lstinputlisting[label={arq:prog3.c}, language=C, caption={Atribuição de um inteiro a uma variável C}]{codigos/MiniC/prog3.c}
+\lstinputlisting[label={arq:prog3.ll}, language=llvm, caption={Atribuição de um inteiro a uma variável LLVM}]{codigos/LLVM-IR/prog3.ll}
+Neste código é utilizado store para atribuir o valor 0 (neste caso), a variável n.
+
+\lstinputlisting[label={arq:prog6.c}, language=C, caption={Atribuição de uma subtração e impressão de uma variável C}]{codigos/MiniC/prog6.c}
+\lstinputlisting[label={arq:prog6.ll}, language=llvm, caption={Atribuição de uma subtração e impressão de uma variável LLVM}]{codigos/LLVM-IR/prog6.ll}
+Saída: -1\\
+Quando é feita uma atribuição com soma e/ou substração a uma variável, o assembler já armazena automaticamente o valor resultante do cálculo na variável, o que tira a necessitade do cálculo em tempo de execução (já que só é feita uma atribuição). Já na impressão, ele carrega o dado em algum tipo de buffer (load),ou registrador, e faz uma chamada utilizando o dado carregado com uma função definida chamada pela importação (printf).
+
+\lstinputlisting[label={arq:prog8.c}, language=C, caption={Condicionais (if/else) C}]{codigos/MiniC/prog8.c}
+\lstinputlisting[label={arq:prog8.ll}, language=llvm, caption={Condicionais LLVM}]{codigos/LLVM-IR/prog8.ll}
+Saída: 1\\
+Neste caso o código é baseado em labels. As variáveis são colocados nos registradores e é invocada intrução icmp para comparação dos valores alocados nos registradores, e dependendo do resultado ele vai para posição correta (baseada em labels que ele cria).
+
+\lstinputlisting[label={arq:prog11.c}, language=C, caption={Comando de repetição while C}]{codigos/MiniC/prog11.c}
+\lstinputlisting[label={arq:prog11.ll}, language=llvm, caption={Comando de repetição while LLVM}]{codigos/LLVM-IR/prog11.ll}
+Saída: 3 e 5\\
+Ao iniciar um laço, o assembler já vai direto para uma label (pedaço de código), nesta label ele faz apenas a comparação da condição de parada, caso true, ele vai para uma label e faz o que deve ser feito, caso negativo ele vai para outra label e termina a execução.
+
+\section{Micro Programas}
+
+\lstinputlisting[label={arq:prog13.c}, language=C, caption={Converter graus Celsius em Fahrenheit C}]{codigos/MiniC/prog13.c}
+\lstinputlisting[label={arq:prog13.ll}, language=llvm, caption={Converter graus Celsius em Fahrenheit LLVM}]{codigos/LLVM-IR/prog13.ll}
+Saída: Grau Celsius convertido em Fahrenheit (0 = 32)\\
+Neste código é importante notar-se como foi feito a passagem de valor (scanf) para uma variável, e além disso como são tratados valores float.
+
+\lstinputlisting[label={arq:prog17.c}, language=C, caption={Lê strings e caracteres C}]{codigos/MiniC/prog17.c}
+\lstinputlisting[label={arq:prog17.ll}, language=llvm, caption={Lê strings e caracteres LLVM}]{codigos/LLVM-IR/prog17.ll}
+Saída: A quantidade de homens e mulheres digitados.\\
+É interessante nesse código perceber como é tratado o tipo char do C no código assembler e como é feito o switch no LLVM
+
+\lstinputlisting[label={arq:prog22.c}, language=C, caption={Calcula o fatorial de um número C}]{codigos/MiniC/prog22.c}
+\lstinputlisting[label={arq:prog22.ll}, language=llvm, caption={Calcula o fatorial de um número LLVM}]{codigos/LLVM-IR/prog22.ll}
+Saída: O fatorial de algum número.\\
+Neste código é feita uma chamada na função fatorial. Na função, são feitos os devidos cálculos com os registradores de forma recursiva (primeiroa label =1 retorna 1, segunda label para todos os diferentes).
+
+\section{Instruções Importantes}
+Existem algumas instruções básicas do LLVM que vale a pena entender como funcionam. São elas:\\
+declare -> Declarar um protótipo ou função;\\
+alloca -> Aloca memória no pedaço de quadro que está rodando a função, e libera automaticamente o espaço quando acaba a execução;\\
+store -> escreve algo na memória;\\
+load -> lê algo da memória;\\
+call -> Simplesmente uma chamada de função;\\
+br -> Transfere o fluxo de controle para outro bloco básico na função em execução (ele tem 2 ramos, condição ok e condição inválida);\\
+icmp,fcmp -> Retorna um valor booleano ou um vector de valores booleados baseado na comparação de 2 variáveis, fcmp é de ponto flutuante;\\
+switch -> Altera o fluxo de controle para diferentes lugares;\\
+fmult,fadd,fdiv,fsub -> Operações sobre valores com ponto flutuante;\\
+add -> Retorna a soma de 2 operandos;\\
+sub -> Retorna a subtração de 2 operandos;\\
+sext -> pega valor de um cast e o tipo que vai ser feito o cast. Basicamente serve para conversões;\\
+ret -> retorna o fluxo de controle de uma função para quem o está chamando.\\
+slt, sgt, eq -> Menor que, maior que, igual
+
+\subsection{Tipos do LLVM}
+Primitivos:\\
+i1,i2,...,i8,....,i16,...,i32\\
+label,void\\
+float e double\\
+\\
+Derivados\\
+Array: [40 x i32]\\
+Pointers: [4 x i8]*\\
+Structures: i32,(i32)*,i1\\
+Function - <tiporetorno>(<parametro>):i32(i32)
+
+\subsection{Condicionais}
+Operadores possíveis condicionais de icmp\\
+eq: Igual\\
+ne: Diferente\\
+ugt: unsigned Maior que\\
+uge: unsigned Maior ou igual\\
+ult: unsigned Menor que\\
+ule: unsigned Menor ou igual\\
+sgt: signed Maior que\\
+sge: signed Maior ou igual\\
+slt: signed Menor ou igual\\
+sle: signed less or equal\\
+\\
+\\
+Operadores possíveis condicionais de fcmp:\\
+false: Sempre retorna falso, não importanto a operação.\\
+true: Sempre retorna true, não importando a operação.\\
+oeq: retorna true se todos os operadores não são QNAN e op1 é igual a op2.\\
+ogt: retorna true se todos os operadores não são QNAN e op1 é maior que op2.\\
+oge: retorna true se todos os operadores não são QNAN e op1 é maior ou igual que op2.\\
+olt: retorna true se todos os operadores não são QNAN e op1 é menor que op2.\\
+ole: retorna true se todos os operadores não são QNAN e op1 é menor ou igual que op2.\\
+one: retorna true se todos os operadores não são QNAN e op1 é diferente de op2.\\
+ord: retorna true se todos os operadores não são QNAN.\\
+ueq: retrona true se qualquer operador é QNAN ou op1 é igual a op2.\\
+ugt: retrona true se qualquer operador é QNAN ou op1 é maior que op2.\\
+uge: retrona true se qualquer operador é QNAN ou op1 é maior ou igual que op2.\\
+ult: retrona true se qualquer operador é QNAN ou op1 é menor que op2.\\
+ule: retrona true se qualquer operador é QNAN ou op1 op1 é menor ou igual que op2.\\
+une: retrona true se qualquer operador é QNAN ou op1 é diferente de op2.\\
+uno: retrona true se qualquer operador é QNAN.\\
+
+\section{Programas Extras}
+Alguns programas extras para complementar a leitura.
+
+\lstinputlisting[label={arq:prog4.c}, language=C, caption={Atribuição de uma soma de inteiros a uma variável C}]{codigos/MiniC/prog4.c}
+\lstinputlisting[label={arq:prog4.ll}, language=llvm, caption={Atribuição de uma soma de inteiros a uma variável LLVM}]{codigos/LLVM-IR/prog4.ll}
+
+\lstinputlisting[label={arq:prog5.c}, language=C, caption={Inclusão do comando de impressão C}]{codigos/MiniC/prog5.c}
+\lstinputlisting[label={arq:prog5.ll}, language=llvm, caption={Inclusão do comando de impressão LLVM}]{codigos/LLVM-IR/prog5.ll}
+
+\lstinputlisting[label={arq:prog7.c}, language=C, caption={Inclusão do comando condicional C}]{codigos/MiniC/prog7.c}
+\lstinputlisting[label={arq:prog7.ll}, language=llvm, caption={Inclusão do comando condicional LLVM}]{codigos/LLVM-IR/prog7.ll}
+
+\lstinputlisting[label={arq:prog9.c}, language=C, caption={Atribuição de duas operações aritméticas sobre inteiros a uma variável C}]{codigos/MiniC/prog9.c}
+\lstinputlisting[label={arq:prog9.ll}, language=llvm, caption={Atribuição de duas operações aritméticas sobre inteiros a uma variável LLVM}]{codigos/LLVM-IR/prog9.ll}
+
+\lstinputlisting[label={arq:prog10.c}, language=C, caption={Atribuição de duas variáveis inteiras C}]{codigos/MiniC/prog10.c}
+\lstinputlisting[label={arq:prog10.ll}, language=llvm, caption={Atribuição de duas variáveis inteiras LLVM}]{codigos/LLVM-IR/prog10.ll}
+
+\lstinputlisting[label={arq:prog12.c}, language=C, caption={Comando condicional aninhado em um comando de repetição C}]{codigos/MiniC/prog12.c}
+\lstinputlisting[label={arq:prog12.ll}, language=llvm, caption={Comando condicional aninhado em um comando de repetição LLVM}]{codigos/LLVM-IR/prog12.ll}
+  
+\lstinputlisting[label={arq:prog14.c}, language=C, caption={Lê dois inteiros e decide qual é maior C}]{codigos/MiniC/prog14.c}
+\lstinputlisting[label={arq:prog14.ll}, language=llvm, caption={Lê dois inteiros e decide qual é maior LLVM}]{codigos/LLVM-IR/prog14.ll}
+
+\lstinputlisting[label={arq:prog15.c}, language=C, caption={Lê um número e verifica se ele está entre 100 e 200 C}]{codigos/MiniC/prog15.c}
+\lstinputlisting[label={arq:prog15.ll}, language=llvm, caption={Lê um número e verifica se ele está entre 100 e 200 LLVM}]{codigos/LLVM-IR/prog15.ll}
+
+\lstinputlisting[label={arq:prog16.c}, language=C, caption={Lê números e informa quais estão entre 10 e 150 C}]{codigos/MiniC/prog16.c}
+\lstinputlisting[label={arq:prog16.ll}, language=llvm, caption={Lê números e informa quais estão entre 10 e 150 LLVM}]{codigos/LLVM-IR/prog16.ll}
+
+\lstinputlisting[label={arq:prog18.c}, language=C, caption={Escreve um número lido por extenso C}]{codigos/MiniC/prog18.c}
+\lstinputlisting[label={arq:prog18.ll}, language=llvm, caption={Escreve um número lido por extenso LLVM}]{codigos/LLVM-IR/prog18.ll}
+
+\lstinputlisting[label={arq:prog19.c}, language=C, caption={Decide se os números são positivos, zeros ou negativos  C}]{codigos/MiniC/prog19.c}
+\lstinputlisting[label={arq:prog19.ll}, language=llvm, caption={Decide se os números são positivos, zeros ou negativos LLVM}]{codigos/LLVM-IR/prog19.ll}
+
+\lstinputlisting[label={arq:prog20.c}, language=C, caption={Decide se um número é maior ou menor que 10  C}]{codigos/MiniC/prog20.c}
+\lstinputlisting[label={arq:prog20.ll}, language=llvm, caption={Decide se um número é maior ou menor que 10 LLVM}]{codigos/LLVM-IR/prog20.ll}
+
+\lstinputlisting[label={arq:prog21.c}, language=C, caption={Cálculo de preços C}]{codigos/MiniC/prog21.c}
+\lstinputlisting[label={arq:prog21.ll}, language=llvm, caption={Cálculo de preços LLVM}]{codigos/LLVM-IR/prog21.ll}
+
+\lstinputlisting[label={arq:prog23.c}, language=C, caption={Cálculo de preços Decide se um número é positivo, zero ou negativo com auxílio de uma função C}]{codigos/MiniC/prog23.c}
+\lstinputlisting[label={arq:prog23.ll}, language=llvm, caption={Cálculo de preços Decide se um número é positivo, zero ou negativo com auxílio de uma função LLVM}]{codigos/LLVM-IR/prog23.ll}
+
+\chapter{Compilador}
+O Compilador é um programa que traduz um programa de entrada de uma linguagem fonte para uma linguagem que possa ser indentida pela máquina. Esse processo demanda na quebra do programa em várias partes, para que seja entendido sua estrutura e significado. Para isso temos o front-end do compilador que é responsável por vários tipos de análises.
+
+\textbf{Análise Léxica:}
+Quebra a entrada (o código) em palavras conhecidas como tokens.
+
+\textbf{Análise Sintática:}
+Analisa a saída do analisador léxico estruturalmente.
+
+\textbf{Análise Semântica:}
+Cálcula o significado do programa.
+
+Além desses passos o compilador ainda conta com geração de código intermediário, optimização de código e geraçãod de código final como fases do seu processo.
+
+\section{Analisador Léxico}
+O analisador léxico é responsável por separar uma sequencia de caracteres que representa o programa fonte em entidades ou tokens, estes que são símbolos básicos da linguagem. Durante a análise léxica, os tokens são classificados como palavras reservadas, identificadores, símbolos especiais, constantes de tipos básicos (int, float), entre outras. Ele lê o texto fonte, carácter por carácter identificando os elementos léxicos da linguagem (identificadores), ignorando comentários, brancos, e includes. Pode-se entende-lo  como uma forma de verificar determinado alfabeto e então, quando analisamos uma palavra, podemos definir através da análise léxica se existe ou não algum caracter que não faz parte do alfabeto da linguagem de programação.
+
+Neste documento, é definido um análisador léxico para linguagem MiniC, segue abaixo:
+\lstinputlisting[label={arq:lexico.mll}, language=Caml, caption={Analisador Léxico em OCAML}]{codigos/Ocaml/lexico.mll}
+
+Para compilar, devem ser seguidos os comandos:
+\begin{terminal}
+> ocamllex lexico.mll
+> ocamlc -c lexico.ml
+\end{terminal}
+
+Construído em sala, este programa (carregador.ml) é responsável por carregar o analisador junto a um arquivo do formato específicado e então obter a saída do analisador léxico dentro de uma lista de tokens.
+\lstinputlisting[label={arq:carregador.ml}, language=Caml, caption={Carregador do analisador léxico}]{codigos/Ocaml/carregador.ml}
+
+Para utiliza-lo, no terminal digite:
+\begin{terminal}
+> rlwrap ocaml
+> #use "carregador.ml";;
+\end{terminal}
+
+Pode-se utilizar qualquer código deste documento em C para realizar os devidos testes do analisador, para isso com o ocaml aberto e o carregador carregado faça:
+\begin{terminal}
+> lex "nomedoarquivo.c";;
+\end{terminal}
+
+Um exemplo de saída de arquivo C correto pode ser visto abaixo (neste caso o programa utilizado foi o da Listagem 2.5 desde arquivo:
+
+Lexico.tokens list =
+[Lexico.INTEIRO; Lexico.MAIN; Lexico.APAR; Lexico.FPAR; Lexico.ACHAVE;
+ Lexico.INTEIRO; Lexico.ID "n"; Lexico.PONTOEV; Lexico.ID "n"; Lexico.ATRIB;
+ Lexico.LITINT 0; Lexico.PONTOEV; Lexico.FCHAVE; Lexico.EOF]
+
+Segue abaixo alguns programas C que fazem o analisador ter como saída uma mensagem acusando determinado erro:
+
+Erro gerado -> Exception: Failure "3-1: Comentario nao fechado".
+\lstinputlisting[label={arq:prog1.c}, language=C, caption={Erro de comentário}]{codigos/MiniCErrosLex/prog1.c}
+
+Erro gerado -> Exception: Failure "7-15: A string nao foi fechada".
+\lstinputlisting[label={arq:prog7.c}, language=C, caption={Erro de string}]{codigos/MiniCErrosLex/prog7.c}
+
+Erro gerado -> Exception: Failure "4-4: caracter desconhecido @".
+\lstinputlisting[label={arq:prog8.c}, language=C, caption={Erro de caracter desconhecido}]{codigos/MiniCErrosLex/prog8.c}
+
+
+\chapter{Referências}
+\href{http://llvm.org/releases/3.3/docs/LangRef.html}{LLVM Documentation}\\
+\href{https://groups.google.com/forum/#!forum/comp_ufu}{Trabalhos de outros alunos do curso}\\
+  
+\end{document} 
