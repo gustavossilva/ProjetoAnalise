@@ -5,12 +5,13 @@
 
 #include "algs.h"
 
+
 /*
 int main() {
     int v[10] = {1,5,11,10,9,8,9,5,15,654};
     int p = 0;
     int r = 9;
-    count(v,10);
+    insertion(v);
 //    insertion(v);
     for(int i =0; i<= r; i++)
     {
@@ -18,6 +19,7 @@ int main() {
     }
 }
 */
+
 
 void ordena_intercala(int * v,int p,int r)
 {

@@ -5,88 +5,89 @@
 
 #include "gerador.h"
 
-int* gerarVetor(int* vetor,int k, int flag){
+Vetor gerarVetor(Vetor vetor,int k, int flag){
 
     int tam = pow(2,k);
+    vetor.size = tam;
     //printf("%d\n",tam);
-    vetor = malloc(tam*sizeof(int));
+    vetor.v = malloc(tam*sizeof(int));
 
     switch(flag){
         case 0: //vetor totalmente aleatorio
-            geraAleatorio(vetor,tam);
+            geraAleatorio(vetor.v,tam);
             break;
 
         case 1: //Vetores ordenados em ordem crescente
-            geraAleatorio(vetor,tam);
-            qsort(vetor,tam,sizeof(vetor[0]),crescente);
+            geraAleatorio(vetor.v,tam);
+            qsort(vetor.v,tam,sizeof(vetor.v[0]),crescente);
             break;
 
         case 2: //Vetores ordenados em ordem decrescente
-            geraAleatorio(vetor,tam);
-            qsort(vetor,tam,sizeof(vetor[0]),decrescente);
+            geraAleatorio(vetor.v,tam);
+            qsort(vetor.v,tam,sizeof(vetor.v[0]),decrescente);
             break;
 
         case 3: //vetor 90% ordenado de forma crescente
-            geraAleatorio(vetor,tam);
-            qsort(vetor,tam,sizeof(vetor[0]),crescente);
+            geraAleatorio(vetor.v,tam);
+            qsort(vetor.v,tam,sizeof(vetor.v[0]),crescente);
             //exibeVetor(vetor,tam);
-            desordenaVetor(vetor,tam,0.1,0);
+            desordenaVetor(vetor.v,tam,0.1,0);
             break;
 
         case 4: //vetor 90% ordenado de forma decrescente
-            geraAleatorio(vetor,tam);
-            qsort(vetor,tam,sizeof(vetor[0]),decrescente);
+            geraAleatorio(vetor.v,tam);
+            qsort(vetor.v,tam,sizeof(vetor.v[0]),decrescente);
             //exibeVetor(vetor,tam);
-            desordenaVetor(vetor,tam,0.1,1);
+            desordenaVetor(vetor.v,tam,0.1,1);
             break;
         case 5: //vetor 80% ordenado de forma crescente
-            geraAleatorio(vetor,tam);
-            qsort(vetor,tam,sizeof(vetor[0]),crescente);
+            geraAleatorio(vetor.v,tam);
+            qsort(vetor.v,tam,sizeof(vetor.v[0]),crescente);
             //exibeVetor(vetor,tam);
-            desordenaVetor(vetor,tam,0.2,0);
+            desordenaVetor(vetor.v,tam,0.2,0);
             break;
 
         case 6: //vetor 80% ordenado de forma decrescente
-            geraAleatorio(vetor,tam);
-            qsort(vetor,tam,sizeof(vetor[0]),decrescente);
+            geraAleatorio(vetor.v,tam);
+            qsort(vetor.v,tam,sizeof(vetor.v[0]),decrescente);
             //exibeVetor(vetor,tam);
-            desordenaVetor(vetor,tam,0.2,1);
+            desordenaVetor(vetor.v,tam,0.2,1);
             break;
         case 7: //vetor 70% ordenado de forma crescente
-            geraAleatorio(vetor,tam);
-            qsort(vetor,tam,sizeof(vetor[0]),crescente);
+            geraAleatorio(vetor.v,tam);
+            qsort(vetor.v,tam,sizeof(vetor.v[0]),crescente);
             //exibeVetor(vetor,tam);
-            desordenaVetor(vetor,tam,0.3,0);
+            desordenaVetor(vetor.v,tam,0.3,0);
             break;
         case 8: //vetor 70% ordenado de forma decrescente
-            geraAleatorio(vetor,tam);
-            qsort(vetor,tam,sizeof(vetor[0]),decrescente);
+            geraAleatorio(vetor.v,tam);
+            qsort(vetor.v,tam,sizeof(vetor.v[0]),decrescente);
             //exibeVetor(vetor,tam);
-            desordenaVetor(vetor,tam,0.3,1);
+            desordenaVetor(vetor.v,tam,0.3,1);
             break;
         case 9: //vetor 60% ordenado de forma crescente
-            geraAleatorio(vetor,tam);
-            qsort(vetor,tam,sizeof(vetor[0]),crescente);
+            geraAleatorio(vetor.v,tam);
+            qsort(vetor.v,tam,sizeof(vetor.v[0]),crescente);
             //exibeVetor(vetor,tam);
-            desordenaVetor(vetor,tam,0.4,0);
+            desordenaVetor(vetor.v,tam,0.4,0);
             break;
         case 10: //vetor 60% ordenado de forma decrescente
-            geraAleatorio(vetor,tam);
-            qsort(vetor,tam,sizeof(vetor[0]),decrescente);
+            geraAleatorio(vetor.v,tam);
+            qsort(vetor.v,tam,sizeof(vetor.v[0]),decrescente);
             //exibeVetor(vetor,tam);
-            desordenaVetor(vetor,tam,0.4,1);
+            desordenaVetor(vetor.v,tam,0.4,1);
             break;
         case 11:  //vetor 50% ordenado de forma crescente
-            geraAleatorio(vetor,tam);
-            qsort(vetor,tam,sizeof(vetor[0]),crescente);
+            geraAleatorio(vetor.v,tam);
+            qsort(vetor.v,tam,sizeof(vetor.v[0]),crescente);
             //exibeVetor(vetor,tam);
-            desordenaVetor(vetor,tam,0.5,0);
+            desordenaVetor(vetor.v,tam,0.5,0);
             break;
         case 12: //vetor 50% ordenado de forma decrescente
-            geraAleatorio(vetor,tam);
-            qsort(vetor,tam,sizeof(vetor[0]),decrescente);
+            geraAleatorio(vetor.v,tam);
+            qsort(vetor.v,tam,sizeof(vetor.v[0]),decrescente);
             //exibeVetor(vetor,tam);
-            desordenaVetor(vetor,tam,0.5,1);
+            desordenaVetor(vetor.v,tam,0.5,1);
             break;
         default:
             printf("Flag incorreta");
@@ -163,3 +164,12 @@ void exibeVetor(int *vetor,int tam){
     }
     printf("\n");
 }
+
+/*
+int getSize(int *v){
+    int i=0;
+    while(v[i] != NULL){
+        i++;
+    }
+    return i;
+}*/

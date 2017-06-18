@@ -15,21 +15,24 @@ int main() {
     //FILE *f = fopen("file.txt", "w");
 
     int i;
-    int **vv;
-    int *v1,*v2,*v3,*v4,*v5,*v6,*v7,*v8,*v9,*v10,*v11,*v12; //Aleatorios
-    int *v13,*v14,*v15,*v16,*v17,*v18,*v19,*v20,*v21,*v22,*v23,*v24; //Ordenado crescente
-    int *v25,*v26,*v27,*v28,*v29,*v30,*v31,*v32,*v33,*v34,*v35,*v36; //Ordenado decrescente
-    int *v37,*v38,*v39,*v40,*v41,*v42,*v43,*v44,*v45,*v46,*v47,*v48; //90% Ordenado crescente
-    int *v49,*v50,*v51,*v52,*v53,*v54,*v55,*v56,*v57,*v58,*v59,*v60; //90% Ordenado decrescente
-    int *v61,*v62,*v63,*v64,*v65,*v66,*v67,*v68,*v69,*v70,*v71,*v72; //80% Ordenado crescente
-    int *v73,*v74,*v75,*v76,*v77,*v78,*v79,*v80,*v81,*v82,*v83,*v84; //80% Ordenado decrescente
-    int *v85,*v86,*v87,*v88,*v89,*v90,*v91,*v92,*v93,*v94,*v95,*v96; //70% Ordenado crescente
-    int *v97,*v98,*v99,*v100,*v101,*v102,*v103,*v104,*v105,*v106,*v107,*v108; //70% Ordenado decrescente
-    int *v109,*v110,*v111,*v112,*v113,*v114,*v115,*v116,*v117,*v118,*v119,*v120; //60% Ordenado crescente
-    int *v121,*v122,*v123,*v124,*v125,*v126,*v127,*v128,*v129,*v130,*v131,*v132; //60% Ordenado decrescente
-    int *v133,*v134,*v135,*v136,*v137,*v138,*v139,*v140,*v141,*v142,*v143,*v144; //50% Ordenado crescente
-    int *v145,*v146,*v147,*v148,*v149,*v150,*v151,*v152,*v153,*v154,*v155,*v156; //50% Ordenado decrescente
-    float tempo_ini,tempo_fim,tempo_med;
+/*    Vetor *vtt;
+    Vetor vt;*/
+    Vetor *vv;
+    Vetor v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12; //Aleatorios
+    Vetor v13,v14,v15,v16,v17,v18,v19,v20,v21,v22,v23,v24; //Ordenado crescente
+    Vetor v25,v26,v27,v28,v29,v30,v31,v32,v33,v34,v35,v36; //Ordenado decrescente
+    Vetor v37,v38,v39,v40,v41,v42,v43,v44,v45,v46,v47,v48; //90% Ordenado crescente
+    Vetor v49,v50,v51,v52,v53,v54,v55,v56,v57,v58,v59,v60; //90% Ordenado decrescente
+    Vetor v61,v62,v63,v64,v65,v66,v67,v68,v69,v70,v71,v72; //80% Ordenado crescente
+    Vetor v73,v74,v75,v76,v77,v78,v79,v80,v81,v82,v83,v84; //80% Ordenado decrescente
+    Vetor v85,v86,v87,v88,v89,v90,v91,v92,v93,v94,v95,v96; //70% Ordenado crescente
+    Vetor v97,v98,v99,v100,v101,v102,v103,v104,v105,v106,v107,v108; //70% Ordenado decrescente
+    Vetor v109,v110,v111,v112,v113,v114,v115,v116,v117,v118,v119,v120; //60% Ordenado crescente
+    Vetor v121,v122,v123,v124,v125,v126,v127,v128,v129,v130,v131,v132; //60% Ordenado decrescente
+    Vetor v133,v134,v135,v136,v137,v138,v139,v140,v141,v142,v143,v144; //50% Ordenado crescente
+    Vetor v145,v146,v147,v148,v149,v150,v151,v152,v153,v154,v155,v156; //50% Ordenado decrescente
+    time_t tempo_ini,tempo_fim;
+    float tempo_med;
     //O que altera na geração é a flag enviada
     /*Após gerar, executa 3x o vetor peagndo o tempo tipo
      * tempo_ini ordenada tempo_fim (3x) mediana dos 3 valores
@@ -38,6 +41,10 @@ int main() {
      * */
     //Vetores Aleatorios
     v1 = gerarVetor(v1,3,0);
+/*    vt.v = v1;
+    vt.size = 8;
+    vtt = (Vetor*)malloc(157*sizeof(Vetor));
+    vtt[0] = vt;*/
     v2 = gerarVetor(v2,4,0);
     v3 = gerarVetor(v3,5,0);
     v4 = gerarVetor(v4,6,0);
@@ -207,7 +214,7 @@ int main() {
     v156 = gerarVetor(v156,14,12);
 
 
-    vv = (int**)malloc(157*sizeof(int*));
+    vv = (Vetor*)malloc(157*sizeof(Vetor));
     vv[0] = v1;
     vv[1] = v2;
     vv[2] = v3;
@@ -368,12 +375,12 @@ int main() {
     //Vetores criados
     for(int i=0;i<156;i++){
         for(int j=0;j<3;j++){
-            //tempo_ini = pega tempo incial
-            //algoritmodeordena(vv[i]);
-            //tempo_fim = pega tempo do fim
-            //tempo_med += tempo_fim-tempo_ini;
+            tempo_ini = time(NULL);
+           quick(vv[i].v,0,vv[i].size);
+            tempo_fim = time(NULL);
+            tempo_med += difftime(tempo_ini,tempo_fim);
         }
-        //tempo_med = tempo_med/3;
+        tempo_med = tempo_med/3;
         printf("Tempo para vetor[%d] : %f",i+1,tempo_med);
         //Printa o vetor i+1 (v1,v2,v3,v4,v5) e o tempo dele
         //Para saber qual tipo de vetor é, é só olhar pra cima nas definições das variaveis
@@ -382,11 +389,24 @@ int main() {
         //v1 = gerarVetor(v1,3,0); então é esse 3, logo v1 tem tamanho 2^3 (o segundo argumento é o K)
         tempo_med = 0;
     }
+    //exibeVetor(vv[155].v,vv[155].size);
+    //printf("Tamanho %d",vv[11].size);
+    //exibeVetor(vv[0],8);
+    //exibeVetor(vv[24],8);
+    //exibeVetor(vv[155],16382);
+    //printf("site of %ld",sizeof(*vv[155]));
     /*for(i =1;i<pow(2,14);i++){
         fprintf(f,"%d %d %f %f %f\n",1,i,log2(i),i*log2(i),pow(i,2));
     }*/
-    //TODO Pegar como calcula no C o tempo e calcular e depois testar o algoritmo (ordenar algum);
-
+    /*TODO Pegar como calcula no C o tempo e calcular e depois testar o algoritmo (ordenar algum);
+     * Conferir se está tudo correto com o tipo vetor
+     * Colocar ordenação para retornar o vetor e não substitui-lo, para conseguimors fazer 3x a ordenação
+     * */
+    /*for(i =0;i<156;i++){
+        free(vv[i].v);
+    }
+    //free(vv);
+    */
     return 0;
 }
 
