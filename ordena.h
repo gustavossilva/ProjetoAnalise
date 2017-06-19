@@ -27,5 +27,6 @@ void ordena_por_bolha(int *A, int n);
  *
  */
 void ordena_por_shell(int *A, int n);
+void insertion(int *v, int tam);
 
 #endif
