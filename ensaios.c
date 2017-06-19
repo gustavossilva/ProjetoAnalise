@@ -20,9 +20,10 @@ int main(int argc, char *argv[]){
   int k=0;
   printf("teste");
   arquivos = (char**)malloc(200*sizeof(char*));
-  for(int i=0;i<128;i++){
+  for(int i=0;i<200;i++){
     arquivos[i] = (char*)malloc(128*sizeof(char));
   }
+  
   for(int i=0;i<12;i++){
     sprintf(nome_do_arquivo,"vetores/vIntAleatorio_%d.dat",(int)pow(2,i+3%15));
     strcpy(arquivos[k], nome_do_arquivo);
@@ -74,6 +75,7 @@ int main(int argc, char *argv[]){
     strcpy(arquivos[k], nome_do_arquivo);
     k++;
   }
+
   for(int i=0;i<12;i++){
       sprintf(nome_do_arquivo,"vetores/vIntDecrescente_%d_P30.dat",(int)pow(2,i+3%15)); 
     strcpy(arquivos[k], nome_do_arquivo);
@@ -89,6 +91,7 @@ int main(int argc, char *argv[]){
     strcpy(arquivos[k], nome_do_arquivo);
     k++;
   }
+    printf("%d\n",k);
   //strcpy(nome_do_arquivo, "vetores/vIntCrescente_131072.dat");
   // Leia o vetor a partir do arquivo
   //v = leia_vetor_int(nome_do_arquivo, &n);

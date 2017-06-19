@@ -18,13 +18,13 @@ void gera_e_salva_vet(int n, Modificador m, Ordem o, Percentual p){
 
   switch (o){
     case ALEATORIO: 
-      sprintf(nome_do_arquivo, "vIntAleatorio_%06d", n);
+      sprintf(nome_do_arquivo, "vIntAleatorio_%d", n);
       break;
     case CRESCENTE:
-      sprintf(nome_do_arquivo, "vIntCrescente_%06d", n);
+      sprintf(nome_do_arquivo, "vIntCrescente_%d", n);
       break;
     case DECRESCENTE:
-      sprintf(nome_do_arquivo, "vIntDecrescente_%06d", n);
+      sprintf(nome_do_arquivo, "vIntDecrescente_%d", n);
       break;
     default: CONFIRME(false, 
                       "gera_e_salva_vet: Ordenação desconhecida");
