@@ -130,7 +130,7 @@ double * gera_vetor_double(int n, Modificador c, Ordem o, Percentual p,
 
   delta =  a / MAX(n-1.0, 1.0);   // incremento nos elementos do vetor
   v = (double *) calloc(n, sizeof(double)); // aloca um vetor com n doubles
-  CONFIRME(v != NULL, "calloc falhou\n");
+  CONFIRME(v != NULL, "callocfalhou\n");
 
   switch (o) {
     case CRESCENTE:

@@ -61,7 +61,7 @@ int main(int argc, char *argv[]){
 
   CONFIRME(chdir(diretorio) == 0, "Erro ao mudar de diretório");
   
-  for(n = POT2(4); n <= POT2(17); n <<= 1){
+  for(n = POT2(4); n <= POT2(14); n <<= 1){
     gera_e_salva_vet(n, TOTALMENTE, ALEATORIO,   0);
     gera_e_salva_vet(n, TOTALMENTE, CRESCENTE,   0);
     gera_e_salva_vet(n, TOTALMENTE, DECRESCENTE, 0);
