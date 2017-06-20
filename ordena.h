@@ -32,4 +32,5 @@ void ordena_intercala(int * v,int p,int r);
 void heap(int *a, int n);
 void quick(int *vetor, int inicio, int fim);
 void radix(int *vetor, int tamanho);
+void coutingsort(int *A, int tamanho);
 #endif

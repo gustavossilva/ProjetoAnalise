@@ -167,12 +167,12 @@ int main(int argc, char *argv[]){
         printf("Tempo do vetor Decrescente P50 tamanho %d: %llu\n",tamanho,(long long unsigned int)tempo_de_cpu/(uint64_t) 3);
     }
     else{
-        printf("Erro em ordenção do vetor %d, arquivo %s",i,arquivos[i]);
+        printf("Erro em ordenção do vetor %d, arquivo %s\n",i,arquivos[i]);
     }
     h++;
     count++;
   }
-  
+  //imprime_vetor_int(v,16384);
   free(v);
   exit(0);
 }

@@ -179,3 +179,24 @@ void radix(int *vetor, int tamanho){
     free(b);
 }
 
+void coutingsort(int *A, int tamanho){
+    int k = tamanho;
+    int aux;
+    int *C = (int*)calloc(k+1,sizeof(int));
+    int *B = (int*)malloc(tamanho*sizeof(int));
+    
+    for(int j = 0;j<tamanho;j++){
+        C[A[j]]++;
+    }
+    for(int i=1;i<=k;i++){
+        C[i] = C[i] + C[i-1];
+    }
+    for(int j=0;j<tamanho;j++){
+        B[C[A[j]]-1] = A[j];
+        C[A[j]]--;
+    }
+    for(int i=0;i<tamanho;i++){
+        A[i] = B[i];
+    }
+}
+
