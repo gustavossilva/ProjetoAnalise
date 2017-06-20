@@ -1,7 +1,8 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 #include "vetor.h"
-
+#include <math.h>
+void intercala(int * v,int p, int q, int r);
 static void inline troca(int *A, int i, int j){
   int temp;
   temp = A[i];
@@ -61,12 +62,12 @@ void intercala(int * v,int p, int q, int r)
     int i,k,j;
     for (i = p; i<=q; i++)
         B[i] = v[i];
-    for (j = (q + 1); j<= r;j++) {
+    for (j = (q + 1); j< r;j++) {
         B[(r + q + 1 - j)] = v[j];
     }
     i = p;
     j = r;
-    for(k = p; k<=r; k++) {
+    for(k = p; k<r; k++) {
             if (B[i] <= B[j]) {
                 v[k] = B[i];
                 i++;

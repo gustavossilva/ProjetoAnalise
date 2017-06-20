@@ -1,19 +1,35 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdint.h>
 #include <time.h>
 #include <float.h>
 #include <math.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
 
 #include "vetor.h"
 #include "ordena.h"
 
+#define BILHAO 1000000000L
+
+#define CRONOMETRA(funcao,vetor,n) {                          \
+   clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &inicio);          \
+   funcao(vetor,n);                                           \
+   clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &fim);             \
+   tempo_de_cpu_aux = BILHAO * (fim.tv_sec - inicio.tv_sec) +     \
+                  fim.tv_nsec - inicio.tv_nsec;               \
+   }
+
 int main(int argc, char *argv[]){
   int * v = NULL;
   int n = 0;
+  uint64_t tempo_de_cpu_aux = 0;
   int tamanho = 0,count = 0;
-  clock_t inicio, fim;
-  double tempo_de_cpu = 0.0;
+  //clock_t inicio, fim;
+  struct timespec inicio, fim;
+  uint64_t tempo_de_cpu = 0.0;
   char msg[256];
   char nome_do_arquivo[128];
   char **arquivos;
@@ -103,50 +119,52 @@ int main(int argc, char *argv[]){
     for(int j=0;j<3;j++){
         v = leia_vetor_int(arquivos[i],&n);
         tamanho = (int)pow(2,h+4%15);
-        inicio = clock();
+        /*inicio = clock();
         //ordena_por_bolha(v,n);
-        quick(v,0,tamanho);
-        fim = clock();
-        tempo_de_cpu += ((double) (fim - inicio)) / CLOCKS_PER_SEC;
+        insertion(v,tamanho);
+        fim = clock();*/
+	CRONOMETRA(radix, v, tamanho);
+        //tempo_de_cpu += ((double) (fim - inicio)) / CLOCKS_PER_SEC;
+	tempo_de_cpu += tempo_de_cpu_aux;
     }
     if(esta_ordenado_int(CRESCENTE,v,n) && count < 11){
-        printf("Tempo do vetor aleatorio tamanho %d: %lf\n",tamanho,tempo_de_cpu/3);
+        printf("Tempo do vetor aleatorio tamanho %d: %llu\n",tamanho,(long long unsigned int)tempo_de_cpu/(uint64_t) 3);
     }
     else if(esta_ordenado_int(CRESCENTE,v,n) && count < 22){
-        printf("Tempo do vetor Crescente tamanho %d: %lf\n",tamanho,tempo_de_cpu/3);
+        printf("Tempo do vetor Crescente tamanho %d: %llu\n",tamanho,(long long unsigned int)tempo_de_cpu/(uint64_t) 3);
     }
     else if(esta_ordenado_int(CRESCENTE,v,n) && count < 33){
-        printf("Tempo do vetor Crescente P10 tamanho %d: %lf\n",tamanho,tempo_de_cpu/3);
+        printf("Tempo do vetor Crescente P10 tamanho %d: %llu\n",tamanho,(long long unsigned int)tempo_de_cpu/(uint64_t) 3);
     }
     else if(esta_ordenado_int(CRESCENTE,v,n) && count < 44){
-        printf("Tempo do vetor Crescente P20 tamanho %d: %lf\n",tamanho,tempo_de_cpu/3);
+        printf("Tempo do vetor Crescente P20 tamanho %d: %llu\n",tamanho,(long long unsigned int)tempo_de_cpu/(uint64_t) 3);
     }
     else if(esta_ordenado_int(CRESCENTE,v,n) && count < 55){
-        printf("Tempo do vetor Crescente P30 tamanho %d: %lf\n",tamanho,tempo_de_cpu/3);
+        printf("Tempo do vetor Crescente P30 tamanho %d: %llu\n",tamanho,(long long unsigned int)tempo_de_cpu/(uint64_t) 3);
     }
     else if(esta_ordenado_int(CRESCENTE,v,n) && count < 66){
-        printf("Tempo do vetor Crescente P40 tamanho %d: %lf\n",tamanho,tempo_de_cpu/3);
+        printf("Tempo do vetor Crescente P40 tamanho %d: %llu\n",tamanho,(long long unsigned int)tempo_de_cpu/(uint64_t) 3);
     }
     else if(esta_ordenado_int(CRESCENTE,v,n) && count < 77){
-        printf("Tempo do vetor Crescente P50 tamanho %d: %lf\n",tamanho,tempo_de_cpu/3);
+        printf("Tempo do vetor Crescente P50 tamanho %d: %llu\n",tamanho,(long long unsigned int)tempo_de_cpu/(uint64_t) 3);
     }
     else if(esta_ordenado_int(CRESCENTE,v,n) && count < 88){
-        printf("Tempo do vetor Decrescente tamanho %d: %lf\n",tamanho,tempo_de_cpu/3);
+        printf("Tempo do vetor Decrescente tamanho %d: %llu\n",tamanho,(long long unsigned int)tempo_de_cpu/(uint64_t) 3);
     }
     else if(esta_ordenado_int(CRESCENTE,v,n) && count < 99){
-        printf("Tempo do vetor Decrescente P10 tamanho %d: %lf\n",tamanho,tempo_de_cpu/3);
+        printf("Tempo do vetor Decrescente P10 tamanho %d: %llu\n",tamanho,(long long unsigned int)tempo_de_cpu/(uint64_t) 3);
     }
     else if(esta_ordenado_int(CRESCENTE,v,n) && count < 110){
-        printf("Tempo do vetor Decrescente P20 tamanho %d: %lf\n",tamanho,tempo_de_cpu/3);
+        printf("Tempo do vetor Decrescente P20 tamanho %d: %llu\n",tamanho,(long long unsigned int)tempo_de_cpu/(uint64_t) 3);
     }
     else if(esta_ordenado_int(CRESCENTE,v,n) && count < 121){
-        printf("Tempo do vetor Decrescente P30 tamanho %d: %lf\n",tamanho,tempo_de_cpu/3);
+        printf("Tempo do vetor Decrescente P30 tamanho %d: %llu\n",tamanho,(long long unsigned int)tempo_de_cpu/(uint64_t) 3);
     }
     else if(esta_ordenado_int(CRESCENTE,v,n) && count < 132){
-        printf("Tempo do vetor Decrescente P40 tamanho %d: %lf\n",tamanho,tempo_de_cpu/3);
+        printf("Tempo do vetor Decrescente P40 tamanho %d: %llu\n",tamanho,(long long unsigned int)tempo_de_cpu/(uint64_t) 3);
     }
     else if(esta_ordenado_int(CRESCENTE,v,n) && count < 143){
-        printf("Tempo do vetor Decrescente P50 tamanho %d: %lf\n",tamanho,tempo_de_cpu/3);
+        printf("Tempo do vetor Decrescente P50 tamanho %d: %llu\n",tamanho,(long long unsigned int)tempo_de_cpu/(uint64_t) 3);
     }
     else{
         printf("Erro em ordenção do vetor %d, arquivo %s",i,arquivos[i]);

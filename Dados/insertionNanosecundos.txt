@@ -1,0 +1,144 @@
+Tempo do vetor aleatorio tamanho 16: 592
+Tempo do vetor aleatorio tamanho 32: 623
+Tempo do vetor aleatorio tamanho 64: 1330
+Tempo do vetor aleatorio tamanho 128: 3921
+Tempo do vetor aleatorio tamanho 256: 13475
+Tempo do vetor aleatorio tamanho 512: 49717
+Tempo do vetor aleatorio tamanho 1024: 181720
+Tempo do vetor aleatorio tamanho 2048: 709142
+Tempo do vetor aleatorio tamanho 4096: 2818906
+Tempo do vetor aleatorio tamanho 8192: 11332358
+Tempo do vetor aleatorio tamanho 16384: 44220895
+Tempo do vetor Crescente tamanho 16: 330
+Tempo do vetor Crescente tamanho 32: 359
+Tempo do vetor Crescente tamanho 64: 366
+Tempo do vetor Crescente tamanho 128: 441
+Tempo do vetor Crescente tamanho 256: 653
+Tempo do vetor Crescente tamanho 512: 1151
+Tempo do vetor Crescente tamanho 1024: 1616
+Tempo do vetor Crescente tamanho 2048: 3006
+Tempo do vetor Crescente tamanho 4096: 5551
+Tempo do vetor Crescente tamanho 8192: 11105
+Tempo do vetor Crescente tamanho 16384: 21993
+Tempo do vetor Crescente P10 tamanho 16: 306
+Tempo do vetor Crescente P10 tamanho 32: 401
+Tempo do vetor Crescente P10 tamanho 64: 641
+Tempo do vetor Crescente P10 tamanho 128: 1477
+Tempo do vetor Crescente P10 tamanho 256: 4722
+Tempo do vetor Crescente P10 tamanho 512: 17262
+Tempo do vetor Crescente P10 tamanho 1024: 73246
+Tempo do vetor Crescente P10 tamanho 2048: 304783
+Tempo do vetor Crescente P10 tamanho 4096: 1140882
+Tempo do vetor Crescente P10 tamanho 8192: 4421923
+Tempo do vetor Crescente P10 tamanho 16384: 17366826
+Tempo do vetor Crescente P20 tamanho 16: 395
+Tempo do vetor Crescente P20 tamanho 32: 528
+Tempo do vetor Crescente P20 tamanho 64: 942
+Tempo do vetor Crescente P20 tamanho 128: 2441
+Tempo do vetor Crescente P20 tamanho 256: 8518
+Tempo do vetor Crescente P20 tamanho 512: 37766
+Tempo do vetor Crescente P20 tamanho 1024: 188395
+Tempo do vetor Crescente P20 tamanho 2048: 561783
+Tempo do vetor Crescente P20 tamanho 4096: 2024058
+Tempo do vetor Crescente P20 tamanho 8192: 8326582
+Tempo do vetor Crescente P20 tamanho 16384: 32720219
+Tempo do vetor Crescente P30 tamanho 16: 426
+Tempo do vetor Crescente P30 tamanho 32: 565
+Tempo do vetor Crescente P30 tamanho 64: 1121
+Tempo do vetor Crescente P30 tamanho 128: 3639
+Tempo do vetor Crescente P30 tamanho 256: 11877
+Tempo do vetor Crescente P30 tamanho 512: 47210
+Tempo do vetor Crescente P30 tamanho 1024: 188411
+Tempo do vetor Crescente P30 tamanho 2048: 747231
+Tempo do vetor Crescente P30 tamanho 4096: 2903599
+Tempo do vetor Crescente P30 tamanho 8192: 11706837
+Tempo do vetor Crescente P30 tamanho 16384: 46407450
+Tempo do vetor Crescente P40 tamanho 16: 419
+Tempo do vetor Crescente P40 tamanho 32: 587
+Tempo do vetor Crescente P40 tamanho 64: 1308
+Tempo do vetor Crescente P40 tamanho 128: 4090
+Tempo do vetor Crescente P40 tamanho 256: 15835
+Tempo do vetor Crescente P40 tamanho 512: 65553
+Tempo do vetor Crescente P40 tamanho 1024: 224888
+Tempo do vetor Crescente P40 tamanho 2048: 916018
+Tempo do vetor Crescente P40 tamanho 4096: 3680777
+Tempo do vetor Crescente P40 tamanho 8192: 14947212
+Tempo do vetor Crescente P40 tamanho 16384: 59251527
+Tempo do vetor Crescente P50 tamanho 16: 558
+Tempo do vetor Crescente P50 tamanho 32: 659
+Tempo do vetor Crescente P50 tamanho 64: 1513
+Tempo do vetor Crescente P50 tamanho 128: 17337
+Tempo do vetor Crescente P50 tamanho 256: 18190
+Tempo do vetor Crescente P50 tamanho 512: 67937
+Tempo do vetor Crescente P50 tamanho 1024: 262668
+Tempo do vetor Crescente P50 tamanho 2048: 1100335
+Tempo do vetor Crescente P50 tamanho 4096: 4360290
+Tempo do vetor Crescente P50 tamanho 8192: 17429716
+Tempo do vetor Crescente P50 tamanho 16384: 67965063
+Tempo do vetor Decrescente tamanho 16: 755
+Tempo do vetor Decrescente tamanho 32: 874
+Tempo do vetor Decrescente tamanho 64: 2328
+Tempo do vetor Decrescente tamanho 128: 7374
+Tempo do vetor Decrescente tamanho 256: 24763
+Tempo do vetor Decrescente tamanho 512: 93192
+Tempo do vetor Decrescente tamanho 1024: 348188
+Tempo do vetor Decrescente tamanho 2048: 1395270
+Tempo do vetor Decrescente tamanho 4096: 5750603
+Tempo do vetor Decrescente tamanho 8192: 24268503
+Tempo do vetor Decrescente tamanho 16384: 95007321
+Tempo do vetor Decrescente P10 tamanho 16: 458
+Tempo do vetor Decrescente P10 tamanho 32: 875
+Tempo do vetor Decrescente P10 tamanho 64: 1835
+Tempo do vetor Decrescente P10 tamanho 128: 5721
+Tempo do vetor Decrescente P10 tamanho 256: 19634
+Tempo do vetor Decrescente P10 tamanho 512: 73075
+Tempo do vetor Decrescente P10 tamanho 1024: 296395
+Tempo do vetor Decrescente P10 tamanho 2048: 1193812
+Tempo do vetor Decrescente P10 tamanho 4096: 4766396
+Tempo do vetor Decrescente P10 tamanho 8192: 19593295
+Tempo do vetor Decrescente P10 tamanho 16384: 77500644
+Tempo do vetor Decrescente P20 tamanho 16: 486
+Tempo do vetor Decrescente P20 tamanho 32: 667
+Tempo do vetor Decrescente P20 tamanho 64: 1535
+Tempo do vetor Decrescente P20 tamanho 128: 4529
+Tempo do vetor Decrescente P20 tamanho 256: 15714
+Tempo do vetor Decrescente P20 tamanho 512: 58010
+Tempo do vetor Decrescente P20 tamanho 1024: 230754
+Tempo do vetor Decrescente P20 tamanho 2048: 906191
+Tempo do vetor Decrescente P20 tamanho 4096: 4298422
+Tempo do vetor Decrescente P20 tamanho 8192: 15435783
+Tempo do vetor Decrescente P20 tamanho 16384: 59268139
+Tempo do vetor Decrescente P30 tamanho 16: 472
+Tempo do vetor Decrescente P30 tamanho 32: 618
+Tempo do vetor Decrescente P30 tamanho 64: 1315
+Tempo do vetor Decrescente P30 tamanho 128: 3584
+Tempo do vetor Decrescente P30 tamanho 256: 12212
+Tempo do vetor Decrescente P30 tamanho 512: 45720
+Tempo do vetor Decrescente P30 tamanho 1024: 176462
+Tempo do vetor Decrescente P30 tamanho 2048: 713725
+Tempo do vetor Decrescente P30 tamanho 4096: 2722869
+Tempo do vetor Decrescente P30 tamanho 8192: 11098439
+Tempo do vetor Decrescente P30 tamanho 16384: 43472556
+Tempo do vetor Decrescente P40 tamanho 16: 455
+Tempo do vetor Decrescente P40 tamanho 32: 617
+Tempo do vetor Decrescente P40 tamanho 64: 1161
+Tempo do vetor Decrescente P40 tamanho 128: 5847
+Tempo do vetor Decrescente P40 tamanho 256: 8949
+Tempo do vetor Decrescente P40 tamanho 512: 32581
+Tempo do vetor Decrescente P40 tamanho 1024: 135069
+Tempo do vetor Decrescente P40 tamanho 2048: 503857
+Tempo do vetor Decrescente P40 tamanho 4096: 2004770
+Tempo do vetor Decrescente P40 tamanho 8192: 8252574
+Tempo do vetor Decrescente P40 tamanho 16384: 31871258
+Tempo do vetor Decrescente P50 tamanho 16: 409
+Tempo do vetor Decrescente P50 tamanho 32: 461
+Tempo do vetor Decrescente P50 tamanho 64: 847
+Tempo do vetor Decrescente P50 tamanho 128: 2144
+Tempo do vetor Decrescente P50 tamanho 256: 6683
+Tempo do vetor Decrescente P50 tamanho 512: 23838
+Tempo do vetor Decrescente P50 tamanho 1024: 89838
+Tempo do vetor Decrescente P50 tamanho 2048: 352101
+Tempo do vetor Decrescente P50 tamanho 4096: 1389637
+Tempo do vetor Decrescente P50 tamanho 8192: 5639428
+Tempo do vetor Decrescente P50 tamanho 16384: 22348219
+

@@ -376,7 +376,7 @@ int main() {
     for(int i=0;i<156;i++){
         for(int j=0;j<3;j++){
             tempo_ini = time(NULL);
-           quick(vv[i].v,0,vv[i].size);
+           	insertion(vv[i].v,vv[i].size);
             tempo_fim = time(NULL);
             tempo_med += difftime(tempo_ini,tempo_fim);
         }

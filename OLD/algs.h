@@ -12,7 +12,7 @@
 
 void ordena_intercala(int * v,int p,int r);
 void intercala(int * v,int p, int q, int r);
-void insertion(int * v);
+void insertion(int * v,int tam);
 void heap(int *,int);
 void quick(int *,int,int);
 void radix(int *,int);

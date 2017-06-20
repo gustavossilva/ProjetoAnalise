@@ -8,7 +8,7 @@
 
 /*
 int main() {
-    int v[10] = {1,5,11,10,9,8,9,5,15,654};
+    int v[10] = {735,5,11,10,9,8,9,5,15,654};
     int p = 0;
     int r = 9;
     insertion(v);
@@ -17,8 +17,8 @@ int main() {
     {
         printf("%d ",v[i]);
     }
-}
-*/
+}*/
+
 
 
 void ordena_intercala(int * v,int p,int r)
@@ -54,19 +54,19 @@ void intercala(int * v,int p, int q, int r)
     }
 }
 
-void insertion(int *v)
+void insertion(int *v, int tam)
 {
     int chave,i,j;
-    for(j=2;j<10;j++)
+    for(j=1;j<tam;j++)
     {
         chave = v[j];
         i = j - 1;
-        while (i > 0 && v[i] > chave)
+        while (i >= 0 && v[i] > chave)
         {
             v[i+1] = v[i];
-            i = i-1;
-            v[i+1] = chave;
+            i = i-1;   
         }
+	v[i+1] = chave;
     }
 }
 
