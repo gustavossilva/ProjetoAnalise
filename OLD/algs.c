@@ -6,18 +6,18 @@
 #include "algs.h"
 
 
-/*
+
 int main() {
-    int v[10] = {735,5,11,10,9,8,9,5,15,654};
+    int v[12] = {735,5,11,10000,9,8,9,100,5,15,654,736};
     int p = 0;
-    int r = 9;
-    insertion(v);
+    int r = 11;
+    ordena_intercala(v,p,r);
 //    insertion(v);
     for(int i =0; i<= r; i++)
     {
         printf("%d ",v[i]);
     }
-}*/
+}
 
 
 
@@ -34,7 +34,7 @@ void ordena_intercala(int * v,int p,int r)
 
 void intercala(int * v,int p, int q, int r)
 {
-    int B[10];
+    int B[12];
     int i,k,j;
     for (i = p; i<=q; i++)
         B[i] = v[i];

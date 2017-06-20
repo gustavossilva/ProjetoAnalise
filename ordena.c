@@ -58,16 +58,16 @@ void ordena_intercala(int * v,int p,int r)
 
 void intercala(int * v,int p, int q, int r)
 {
-    int B[10];
+    int *B = calloc((r+1),sizeof(int));
     int i,k,j;
     for (i = p; i<=q; i++)
         B[i] = v[i];
-    for (j = (q + 1); j< r;j++) {
+    for (j = (q + 1); j<= r;j++) {
         B[(r + q + 1 - j)] = v[j];
     }
     i = p;
     j = r;
-    for(k = p; k<r; k++) {
+    for(k = p; k<=r; k++) {
             if (B[i] <= B[j]) {
                 v[k] = B[i];
                 i++;
@@ -76,6 +76,7 @@ void intercala(int * v,int p, int q, int r)
                 j--;
             }
     }
+	free(B);
 }
 
 void insertion(int *v, int tam)
