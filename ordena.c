@@ -202,7 +202,8 @@ void coutingsort(int *A, int tamanho){
 
 void insertiondouble(double *v, int tam)
 {
-    int chave,i,j;
+    int i,j;
+    double chave;
     for(j=1;j<tam;j++)
     {
         chave = v[j];
@@ -221,7 +222,7 @@ void bucketsort(double *A,int tamanho){
     int j,i;
     for(int i=0;i<tamanho;i++){ //Inicialização dos topos dos baldes
         C[i].topo = 0.0;
-        C[i].balde = (double*)malloc((int)(tamanho/2)*sizeof(double));
+        C[i].balde = (double*)malloc((int)(tamanho)*sizeof(double));
     }
     for(i = 0;i<tamanho;i++){ //Verifica em que balde o elem deve ficar
         j = (tamanho)-1;
@@ -249,4 +250,5 @@ void bucketsort(double *A,int tamanho){
             i++;
         }
     }
+	free(C);
 }

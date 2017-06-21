@@ -35,7 +35,7 @@ void gera_e_salva_vet(int n, Modificador m, Ordem o, Percentual p){
   else
     strcpy(sufixo, ".dat");
     
-  v = gera_vetor_double(n, m, o, p, 0.0, 1.0);    
+  v = gera_vetor_double(n, m, o, p, 0.0, 0.9999998);    
   strcat(nome_do_arquivo, sufixo);
   escreva_vetor_double(v, n, nome_do_arquivo);
   free(v);
@@ -53,7 +53,7 @@ int main(int argc, char *argv[]){
   if (argc == 2)
     strcpy(diretorio, argv[1]);
   else
-    strcpy(diretorio, "./vetoresReais");
+    strcpy(diretorio, "./vetoresReal");
 
   if (stat(diretorio, &st) == -1) { // se o diretorio não existir,
     mkdir(diretorio, 0700);         // crie um
