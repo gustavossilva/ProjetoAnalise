@@ -179,10 +179,9 @@ literate={â}{{\^{a}}}1  % para formatar corretamente os acentos do Português a
 
 % ---------------------------------------------------------------------------- %
 
-\title{Construção de um compilador de MiniC para LLVM usando Objective Caml}
+\title{Análise de Algoritmos - Ordenação}
 \date{}
-\author{Gustavo de Souza Silva \\
-\texttt{\small \url{xgustavossilva@gmail.com}}\\
+\author{Gustavo de Souza Silva \\ Guilherme de Souza Silva \\ Arthur Xavier \\ Shumaiquer Souto \\
 \vspace{1cm} \\
 Faculdade de Computação \\
 Universidade Federal de Uberlândia
@@ -276,66 +275,14 @@ O primeiro comanda cria o arquivo .o (executavel) e o segundo faz sua execução
 A seguir, os programas em C, seguidos por sua tradução para Assembly da LLVM, no fim deste capítulo, é póssivel encontrar uma "tradução" para as intruções do assembly:
 
 \section{Nano Programas}
-\lstinputlisting[label={arq:prog1.c}, language=C, caption={Módulo Mínimo C}]{codigos/MiniC/prog1.c}
-\lstinputlisting[label={arq:prog1.ll}, language=llvm, caption={Módulo Mínimo LLVM}]{codigos/LLVM-IR/prog1.ll}
-Não é possível ver muita coisa ainda neste exemplo, temos apenas a definição no assembly para a MAIN do arquivo C, e um retorno (criado automaticamente pelo assembler). Podemos ainda ver um dos tipos primitivos da linguagem utilizada pela LLVM (i32) que representa o int do C.
+%\lstinputlisting[label={arq:prog1.c}, language=C, caption={Módulo Mínimo C}]{codigos/MiniC/prog1.c}
 
-\lstinputlisting[label={arq:prog2.c}, language=C, caption={Declaração de uma variável C}]{codigos/MiniC/prog2.c}
-\lstinputlisting[label={arq:prog2.ll}, language=llvm, caption={Declaração de uma variável LLVM}]{codigos/LLVM-IR/prog2.ll}
-Já neste segundo exemplo é possível ver a alocação de espaço para a variável que foi declarada com o tamanho do tipo que foi atribuído a ela (no caso i32 que é referente ao int do C).
-
-\lstinputlisting[label={arq:prog3.c}, language=C, caption={Atribuição de um inteiro a uma variável C}]{codigos/MiniC/prog3.c}
-\lstinputlisting[label={arq:prog3.ll}, language=llvm, caption={Atribuição de um inteiro a uma variável LLVM}]{codigos/LLVM-IR/prog3.ll}
-Neste código é utilizado store para atribuir o valor 0 (neste caso), a variável n.
-
-\lstinputlisting[label={arq:prog6.c}, language=C, caption={Atribuição de uma subtração e impressão de uma variável C}]{codigos/MiniC/prog6.c}
-\lstinputlisting[label={arq:prog6.ll}, language=llvm, caption={Atribuição de uma subtração e impressão de uma variável LLVM}]{codigos/LLVM-IR/prog6.ll}
-Saída: -1\\
-Quando é feita uma atribuição com soma e/ou substração a uma variável, o assembler já armazena automaticamente o valor resultante do cálculo na variável, o que tira a necessitade do cálculo em tempo de execução (já que só é feita uma atribuição). Já na impressão, ele carrega o dado em algum tipo de buffer (load),ou registrador, e faz uma chamada utilizando o dado carregado com uma função definida chamada pela importação (printf).
-
-\lstinputlisting[label={arq:prog8.c}, language=C, caption={Condicionais (if/else) C}]{codigos/MiniC/prog8.c}
-\lstinputlisting[label={arq:prog8.ll}, language=llvm, caption={Condicionais LLVM}]{codigos/LLVM-IR/prog8.ll}
-Saída: 1\\
-Neste caso o código é baseado em labels. As variáveis são colocados nos registradores e é invocada intrução icmp para comparação dos valores alocados nos registradores, e dependendo do resultado ele vai para posição correta (baseada em labels que ele cria).
-
-\lstinputlisting[label={arq:prog11.c}, language=C, caption={Comando de repetição while C}]{codigos/MiniC/prog11.c}
-\lstinputlisting[label={arq:prog11.ll}, language=llvm, caption={Comando de repetição while LLVM}]{codigos/LLVM-IR/prog11.ll}
-Saída: 3 e 5\\
-Ao iniciar um laço, o assembler já vai direto para uma label (pedaço de código), nesta label ele faz apenas a comparação da condição de parada, caso true, ele vai para uma label e faz o que deve ser feito, caso negativo ele vai para outra label e termina a execução.
 
 \section{Micro Programas}
 
-\lstinputlisting[label={arq:prog13.c}, language=C, caption={Converter graus Celsius em Fahrenheit C}]{codigos/MiniC/prog13.c}
-\lstinputlisting[label={arq:prog13.ll}, language=llvm, caption={Converter graus Celsius em Fahrenheit LLVM}]{codigos/LLVM-IR/prog13.ll}
-Saída: Grau Celsius convertido em Fahrenheit (0 = 32)\\
-Neste código é importante notar-se como foi feito a passagem de valor (scanf) para uma variável, e além disso como são tratados valores float.
-
-\lstinputlisting[label={arq:prog17.c}, language=C, caption={Lê strings e caracteres C}]{codigos/MiniC/prog17.c}
-\lstinputlisting[label={arq:prog17.ll}, language=llvm, caption={Lê strings e caracteres LLVM}]{codigos/LLVM-IR/prog17.ll}
-Saída: A quantidade de homens e mulheres digitados.\\
-É interessante nesse código perceber como é tratado o tipo char do C no código assembler e como é feito o switch no LLVM
-
-\lstinputlisting[label={arq:prog22.c}, language=C, caption={Calcula o fatorial de um número C}]{codigos/MiniC/prog22.c}
-\lstinputlisting[label={arq:prog22.ll}, language=llvm, caption={Calcula o fatorial de um número LLVM}]{codigos/LLVM-IR/prog22.ll}
-Saída: O fatorial de algum número.\\
-Neste código é feita uma chamada na função fatorial. Na função, são feitos os devidos cálculos com os registradores de forma recursiva (primeiroa label =1 retorna 1, segunda label para todos os diferentes).
 
 \section{Instruções Importantes}
-Existem algumas instruções básicas do LLVM que vale a pena entender como funcionam. São elas:\\
-declare -> Declarar um protótipo ou função;\\
-alloca -> Aloca memória no pedaço de quadro que está rodando a função, e libera automaticamente o espaço quando acaba a execução;\\
-store -> escreve algo na memória;\\
-load -> lê algo da memória;\\
-call -> Simplesmente uma chamada de função;\\
-br -> Transfere o fluxo de controle para outro bloco básico na função em execução (ele tem 2 ramos, condição ok e condição inválida);\\
-icmp,fcmp -> Retorna um valor booleano ou um vector de valores booleados baseado na comparação de 2 variáveis, fcmp é de ponto flutuante;\\
-switch -> Altera o fluxo de controle para diferentes lugares;\\
-fmult,fadd,fdiv,fsub -> Operações sobre valores com ponto flutuante;\\
-add -> Retorna a soma de 2 operandos;\\
-sub -> Retorna a subtração de 2 operandos;\\
-sext -> pega valor de um cast e o tipo que vai ser feito o cast. Basicamente serve para conversões;\\
-ret -> retorna o fluxo de controle de uma função para quem o está chamando.\\
-slt, sgt, eq -> Menor que, maior que, igual
+
 
 \subsection{Tipos do LLVM}
 Primitivos:\\
@@ -384,47 +331,8 @@ uno: retrona true se qualquer operador é QNAN.\\
 \section{Programas Extras}
 Alguns programas extras para complementar a leitura.
 
-\lstinputlisting[label={arq:prog4.c}, language=C, caption={Atribuição de uma soma de inteiros a uma variável C}]{codigos/MiniC/prog4.c}
-\lstinputlisting[label={arq:prog4.ll}, language=llvm, caption={Atribuição de uma soma de inteiros a uma variável LLVM}]{codigos/LLVM-IR/prog4.ll}
+%\lstinputlisting[label={arq:prog4.c}, language=C, caption={Atribuição de uma soma de inteiros a uma variável C}]{codigos/MiniC/prog4.c}
 
-\lstinputlisting[label={arq:prog5.c}, language=C, caption={Inclusão do comando de impressão C}]{codigos/MiniC/prog5.c}
-\lstinputlisting[label={arq:prog5.ll}, language=llvm, caption={Inclusão do comando de impressão LLVM}]{codigos/LLVM-IR/prog5.ll}
-
-\lstinputlisting[label={arq:prog7.c}, language=C, caption={Inclusão do comando condicional C}]{codigos/MiniC/prog7.c}
-\lstinputlisting[label={arq:prog7.ll}, language=llvm, caption={Inclusão do comando condicional LLVM}]{codigos/LLVM-IR/prog7.ll}
-
-\lstinputlisting[label={arq:prog9.c}, language=C, caption={Atribuição de duas operações aritméticas sobre inteiros a uma variável C}]{codigos/MiniC/prog9.c}
-\lstinputlisting[label={arq:prog9.ll}, language=llvm, caption={Atribuição de duas operações aritméticas sobre inteiros a uma variável LLVM}]{codigos/LLVM-IR/prog9.ll}
-
-\lstinputlisting[label={arq:prog10.c}, language=C, caption={Atribuição de duas variáveis inteiras C}]{codigos/MiniC/prog10.c}
-\lstinputlisting[label={arq:prog10.ll}, language=llvm, caption={Atribuição de duas variáveis inteiras LLVM}]{codigos/LLVM-IR/prog10.ll}
-
-\lstinputlisting[label={arq:prog12.c}, language=C, caption={Comando condicional aninhado em um comando de repetição C}]{codigos/MiniC/prog12.c}
-\lstinputlisting[label={arq:prog12.ll}, language=llvm, caption={Comando condicional aninhado em um comando de repetição LLVM}]{codigos/LLVM-IR/prog12.ll}
-  
-\lstinputlisting[label={arq:prog14.c}, language=C, caption={Lê dois inteiros e decide qual é maior C}]{codigos/MiniC/prog14.c}
-\lstinputlisting[label={arq:prog14.ll}, language=llvm, caption={Lê dois inteiros e decide qual é maior LLVM}]{codigos/LLVM-IR/prog14.ll}
-
-\lstinputlisting[label={arq:prog15.c}, language=C, caption={Lê um número e verifica se ele está entre 100 e 200 C}]{codigos/MiniC/prog15.c}
-\lstinputlisting[label={arq:prog15.ll}, language=llvm, caption={Lê um número e verifica se ele está entre 100 e 200 LLVM}]{codigos/LLVM-IR/prog15.ll}
-
-\lstinputlisting[label={arq:prog16.c}, language=C, caption={Lê números e informa quais estão entre 10 e 150 C}]{codigos/MiniC/prog16.c}
-\lstinputlisting[label={arq:prog16.ll}, language=llvm, caption={Lê números e informa quais estão entre 10 e 150 LLVM}]{codigos/LLVM-IR/prog16.ll}
-
-\lstinputlisting[label={arq:prog18.c}, language=C, caption={Escreve um número lido por extenso C}]{codigos/MiniC/prog18.c}
-\lstinputlisting[label={arq:prog18.ll}, language=llvm, caption={Escreve um número lido por extenso LLVM}]{codigos/LLVM-IR/prog18.ll}
-
-\lstinputlisting[label={arq:prog19.c}, language=C, caption={Decide se os números são positivos, zeros ou negativos  C}]{codigos/MiniC/prog19.c}
-\lstinputlisting[label={arq:prog19.ll}, language=llvm, caption={Decide se os números são positivos, zeros ou negativos LLVM}]{codigos/LLVM-IR/prog19.ll}
-
-\lstinputlisting[label={arq:prog20.c}, language=C, caption={Decide se um número é maior ou menor que 10  C}]{codigos/MiniC/prog20.c}
-\lstinputlisting[label={arq:prog20.ll}, language=llvm, caption={Decide se um número é maior ou menor que 10 LLVM}]{codigos/LLVM-IR/prog20.ll}
-
-\lstinputlisting[label={arq:prog21.c}, language=C, caption={Cálculo de preços C}]{codigos/MiniC/prog21.c}
-\lstinputlisting[label={arq:prog21.ll}, language=llvm, caption={Cálculo de preços LLVM}]{codigos/LLVM-IR/prog21.ll}
-
-\lstinputlisting[label={arq:prog23.c}, language=C, caption={Cálculo de preços Decide se um número é positivo, zero ou negativo com auxílio de uma função C}]{codigos/MiniC/prog23.c}
-\lstinputlisting[label={arq:prog23.ll}, language=llvm, caption={Cálculo de preços Decide se um número é positivo, zero ou negativo com auxílio de uma função LLVM}]{codigos/LLVM-IR/prog23.ll}
 
 \chapter{Compilador}
 O Compilador é um programa que traduz um programa de entrada de uma linguagem fonte para uma linguagem que possa ser indentida pela máquina. Esse processo demanda na quebra do programa em várias partes, para que seja entendido sua estrutura e significado. Para isso temos o front-end do compilador que é responsável por vários tipos de análises.
@@ -443,8 +351,6 @@ Além desses passos o compilador ainda conta com geração de código intermedi�
 \section{Analisador Léxico}
 O analisador léxico é responsável por separar uma sequencia de caracteres que representa o programa fonte em entidades ou tokens, estes que são símbolos básicos da linguagem. Durante a análise léxica, os tokens são classificados como palavras reservadas, identificadores, símbolos especiais, constantes de tipos básicos (int, float), entre outras. Ele lê o texto fonte, carácter por carácter identificando os elementos léxicos da linguagem (identificadores), ignorando comentários, brancos, e includes. Pode-se entende-lo  como uma forma de verificar determinado alfabeto e então, quando analisamos uma palavra, podemos definir através da análise léxica se existe ou não algum caracter que não faz parte do alfabeto da linguagem de programação.
 
-Neste documento, é definido um análisador léxico para linguagem MiniC, segue abaixo:
-\lstinputlisting[label={arq:lexico.mll}, language=Caml, caption={Analisador Léxico em OCAML}]{codigos/Ocaml/lexico.mll}
 
 Para compilar, devem ser seguidos os comandos:
 \begin{terminal}
@@ -452,8 +358,6 @@ Para compilar, devem ser seguidos os comandos:
 > ocamlc -c lexico.ml
 \end{terminal}
 
-Construído em sala, este programa (carregador.ml) é responsável por carregar o analisador junto a um arquivo do formato específicado e então obter a saída do analisador léxico dentro de uma lista de tokens.
-\lstinputlisting[label={arq:carregador.ml}, language=Caml, caption={Carregador do analisador léxico}]{codigos/Ocaml/carregador.ml}
 
 Para utiliza-lo, no terminal digite:
 \begin{terminal}
@@ -474,16 +378,6 @@ Lexico.tokens list =
  Lexico.LITINT 0; Lexico.PONTOEV; Lexico.FCHAVE; Lexico.EOF]
 
 Segue abaixo alguns programas C que fazem o analisador ter como saída uma mensagem acusando determinado erro:
-
-Erro gerado -> Exception: Failure "3-1: Comentario nao fechado".
-\lstinputlisting[label={arq:prog1.c}, language=C, caption={Erro de comentário}]{codigos/MiniCErrosLex/prog1.c}
-
-Erro gerado -> Exception: Failure "7-15: A string nao foi fechada".
-\lstinputlisting[label={arq:prog7.c}, language=C, caption={Erro de string}]{codigos/MiniCErrosLex/prog7.c}
-
-Erro gerado -> Exception: Failure "4-4: caracter desconhecido @".
-\lstinputlisting[label={arq:prog8.c}, language=C, caption={Erro de caracter desconhecido}]{codigos/MiniCErrosLex/prog8.c}
-
 
 \chapter{Referências}
 \href{http://llvm.org/releases/3.3/docs/LangRef.html}{LLVM Documentation}\\

@@ -12,7 +12,10 @@
 typedef enum ordem {ALEATORIO, CRESCENTE, DECRESCENTE} Ordem;
 typedef enum modificador {TOTALMENTE, PARCIALMENTE} Modificador;
 typedef int Percentual;
-
+typedef struct {
+         double topo;
+         double *balde;
+ }bucket;
 /*
  * Função: gera_vetor_int
  * ----------------------

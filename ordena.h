@@ -33,5 +33,6 @@ void heap(int *a, int n);
 void quick(int *vetor, int inicio, int fim);
 void radix(int *vetor, int tamanho);
 void coutingsort(int *A, int tamanho);
-void bucket(int *v, int n);
+void insertiondouble(double *v, int tam);
+void bucketsort(double *A,int tamanho);
 #endif
