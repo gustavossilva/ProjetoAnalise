@@ -263,14 +263,18 @@ bool esta_ordenado_double(Ordem o, double * v, int n){
   if (n == 1) return true;
   switch (o) {
     case CRESCENTE:
-      for(i=0;i<n;i++)
-        if (v[i-1] > v[i])
+      for(i=1;i<n;i++)
+        if (v[i-1] > v[i]){
+          printf("valor V[%d] = %lf eh maior que V[%d] = %lf",i-1,v[i-1],i,v[i]);
           return false;
+        }
       break;
     case DECRESCENTE:
-      for(i=0;i<n;i++)
-        if (v[i-1] < v[i])
+      for(i=1;i<n;i++)
+        if (v[i-1] < v[i]){
+          printf("valor V[%d] = %lf eh menor que V[%d] = %lf",i-1,v[i-1],i,v[i]);
           return false;
+          }
       break;
     default: CONFIRME(false, "estaOrdenado_double: Ordem Inválida\n");
   }

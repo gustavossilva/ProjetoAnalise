@@ -116,7 +116,7 @@ int main(int argc, char *argv[]){
     if(h > 10){
         h = 0;
     }
-    for(int j=0;j<3;j++){
+    for(int j=0;j<1;j++){
         v = leia_vetor_double(arquivos[i],&n);
         tamanho = (int)pow(2,h+4%15);
         /*inicio = clock();

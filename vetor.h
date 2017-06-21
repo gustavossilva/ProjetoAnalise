@@ -13,7 +13,7 @@ typedef enum ordem {ALEATORIO, CRESCENTE, DECRESCENTE} Ordem;
 typedef enum modificador {TOTALMENTE, PARCIALMENTE} Modificador;
 typedef int Percentual;
 typedef struct {
-         double topo;
+         int topo;
          double *balde;
  }bucket;
 /*
