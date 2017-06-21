@@ -200,3 +200,53 @@ void coutingsort(int *A, int tamanho){
     }
 }
 
+void insertiondouble(double *v, int tam)
+{
+    int chave,i,j;
+    for(j=1;j<tam;j++)
+    {
+        chave = v[j];
+        i = j - 1;
+        while (i >= 0 && v[i] > chave)
+        {
+            v[i+1] = v[i];
+            i = i-1;   
+        }
+	v[i+1] = chave;
+    }
+}
+
+void bucketsort(double *A,int tamanho){
+    bucket *C = (bucket*)malloc(tamanho*sizeof(bucket));
+    int j,i;
+    for(int i=0;i<tamanho;i++){ //Inicialização dos topos dos baldes
+        C[i].topo = 0.0;
+        C[i].balde = (double*)malloc((int)(tamanho/2)*sizeof(double));
+    }
+    for(i = 0;i<tamanho;i++){ //Verifica em que balde o elem deve ficar
+        j = (tamanho)-1;
+        while(1){
+            if(j<0){
+                break;
+            }
+            if(A[i]>=j*10){
+                C[j].balde[(int)C[j].topo] = A[i];
+                (C[j].topo)++;
+                break;
+            }
+            j--;
+        }
+    }    
+    for(i=0;i<tamanho;i++){ //ordena os baldes
+        if(C[i].topo){
+            insertiondouble(C[i].balde,C[i].topo);
+        }
+    }
+    i=0;
+    for(j=0;j<tamanho;j++){ //coloca os elementos dos baldes de volta no vetor
+        for(int k=0;k<C[j].topo;k++){
+            A[i]=C[j].balde[k];
+            i++;
+        }
+    }
+}
