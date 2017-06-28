@@ -3,203 +3,203 @@
 \contentsline {chapter}{Lista de Tabelas}{5}{chapter*.2}
 \contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{14}{chapter.1}
 \contentsline {section}{\numberline {1.1}Codifica\IeC {\c c}\IeC {\~a}o}{14}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Comandos}{29}{subsection.1.1.1}
-\contentsline {section}{\numberline {1.2}M\IeC {\'a}quina de teste}{30}{section.1.2}
-\contentsline {chapter}{\numberline {2}Insertion Sort}{31}{chapter.2}
-\contentsline {section}{\numberline {2.1}Insertion Sort - Vetor Aleat\IeC {\'o}rio}{31}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Gr\IeC {\'a}fico Insertion sort - Vetor Alet\IeC {\'o}rio}{32}{subsection.2.1.1}
-\contentsline {section}{\numberline {2.2}Insertion Sort - Vetor Crescente}{32}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Grafico Insertion Sort - Vetor Crescente}{33}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Insertion Sort - Vetor Crescente P10}{33}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Grafico Insertion Sort - Vetor Crescente P10}{34}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Insertion Sort - Vetor Crescente P20}{34}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Grafico Insertion Sort - Vetor Crescente P20}{35}{subsection.2.4.1}
-\contentsline {section}{\numberline {2.5}Insertion Sort - Vetor Crescente P30}{35}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Grafico Insertion Sort - Vetor Crescente P30}{36}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}Insertion Sort - Vetor Crescente P40}{36}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Grafico Insertion Sort - Vetor Crescente P40}{37}{subsection.2.6.1}
-\contentsline {section}{\numberline {2.7}Insertion Sort - Vetor Crescente P50}{37}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Grafico Insertion Sort - Vetor Crescente P50}{38}{subsection.2.7.1}
-\contentsline {section}{\numberline {2.8}Insertion Sort - Vetor Decrescente}{38}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}Grafico Insertion Sort - Vetor Decrescente}{39}{subsection.2.8.1}
-\contentsline {section}{\numberline {2.9}Insertion Sort - Vetor Decrescente P10}{39}{section.2.9}
-\contentsline {subsection}{\numberline {2.9.1}Grafico Insertion Sort - Vetor Decrescente P10}{40}{subsection.2.9.1}
-\contentsline {section}{\numberline {2.10}Insertion Sort - Vetor Decrescente P20}{40}{section.2.10}
-\contentsline {subsection}{\numberline {2.10.1}Grafico Insertion Sort - Vetor Decrescente P20}{41}{subsection.2.10.1}
-\contentsline {section}{\numberline {2.11}Insertion Sort - Vetor Decrescente P30}{41}{section.2.11}
-\contentsline {subsection}{\numberline {2.11.1}Grafico Insertion Sort - Vetor Decrescente P30}{42}{subsection.2.11.1}
-\contentsline {section}{\numberline {2.12}Insertion Sort - Vetor Decrescente P40}{42}{section.2.12}
-\contentsline {subsection}{\numberline {2.12.1}Grafico Insertion Sort - Vetor Decrescente P40}{43}{subsection.2.12.1}
-\contentsline {section}{\numberline {2.13}Insertion Sort - Vetor Decrescente P50}{43}{section.2.13}
-\contentsline {subsection}{\numberline {2.13.1}Grafico Insertion Sort - Vetor Decrescente P50}{44}{subsection.2.13.1}
-\contentsline {section}{\numberline {2.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{44}{section.2.14}
-\contentsline {chapter}{\numberline {3}Merge Sort}{45}{chapter.3}
-\contentsline {section}{\numberline {3.1}Merge Sort - Vetor Aleat\IeC {\'o}rio}{45}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Gr\IeC {\'a}fico Merge Sort - Vetor Aleat\IeC {\'o}rio}{46}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Merge Sort - Vetor Crescente}{46}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Gr\IeC {\'a}fico Merge Sort - Vetor Crescente}{47}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Merge Sort - Vetor Crescente P10}{47}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Gr\IeC {\'a}fico Merge Sort - Vetor Crescente P10}{48}{subsection.3.3.1}
-\contentsline {section}{\numberline {3.4}Merge Sort - Vetor Crescente P20}{48}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Gr\IeC {\'a}fico Merge Sort - Vetor Crescente P20}{49}{subsection.3.4.1}
-\contentsline {section}{\numberline {3.5}Merge Sort - Vetor Crescente P30}{49}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Gr\IeC {\'a}fico Merge Sort - Vetor Crescente P30}{50}{subsection.3.5.1}
-\contentsline {section}{\numberline {3.6}Merge Sort - Vetor Crescente P40}{50}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Gr\IeC {\'a}fico Merge Sort - Vetor Crescente P40}{51}{subsection.3.6.1}
-\contentsline {section}{\numberline {3.7}Merge Sort - Vetor Crescente P50}{51}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Gr\IeC {\'a}fico Merge Sort - Vetor Crescente P50}{52}{subsection.3.7.1}
-\contentsline {section}{\numberline {3.8}Merge Sort - Vetor Decrescente}{52}{section.3.8}
-\contentsline {subsection}{\numberline {3.8.1}Gr\IeC {\'a}fico Merge Sort - Vetor Decrescente}{53}{subsection.3.8.1}
-\contentsline {section}{\numberline {3.9}Merge Sort - Vetor Decrescente P10}{53}{section.3.9}
-\contentsline {subsection}{\numberline {3.9.1}Gr\IeC {\'a}fico Merge Sort - Vetor Decrescente P10}{54}{subsection.3.9.1}
-\contentsline {section}{\numberline {3.10}Merge Sort - Vetor Decrescente P20}{54}{section.3.10}
-\contentsline {subsection}{\numberline {3.10.1}Gr\IeC {\'a}fico Merge Sort - Vetor Decrescente P20}{55}{subsection.3.10.1}
-\contentsline {section}{\numberline {3.11}Merge Sort - Vetor Decrescente P30}{55}{section.3.11}
-\contentsline {subsection}{\numberline {3.11.1}Gr\IeC {\'a}fico Merge Sort - Vetor Decrescente P30}{56}{subsection.3.11.1}
-\contentsline {section}{\numberline {3.12}Merge Sort - Vetor Decrescente P40}{56}{section.3.12}
-\contentsline {subsection}{\numberline {3.12.1}Gr\IeC {\'a}fico Merge Sort - Vetor Decrescente P40}{57}{subsection.3.12.1}
-\contentsline {section}{\numberline {3.13}Merge Sort - Vetor Decrescente P50}{57}{section.3.13}
-\contentsline {subsection}{\numberline {3.13.1}Gr\IeC {\'a}fico Merge Sort - Vetor Decrescente P50}{58}{subsection.3.13.1}
-\contentsline {section}{\numberline {3.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{58}{section.3.14}
-\contentsline {chapter}{\numberline {4}Heap Sort}{59}{chapter.4}
-\contentsline {section}{\numberline {4.1}Heap Sort - Vetor Aleat\IeC {\'o}rio}{59}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Gr\IeC {\'a}fico Heap Sort - Vetor Aleat\IeC {\'o}rio}{60}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Heap Sort - Vetor Crescente}{60}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Gr\IeC {\'a}fico Heap Sort - Vetor Crescente}{61}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Heap Sort - Vetor Crescente P10}{61}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Gr\IeC {\'a}fico Heap Sort - Vetor Crescente P10}{62}{subsection.4.3.1}
-\contentsline {section}{\numberline {4.4}Heap Sort - Vetor Crescente P20}{62}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Gr\IeC {\'a}fico Heap Sort - Vetor Crescente P20}{63}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}Heap Sort - Vetor Crescente P30}{63}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Gr\IeC {\'a}fico Heap Sort - Vetor Crescente P30}{64}{subsection.4.5.1}
-\contentsline {section}{\numberline {4.6}Heap Sort - Vetor Crescente P40}{64}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Gr\IeC {\'a}fico Heap Sort - Vetor Crescente P40}{65}{subsection.4.6.1}
-\contentsline {section}{\numberline {4.7}Heap Sort - Vetor Crescente P50}{65}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Gr\IeC {\'a}fico Heap Sort - Vetor Crescente P50}{66}{subsection.4.7.1}
-\contentsline {section}{\numberline {4.8}Heap Sort - Vetor Decrescente}{66}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}Gr\IeC {\'a}fico Heap Sort - Vetor Decrescente}{67}{subsection.4.8.1}
-\contentsline {section}{\numberline {4.9}Heap Sort - Vetor Decrescente P10}{67}{section.4.9}
-\contentsline {subsection}{\numberline {4.9.1}Gr\IeC {\'a}fico Heap Sort - Vetor Decrescente P10}{68}{subsection.4.9.1}
-\contentsline {section}{\numberline {4.10}Heap Sort - Vetor Decrescente P20}{68}{section.4.10}
-\contentsline {subsection}{\numberline {4.10.1}Gr\IeC {\'a}fico Heap Sort - Vetor Decrescente P20}{69}{subsection.4.10.1}
-\contentsline {section}{\numberline {4.11}Heap Sort - Vetor Decrescente P30}{69}{section.4.11}
-\contentsline {subsection}{\numberline {4.11.1}Gr\IeC {\'a}fico Heap Sort - Vetor Decrescente P30}{70}{subsection.4.11.1}
-\contentsline {section}{\numberline {4.12}Heap Sort - Vetor Decrescente P40}{70}{section.4.12}
-\contentsline {subsection}{\numberline {4.12.1}Gr\IeC {\'a}fico Heap Sort - Vetor Decrescente P40}{71}{subsection.4.12.1}
-\contentsline {section}{\numberline {4.13}Heap Sort - Vetor Decrescente P50}{71}{section.4.13}
-\contentsline {subsection}{\numberline {4.13.1}Gr\IeC {\'a}fico Heap Sort - Vetor Decrescente P50}{72}{subsection.4.13.1}
-\contentsline {section}{\numberline {4.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{72}{section.4.14}
-\contentsline {chapter}{\numberline {5}Quick Sort}{73}{chapter.5}
-\contentsline {section}{\numberline {5.1}Quick Sort - Vetor Aleat\IeC {\'o}rio}{73}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Gr\IeC {\'a}fico Quick Sort - Vetor Aleat\IeC {\'o}rio}{74}{subsection.5.1.1}
-\contentsline {section}{\numberline {5.2}Quick Sort - Vetor Crescente}{74}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Gr\IeC {\'a}fico Quick Sort - Vetor Crescente}{75}{subsection.5.2.1}
-\contentsline {section}{\numberline {5.3}Quick Sort - Vetor Crescente P10}{75}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Gr\IeC {\'a}fico Quick Sort - Vetor Crescente P10}{76}{subsection.5.3.1}
-\contentsline {section}{\numberline {5.4}Quick Sort - Vetor Crescente P20}{76}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Gr\IeC {\'a}fico Quick Sort - Vetor Crescente P20}{77}{subsection.5.4.1}
-\contentsline {section}{\numberline {5.5}Quick Sort - Vetor Crescente P30}{77}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Gr\IeC {\'a}fico Quick Sort - Vetor Crescente P30}{78}{subsection.5.5.1}
-\contentsline {section}{\numberline {5.6}Quick Sort - Vetor Crescente P40}{78}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Gr\IeC {\'a}fico Quick Sort - Vetor Crescente P40}{79}{subsection.5.6.1}
-\contentsline {section}{\numberline {5.7}Quick Sort - Vetor Crescente P50}{79}{section.5.7}
-\contentsline {subsection}{\numberline {5.7.1}Gr\IeC {\'a}fico Quick Sort - Vetor Crescente P50}{80}{subsection.5.7.1}
-\contentsline {section}{\numberline {5.8}Quick Sort - Vetor Decrescente}{80}{section.5.8}
-\contentsline {subsection}{\numberline {5.8.1}Gr\IeC {\'a}fico Quick Sort - Vetor Decrescente}{81}{subsection.5.8.1}
-\contentsline {section}{\numberline {5.9}Quick Sort - Vetor Decrescente P10}{81}{section.5.9}
-\contentsline {subsection}{\numberline {5.9.1}Gr\IeC {\'a}fico Quick Sort - Vetor Decrescente P10}{82}{subsection.5.9.1}
-\contentsline {section}{\numberline {5.10}Quick Sort - Vetor Decrescente P20}{82}{section.5.10}
-\contentsline {subsection}{\numberline {5.10.1}Gr\IeC {\'a}fico Quick Sort - Vetor Decrescente P20}{83}{subsection.5.10.1}
-\contentsline {section}{\numberline {5.11}Quick Sort - Vetor Decrescente P30}{83}{section.5.11}
-\contentsline {subsection}{\numberline {5.11.1}Gr\IeC {\'a}fico Quick Sort - Vetor Decrescente P30}{84}{subsection.5.11.1}
-\contentsline {section}{\numberline {5.12}Quick Sort - Vetor Decrescente P40}{84}{section.5.12}
-\contentsline {subsection}{\numberline {5.12.1}Gr\IeC {\'a}fico Quick Sort - Vetor Decrescente P40}{85}{subsection.5.12.1}
-\contentsline {section}{\numberline {5.13}Quick Sort - Vetor Decrescente P50}{85}{section.5.13}
-\contentsline {subsection}{\numberline {5.13.1}Gr\IeC {\'a}fico Quick Sort - Vetor Decrescente P50}{86}{subsection.5.13.1}
-\contentsline {section}{\numberline {5.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{86}{section.5.14}
-\contentsline {chapter}{\numberline {6}Counting Sort}{87}{chapter.6}
-\contentsline {section}{\numberline {6.1}Counting Sort - Vetor Aleat\IeC {\'o}rio}{87}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Gr\IeC {\'a}fico Counting Sort - Vetor Aleat\IeC {\'o}rio}{88}{subsection.6.1.1}
-\contentsline {section}{\numberline {6.2}Counting Sort - Vetor Crescente}{88}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Gr\IeC {\'a}fico Counting Sort - Vetor Crescente}{89}{subsection.6.2.1}
-\contentsline {section}{\numberline {6.3}Counting Sort - Vetor Crescente P10}{89}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Gr\IeC {\'a}fico Counting Sort - Vetor Crescente P10}{90}{subsection.6.3.1}
-\contentsline {section}{\numberline {6.4}Counting Sort - Vetor Crescente P20}{90}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Gr\IeC {\'a}fico Counting Sort - Vetor Crescente P20}{91}{subsection.6.4.1}
-\contentsline {section}{\numberline {6.5}Counting Sort - Vetor Crescente P30}{91}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Gr\IeC {\'a}fico Counting Sort - Vetor Crescente P30}{92}{subsection.6.5.1}
-\contentsline {section}{\numberline {6.6}Counting Sort - Vetor Crescente P40}{92}{section.6.6}
-\contentsline {subsection}{\numberline {6.6.1}Gr\IeC {\'a}fico Counting Sort - Vetor Crescente P40}{93}{subsection.6.6.1}
-\contentsline {section}{\numberline {6.7}Counting Sort - Vetor Crescente P50}{93}{section.6.7}
-\contentsline {subsection}{\numberline {6.7.1}Gr\IeC {\'a}fico Counting Sort - Vetor Crescente P50}{94}{subsection.6.7.1}
-\contentsline {section}{\numberline {6.8}Counting Sort - Vetor Decrescente}{94}{section.6.8}
-\contentsline {subsection}{\numberline {6.8.1}Gr\IeC {\'a}fico Counting Sort - Vetor Decrescente}{95}{subsection.6.8.1}
-\contentsline {section}{\numberline {6.9}Counting Sort - Vetor Decrescente P10}{95}{section.6.9}
-\contentsline {subsection}{\numberline {6.9.1}Gr\IeC {\'a}fico Counting Sort - Vetor Decrescente P10}{96}{subsection.6.9.1}
-\contentsline {section}{\numberline {6.10}Counting Sort - Vetor Decrescente P20}{96}{section.6.10}
-\contentsline {subsection}{\numberline {6.10.1}Gr\IeC {\'a}fico Counting Sort - Vetor Decrescente P20}{97}{subsection.6.10.1}
-\contentsline {section}{\numberline {6.11}Counting Sort - Vetor Decrescente P30}{97}{section.6.11}
-\contentsline {subsection}{\numberline {6.11.1}Gr\IeC {\'a}fico Counting Sort - Vetor Decrescente P30}{98}{subsection.6.11.1}
-\contentsline {section}{\numberline {6.12}Counting Sort - Vetor Decrescente P40}{98}{section.6.12}
-\contentsline {subsection}{\numberline {6.12.1}Gr\IeC {\'a}fico Counting Sort - Vetor Decrescente P40}{99}{subsection.6.12.1}
-\contentsline {section}{\numberline {6.13}Counting Sort - Vetor Decrescente P50}{99}{section.6.13}
-\contentsline {subsection}{\numberline {6.13.1}Gr\IeC {\'a}fico Counting Sort - Vetor Decrescente P50}{100}{subsection.6.13.1}
-\contentsline {section}{\numberline {6.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{100}{section.6.14}
-\contentsline {chapter}{\numberline {7}Radix Sort}{101}{chapter.7}
-\contentsline {section}{\numberline {7.1}Radix Sort - Vetor Aleat\IeC {\'o}rio}{101}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Gr\IeC {\'a}fico Radix Sort - Vetor Aleat\IeC {\'o}rio}{102}{subsection.7.1.1}
-\contentsline {section}{\numberline {7.2}Radix Sort - Vetor Crescente}{102}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Gr\IeC {\'a}fico Radix Sort - Vetor Crescente}{103}{subsection.7.2.1}
-\contentsline {section}{\numberline {7.3}Radix Sort - Vetor Crescente P10}{103}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Gr\IeC {\'a}fico Radix Sort - Vetor Crescente P10}{104}{subsection.7.3.1}
-\contentsline {section}{\numberline {7.4}Radix Sort - Vetor Crescente P20}{104}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}Gr\IeC {\'a}fico Radix Sort - Vetor Crescente P20}{105}{subsection.7.4.1}
-\contentsline {section}{\numberline {7.5}Radix Sort - Vetor Crescente P30}{105}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}Gr\IeC {\'a}fico Radix Sort - Vetor Crescente P30}{106}{subsection.7.5.1}
-\contentsline {section}{\numberline {7.6}Radix Sort - Vetor Crescente P40}{106}{section.7.6}
-\contentsline {subsection}{\numberline {7.6.1}Gr\IeC {\'a}fico Radix Sort - Vetor Crescente P40}{107}{subsection.7.6.1}
-\contentsline {section}{\numberline {7.7}Radix Sort - Vetor Crescente P50}{107}{section.7.7}
-\contentsline {subsection}{\numberline {7.7.1}Gr\IeC {\'a}fico Radix Sort - Vetor Crescente P50}{108}{subsection.7.7.1}
-\contentsline {section}{\numberline {7.8}Radix Sort - Vetor Decrescente}{108}{section.7.8}
-\contentsline {subsection}{\numberline {7.8.1}Gr\IeC {\'a}fico Radix Sort - Vetor Decrescente}{109}{subsection.7.8.1}
-\contentsline {section}{\numberline {7.9}Radix Sort - Vetor Decrescente P10}{109}{section.7.9}
-\contentsline {subsection}{\numberline {7.9.1}Gr\IeC {\'a}fico Radix Sort - Vetor Decrescente P10}{110}{subsection.7.9.1}
-\contentsline {section}{\numberline {7.10}Radix Sort - Vetor Decrescente P20}{110}{section.7.10}
-\contentsline {subsection}{\numberline {7.10.1}Gr\IeC {\'a}fico Radix Sort - Vetor Decrescente P20}{111}{subsection.7.10.1}
-\contentsline {section}{\numberline {7.11}Radix Sort - Vetor Decrescente P30}{111}{section.7.11}
-\contentsline {subsection}{\numberline {7.11.1}Gr\IeC {\'a}fico Radix Sort - Vetor Decrescente P30}{112}{subsection.7.11.1}
-\contentsline {section}{\numberline {7.12}Radix Sort - Vetor Decrescente P40}{112}{section.7.12}
-\contentsline {subsection}{\numberline {7.12.1}Gr\IeC {\'a}fico Radix Sort - Vetor Decrescente P40}{113}{subsection.7.12.1}
-\contentsline {section}{\numberline {7.13}Radix Sort - Vetor Decrescente P50}{113}{section.7.13}
-\contentsline {subsection}{\numberline {7.13.1}Gr\IeC {\'a}fico Radix Sort - Vetor Decrescente P50}{114}{subsection.7.13.1}
-\contentsline {section}{\numberline {7.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{114}{section.7.14}
-\contentsline {chapter}{\numberline {8}Bucket sort}{115}{chapter.8}
-\contentsline {section}{\numberline {8.1}Bucket sort - Vetor Aleat\IeC {\'o}rio}{115}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Gr\IeC {\'a}fico Bucket sort - Vetor Alet\IeC {\'o}rio}{116}{subsection.8.1.1}
-\contentsline {section}{\numberline {8.2}Bucket sort - Vetor Crescente}{116}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}Grafico Bucket sort - Vetor Crescente}{117}{subsection.8.2.1}
-\contentsline {section}{\numberline {8.3}Bucket sort - Vetor Crescente P10}{117}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}Grafico Bucket sort - Vetor Crescente P10}{118}{subsection.8.3.1}
-\contentsline {section}{\numberline {8.4}Bucket sort - Vetor Crescente P20}{118}{section.8.4}
-\contentsline {subsection}{\numberline {8.4.1}Grafico Bucket sort - Vetor Crescente P20}{119}{subsection.8.4.1}
-\contentsline {section}{\numberline {8.5}Bucket sort - Vetor Crescente P30}{119}{section.8.5}
-\contentsline {subsection}{\numberline {8.5.1}Grafico Bucket sort - Vetor Crescente P30}{120}{subsection.8.5.1}
-\contentsline {section}{\numberline {8.6}Bucket sort - Vetor Crescente P40}{120}{section.8.6}
-\contentsline {subsection}{\numberline {8.6.1}Grafico Bucket sort - Vetor Crescente P40}{121}{subsection.8.6.1}
-\contentsline {section}{\numberline {8.7}Bucket sort - Vetor Crescente P50}{121}{section.8.7}
-\contentsline {subsection}{\numberline {8.7.1}Grafico Bucket sort - Vetor Crescente P50}{122}{subsection.8.7.1}
-\contentsline {section}{\numberline {8.8}Bucket sort - Vetor Decrescente}{122}{section.8.8}
-\contentsline {subsection}{\numberline {8.8.1}Grafico Bucket sort - Vetor Decrescente}{123}{subsection.8.8.1}
-\contentsline {section}{\numberline {8.9}Bucket sort - Vetor Decrescente P10}{123}{section.8.9}
-\contentsline {subsection}{\numberline {8.9.1}Grafico Bucket sort - Vetor Decrescente P10}{124}{subsection.8.9.1}
-\contentsline {section}{\numberline {8.10}Bucket sort - Vetor Decrescente P20}{124}{section.8.10}
-\contentsline {subsection}{\numberline {8.10.1}Grafico Bucket sort - Vetor Decrescente P20}{125}{subsection.8.10.1}
-\contentsline {section}{\numberline {8.11}Bucket sort - Vetor Decrescente P30}{125}{section.8.11}
-\contentsline {subsection}{\numberline {8.11.1}Grafico Bucket sort - Vetor Decrescente P30}{126}{subsection.8.11.1}
-\contentsline {section}{\numberline {8.12}Bucket sort - Vetor Decrescente P40}{126}{section.8.12}
-\contentsline {subsection}{\numberline {8.12.1}Grafico Bucket sort - Vetor Decrescente P40}{127}{subsection.8.12.1}
-\contentsline {section}{\numberline {8.13}Bucket sort - Vetor Decrescente P50}{127}{section.8.13}
-\contentsline {subsection}{\numberline {8.13.1}Grafico Bucket sort - Vetor Decrescente P50}{128}{subsection.8.13.1}
-\contentsline {section}{\numberline {8.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{128}{section.8.14}
-\contentsline {chapter}{\numberline {9}Refer\IeC {\^e}ncias}{129}{chapter.9}
+\contentsline {subsection}{\numberline {1.1.1}Comandos}{28}{subsection.1.1.1}
+\contentsline {section}{\numberline {1.2}M\IeC {\'a}quina de teste}{29}{section.1.2}
+\contentsline {chapter}{\numberline {2}Insertion Sort}{30}{chapter.2}
+\contentsline {section}{\numberline {2.1}Insertion Sort - Vetor Aleat\IeC {\'o}rio}{30}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Gr\IeC {\'a}fico Insertion sort - Vetor Alet\IeC {\'o}rio}{31}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Insertion Sort - Vetor Crescente}{31}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Grafico Insertion Sort - Vetor Crescente}{32}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Insertion Sort - Vetor Crescente P10}{32}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Grafico Insertion Sort - Vetor Crescente P10}{33}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Insertion Sort - Vetor Crescente P20}{33}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Grafico Insertion Sort - Vetor Crescente P20}{34}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.5}Insertion Sort - Vetor Crescente P30}{34}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Grafico Insertion Sort - Vetor Crescente P30}{35}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}Insertion Sort - Vetor Crescente P40}{35}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Grafico Insertion Sort - Vetor Crescente P40}{36}{subsection.2.6.1}
+\contentsline {section}{\numberline {2.7}Insertion Sort - Vetor Crescente P50}{36}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Grafico Insertion Sort - Vetor Crescente P50}{37}{subsection.2.7.1}
+\contentsline {section}{\numberline {2.8}Insertion Sort - Vetor Decrescente}{37}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Grafico Insertion Sort - Vetor Decrescente}{38}{subsection.2.8.1}
+\contentsline {section}{\numberline {2.9}Insertion Sort - Vetor Decrescente P10}{38}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Grafico Insertion Sort - Vetor Decrescente P10}{39}{subsection.2.9.1}
+\contentsline {section}{\numberline {2.10}Insertion Sort - Vetor Decrescente P20}{39}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}Grafico Insertion Sort - Vetor Decrescente P20}{40}{subsection.2.10.1}
+\contentsline {section}{\numberline {2.11}Insertion Sort - Vetor Decrescente P30}{40}{section.2.11}
+\contentsline {subsection}{\numberline {2.11.1}Grafico Insertion Sort - Vetor Decrescente P30}{41}{subsection.2.11.1}
+\contentsline {section}{\numberline {2.12}Insertion Sort - Vetor Decrescente P40}{41}{section.2.12}
+\contentsline {subsection}{\numberline {2.12.1}Grafico Insertion Sort - Vetor Decrescente P40}{42}{subsection.2.12.1}
+\contentsline {section}{\numberline {2.13}Insertion Sort - Vetor Decrescente P50}{42}{section.2.13}
+\contentsline {subsection}{\numberline {2.13.1}Grafico Insertion Sort - Vetor Decrescente P50}{43}{subsection.2.13.1}
+\contentsline {section}{\numberline {2.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{43}{section.2.14}
+\contentsline {chapter}{\numberline {3}Merge Sort}{44}{chapter.3}
+\contentsline {section}{\numberline {3.1}Merge Sort - Vetor Aleat\IeC {\'o}rio}{44}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Gr\IeC {\'a}fico Merge Sort - Vetor Aleat\IeC {\'o}rio}{45}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Merge Sort - Vetor Crescente}{45}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Gr\IeC {\'a}fico Merge Sort - Vetor Crescente}{46}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Merge Sort - Vetor Crescente P10}{46}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Gr\IeC {\'a}fico Merge Sort - Vetor Crescente P10}{47}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Merge Sort - Vetor Crescente P20}{47}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Gr\IeC {\'a}fico Merge Sort - Vetor Crescente P20}{48}{subsection.3.4.1}
+\contentsline {section}{\numberline {3.5}Merge Sort - Vetor Crescente P30}{48}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Gr\IeC {\'a}fico Merge Sort - Vetor Crescente P30}{49}{subsection.3.5.1}
+\contentsline {section}{\numberline {3.6}Merge Sort - Vetor Crescente P40}{49}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Gr\IeC {\'a}fico Merge Sort - Vetor Crescente P40}{50}{subsection.3.6.1}
+\contentsline {section}{\numberline {3.7}Merge Sort - Vetor Crescente P50}{50}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Gr\IeC {\'a}fico Merge Sort - Vetor Crescente P50}{51}{subsection.3.7.1}
+\contentsline {section}{\numberline {3.8}Merge Sort - Vetor Decrescente}{51}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}Gr\IeC {\'a}fico Merge Sort - Vetor Decrescente}{52}{subsection.3.8.1}
+\contentsline {section}{\numberline {3.9}Merge Sort - Vetor Decrescente P10}{52}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}Gr\IeC {\'a}fico Merge Sort - Vetor Decrescente P10}{53}{subsection.3.9.1}
+\contentsline {section}{\numberline {3.10}Merge Sort - Vetor Decrescente P20}{53}{section.3.10}
+\contentsline {subsection}{\numberline {3.10.1}Gr\IeC {\'a}fico Merge Sort - Vetor Decrescente P20}{54}{subsection.3.10.1}
+\contentsline {section}{\numberline {3.11}Merge Sort - Vetor Decrescente P30}{54}{section.3.11}
+\contentsline {subsection}{\numberline {3.11.1}Gr\IeC {\'a}fico Merge Sort - Vetor Decrescente P30}{55}{subsection.3.11.1}
+\contentsline {section}{\numberline {3.12}Merge Sort - Vetor Decrescente P40}{55}{section.3.12}
+\contentsline {subsection}{\numberline {3.12.1}Gr\IeC {\'a}fico Merge Sort - Vetor Decrescente P40}{56}{subsection.3.12.1}
+\contentsline {section}{\numberline {3.13}Merge Sort - Vetor Decrescente P50}{56}{section.3.13}
+\contentsline {subsection}{\numberline {3.13.1}Gr\IeC {\'a}fico Merge Sort - Vetor Decrescente P50}{57}{subsection.3.13.1}
+\contentsline {section}{\numberline {3.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{57}{section.3.14}
+\contentsline {chapter}{\numberline {4}Heap Sort}{58}{chapter.4}
+\contentsline {section}{\numberline {4.1}Heap Sort - Vetor Aleat\IeC {\'o}rio}{58}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Gr\IeC {\'a}fico Heap Sort - Vetor Aleat\IeC {\'o}rio}{59}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Heap Sort - Vetor Crescente}{59}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Gr\IeC {\'a}fico Heap Sort - Vetor Crescente}{60}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Heap Sort - Vetor Crescente P10}{60}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Gr\IeC {\'a}fico Heap Sort - Vetor Crescente P10}{61}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}Heap Sort - Vetor Crescente P20}{61}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Gr\IeC {\'a}fico Heap Sort - Vetor Crescente P20}{62}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}Heap Sort - Vetor Crescente P30}{62}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Gr\IeC {\'a}fico Heap Sort - Vetor Crescente P30}{63}{subsection.4.5.1}
+\contentsline {section}{\numberline {4.6}Heap Sort - Vetor Crescente P40}{63}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Gr\IeC {\'a}fico Heap Sort - Vetor Crescente P40}{64}{subsection.4.6.1}
+\contentsline {section}{\numberline {4.7}Heap Sort - Vetor Crescente P50}{64}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Gr\IeC {\'a}fico Heap Sort - Vetor Crescente P50}{65}{subsection.4.7.1}
+\contentsline {section}{\numberline {4.8}Heap Sort - Vetor Decrescente}{65}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Gr\IeC {\'a}fico Heap Sort - Vetor Decrescente}{66}{subsection.4.8.1}
+\contentsline {section}{\numberline {4.9}Heap Sort - Vetor Decrescente P10}{66}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}Gr\IeC {\'a}fico Heap Sort - Vetor Decrescente P10}{67}{subsection.4.9.1}
+\contentsline {section}{\numberline {4.10}Heap Sort - Vetor Decrescente P20}{67}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}Gr\IeC {\'a}fico Heap Sort - Vetor Decrescente P20}{68}{subsection.4.10.1}
+\contentsline {section}{\numberline {4.11}Heap Sort - Vetor Decrescente P30}{68}{section.4.11}
+\contentsline {subsection}{\numberline {4.11.1}Gr\IeC {\'a}fico Heap Sort - Vetor Decrescente P30}{69}{subsection.4.11.1}
+\contentsline {section}{\numberline {4.12}Heap Sort - Vetor Decrescente P40}{69}{section.4.12}
+\contentsline {subsection}{\numberline {4.12.1}Gr\IeC {\'a}fico Heap Sort - Vetor Decrescente P40}{70}{subsection.4.12.1}
+\contentsline {section}{\numberline {4.13}Heap Sort - Vetor Decrescente P50}{70}{section.4.13}
+\contentsline {subsection}{\numberline {4.13.1}Gr\IeC {\'a}fico Heap Sort - Vetor Decrescente P50}{71}{subsection.4.13.1}
+\contentsline {section}{\numberline {4.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{71}{section.4.14}
+\contentsline {chapter}{\numberline {5}Quick Sort}{72}{chapter.5}
+\contentsline {section}{\numberline {5.1}Quick Sort - Vetor Aleat\IeC {\'o}rio}{72}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Gr\IeC {\'a}fico Quick Sort - Vetor Aleat\IeC {\'o}rio}{73}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Quick Sort - Vetor Crescente}{73}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Gr\IeC {\'a}fico Quick Sort - Vetor Crescente}{74}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Quick Sort - Vetor Crescente P10}{74}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Gr\IeC {\'a}fico Quick Sort - Vetor Crescente P10}{75}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}Quick Sort - Vetor Crescente P20}{75}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Gr\IeC {\'a}fico Quick Sort - Vetor Crescente P20}{76}{subsection.5.4.1}
+\contentsline {section}{\numberline {5.5}Quick Sort - Vetor Crescente P30}{76}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Gr\IeC {\'a}fico Quick Sort - Vetor Crescente P30}{77}{subsection.5.5.1}
+\contentsline {section}{\numberline {5.6}Quick Sort - Vetor Crescente P40}{77}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Gr\IeC {\'a}fico Quick Sort - Vetor Crescente P40}{78}{subsection.5.6.1}
+\contentsline {section}{\numberline {5.7}Quick Sort - Vetor Crescente P50}{78}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Gr\IeC {\'a}fico Quick Sort - Vetor Crescente P50}{79}{subsection.5.7.1}
+\contentsline {section}{\numberline {5.8}Quick Sort - Vetor Decrescente}{79}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}Gr\IeC {\'a}fico Quick Sort - Vetor Decrescente}{80}{subsection.5.8.1}
+\contentsline {section}{\numberline {5.9}Quick Sort - Vetor Decrescente P10}{80}{section.5.9}
+\contentsline {subsection}{\numberline {5.9.1}Gr\IeC {\'a}fico Quick Sort - Vetor Decrescente P10}{81}{subsection.5.9.1}
+\contentsline {section}{\numberline {5.10}Quick Sort - Vetor Decrescente P20}{81}{section.5.10}
+\contentsline {subsection}{\numberline {5.10.1}Gr\IeC {\'a}fico Quick Sort - Vetor Decrescente P20}{82}{subsection.5.10.1}
+\contentsline {section}{\numberline {5.11}Quick Sort - Vetor Decrescente P30}{82}{section.5.11}
+\contentsline {subsection}{\numberline {5.11.1}Gr\IeC {\'a}fico Quick Sort - Vetor Decrescente P30}{83}{subsection.5.11.1}
+\contentsline {section}{\numberline {5.12}Quick Sort - Vetor Decrescente P40}{83}{section.5.12}
+\contentsline {subsection}{\numberline {5.12.1}Gr\IeC {\'a}fico Quick Sort - Vetor Decrescente P40}{84}{subsection.5.12.1}
+\contentsline {section}{\numberline {5.13}Quick Sort - Vetor Decrescente P50}{84}{section.5.13}
+\contentsline {subsection}{\numberline {5.13.1}Gr\IeC {\'a}fico Quick Sort - Vetor Decrescente P50}{85}{subsection.5.13.1}
+\contentsline {section}{\numberline {5.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{85}{section.5.14}
+\contentsline {chapter}{\numberline {6}Counting Sort}{86}{chapter.6}
+\contentsline {section}{\numberline {6.1}Counting Sort - Vetor Aleat\IeC {\'o}rio}{86}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Gr\IeC {\'a}fico Counting Sort - Vetor Aleat\IeC {\'o}rio}{87}{subsection.6.1.1}
+\contentsline {section}{\numberline {6.2}Counting Sort - Vetor Crescente}{87}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Gr\IeC {\'a}fico Counting Sort - Vetor Crescente}{88}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.3}Counting Sort - Vetor Crescente P10}{88}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Gr\IeC {\'a}fico Counting Sort - Vetor Crescente P10}{89}{subsection.6.3.1}
+\contentsline {section}{\numberline {6.4}Counting Sort - Vetor Crescente P20}{89}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Gr\IeC {\'a}fico Counting Sort - Vetor Crescente P20}{90}{subsection.6.4.1}
+\contentsline {section}{\numberline {6.5}Counting Sort - Vetor Crescente P30}{90}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Gr\IeC {\'a}fico Counting Sort - Vetor Crescente P30}{91}{subsection.6.5.1}
+\contentsline {section}{\numberline {6.6}Counting Sort - Vetor Crescente P40}{91}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Gr\IeC {\'a}fico Counting Sort - Vetor Crescente P40}{92}{subsection.6.6.1}
+\contentsline {section}{\numberline {6.7}Counting Sort - Vetor Crescente P50}{92}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Gr\IeC {\'a}fico Counting Sort - Vetor Crescente P50}{93}{subsection.6.7.1}
+\contentsline {section}{\numberline {6.8}Counting Sort - Vetor Decrescente}{93}{section.6.8}
+\contentsline {subsection}{\numberline {6.8.1}Gr\IeC {\'a}fico Counting Sort - Vetor Decrescente}{94}{subsection.6.8.1}
+\contentsline {section}{\numberline {6.9}Counting Sort - Vetor Decrescente P10}{94}{section.6.9}
+\contentsline {subsection}{\numberline {6.9.1}Gr\IeC {\'a}fico Counting Sort - Vetor Decrescente P10}{95}{subsection.6.9.1}
+\contentsline {section}{\numberline {6.10}Counting Sort - Vetor Decrescente P20}{95}{section.6.10}
+\contentsline {subsection}{\numberline {6.10.1}Gr\IeC {\'a}fico Counting Sort - Vetor Decrescente P20}{96}{subsection.6.10.1}
+\contentsline {section}{\numberline {6.11}Counting Sort - Vetor Decrescente P30}{96}{section.6.11}
+\contentsline {subsection}{\numberline {6.11.1}Gr\IeC {\'a}fico Counting Sort - Vetor Decrescente P30}{97}{subsection.6.11.1}
+\contentsline {section}{\numberline {6.12}Counting Sort - Vetor Decrescente P40}{97}{section.6.12}
+\contentsline {subsection}{\numberline {6.12.1}Gr\IeC {\'a}fico Counting Sort - Vetor Decrescente P40}{98}{subsection.6.12.1}
+\contentsline {section}{\numberline {6.13}Counting Sort - Vetor Decrescente P50}{98}{section.6.13}
+\contentsline {subsection}{\numberline {6.13.1}Gr\IeC {\'a}fico Counting Sort - Vetor Decrescente P50}{99}{subsection.6.13.1}
+\contentsline {section}{\numberline {6.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{99}{section.6.14}
+\contentsline {chapter}{\numberline {7}Radix Sort}{100}{chapter.7}
+\contentsline {section}{\numberline {7.1}Radix Sort - Vetor Aleat\IeC {\'o}rio}{100}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Gr\IeC {\'a}fico Radix Sort - Vetor Aleat\IeC {\'o}rio}{101}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}Radix Sort - Vetor Crescente}{101}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Gr\IeC {\'a}fico Radix Sort - Vetor Crescente}{102}{subsection.7.2.1}
+\contentsline {section}{\numberline {7.3}Radix Sort - Vetor Crescente P10}{102}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Gr\IeC {\'a}fico Radix Sort - Vetor Crescente P10}{103}{subsection.7.3.1}
+\contentsline {section}{\numberline {7.4}Radix Sort - Vetor Crescente P20}{103}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Gr\IeC {\'a}fico Radix Sort - Vetor Crescente P20}{104}{subsection.7.4.1}
+\contentsline {section}{\numberline {7.5}Radix Sort - Vetor Crescente P30}{104}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Gr\IeC {\'a}fico Radix Sort - Vetor Crescente P30}{105}{subsection.7.5.1}
+\contentsline {section}{\numberline {7.6}Radix Sort - Vetor Crescente P40}{105}{section.7.6}
+\contentsline {subsection}{\numberline {7.6.1}Gr\IeC {\'a}fico Radix Sort - Vetor Crescente P40}{106}{subsection.7.6.1}
+\contentsline {section}{\numberline {7.7}Radix Sort - Vetor Crescente P50}{106}{section.7.7}
+\contentsline {subsection}{\numberline {7.7.1}Gr\IeC {\'a}fico Radix Sort - Vetor Crescente P50}{107}{subsection.7.7.1}
+\contentsline {section}{\numberline {7.8}Radix Sort - Vetor Decrescente}{107}{section.7.8}
+\contentsline {subsection}{\numberline {7.8.1}Gr\IeC {\'a}fico Radix Sort - Vetor Decrescente}{108}{subsection.7.8.1}
+\contentsline {section}{\numberline {7.9}Radix Sort - Vetor Decrescente P10}{108}{section.7.9}
+\contentsline {subsection}{\numberline {7.9.1}Gr\IeC {\'a}fico Radix Sort - Vetor Decrescente P10}{109}{subsection.7.9.1}
+\contentsline {section}{\numberline {7.10}Radix Sort - Vetor Decrescente P20}{109}{section.7.10}
+\contentsline {subsection}{\numberline {7.10.1}Gr\IeC {\'a}fico Radix Sort - Vetor Decrescente P20}{110}{subsection.7.10.1}
+\contentsline {section}{\numberline {7.11}Radix Sort - Vetor Decrescente P30}{110}{section.7.11}
+\contentsline {subsection}{\numberline {7.11.1}Gr\IeC {\'a}fico Radix Sort - Vetor Decrescente P30}{111}{subsection.7.11.1}
+\contentsline {section}{\numberline {7.12}Radix Sort - Vetor Decrescente P40}{111}{section.7.12}
+\contentsline {subsection}{\numberline {7.12.1}Gr\IeC {\'a}fico Radix Sort - Vetor Decrescente P40}{112}{subsection.7.12.1}
+\contentsline {section}{\numberline {7.13}Radix Sort - Vetor Decrescente P50}{112}{section.7.13}
+\contentsline {subsection}{\numberline {7.13.1}Gr\IeC {\'a}fico Radix Sort - Vetor Decrescente P50}{113}{subsection.7.13.1}
+\contentsline {section}{\numberline {7.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{113}{section.7.14}
+\contentsline {chapter}{\numberline {8}Bucket sort}{114}{chapter.8}
+\contentsline {section}{\numberline {8.1}Bucket sort - Vetor Aleat\IeC {\'o}rio}{114}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Gr\IeC {\'a}fico Bucket sort - Vetor Alet\IeC {\'o}rio}{115}{subsection.8.1.1}
+\contentsline {section}{\numberline {8.2}Bucket sort - Vetor Crescente}{115}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Grafico Bucket sort - Vetor Crescente}{116}{subsection.8.2.1}
+\contentsline {section}{\numberline {8.3}Bucket sort - Vetor Crescente P10}{116}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Grafico Bucket sort - Vetor Crescente P10}{117}{subsection.8.3.1}
+\contentsline {section}{\numberline {8.4}Bucket sort - Vetor Crescente P20}{117}{section.8.4}
+\contentsline {subsection}{\numberline {8.4.1}Grafico Bucket sort - Vetor Crescente P20}{118}{subsection.8.4.1}
+\contentsline {section}{\numberline {8.5}Bucket sort - Vetor Crescente P30}{118}{section.8.5}
+\contentsline {subsection}{\numberline {8.5.1}Grafico Bucket sort - Vetor Crescente P30}{119}{subsection.8.5.1}
+\contentsline {section}{\numberline {8.6}Bucket sort - Vetor Crescente P40}{119}{section.8.6}
+\contentsline {subsection}{\numberline {8.6.1}Grafico Bucket sort - Vetor Crescente P40}{120}{subsection.8.6.1}
+\contentsline {section}{\numberline {8.7}Bucket sort - Vetor Crescente P50}{120}{section.8.7}
+\contentsline {subsection}{\numberline {8.7.1}Grafico Bucket sort - Vetor Crescente P50}{121}{subsection.8.7.1}
+\contentsline {section}{\numberline {8.8}Bucket sort - Vetor Decrescente}{121}{section.8.8}
+\contentsline {subsection}{\numberline {8.8.1}Grafico Bucket sort - Vetor Decrescente}{122}{subsection.8.8.1}
+\contentsline {section}{\numberline {8.9}Bucket sort - Vetor Decrescente P10}{122}{section.8.9}
+\contentsline {subsection}{\numberline {8.9.1}Grafico Bucket sort - Vetor Decrescente P10}{123}{subsection.8.9.1}
+\contentsline {section}{\numberline {8.10}Bucket sort - Vetor Decrescente P20}{123}{section.8.10}
+\contentsline {subsection}{\numberline {8.10.1}Grafico Bucket sort - Vetor Decrescente P20}{124}{subsection.8.10.1}
+\contentsline {section}{\numberline {8.11}Bucket sort - Vetor Decrescente P30}{124}{section.8.11}
+\contentsline {subsection}{\numberline {8.11.1}Grafico Bucket sort - Vetor Decrescente P30}{125}{subsection.8.11.1}
+\contentsline {section}{\numberline {8.12}Bucket sort - Vetor Decrescente P40}{125}{section.8.12}
+\contentsline {subsection}{\numberline {8.12.1}Grafico Bucket sort - Vetor Decrescente P40}{126}{subsection.8.12.1}
+\contentsline {section}{\numberline {8.13}Bucket sort - Vetor Decrescente P50}{126}{section.8.13}
+\contentsline {subsection}{\numberline {8.13.1}Grafico Bucket sort - Vetor Decrescente P50}{127}{subsection.8.13.1}
+\contentsline {section}{\numberline {8.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{127}{section.8.14}
+\contentsline {chapter}{\numberline {9}Refer\IeC {\^e}ncias}{128}{chapter.9}
 \contentsfinish 

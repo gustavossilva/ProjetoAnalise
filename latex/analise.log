@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.16)  28 JUN 2017 13:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.16)  28 JUN 2017 15:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1358,15 +1358,15 @@ Package babel Info: Redefining portuges shorthand "|
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 85.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 85.
 
 [15]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 139.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 139.
+(babel)             in language  on input line 140.
  [16]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 198.
@@ -1384,14 +1384,14 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 222--222
 
 (../gera_vets.c
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 19.
  [19]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 66.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 66.
+(babel)             in language  on input line 78.
  [20])
 Overfull \hbox (6.0pt too wide) in paragraph at lines 225--225
 [][][][][][][] 
@@ -1399,24 +1399,24 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 225--225
 
 (../ordena.c
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 41.
+(babel)             in language  on input line 52.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 41.
+(babel)             in language  on input line 52.
  [21]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 100.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 100.
+(babel)             in language  on input line 111.
  [22]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 160.
+(babel)             in language  on input line 170.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 160.
+(babel)             in language  on input line 170.
  [23]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 217.
+(babel)             in language  on input line 228.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 217.
+(babel)             in language  on input line 228.
  [24])
 Overfull \hbox (6.0pt too wide) in paragraph at lines 228--228
 [][][][][][][] 
@@ -1424,25 +1424,20 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 228--228
 
 (../ensaios.c
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 2.
+(babel)             in language  on input line 49.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 2.
+(babel)             in language  on input line 49.
  [25]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 98.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 98.
  [26]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 107.
+(babel)             in language  on input line 147.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 107.
- [27]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 157.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 157.
- [28])
+(babel)             in language  on input line 147.
+ [27])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 230.
 
@@ -1453,10 +1448,10 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 257.
+(babel)             in language  on input line 253.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 257.
- [29]
+(babel)             in language  on input line 253.
+ [28]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 259.
 
@@ -1468,7 +1463,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 267.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 267.
-[30]
+[29]
 Cap\'{\i }tulo 2.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 267.
@@ -1477,7 +1472,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 292.
 
-<graficos/Insertion/vIntAleatorio/vIntAleatorio.png, id=2381, 642.4pt x 481.8pt
+<graficos/Insertion/vIntAleatorio/vIntAleatorio.png, id=2321, 642.4pt x 481.8pt
 >
 File: graficos/Insertion/vIntAleatorio/vIntAleatorio.png Graphic file (type png
 )
@@ -1489,7 +1484,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 298.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 298.
- [31
+ [30
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -1497,7 +1492,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 324.
 
-<graficos/Insertion/vIntCrescente/vIntCrescente.png, id=2393, 481.8pt x 361.35p
+<graficos/Insertion/vIntCrescente/vIntCrescente.png, id=2332, 481.8pt x 361.35p
 t>
 File: graficos/Insertion/vIntCrescente/vIntCrescente.png Graphic file (type png
 )
@@ -1509,13 +1504,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 330.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 330.
- [32 <./graficos/Insertion/vIntAleatorio/vIntAleatorio.png>]
+ [31 <./graficos/Insertion/vIntAleatorio/vIntAleatorio.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 331.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 355.
 
-<graficos/Insertion/vIntCrescenteP10/vIntCrescenteP10.png, id=2399, 642.4pt x 4
+<graficos/Insertion/vIntCrescenteP10/vIntCrescenteP10.png, id=2339, 642.4pt x 4
 81.8pt>
 File: graficos/Insertion/vIntCrescenteP10/vIntCrescenteP10.png Graphic file (ty
 pe png)
@@ -1527,13 +1522,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 361.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 361.
- [33 <./graficos/Insertion/vIntCrescente/vIntCrescente.png>]
+ [32 <./graficos/Insertion/vIntCrescente/vIntCrescente.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 362.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 386.
 
-<graficos/Insertion/vIntCrescenteP20/vIntCrescenteP20.png, id=2405, 642.4pt x 4
+<graficos/Insertion/vIntCrescenteP20/vIntCrescenteP20.png, id=2345, 642.4pt x 4
 81.8pt>
 File: graficos/Insertion/vIntCrescenteP20/vIntCrescenteP20.png Graphic file (ty
 pe png)
@@ -1545,13 +1540,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 392.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 392.
- [34 <./graficos/Insertion/vIntCrescenteP10/vIntCrescenteP10.png>]
+ [33 <./graficos/Insertion/vIntCrescenteP10/vIntCrescenteP10.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 394.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 418.
 
-<graficos/Insertion/vIntCrescenteP30/vIntCrescenteP30.png, id=2411, 642.4pt x 4
+<graficos/Insertion/vIntCrescenteP30/vIntCrescenteP30.png, id=2352, 642.4pt x 4
 81.8pt>
 File: graficos/Insertion/vIntCrescenteP30/vIntCrescenteP30.png Graphic file (ty
 pe png)
@@ -1563,13 +1558,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 424.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 424.
- [35 <./graficos/Insertion/vIntCrescenteP20/vIntCrescenteP20.png>]
+ [34 <./graficos/Insertion/vIntCrescenteP20/vIntCrescenteP20.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 426.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 450.
 
-<graficos/Insertion/vIntCrescenteP40/vIntCrescenteP40.png, id=2417, 642.4pt x 4
+<graficos/Insertion/vIntCrescenteP40/vIntCrescenteP40.png, id=2358, 642.4pt x 4
 81.8pt>
 File: graficos/Insertion/vIntCrescenteP40/vIntCrescenteP40.png Graphic file (ty
 pe png)
@@ -1581,13 +1576,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 456.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 456.
- [36 <./graficos/Insertion/vIntCrescenteP30/vIntCrescenteP30.png>]
+ [35 <./graficos/Insertion/vIntCrescenteP30/vIntCrescenteP30.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 458.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 482.
 
-<graficos/Insertion/vIntCrescenteP50/vIntCrescenteP50.png, id=2423, 642.4pt x 4
+<graficos/Insertion/vIntCrescenteP50/vIntCrescenteP50.png, id=2364, 642.4pt x 4
 81.8pt>
 File: graficos/Insertion/vIntCrescenteP50/vIntCrescenteP50.png Graphic file (ty
 pe png)
@@ -1599,13 +1594,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 488.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 488.
- [37 <./graficos/Insertion/vIntCrescenteP40/vIntCrescenteP40.png>]
+ [36 <./graficos/Insertion/vIntCrescenteP40/vIntCrescenteP40.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 490.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 514.
 
-<graficos/Insertion/vIntDecrescente/vIntDecrescente.png, id=2430, 642.4pt x 481
+<graficos/Insertion/vIntDecrescente/vIntDecrescente.png, id=2370, 642.4pt x 481
 .8pt>
 File: graficos/Insertion/vIntDecrescente/vIntDecrescente.png Graphic file (type
  png)
@@ -1617,13 +1612,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 520.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 520.
- [38 <./graficos/Insertion/vIntCrescenteP50/vIntCrescenteP50.png>]
+ [37 <./graficos/Insertion/vIntCrescenteP50/vIntCrescenteP50.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 522.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 546.
 
-<graficos/Insertion/vIntDecrescenteP10/vIntDecrescenteP10.png, id=2436, 642.4pt
+<graficos/Insertion/vIntDecrescenteP10/vIntDecrescenteP10.png, id=2377, 642.4pt
  x 481.8pt>
 File: graficos/Insertion/vIntDecrescenteP10/vIntDecrescenteP10.png Graphic file
  (type png)
@@ -1636,13 +1631,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 552.
 
-[39 <./graficos/Insertion/vIntDecrescente/vIntDecrescente.png>]
+[38 <./graficos/Insertion/vIntDecrescente/vIntDecrescente.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 553.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 577.
 
-<graficos/Insertion/vIntDecrescenteP20/vIntDecrescenteP20.png, id=2442, 642.4pt
+<graficos/Insertion/vIntDecrescenteP20/vIntDecrescenteP20.png, id=2383, 642.4pt
  x 481.8pt>
 File: graficos/Insertion/vIntDecrescenteP20/vIntDecrescenteP20.png Graphic file
  (type png)
@@ -1655,13 +1650,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 583.
 
-[40 <./graficos/Insertion/vIntDecrescenteP10/vIntDecrescenteP10.png>]
+[39 <./graficos/Insertion/vIntDecrescenteP10/vIntDecrescenteP10.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 584.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 608.
 
-<graficos/Insertion/vIntDecrescenteP30/vIntDecrescenteP30.png, id=2449, 642.4pt
+<graficos/Insertion/vIntDecrescenteP30/vIntDecrescenteP30.png, id=2389, 642.4pt
  x 481.8pt>
 File: graficos/Insertion/vIntDecrescenteP30/vIntDecrescenteP30.png Graphic file
  (type png)
@@ -1674,13 +1669,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 614.
 
-[41 <./graficos/Insertion/vIntDecrescenteP20/vIntDecrescenteP20.png>]
+[40 <./graficos/Insertion/vIntDecrescenteP20/vIntDecrescenteP20.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 616.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 640.
 
-<graficos/Insertion/vIntDecrescenteP40/vIntDecrescenteP40.png, id=2455, 642.4pt
+<graficos/Insertion/vIntDecrescenteP40/vIntDecrescenteP40.png, id=2395, 642.4pt
  x 481.8pt>
 File: graficos/Insertion/vIntDecrescenteP40/vIntDecrescenteP40.png Graphic file
  (type png)
@@ -1693,13 +1688,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 646.
 
-[42 <./graficos/Insertion/vIntDecrescenteP30/vIntDecrescenteP30.png>]
+[41 <./graficos/Insertion/vIntDecrescenteP30/vIntDecrescenteP30.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 648.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 672.
 
-<graficos/Insertion/vIntDecrescenteP50/vIntDecrescenteP50.png, id=2461, 642.4pt
+<graficos/Insertion/vIntDecrescenteP50/vIntDecrescenteP50.png, id=2401, 642.4pt
  x 481.8pt>
 File: graficos/Insertion/vIntDecrescenteP50/vIntDecrescenteP50.png Graphic file
  (type png)
@@ -1712,14 +1707,14 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 678.
 
-[43 <./graficos/Insertion/vIntDecrescenteP40/vIntDecrescenteP40.png>]
+[42 <./graficos/Insertion/vIntDecrescenteP40/vIntDecrescenteP40.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 679.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 682.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 682.
- [44 <./graficos/Insertion/vIntDecrescenteP50/vIntDecrescenteP50.png>]
+ [43 <./graficos/Insertion/vIntDecrescenteP50/vIntDecrescenteP50.png>]
 Cap\'{\i }tulo 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 682.
@@ -1728,7 +1723,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 710.
 
-<graficos/MergeSort/vIntAleatorio/vIntAleatorio.png, id=2473, 481.8pt x 361.35p
+<graficos/MergeSort/vIntAleatorio/vIntAleatorio.png, id=2413, 481.8pt x 361.35p
 t>
 File: graficos/MergeSort/vIntAleatorio/vIntAleatorio.png Graphic file (type png
 )
@@ -1740,7 +1735,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 716.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 716.
- [45
+ [44
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -1748,7 +1743,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 740.
 
-<graficos/MergeSort/vIntCrescente/vIntCrescente.png, id=2478, 481.8pt x 361.35p
+<graficos/MergeSort/vIntCrescente/vIntCrescente.png, id=2418, 481.8pt x 361.35p
 t>
 File: graficos/MergeSort/vIntCrescente/vIntCrescente.png Graphic file (type png
 )
@@ -1760,13 +1755,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 746.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 746.
- [46 <./graficos/MergeSort/vIntAleatorio/vIntAleatorio.png>]
+ [45 <./graficos/MergeSort/vIntAleatorio/vIntAleatorio.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 747.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 770.
 
-<graficos/MergeSort/vIntCrescenteP10/vIntCrescenteP10.png, id=2484, 481.8pt x 3
+<graficos/MergeSort/vIntCrescenteP10/vIntCrescenteP10.png, id=2424, 481.8pt x 3
 61.35pt>
 File: graficos/MergeSort/vIntCrescenteP10/vIntCrescenteP10.png Graphic file (ty
 pe png)
@@ -1779,13 +1774,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 776.
 
-[47 <./graficos/MergeSort/vIntCrescente/vIntCrescente.png>]
+[46 <./graficos/MergeSort/vIntCrescente/vIntCrescente.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 777.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 800.
 
-<graficos/MergeSort/vIntCrescenteP20/vIntCrescenteP20.png, id=2490, 481.8pt x 3
+<graficos/MergeSort/vIntCrescenteP20/vIntCrescenteP20.png, id=2430, 481.8pt x 3
 61.35pt>
 File: graficos/MergeSort/vIntCrescenteP20/vIntCrescenteP20.png Graphic file (ty
 pe png)
@@ -1798,13 +1793,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 806.
 
-[48 <./graficos/MergeSort/vIntCrescenteP10/vIntCrescenteP10.png>]
+[47 <./graficos/MergeSort/vIntCrescenteP10/vIntCrescenteP10.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 807.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 830.
 
-<graficos/MergeSort/vIntCrescenteP30/vIntCrescenteP30.png, id=2496, 481.8pt x 3
+<graficos/MergeSort/vIntCrescenteP30/vIntCrescenteP30.png, id=2436, 481.8pt x 3
 61.35pt>
 File: graficos/MergeSort/vIntCrescenteP30/vIntCrescenteP30.png Graphic file (ty
 pe png)
@@ -1817,13 +1812,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 836.
 
-[49 <./graficos/MergeSort/vIntCrescenteP20/vIntCrescenteP20.png>]
+[48 <./graficos/MergeSort/vIntCrescenteP20/vIntCrescenteP20.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 837.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 860.
 
-<graficos/MergeSort/vIntCrescenteP40/vIntCrescenteP40.png, id=2503, 481.8pt x 3
+<graficos/MergeSort/vIntCrescenteP40/vIntCrescenteP40.png, id=2443, 481.8pt x 3
 61.35pt>
 File: graficos/MergeSort/vIntCrescenteP40/vIntCrescenteP40.png Graphic file (ty
 pe png)
@@ -1836,13 +1831,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 866.
 
-[50 <./graficos/MergeSort/vIntCrescenteP30/vIntCrescenteP30.png>]
+[49 <./graficos/MergeSort/vIntCrescenteP30/vIntCrescenteP30.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 867.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 890.
 
-<graficos/MergeSort/vIntCrescenteP50/vIntCrescenteP50.png, id=2509, 481.8pt x 3
+<graficos/MergeSort/vIntCrescenteP50/vIntCrescenteP50.png, id=2450, 481.8pt x 3
 61.35pt>
 File: graficos/MergeSort/vIntCrescenteP50/vIntCrescenteP50.png Graphic file (ty
 pe png)
@@ -1855,13 +1850,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 896.
 
-[51 <./graficos/MergeSort/vIntCrescenteP40/vIntCrescenteP40.png>]
+[50 <./graficos/MergeSort/vIntCrescenteP40/vIntCrescenteP40.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 897.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 920.
 
-<graficos/MergeSort/vIntDecrescente/vIntDecrescente.png, id=2515, 481.8pt x 361
+<graficos/MergeSort/vIntDecrescente/vIntDecrescente.png, id=2456, 481.8pt x 361
 .35pt>
 File: graficos/MergeSort/vIntDecrescente/vIntDecrescente.png Graphic file (type
  png)
@@ -1873,13 +1868,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 926.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 926.
- [52 <./graficos/MergeSort/vIntCrescenteP50/vIntCrescenteP50.png>]
+ [51 <./graficos/MergeSort/vIntCrescenteP50/vIntCrescenteP50.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 927.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 950.
 
-<graficos/MergeSort/vIntDecrescenteP10/vIntDecrescenteP10.png, id=2521, 481.8pt
+<graficos/MergeSort/vIntDecrescenteP10/vIntDecrescenteP10.png, id=2462, 481.8pt
  x 361.35pt>
 File: graficos/MergeSort/vIntDecrescenteP10/vIntDecrescenteP10.png Graphic file
  (type png)
@@ -1892,13 +1887,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 956.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 956.
- [53 <./graficos/MergeSort/vIntDecrescente/vIntDecrescente.png>]
+ [52 <./graficos/MergeSort/vIntDecrescente/vIntDecrescente.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 957.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 980.
 
-<graficos/MergeSort/vIntDecrescenteP20/vIntDecrescenteP20.png, id=2527, 481.8pt
+<graficos/MergeSort/vIntDecrescenteP20/vIntDecrescenteP20.png, id=2468, 481.8pt
  x 361.35pt>
 File: graficos/MergeSort/vIntDecrescenteP20/vIntDecrescenteP20.png Graphic file
  (type png)
@@ -1911,13 +1906,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 986.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 986.
- [54 <./graficos/MergeSort/vIntDecrescenteP10/vIntDecrescenteP10.png>]
+ [53 <./graficos/MergeSort/vIntDecrescenteP10/vIntDecrescenteP10.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 987.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1010.
 
-<graficos/MergeSort/vIntDecrescenteP30/vIntDecrescenteP30.png, id=2533, 481.8pt
+<graficos/MergeSort/vIntDecrescenteP30/vIntDecrescenteP30.png, id=2474, 481.8pt
  x 361.35pt>
 File: graficos/MergeSort/vIntDecrescenteP30/vIntDecrescenteP30.png Graphic file
  (type png)
@@ -1930,13 +1925,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1016.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1016.
- [55 <./graficos/MergeSort/vIntDecrescenteP20/vIntDecrescenteP20.png>]
+ [54 <./graficos/MergeSort/vIntDecrescenteP20/vIntDecrescenteP20.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1017.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1040.
 
-<graficos/MergeSort/vIntDecrescenteP40/vIntDecrescenteP40.png, id=2541, 481.8pt
+<graficos/MergeSort/vIntDecrescenteP40/vIntDecrescenteP40.png, id=2480, 481.8pt
  x 361.35pt>
 File: graficos/MergeSort/vIntDecrescenteP40/vIntDecrescenteP40.png Graphic file
  (type png)
@@ -1949,13 +1944,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1046.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1046.
- [56 <./graficos/MergeSort/vIntDecrescenteP30/vIntDecrescenteP30.png>]
+ [55 <./graficos/MergeSort/vIntDecrescenteP30/vIntDecrescenteP30.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1047.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1070.
 
-<graficos/MergeSort/vIntDecrescenteP50/vIntDecrescenteP50.png, id=2547, 481.8pt
+<graficos/MergeSort/vIntDecrescenteP50/vIntDecrescenteP50.png, id=2487, 481.8pt
  x 361.35pt>
 File: graficos/MergeSort/vIntDecrescenteP50/vIntDecrescenteP50.png Graphic file
  (type png)
@@ -1968,14 +1963,14 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1076.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1076.
- [57 <./graficos/MergeSort/vIntDecrescenteP40/vIntDecrescenteP40.png>]
+ [56 <./graficos/MergeSort/vIntDecrescenteP40/vIntDecrescenteP40.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1076.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1079.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1079.
- [58 <./graficos/MergeSort/vIntDecrescenteP50/vIntDecrescenteP50.png>]
+ [57 <./graficos/MergeSort/vIntDecrescenteP50/vIntDecrescenteP50.png>]
 Cap\'{\i }tulo 4.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1079.
@@ -1984,7 +1979,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1107.
 
-<graficos/HeapSort/vIntAleatorio/vIntAleatorio.png, id=2558, 481.8pt x 361.35pt
+<graficos/HeapSort/vIntAleatorio/vIntAleatorio.png, id=2498, 481.8pt x 361.35pt
 >
 File: graficos/HeapSort/vIntAleatorio/vIntAleatorio.png Graphic file (type png)
 
@@ -1996,7 +1991,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1113.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1113.
- [59
+ [58
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -2004,7 +1999,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1137.
 
-<graficos/HeapSort/vIntCrescente/vIntCrescente.png, id=2563, 481.8pt x 361.35pt
+<graficos/HeapSort/vIntCrescente/vIntCrescente.png, id=2503, 481.8pt x 361.35pt
 >
 File: graficos/HeapSort/vIntCrescente/vIntCrescente.png Graphic file (type png)
 
@@ -2016,13 +2011,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1143.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1143.
- [60 <./graficos/HeapSort/vIntAleatorio/vIntAleatorio.png>]
+ [59 <./graficos/HeapSort/vIntAleatorio/vIntAleatorio.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1144.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1167.
 
-<graficos/HeapSort/vIntCrescenteP10/vIntCrescenteP10.png, id=2569, 481.8pt x 36
+<graficos/HeapSort/vIntCrescenteP10/vIntCrescenteP10.png, id=2509, 481.8pt x 36
 1.35pt>
 File: graficos/HeapSort/vIntCrescenteP10/vIntCrescenteP10.png Graphic file (typ
 e png)
@@ -2034,13 +2029,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1173.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1173.
- [61 <./graficos/HeapSort/vIntCrescente/vIntCrescente.png>]
+ [60 <./graficos/HeapSort/vIntCrescente/vIntCrescente.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1174.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1197.
 
-<graficos/HeapSort/vIntCrescenteP20/vIntCrescenteP20.png, id=2576, 481.8pt x 36
+<graficos/HeapSort/vIntCrescenteP20/vIntCrescenteP20.png, id=2515, 481.8pt x 36
 1.35pt>
 File: graficos/HeapSort/vIntCrescenteP20/vIntCrescenteP20.png Graphic file (typ
 e png)
@@ -2052,13 +2047,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1203.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1203.
- [62 <./graficos/HeapSort/vIntCrescenteP10/vIntCrescenteP10.png>]
+ [61 <./graficos/HeapSort/vIntCrescenteP10/vIntCrescenteP10.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1204.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1227.
 
-<graficos/HeapSort/vIntCrescenteP30/vIntCrescenteP30.png, id=2582, 481.8pt x 36
+<graficos/HeapSort/vIntCrescenteP30/vIntCrescenteP30.png, id=2522, 481.8pt x 36
 1.35pt>
 File: graficos/HeapSort/vIntCrescenteP30/vIntCrescenteP30.png Graphic file (typ
 e png)
@@ -2070,13 +2065,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1233.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1233.
- [63 <./graficos/HeapSort/vIntCrescenteP20/vIntCrescenteP20.png>]
+ [62 <./graficos/HeapSort/vIntCrescenteP20/vIntCrescenteP20.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1234.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1257.
 
-<graficos/HeapSort/vIntCrescenteP40/vIntCrescenteP40.png, id=2588, 481.8pt x 36
+<graficos/HeapSort/vIntCrescenteP40/vIntCrescenteP40.png, id=2529, 481.8pt x 36
 1.35pt>
 File: graficos/HeapSort/vIntCrescenteP40/vIntCrescenteP40.png Graphic file (typ
 e png)
@@ -2088,13 +2083,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1263.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1263.
- [64 <./graficos/HeapSort/vIntCrescenteP30/vIntCrescenteP30.png>]
+ [63 <./graficos/HeapSort/vIntCrescenteP30/vIntCrescenteP30.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1264.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1287.
 
-<graficos/HeapSort/vIntCrescenteP50/vIntCrescenteP50.png, id=2594, 481.8pt x 36
+<graficos/HeapSort/vIntCrescenteP50/vIntCrescenteP50.png, id=2535, 481.8pt x 36
 1.35pt>
 File: graficos/HeapSort/vIntCrescenteP50/vIntCrescenteP50.png Graphic file (typ
 e png)
@@ -2106,13 +2101,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1293.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1293.
- [65 <./graficos/HeapSort/vIntCrescenteP40/vIntCrescenteP40.png>]
+ [64 <./graficos/HeapSort/vIntCrescenteP40/vIntCrescenteP40.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1294.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1317.
 
-<graficos/HeapSort/vIntDecrescente/vIntDecrescente.png, id=2600, 481.8pt x 361.
+<graficos/HeapSort/vIntDecrescente/vIntDecrescente.png, id=2541, 481.8pt x 361.
 35pt>
 File: graficos/HeapSort/vIntDecrescente/vIntDecrescente.png Graphic file (type 
 png)
@@ -2124,13 +2119,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1323.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1323.
- [66 <./graficos/HeapSort/vIntCrescenteP50/vIntCrescenteP50.png>]
+ [65 <./graficos/HeapSort/vIntCrescenteP50/vIntCrescenteP50.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1324.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1347.
 
-<graficos/HeapSort/vIntDecrescenteP10/vIntDecrescenteP10.png, id=2606, 481.8pt 
+<graficos/HeapSort/vIntDecrescenteP10/vIntDecrescenteP10.png, id=2547, 481.8pt 
 x 361.35pt>
 File: graficos/HeapSort/vIntDecrescenteP10/vIntDecrescenteP10.png Graphic file 
 (type png)
@@ -2143,13 +2138,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1353.
 
-[67 <./graficos/HeapSort/vIntDecrescente/vIntDecrescente.png>]
+[66 <./graficos/HeapSort/vIntDecrescente/vIntDecrescente.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1354.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1377.
 
-<graficos/HeapSort/vIntDecrescenteP20/vIntDecrescenteP20.png, id=2613, 481.8pt 
+<graficos/HeapSort/vIntDecrescenteP20/vIntDecrescenteP20.png, id=2553, 481.8pt 
 x 361.35pt>
 File: graficos/HeapSort/vIntDecrescenteP20/vIntDecrescenteP20.png Graphic file 
 (type png)
@@ -2162,13 +2157,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1383.
 
-[68 <./graficos/HeapSort/vIntDecrescenteP10/vIntDecrescenteP10.png>]
+[67 <./graficos/HeapSort/vIntDecrescenteP10/vIntDecrescenteP10.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1384.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1407.
 
-<graficos/HeapSort/vIntDecrescenteP30/vIntDecrescenteP30.png, id=2619, 481.8pt 
+<graficos/HeapSort/vIntDecrescenteP30/vIntDecrescenteP30.png, id=2560, 481.8pt 
 x 361.35pt>
 File: graficos/HeapSort/vIntDecrescenteP30/vIntDecrescenteP30.png Graphic file 
 (type png)
@@ -2181,13 +2176,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1413.
 
-[69 <./graficos/HeapSort/vIntDecrescenteP20/vIntDecrescenteP20.png>]
+[68 <./graficos/HeapSort/vIntDecrescenteP20/vIntDecrescenteP20.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1414.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1437.
 
-<graficos/HeapSort/vIntDecrescenteP40/vIntDecrescenteP40.png, id=2626, 481.8pt 
+<graficos/HeapSort/vIntDecrescenteP40/vIntDecrescenteP40.png, id=2566, 481.8pt 
 x 361.35pt>
 File: graficos/HeapSort/vIntDecrescenteP40/vIntDecrescenteP40.png Graphic file 
 (type png)
@@ -2200,13 +2195,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1443.
 
-[70 <./graficos/HeapSort/vIntDecrescenteP30/vIntDecrescenteP30.png>]
+[69 <./graficos/HeapSort/vIntDecrescenteP30/vIntDecrescenteP30.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1444.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1467.
 
-<graficos/HeapSort/vIntDecrescenteP50/vIntDecrescenteP50.png, id=2632, 481.8pt 
+<graficos/HeapSort/vIntDecrescenteP50/vIntDecrescenteP50.png, id=2572, 481.8pt 
 x 361.35pt>
 File: graficos/HeapSort/vIntDecrescenteP50/vIntDecrescenteP50.png Graphic file 
 (type png)
@@ -2219,14 +2214,14 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1473.
 
-[71 <./graficos/HeapSort/vIntDecrescenteP40/vIntDecrescenteP40.png>]
+[70 <./graficos/HeapSort/vIntDecrescenteP40/vIntDecrescenteP40.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1473.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1476.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1476.
- [72 <./graficos/HeapSort/vIntDecrescenteP50/vIntDecrescenteP50.png>]
+ [71 <./graficos/HeapSort/vIntDecrescenteP50/vIntDecrescenteP50.png>]
 Cap\'{\i }tulo 5.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1476.
@@ -2235,7 +2230,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1503.
 
-<graficos/QuickSort/vIntAleatorio/vIntAleatorio.png, id=2643, 481.8pt x 361.35p
+<graficos/QuickSort/vIntAleatorio/vIntAleatorio.png, id=2583, 481.8pt x 361.35p
 t>
 File: graficos/QuickSort/vIntAleatorio/vIntAleatorio.png Graphic file (type png
 )
@@ -2247,7 +2242,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1509.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1509.
- [73
+ [72
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -2255,7 +2250,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1533.
 
-<graficos/QuickSort/vIntCrescente/vIntCrescente.png, id=2649, 481.8pt x 361.35p
+<graficos/QuickSort/vIntCrescente/vIntCrescente.png, id=2588, 481.8pt x 361.35p
 t>
 File: graficos/QuickSort/vIntCrescente/vIntCrescente.png Graphic file (type png
 )
@@ -2267,13 +2262,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1539.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1539.
- [74 <./graficos/QuickSort/vIntAleatorio/vIntAleatorio.png>]
+ [73 <./graficos/QuickSort/vIntAleatorio/vIntAleatorio.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1540.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1563.
 
-<graficos/QuickSort/vIntCrescenteP10/vIntCrescenteP10.png, id=2655, 481.8pt x 3
+<graficos/QuickSort/vIntCrescenteP10/vIntCrescenteP10.png, id=2595, 481.8pt x 3
 61.35pt>
 File: graficos/QuickSort/vIntCrescenteP10/vIntCrescenteP10.png Graphic file (ty
 pe png)
@@ -2286,13 +2281,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1569.
 
-[75 <./graficos/QuickSort/vIntCrescente/vIntCrescente.png>]
+[74 <./graficos/QuickSort/vIntCrescente/vIntCrescente.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1570.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1593.
 
-<graficos/QuickSort/vIntCrescenteP20/vIntCrescenteP20.png, id=2661, 481.8pt x 3
+<graficos/QuickSort/vIntCrescenteP20/vIntCrescenteP20.png, id=2601, 481.8pt x 3
 61.35pt>
 File: graficos/QuickSort/vIntCrescenteP20/vIntCrescenteP20.png Graphic file (ty
 pe png)
@@ -2305,13 +2300,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1599.
 
-[76 <./graficos/QuickSort/vIntCrescenteP10/vIntCrescenteP10.png>]
+[75 <./graficos/QuickSort/vIntCrescenteP10/vIntCrescenteP10.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1600.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1623.
 
-<graficos/QuickSort/vIntCrescenteP30/vIntCrescenteP30.png, id=2667, 481.8pt x 3
+<graficos/QuickSort/vIntCrescenteP30/vIntCrescenteP30.png, id=2607, 481.8pt x 3
 61.35pt>
 File: graficos/QuickSort/vIntCrescenteP30/vIntCrescenteP30.png Graphic file (ty
 pe png)
@@ -2324,13 +2319,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1629.
 
-[77 <./graficos/QuickSort/vIntCrescenteP20/vIntCrescenteP20.png>]
+[76 <./graficos/QuickSort/vIntCrescenteP20/vIntCrescenteP20.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1630.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1653.
 
-<graficos/QuickSort/vIntCrescenteP40/vIntCrescenteP40.png, id=2673, 481.8pt x 3
+<graficos/QuickSort/vIntCrescenteP40/vIntCrescenteP40.png, id=2613, 481.8pt x 3
 61.35pt>
 File: graficos/QuickSort/vIntCrescenteP40/vIntCrescenteP40.png Graphic file (ty
 pe png)
@@ -2343,13 +2338,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1659.
 
-[78 <./graficos/QuickSort/vIntCrescenteP30/vIntCrescenteP30.png>]
+[77 <./graficos/QuickSort/vIntCrescenteP30/vIntCrescenteP30.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1660.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1683.
 
-<graficos/QuickSort/vIntCrescenteP50/vIntCrescenteP50.png, id=2679, 481.8pt x 3
+<graficos/QuickSort/vIntCrescenteP50/vIntCrescenteP50.png, id=2620, 481.8pt x 3
 61.35pt>
 File: graficos/QuickSort/vIntCrescenteP50/vIntCrescenteP50.png Graphic file (ty
 pe png)
@@ -2362,13 +2357,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1689.
 
-[79 <./graficos/QuickSort/vIntCrescenteP40/vIntCrescenteP40.png>]
+[78 <./graficos/QuickSort/vIntCrescenteP40/vIntCrescenteP40.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1690.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1713.
 
-<graficos/QuickSort/vIntDecrescente/vIntDecrescente.png, id=2686, 481.8pt x 361
+<graficos/QuickSort/vIntDecrescente/vIntDecrescente.png, id=2626, 481.8pt x 361
 .35pt>
 File: graficos/QuickSort/vIntDecrescente/vIntDecrescente.png Graphic file (type
  png)
@@ -2380,13 +2375,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1719.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1719.
- [80 <./graficos/QuickSort/vIntCrescenteP50/vIntCrescenteP50.png>]
+ [79 <./graficos/QuickSort/vIntCrescenteP50/vIntCrescenteP50.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1720.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1743.
 
-<graficos/QuickSort/vIntDecrescenteP10/vIntDecrescenteP10.png, id=2692, 481.8pt
+<graficos/QuickSort/vIntDecrescenteP10/vIntDecrescenteP10.png, id=2633, 481.8pt
  x 361.35pt>
 File: graficos/QuickSort/vIntDecrescenteP10/vIntDecrescenteP10.png Graphic file
  (type png)
@@ -2399,13 +2394,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1749.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1749.
- [81 <./graficos/QuickSort/vIntDecrescente/vIntDecrescente.png>]
+ [80 <./graficos/QuickSort/vIntDecrescente/vIntDecrescente.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1750.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1773.
 
-<graficos/QuickSort/vIntDecrescenteP20/vIntDecrescenteP20.png, id=2698, 481.8pt
+<graficos/QuickSort/vIntDecrescenteP20/vIntDecrescenteP20.png, id=2639, 481.8pt
  x 361.35pt>
 File: graficos/QuickSort/vIntDecrescenteP20/vIntDecrescenteP20.png Graphic file
  (type png)
@@ -2418,13 +2413,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1779.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1779.
- [82 <./graficos/QuickSort/vIntDecrescenteP10/vIntDecrescenteP10.png>]
+ [81 <./graficos/QuickSort/vIntDecrescenteP10/vIntDecrescenteP10.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1780.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1803.
 
-<graficos/QuickSort/vIntDecrescenteP30/vIntDecrescenteP30.png, id=2704, 481.8pt
+<graficos/QuickSort/vIntDecrescenteP30/vIntDecrescenteP30.png, id=2645, 481.8pt
  x 361.35pt>
 File: graficos/QuickSort/vIntDecrescenteP30/vIntDecrescenteP30.png Graphic file
  (type png)
@@ -2437,13 +2432,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1809.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1809.
- [83 <./graficos/QuickSort/vIntDecrescenteP20/vIntDecrescenteP20.png>]
+ [82 <./graficos/QuickSort/vIntDecrescenteP20/vIntDecrescenteP20.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1810.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1833.
 
-<graficos/QuickSort/vIntDecrescenteP40/vIntDecrescenteP40.png, id=2710, 481.8pt
+<graficos/QuickSort/vIntDecrescenteP40/vIntDecrescenteP40.png, id=2651, 481.8pt
  x 361.35pt>
 File: graficos/QuickSort/vIntDecrescenteP40/vIntDecrescenteP40.png Graphic file
  (type png)
@@ -2456,13 +2451,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1839.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1839.
- [84 <./graficos/QuickSort/vIntDecrescenteP30/vIntDecrescenteP30.png>]
+ [83 <./graficos/QuickSort/vIntDecrescenteP30/vIntDecrescenteP30.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1840.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1863.
 
-<graficos/QuickSort/vIntDecrescenteP50/vIntDecrescenteP50.png, id=2717, 481.8pt
+<graficos/QuickSort/vIntDecrescenteP50/vIntDecrescenteP50.png, id=2657, 481.8pt
  x 361.35pt>
 File: graficos/QuickSort/vIntDecrescenteP50/vIntDecrescenteP50.png Graphic file
  (type png)
@@ -2475,14 +2470,14 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1869.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1869.
- [85 <./graficos/QuickSort/vIntDecrescenteP40/vIntDecrescenteP40.png>]
+ [84 <./graficos/QuickSort/vIntDecrescenteP40/vIntDecrescenteP40.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1869.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1872.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1872.
- [86 <./graficos/QuickSort/vIntDecrescenteP50/vIntDecrescenteP50.png>]
+ [85 <./graficos/QuickSort/vIntDecrescenteP50/vIntDecrescenteP50.png>]
 Cap\'{\i }tulo 6.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1872.
@@ -2491,7 +2486,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1899.
 
-<graficos/CountingSort/vIntAleatorio/vIntAleatorio.png, id=2729, 481.8pt x 361.
+<graficos/CountingSort/vIntAleatorio/vIntAleatorio.png, id=2669, 481.8pt x 361.
 35pt>
 File: graficos/CountingSort/vIntAleatorio/vIntAleatorio.png Graphic file (type 
 png)
@@ -2503,7 +2498,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1905.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1905.
- [87
+ [86
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -2511,7 +2506,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1929.
 
-<graficos/CountingSort/vIntCrescente/vIntCrescente.png, id=2734, 481.8pt x 361.
+<graficos/CountingSort/vIntCrescente/vIntCrescente.png, id=2674, 481.8pt x 361.
 35pt>
 File: graficos/CountingSort/vIntCrescente/vIntCrescente.png Graphic file (type 
 png)
@@ -2523,13 +2518,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1935.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1935.
- [88 <./graficos/CountingSort/vIntAleatorio/vIntAleatorio.png>]
+ [87 <./graficos/CountingSort/vIntAleatorio/vIntAleatorio.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1936.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1959.
 
-<graficos/CountingSort/vIntCrescenteP10/vIntCrescenteP10.png, id=2740, 481.8pt 
+<graficos/CountingSort/vIntCrescenteP10/vIntCrescenteP10.png, id=2680, 481.8pt 
 x 361.35pt>
 File: graficos/CountingSort/vIntCrescenteP10/vIntCrescenteP10.png Graphic file 
 (type png)
@@ -2542,13 +2537,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1965.
 
-[89 <./graficos/CountingSort/vIntCrescente/vIntCrescente.png>]
+[88 <./graficos/CountingSort/vIntCrescente/vIntCrescente.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1966.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1989.
 
-<graficos/CountingSort/vIntCrescenteP20/vIntCrescenteP20.png, id=2746, 481.8pt 
+<graficos/CountingSort/vIntCrescenteP20/vIntCrescenteP20.png, id=2686, 481.8pt 
 x 361.35pt>
 File: graficos/CountingSort/vIntCrescenteP20/vIntCrescenteP20.png Graphic file 
 (type png)
@@ -2561,13 +2556,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1995.
 
-[90 <./graficos/CountingSort/vIntCrescenteP10/vIntCrescenteP10.png>]
+[89 <./graficos/CountingSort/vIntCrescenteP10/vIntCrescenteP10.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1996.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2019.
 
-<graficos/CountingSort/vIntCrescenteP30/vIntCrescenteP30.png, id=2752, 481.8pt 
+<graficos/CountingSort/vIntCrescenteP30/vIntCrescenteP30.png, id=2692, 481.8pt 
 x 361.35pt>
 File: graficos/CountingSort/vIntCrescenteP30/vIntCrescenteP30.png Graphic file 
 (type png)
@@ -2580,13 +2575,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2025.
 
-[91 <./graficos/CountingSort/vIntCrescenteP20/vIntCrescenteP20.png>]
+[90 <./graficos/CountingSort/vIntCrescenteP20/vIntCrescenteP20.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2026.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2049.
 
-<graficos/CountingSort/vIntCrescenteP40/vIntCrescenteP40.png, id=2759, 481.8pt 
+<graficos/CountingSort/vIntCrescenteP40/vIntCrescenteP40.png, id=2698, 481.8pt 
 x 361.35pt>
 File: graficos/CountingSort/vIntCrescenteP40/vIntCrescenteP40.png Graphic file 
 (type png)
@@ -2599,13 +2594,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2055.
 
-[92 <./graficos/CountingSort/vIntCrescenteP30/vIntCrescenteP30.png>]
+[91 <./graficos/CountingSort/vIntCrescenteP30/vIntCrescenteP30.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2056.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2079.
 
-<graficos/CountingSort/vIntCrescenteP50/vIntCrescenteP50.png, id=2765, 481.8pt 
+<graficos/CountingSort/vIntCrescenteP50/vIntCrescenteP50.png, id=2706, 481.8pt 
 x 361.35pt>
 File: graficos/CountingSort/vIntCrescenteP50/vIntCrescenteP50.png Graphic file 
 (type png)
@@ -2618,13 +2613,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2085.
 
-[93 <./graficos/CountingSort/vIntCrescenteP40/vIntCrescenteP40.png>]
+[92 <./graficos/CountingSort/vIntCrescenteP40/vIntCrescenteP40.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2086.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2109.
 
-<graficos/CountingSort/vIntDecrescente/vIntDecrescente.png, id=2771, 481.8pt x 
+<graficos/CountingSort/vIntDecrescente/vIntDecrescente.png, id=2712, 481.8pt x 
 361.35pt>
 File: graficos/CountingSort/vIntDecrescente/vIntDecrescente.png Graphic file (t
 ype png)
@@ -2637,13 +2632,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2115.
 
-[94 <./graficos/CountingSort/vIntCrescenteP50/vIntCrescenteP50.png>]
+[93 <./graficos/CountingSort/vIntCrescenteP50/vIntCrescenteP50.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2116.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2139.
 
-<graficos/CountingSort/vIntDecrescenteP10/vIntDecrescenteP10.png, id=2777, 481.
+<graficos/CountingSort/vIntDecrescenteP10/vIntDecrescenteP10.png, id=2718, 481.
 8pt x 361.35pt>
 File: graficos/CountingSort/vIntDecrescenteP10/vIntDecrescenteP10.png Graphic f
 ile (type png)
@@ -2656,13 +2651,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2145.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2145.
- [95 <./graficos/CountingSort/vIntDecrescente/vIntDecrescente.png>]
+ [94 <./graficos/CountingSort/vIntDecrescente/vIntDecrescente.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2146.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2169.
 
-<graficos/CountingSort/vIntDecrescenteP20/vIntDecrescenteP20.png, id=2783, 481.
+<graficos/CountingSort/vIntDecrescenteP20/vIntDecrescenteP20.png, id=2724, 481.
 8pt x 361.35pt>
 File: graficos/CountingSort/vIntDecrescenteP20/vIntDecrescenteP20.png Graphic f
 ile (type png)
@@ -2675,13 +2670,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2175.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2175.
- [96 <./graficos/CountingSort/vIntDecrescenteP10/vIntDecrescenteP10.png>]
+ [95 <./graficos/CountingSort/vIntDecrescenteP10/vIntDecrescenteP10.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2176.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2199.
 
-<graficos/CountingSort/vIntDecrescenteP30/vIntDecrescenteP30.png, id=2789, 481.
+<graficos/CountingSort/vIntDecrescenteP30/vIntDecrescenteP30.png, id=2730, 481.
 8pt x 361.35pt>
 File: graficos/CountingSort/vIntDecrescenteP30/vIntDecrescenteP30.png Graphic f
 ile (type png)
@@ -2694,13 +2689,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2205.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2205.
- [97 <./graficos/CountingSort/vIntDecrescenteP20/vIntDecrescenteP20.png>]
+ [96 <./graficos/CountingSort/vIntDecrescenteP20/vIntDecrescenteP20.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2206.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2229.
 
-<graficos/CountingSort/vIntDecrescenteP40/vIntDecrescenteP40.png, id=2796, 481.
+<graficos/CountingSort/vIntDecrescenteP40/vIntDecrescenteP40.png, id=2736, 481.
 8pt x 361.35pt>
 File: graficos/CountingSort/vIntDecrescenteP40/vIntDecrescenteP40.png Graphic f
 ile (type png)
@@ -2713,13 +2708,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2235.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2235.
- [98 <./graficos/CountingSort/vIntDecrescenteP30/vIntDecrescenteP30.png>]
+ [97 <./graficos/CountingSort/vIntDecrescenteP30/vIntDecrescenteP30.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2236.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2259.
 
-<graficos/CountingSort/vIntDecrescenteP50/vIntDecrescenteP50.png, id=2803, 481.
+<graficos/CountingSort/vIntDecrescenteP50/vIntDecrescenteP50.png, id=2743, 481.
 8pt x 361.35pt>
 File: graficos/CountingSort/vIntDecrescenteP50/vIntDecrescenteP50.png Graphic f
 ile (type png)
@@ -2732,14 +2727,14 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2265.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2265.
- [99 <./graficos/CountingSort/vIntDecrescenteP40/vIntDecrescenteP40.png>]
+ [98 <./graficos/CountingSort/vIntDecrescenteP40/vIntDecrescenteP40.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2265.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2268.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2268.
- [100 <./graficos/CountingSort/vIntDecrescenteP50/vIntDecrescenteP50.png>]
+ [99 <./graficos/CountingSort/vIntDecrescenteP50/vIntDecrescenteP50.png>]
 Cap\'{\i }tulo 7.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2268.
@@ -2748,7 +2743,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2295.
 
-<graficos/RadixSort/vIntAleatorio/vIntAleatorio.png, id=2814, 481.8pt x 361.35p
+<graficos/RadixSort/vIntAleatorio/vIntAleatorio.png, id=2754, 481.8pt x 361.35p
 t>
 File: graficos/RadixSort/vIntAleatorio/vIntAleatorio.png Graphic file (type png
 )
@@ -2760,7 +2755,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2301.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2301.
- [101
+ [100
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -2768,7 +2763,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2325.
 
-<graficos/RadixSort/vIntCrescente/vIntCrescente.png, id=2819, 481.8pt x 361.35p
+<graficos/RadixSort/vIntCrescente/vIntCrescente.png, id=2759, 481.8pt x 361.35p
 t>
 File: graficos/RadixSort/vIntCrescente/vIntCrescente.png Graphic file (type png
 )
@@ -2780,13 +2775,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2331.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2331.
- [102 <./graficos/RadixSort/vIntAleatorio/vIntAleatorio.png>]
+ [101 <./graficos/RadixSort/vIntAleatorio/vIntAleatorio.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2332.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2355.
 
-<graficos/RadixSort/vIntCrescenteP10/vIntCrescenteP10.png, id=2825, 481.8pt x 3
+<graficos/RadixSort/vIntCrescenteP10/vIntCrescenteP10.png, id=2765, 481.8pt x 3
 61.35pt>
 File: graficos/RadixSort/vIntCrescenteP10/vIntCrescenteP10.png Graphic file (ty
 pe png)
@@ -2799,13 +2794,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2361.
 
-[103 <./graficos/RadixSort/vIntCrescente/vIntCrescente.png>]
+[102 <./graficos/RadixSort/vIntCrescente/vIntCrescente.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2362.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2385.
 
-<graficos/RadixSort/vIntCrescenteP20/vIntCrescenteP20.png, id=2832, 481.8pt x 3
+<graficos/RadixSort/vIntCrescenteP20/vIntCrescenteP20.png, id=2771, 481.8pt x 3
 61.35pt>
 File: graficos/RadixSort/vIntCrescenteP20/vIntCrescenteP20.png Graphic file (ty
 pe png)
@@ -2818,13 +2813,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2391.
 
-[104 <./graficos/RadixSort/vIntCrescenteP10/vIntCrescenteP10.png>]
+[103 <./graficos/RadixSort/vIntCrescenteP10/vIntCrescenteP10.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2392.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2415.
 
-<graficos/RadixSort/vIntCrescenteP30/vIntCrescenteP30.png, id=2838, 481.8pt x 3
+<graficos/RadixSort/vIntCrescenteP30/vIntCrescenteP30.png, id=2778, 481.8pt x 3
 61.35pt>
 File: graficos/RadixSort/vIntCrescenteP30/vIntCrescenteP30.png Graphic file (ty
 pe png)
@@ -2837,13 +2832,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2421.
 
-[105 <./graficos/RadixSort/vIntCrescenteP20/vIntCrescenteP20.png>]
+[104 <./graficos/RadixSort/vIntCrescenteP20/vIntCrescenteP20.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2422.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2445.
 
-<graficos/RadixSort/vIntCrescenteP40/vIntCrescenteP40.png, id=2844, 481.8pt x 3
+<graficos/RadixSort/vIntCrescenteP40/vIntCrescenteP40.png, id=2784, 481.8pt x 3
 61.35pt>
 File: graficos/RadixSort/vIntCrescenteP40/vIntCrescenteP40.png Graphic file (ty
 pe png)
@@ -2856,13 +2851,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2451.
 
-[106 <./graficos/RadixSort/vIntCrescenteP30/vIntCrescenteP30.png>]
+[105 <./graficos/RadixSort/vIntCrescenteP30/vIntCrescenteP30.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2452.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2475.
 
-<graficos/RadixSort/vIntCrescenteP50/vIntCrescenteP50.png, id=2850, 481.8pt x 3
+<graficos/RadixSort/vIntCrescenteP50/vIntCrescenteP50.png, id=2790, 481.8pt x 3
 61.35pt>
 File: graficos/RadixSort/vIntCrescenteP50/vIntCrescenteP50.png Graphic file (ty
 pe png)
@@ -2875,13 +2870,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2481.
 
-[107 <./graficos/RadixSort/vIntCrescenteP40/vIntCrescenteP40.png>]
+[106 <./graficos/RadixSort/vIntCrescenteP40/vIntCrescenteP40.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2482.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2505.
 
-<graficos/RadixSort/vIntDecrescente/vIntDecrescente.png, id=2856, 481.8pt x 361
+<graficos/RadixSort/vIntDecrescente/vIntDecrescente.png, id=2797, 481.8pt x 361
 .35pt>
 File: graficos/RadixSort/vIntDecrescente/vIntDecrescente.png Graphic file (type
  png)
@@ -2893,13 +2888,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2511.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2511.
- [108 <./graficos/RadixSort/vIntCrescenteP50/vIntCrescenteP50.png>]
+ [107 <./graficos/RadixSort/vIntCrescenteP50/vIntCrescenteP50.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2512.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2535.
 
-<graficos/RadixSort/vIntDecrescenteP10/vIntDecrescenteP10.png, id=2862, 481.8pt
+<graficos/RadixSort/vIntDecrescenteP10/vIntDecrescenteP10.png, id=2803, 481.8pt
  x 361.35pt>
 File: graficos/RadixSort/vIntDecrescenteP10/vIntDecrescenteP10.png Graphic file
  (type png)
@@ -2912,13 +2907,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2541.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2541.
- [109 <./graficos/RadixSort/vIntDecrescente/vIntDecrescente.png>]
+ [108 <./graficos/RadixSort/vIntDecrescente/vIntDecrescente.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2542.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2565.
 
-<graficos/RadixSort/vIntDecrescenteP20/vIntDecrescenteP20.png, id=2869, 481.8pt
+<graficos/RadixSort/vIntDecrescenteP20/vIntDecrescenteP20.png, id=2809, 481.8pt
  x 361.35pt>
 File: graficos/RadixSort/vIntDecrescenteP20/vIntDecrescenteP20.png Graphic file
  (type png)
@@ -2931,13 +2926,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2571.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2571.
- [110 <./graficos/RadixSort/vIntDecrescenteP10/vIntDecrescenteP10.png>]
+ [109 <./graficos/RadixSort/vIntDecrescenteP10/vIntDecrescenteP10.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2572.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2595.
 
-<graficos/RadixSort/vIntDecrescenteP30/vIntDecrescenteP30.png, id=2875, 481.8pt
+<graficos/RadixSort/vIntDecrescenteP30/vIntDecrescenteP30.png, id=2816, 481.8pt
  x 361.35pt>
 File: graficos/RadixSort/vIntDecrescenteP30/vIntDecrescenteP30.png Graphic file
  (type png)
@@ -2950,13 +2945,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2601.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2601.
- [111 <./graficos/RadixSort/vIntDecrescenteP20/vIntDecrescenteP20.png>]
+ [110 <./graficos/RadixSort/vIntDecrescenteP20/vIntDecrescenteP20.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2602.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2625.
 
-<graficos/RadixSort/vIntDecrescenteP40/vIntDecrescenteP40.png, id=2881, 481.8pt
+<graficos/RadixSort/vIntDecrescenteP40/vIntDecrescenteP40.png, id=2822, 481.8pt
  x 361.35pt>
 File: graficos/RadixSort/vIntDecrescenteP40/vIntDecrescenteP40.png Graphic file
  (type png)
@@ -2969,13 +2964,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2631.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2631.
- [112 <./graficos/RadixSort/vIntDecrescenteP30/vIntDecrescenteP30.png>]
+ [111 <./graficos/RadixSort/vIntDecrescenteP30/vIntDecrescenteP30.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2632.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2655.
 
-<graficos/RadixSort/vIntDecrescenteP50/vIntDecrescenteP50.png, id=2887, 481.8pt
+<graficos/RadixSort/vIntDecrescenteP50/vIntDecrescenteP50.png, id=2828, 481.8pt
  x 361.35pt>
 File: graficos/RadixSort/vIntDecrescenteP50/vIntDecrescenteP50.png Graphic file
  (type png)
@@ -2988,14 +2983,14 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2661.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2661.
- [113 <./graficos/RadixSort/vIntDecrescenteP40/vIntDecrescenteP40.png>]
+ [112 <./graficos/RadixSort/vIntDecrescenteP40/vIntDecrescenteP40.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2661.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2664.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2664.
- [114 <./graficos/RadixSort/vIntDecrescenteP50/vIntDecrescenteP50.png>]
+ [113 <./graficos/RadixSort/vIntDecrescenteP50/vIntDecrescenteP50.png>]
 Cap\'{\i }tulo 8.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2664.
@@ -3003,7 +2998,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2666.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2689.
-<graficos/Bucket/vIntAleatorio/vIntAleatorio.png, id=2899, 642.4pt x 481.8pt>
+<graficos/Bucket/vIntAleatorio/vIntAleatorio.png, id=2839, 642.4pt x 481.8pt>
 File: graficos/Bucket/vIntAleatorio/vIntAleatorio.png Graphic file (type png)
 
 <use graficos/Bucket/vIntAleatorio/vIntAleatorio.png>
@@ -3014,7 +3009,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2695.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2695.
- [115
+ [114
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -3022,7 +3017,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2721.
 
-<graficos/Bucket/vIntCrescente/vIntCrescente.png, id=2905, 481.8pt x 361.35pt>
+<graficos/Bucket/vIntCrescente/vIntCrescente.png, id=2844, 481.8pt x 361.35pt>
 File: graficos/Bucket/vIntCrescente/vIntCrescente.png Graphic file (type png)
 
 <use graficos/Bucket/vIntCrescente/vIntCrescente.png>
@@ -3033,13 +3028,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2727.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2727.
- [116 <./graficos/Bucket/vIntAleatorio/vIntAleatorio.png>]
+ [115 <./graficos/Bucket/vIntAleatorio/vIntAleatorio.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2728.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2752.
 
-<graficos/Bucket/vIntCrescenteP10/vIntCrescenteP10.png, id=2911, 642.4pt x 481.
+<graficos/Bucket/vIntCrescenteP10/vIntCrescenteP10.png, id=2851, 642.4pt x 481.
 8pt>
 File: graficos/Bucket/vIntCrescenteP10/vIntCrescenteP10.png Graphic file (type 
 png)
@@ -3051,13 +3046,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2758.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2758.
- [117 <./graficos/Bucket/vIntCrescente/vIntCrescente.png>]
+ [116 <./graficos/Bucket/vIntCrescente/vIntCrescente.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2759.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2783.
 
-<graficos/Bucket/vIntCrescenteP20/vIntCrescenteP20.png, id=2917, 642.4pt x 481.
+<graficos/Bucket/vIntCrescenteP20/vIntCrescenteP20.png, id=2857, 642.4pt x 481.
 8pt>
 File: graficos/Bucket/vIntCrescenteP20/vIntCrescenteP20.png Graphic file (type 
 png)
@@ -3069,13 +3064,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2789.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2789.
- [118 <./graficos/Bucket/vIntCrescenteP10/vIntCrescenteP10.png>]
+ [117 <./graficos/Bucket/vIntCrescenteP10/vIntCrescenteP10.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2791.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2815.
 
-<graficos/Bucket/vIntCrescenteP30/vIntCrescenteP30.png, id=2923, 642.4pt x 481.
+<graficos/Bucket/vIntCrescenteP30/vIntCrescenteP30.png, id=2863, 642.4pt x 481.
 8pt>
 File: graficos/Bucket/vIntCrescenteP30/vIntCrescenteP30.png Graphic file (type 
 png)
@@ -3087,13 +3082,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2821.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2821.
- [119 <./graficos/Bucket/vIntCrescenteP20/vIntCrescenteP20.png>]
+ [118 <./graficos/Bucket/vIntCrescenteP20/vIntCrescenteP20.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2823.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2847.
 
-<graficos/Bucket/vIntCrescenteP40/vIntCrescenteP40.png, id=2929, 642.4pt x 481.
+<graficos/Bucket/vIntCrescenteP40/vIntCrescenteP40.png, id=2869, 642.4pt x 481.
 8pt>
 File: graficos/Bucket/vIntCrescenteP40/vIntCrescenteP40.png Graphic file (type 
 png)
@@ -3105,13 +3100,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2853.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2853.
- [120 <./graficos/Bucket/vIntCrescenteP30/vIntCrescenteP30.png>]
+ [119 <./graficos/Bucket/vIntCrescenteP30/vIntCrescenteP30.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2855.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2879.
 
-<graficos/Bucket/vIntCrescenteP50/vIntCrescenteP50.png, id=2935, 642.4pt x 481.
+<graficos/Bucket/vIntCrescenteP50/vIntCrescenteP50.png, id=2875, 642.4pt x 481.
 8pt>
 File: graficos/Bucket/vIntCrescenteP50/vIntCrescenteP50.png Graphic file (type 
 png)
@@ -3123,13 +3118,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2885.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2885.
- [121 <./graficos/Bucket/vIntCrescenteP40/vIntCrescenteP40.png>]
+ [120 <./graficos/Bucket/vIntCrescenteP40/vIntCrescenteP40.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2887.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2911.
 
-<graficos/Bucket/vIntDecrescente/vIntDecrescente.png, id=2942, 642.4pt x 481.8p
+<graficos/Bucket/vIntDecrescente/vIntDecrescente.png, id=2881, 642.4pt x 481.8p
 t>
 File: graficos/Bucket/vIntDecrescente/vIntDecrescente.png Graphic file (type pn
 g)
@@ -3141,13 +3136,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2917.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2917.
- [122 <./graficos/Bucket/vIntCrescenteP50/vIntCrescenteP50.png>]
+ [121 <./graficos/Bucket/vIntCrescenteP50/vIntCrescenteP50.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2919.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2943.
 
-<graficos/Bucket/vIntDecrescenteP10/vIntDecrescenteP10.png, id=2948, 642.4pt x 
+<graficos/Bucket/vIntDecrescenteP10/vIntDecrescenteP10.png, id=2889, 642.4pt x 
 481.8pt>
 File: graficos/Bucket/vIntDecrescenteP10/vIntDecrescenteP10.png Graphic file (t
 ype png)
@@ -3160,13 +3155,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2949.
 
-[123 <./graficos/Bucket/vIntDecrescente/vIntDecrescente.png>]
+[122 <./graficos/Bucket/vIntDecrescente/vIntDecrescente.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2950.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2974.
 
-<graficos/Bucket/vIntDecrescenteP20/vIntDecrescenteP20.png, id=2954, 642.4pt x 
+<graficos/Bucket/vIntDecrescenteP20/vIntDecrescenteP20.png, id=2895, 642.4pt x 
 481.8pt>
 File: graficos/Bucket/vIntDecrescenteP20/vIntDecrescenteP20.png Graphic file (t
 ype png)
@@ -3179,13 +3174,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2980.
 
-[124 <./graficos/Bucket/vIntDecrescenteP10/vIntDecrescenteP10.png>]
+[123 <./graficos/Bucket/vIntDecrescenteP10/vIntDecrescenteP10.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2981.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3005.
 
-<graficos/Bucket/vIntDecrescenteP30/vIntDecrescenteP30.png, id=2960, 642.4pt x 
+<graficos/Bucket/vIntDecrescenteP30/vIntDecrescenteP30.png, id=2901, 642.4pt x 
 481.8pt>
 File: graficos/Bucket/vIntDecrescenteP30/vIntDecrescenteP30.png Graphic file (t
 ype png)
@@ -3198,13 +3193,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3011.
 
-[125 <./graficos/Bucket/vIntDecrescenteP20/vIntDecrescenteP20.png>]
+[124 <./graficos/Bucket/vIntDecrescenteP20/vIntDecrescenteP20.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3013.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3037.
 
-<graficos/Bucket/vIntDecrescenteP40/vIntDecrescenteP40.png, id=2966, 642.4pt x 
+<graficos/Bucket/vIntDecrescenteP40/vIntDecrescenteP40.png, id=2907, 642.4pt x 
 481.8pt>
 File: graficos/Bucket/vIntDecrescenteP40/vIntDecrescenteP40.png Graphic file (t
 ype png)
@@ -3217,13 +3212,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3043.
 
-[126 <./graficos/Bucket/vIntDecrescenteP30/vIntDecrescenteP30.png>]
+[125 <./graficos/Bucket/vIntDecrescenteP30/vIntDecrescenteP30.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3045.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3069.
 
-<graficos/Bucket/vIntDecrescenteP50/vIntDecrescenteP50.png, id=2972, 642.4pt x 
+<graficos/Bucket/vIntDecrescenteP50/vIntDecrescenteP50.png, id=2913, 642.4pt x 
 481.8pt>
 File: graficos/Bucket/vIntDecrescenteP50/vIntDecrescenteP50.png Graphic file (t
 ype png)
@@ -3236,14 +3231,14 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3075.
 
-[127 <./graficos/Bucket/vIntDecrescenteP40/vIntDecrescenteP40.png>]
+[126 <./graficos/Bucket/vIntDecrescenteP40/vIntDecrescenteP40.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3075.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3086.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3086.
- [128 <./graficos/Bucket/vIntDecrescenteP50/vIntDecrescenteP50.png>]
+ [127 <./graficos/Bucket/vIntDecrescenteP50/vIntDecrescenteP50.png>]
 Cap\'{\i }tulo 9.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3086.
@@ -3252,7 +3247,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3096.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3096.
-[129
+[128
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 3096.
@@ -3269,13 +3264,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3096.
  ) 
 Here is how much of TeX's memory you used:
- 15118 strings out of 494929
- 237041 string characters out of 6180142
- 517861 words of memory out of 5000000
- 16702 multiletter control sequences out of 15000+600000
+ 15054 strings out of 494929
+ 235968 string characters out of 6180142
+ 502861 words of memory out of 5000000
+ 16694 multiletter control sequences out of 15000+600000
  21674 words of font info for 52 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 36i,12n,58p,383b,1990s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,12n,58p,428b,1990s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/gustavovm/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </ho
 me/gustavovm/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/gust
 avovm/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk>{/usr/share/texlive
@@ -3293,10 +3288,10 @@ t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/uc
 rr8a.pfb>
-Output written on analise.pdf (129 pages, 1036124 bytes).
+Output written on analise.pdf (128 pages, 1027389 bytes).
 PDF statistics:
- 3758 PDF objects out of 4296 (max. 8388607)
- 2987 compressed objects within 30 object streams
- 1356 named destinations out of 1440 (max. 500000)
+ 3687 PDF objects out of 4296 (max. 8388607)
+ 2919 compressed objects within 30 object streams
+ 1300 named destinations out of 1440 (max. 500000)
  2080 words of extra memory for PDF output out of 10000 (max. 10000000)
 
