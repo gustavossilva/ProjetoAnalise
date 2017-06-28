@@ -1,8 +1,102 @@
 \select@language {brazil}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Insertion Sort com Vetor aleat\IeC {\'o}rio\relax }}{31}{table.caption.5}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Insertion Sort com Vetor ordenado em ordem crescente\relax }}{32}{table.caption.7}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Insertion Sort com Vetor ordenado em ordem crescente 10\% ordenado\relax }}{33}{table.caption.9}
+\contentsline {table}{\numberline {2.4}{\ignorespaces Insertion Sort com Vetor ordenado em ordem crescente 20\% ordenado\relax }}{34}{table.caption.11}
+\contentsline {table}{\numberline {2.5}{\ignorespaces Insertion Sort com Vetor ordenado em ordem crescente 30\% ordenado\relax }}{35}{table.caption.13}
+\contentsline {table}{\numberline {2.6}{\ignorespaces Insertion Sort com Vetor ordenado em ordem crescente 40\% ordenado\relax }}{36}{table.caption.15}
+\contentsline {table}{\numberline {2.7}{\ignorespaces Insertion Sort com Vetor ordenado em ordem crescente 50\% ordenado\relax }}{37}{table.caption.17}
+\contentsline {table}{\numberline {2.8}{\ignorespaces Insertion Sort com Vetor ordenado em ordem decrescente\relax }}{38}{table.caption.19}
+\contentsline {table}{\numberline {2.9}{\ignorespaces Insertion Sort com Vetor ordenado em ordem descrecente 10\% ordenado\relax }}{39}{table.caption.21}
+\contentsline {table}{\numberline {2.10}{\ignorespaces Insertion Sort com Vetor ordenado em ordem descrecente 20\% ordenado\relax }}{40}{table.caption.23}
+\contentsline {table}{\numberline {2.11}{\ignorespaces Insertion Sort com Vetor ordenado em ordem descrecente 30\% ordenado\relax }}{41}{table.caption.25}
+\contentsline {table}{\numberline {2.12}{\ignorespaces Insertion Sort com Vetor ordenado em ordem descrecente 40\% ordenado\relax }}{42}{table.caption.27}
+\contentsline {table}{\numberline {2.13}{\ignorespaces Insertion Sort com Vetor ordenado em ordem descrecente 50\% ordenado\relax }}{43}{table.caption.29}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Insertion Sort com Vetor aleat\IeC {\'o}rio\relax }}{23}{table.caption.5}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Insertion Sort com Vetor ordenado em ordem crescente\relax }}{24}{table.caption.7}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Merge Sort com vetor aleat\IeC {\'o}rio\relax }}{45}{table.caption.31}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Merge Sort com vetor ordenado em ordem crescente\relax }}{46}{table.caption.33}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Merge Sort com vetor ordenado em ordem crescente estando 10\% ordenado\relax }}{47}{table.caption.35}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Merge Sort com vetor ordenado em ordem crescente estando 20\% ordenado\relax }}{48}{table.caption.37}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Merge Sort com vetor ordenado em ordem crescente estando 30\% ordenado\relax }}{49}{table.caption.39}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Merge Sort com vetor ordenado em ordem crescente estando 40\% ordenado\relax }}{50}{table.caption.41}
+\contentsline {table}{\numberline {3.7}{\ignorespaces Merge Sort com vetor ordenado em ordem crescente estando 50\% ordenado\relax }}{51}{table.caption.43}
+\contentsline {table}{\numberline {3.8}{\ignorespaces Merge Sort com vetor ordenado em ordem decrescente\relax }}{52}{table.caption.45}
+\contentsline {table}{\numberline {3.9}{\ignorespaces Merge Sort com vetor ordenado em ordem decrescente estando 10\% ordenado\relax }}{53}{table.caption.47}
+\contentsline {table}{\numberline {3.10}{\ignorespaces Merge Sort com vetor ordenado em ordem decrescente estando 20\% ordenado\relax }}{54}{table.caption.49}
+\contentsline {table}{\numberline {3.11}{\ignorespaces Merge Sort com vetor ordenado em ordem decrescente estando 30\% ordenado\relax }}{55}{table.caption.51}
+\contentsline {table}{\numberline {3.12}{\ignorespaces Merge Sort com vetor ordenado em ordem decrescente estando 40\% ordenado\relax }}{56}{table.caption.53}
+\contentsline {table}{\numberline {3.13}{\ignorespaces Merge Sort com vetor ordenado em ordem decrescente estando 50\% ordenado\relax }}{57}{table.caption.55}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Heap Sort com vetor aleat\IeC {\'o}rio\relax }}{59}{table.caption.57}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Heap Sort com vetor ordenado em ordem crescente\relax }}{60}{table.caption.59}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Heap Sort com vetor ordenado em ordem crescente estando 10\% ordenado\relax }}{61}{table.caption.61}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Heap Sort com vetor ordenado em ordem crescente estando 20\% ordenado\relax }}{62}{table.caption.63}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Heap Sort com vetor ordenado em ordem crescente estando 30\% ordenado\relax }}{63}{table.caption.65}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Heap Sort com vetor ordenado em ordem crescente estando 40\% ordenado\relax }}{64}{table.caption.67}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Heap Sort com vetor ordenado em ordem crescente estando 50\% ordenado\relax }}{65}{table.caption.69}
+\contentsline {table}{\numberline {4.8}{\ignorespaces Heap Sort com vetor ordenado em ordem decrescente\relax }}{66}{table.caption.71}
+\contentsline {table}{\numberline {4.9}{\ignorespaces Heap Sort com vetor ordenado em ordem decrescente estando 10\% ordenado\relax }}{67}{table.caption.73}
+\contentsline {table}{\numberline {4.10}{\ignorespaces Heap Sort com vetor ordenado em ordem decrescente estando 20\% ordenado\relax }}{68}{table.caption.75}
+\contentsline {table}{\numberline {4.11}{\ignorespaces Heap Sort com vetor ordenado em ordem decrescente estando 30\% ordenado\relax }}{69}{table.caption.77}
+\contentsline {table}{\numberline {4.12}{\ignorespaces Heap Sort com vetor ordenado em ordem decrescente estando 40\% ordenado\relax }}{70}{table.caption.79}
+\contentsline {table}{\numberline {4.13}{\ignorespaces Heap Sort com vetor ordenado em ordem decrescente estando 50\% ordenado\relax }}{71}{table.caption.81}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Quick Sort com vetor aleat\IeC {\'o}rio\relax }}{73}{table.caption.83}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Quick Sort com vetor ordenado em ordem crescente\relax }}{74}{table.caption.85}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Quick Sort com vetor ordenado em ordem crescente estando 10\% ordenado\relax }}{75}{table.caption.87}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Quick Sort com vetor ordenado em ordem crescente estando 20\% ordenado\relax }}{76}{table.caption.89}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Quick Sort com vetor ordenado em ordem crescente estando 30\% ordenado\relax }}{77}{table.caption.91}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Quick Sort com vetor ordenado em ordem crescente estando 40\% ordenado\relax }}{78}{table.caption.93}
+\contentsline {table}{\numberline {5.7}{\ignorespaces Quick Sort com vetor ordenado em ordem crescente estando 50\% ordenado\relax }}{79}{table.caption.95}
+\contentsline {table}{\numberline {5.8}{\ignorespaces Quick Sort com vetor ordenado em ordem decrescente\relax }}{80}{table.caption.97}
+\contentsline {table}{\numberline {5.9}{\ignorespaces Quick Sort com vetor ordenado em ordem decrescente estando 10\% ordenado\relax }}{81}{table.caption.99}
+\contentsline {table}{\numberline {5.10}{\ignorespaces Quick Sort com vetor ordenado em ordem decrescente estando 20\% ordenado\relax }}{82}{table.caption.101}
+\contentsline {table}{\numberline {5.11}{\ignorespaces Quick Sort com vetor ordenado em ordem decrescente estando 30\% ordenado\relax }}{83}{table.caption.103}
+\contentsline {table}{\numberline {5.12}{\ignorespaces Quick Sort com vetor ordenado em ordem decrescente estando 40\% ordenado\relax }}{84}{table.caption.105}
+\contentsline {table}{\numberline {5.13}{\ignorespaces Quick Sort com vetor ordenado em ordem decrescente estando 50\% ordenado\relax }}{85}{table.caption.107}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Counting Sort com vetor aleat\IeC {\'o}rio\relax }}{87}{table.caption.109}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Counting Sort com vetor ordenado em ordem crescente\relax }}{88}{table.caption.111}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Counting Sort com vetor ordenado em ordem crescente estando 10\% ordenado\relax }}{89}{table.caption.113}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Counting Sort com vetor ordenado em ordem crescente estando 20\% ordenado\relax }}{90}{table.caption.115}
+\contentsline {table}{\numberline {6.5}{\ignorespaces Counting Sort com vetor ordenado em ordem crescente estando 30\% ordenado\relax }}{91}{table.caption.117}
+\contentsline {table}{\numberline {6.6}{\ignorespaces Counting Sort com vetor ordenado em ordem crescente estando 40\% ordenado\relax }}{92}{table.caption.119}
+\contentsline {table}{\numberline {6.7}{\ignorespaces Counting Sort com vetor ordenado em ordem crescente estando 50\% ordenado\relax }}{93}{table.caption.121}
+\contentsline {table}{\numberline {6.8}{\ignorespaces Counting Sort com vetor ordenado em ordem decrescente\relax }}{94}{table.caption.123}
+\contentsline {table}{\numberline {6.9}{\ignorespaces Counting Sort com vetor ordenado em ordem decrescente estando 10\% ordenado\relax }}{95}{table.caption.125}
+\contentsline {table}{\numberline {6.10}{\ignorespaces Counting Sort com vetor ordenado em ordem decrescente estando 20\% ordenado\relax }}{96}{table.caption.127}
+\contentsline {table}{\numberline {6.11}{\ignorespaces Counting Sort com vetor ordenado em ordem decrescente estando 30\% ordenado\relax }}{97}{table.caption.129}
+\contentsline {table}{\numberline {6.12}{\ignorespaces Counting Sort com vetor ordenado em ordem decrescente estando 40\% ordenado\relax }}{98}{table.caption.131}
+\contentsline {table}{\numberline {6.13}{\ignorespaces Counting Sort com vetor ordenado em ordem decrescente estando 50\% ordenado\relax }}{99}{table.caption.133}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {7.1}{\ignorespaces Radix Sort com vetor aleat\IeC {\'o}rio\relax }}{101}{table.caption.135}
+\contentsline {table}{\numberline {7.2}{\ignorespaces Radix Sort com vetor ordenado em ordem crescente\relax }}{102}{table.caption.137}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Radix Sort com vetor ordenado em ordem crescente estando 10\% ordenado\relax }}{103}{table.caption.139}
+\contentsline {table}{\numberline {7.4}{\ignorespaces Radix Sort com vetor ordenado em ordem crescente estando 20\% ordenado\relax }}{104}{table.caption.141}
+\contentsline {table}{\numberline {7.5}{\ignorespaces Radix Sort com vetor ordenado em ordem crescente estando 30\% ordenado\relax }}{105}{table.caption.143}
+\contentsline {table}{\numberline {7.6}{\ignorespaces Radix Sort com vetor ordenado em ordem crescente estando 40\% ordenado\relax }}{106}{table.caption.145}
+\contentsline {table}{\numberline {7.7}{\ignorespaces Radix Sort com vetor ordenado em ordem crescente estando 50\% ordenado\relax }}{107}{table.caption.147}
+\contentsline {table}{\numberline {7.8}{\ignorespaces Radix Sort com vetor ordenado em ordem decrescente\relax }}{108}{table.caption.149}
+\contentsline {table}{\numberline {7.9}{\ignorespaces Radix Sort com vetor ordenado em ordem decrescente estando 10\% ordenado\relax }}{109}{table.caption.151}
+\contentsline {table}{\numberline {7.10}{\ignorespaces Radix Sort com vetor ordenado em ordem decrescente estando 20\% ordenado\relax }}{110}{table.caption.153}
+\contentsline {table}{\numberline {7.11}{\ignorespaces Radix Sort com vetor ordenado em ordem decrescente estando 30\% ordenado\relax }}{111}{table.caption.155}
+\contentsline {table}{\numberline {7.12}{\ignorespaces Radix Sort com vetor ordenado em ordem decrescente estando 40\% ordenado\relax }}{112}{table.caption.157}
+\contentsline {table}{\numberline {7.13}{\ignorespaces Radix Sort com vetor ordenado em ordem decrescente estando 50\% ordenado\relax }}{113}{table.caption.159}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {8.1}{\ignorespaces Bucket sort com Vetor aleat\IeC {\'o}rio\relax }}{115}{table.caption.161}
+\contentsline {table}{\numberline {8.2}{\ignorespaces Bucket sort com Vetor ordenado em ordem crescente\relax }}{116}{table.caption.163}
+\contentsline {table}{\numberline {8.3}{\ignorespaces Bucket sort com Vetor ordenado em ordem crescente 10\% ordenado\relax }}{117}{table.caption.165}
+\contentsline {table}{\numberline {8.4}{\ignorespaces Bucket sort com Vetor ordenado em ordem crescente 20\% ordenado\relax }}{118}{table.caption.167}
+\contentsline {table}{\numberline {8.5}{\ignorespaces Bucket sort com Vetor ordenado em ordem crescente 30\% ordenado\relax }}{119}{table.caption.169}
+\contentsline {table}{\numberline {8.6}{\ignorespaces Bucket sort com Vetor ordenado em ordem crescente 40\% ordenado\relax }}{120}{table.caption.171}
+\contentsline {table}{\numberline {8.7}{\ignorespaces Bucket sort com Vetor ordenado em ordem crescente 50\% ordenado\relax }}{121}{table.caption.173}
+\contentsline {table}{\numberline {8.8}{\ignorespaces Bucket sort com Vetor ordenado em ordem decrescente\relax }}{122}{table.caption.175}
+\contentsline {table}{\numberline {8.9}{\ignorespaces Bucket sort com Vetor ordenado em ordem descrecente 10\% ordenado\relax }}{123}{table.caption.177}
+\contentsline {table}{\numberline {8.10}{\ignorespaces Bucket sort com Vetor ordenado em ordem descrecente 20\% ordenado\relax }}{124}{table.caption.179}
+\contentsline {table}{\numberline {8.11}{\ignorespaces Bucket sort com Vetor ordenado em ordem descrecente 30\% ordenado\relax }}{125}{table.caption.181}
+\contentsline {table}{\numberline {8.12}{\ignorespaces Bucket sort com Vetor ordenado em ordem descrecente 40\% ordenado\relax }}{126}{table.caption.183}
+\contentsline {table}{\numberline {8.13}{\ignorespaces Bucket sort com Vetor ordenado em ordem descrecente 50\% ordenado\relax }}{127}{table.caption.185}
 \addvspace {10\p@ }
 \contentsfinish 

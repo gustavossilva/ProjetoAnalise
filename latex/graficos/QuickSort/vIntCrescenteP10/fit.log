@@ -1,0 +1,108 @@
+
+
+*******************************************************************************
+Wed Jun 28 01:07:20 2017
+
+
+FIT:    data read from 'vIntCrescenteP10.dat' using 1:2
+        format = x:z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+	t(x) = a*x*log(x) + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.6559763419e+10   0.00e+00  3.83e+04    1.000000e+00   1.000000e+00
+   8 2.7366918077e+07  -2.73e-07  3.83e-04    1.702005e+00   1.545306e+03
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 2.73669e+07
+rel. change during last iteration : -2.72547e-12
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1743.78
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.04077e+06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1.70201          +/- 0.01119      (0.6576%)
+b               = 1545.31          +/- 605.6        (39.19%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.496  1.000 
+
+
+*******************************************************************************
+Wed Jun 28 01:07:43 2017
+
+
+FIT:    data read from 'vIntCrescenteP10.dat' using 1:2
+        format = x:z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+	t(x) = a*x*log(x) + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.6559763419e+10   0.00e+00  3.83e+04    1.000000e+00   1.000000e+00
+   8 2.7366918077e+07  -2.73e-07  3.83e-04    1.702005e+00   1.545306e+03
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 2.73669e+07
+rel. change during last iteration : -2.72547e-12
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1743.78
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.04077e+06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1.70201          +/- 0.01119      (0.6576%)
+b               = 1545.31          +/- 605.6        (39.19%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.496  1.000 
+
+
+*******************************************************************************
+Wed Jun 28 01:10:28 2017
+
+
+FIT:    data read from 'vIntCrescenteP10.dat' using 1:2
+        format = x:z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+	t(x) = a*x*log(x) + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.6559763419e+10   0.00e+00  3.83e+04    1.000000e+00   1.000000e+00
+   8 2.7366918077e+07  -2.73e-07  3.83e-04    1.702005e+00   1.545306e+03
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 2.73669e+07
+rel. change during last iteration : -2.72547e-12
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1743.78
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.04077e+06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1.70201          +/- 0.01119      (0.6576%)
+b               = 1545.31          +/- 605.6        (39.19%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.496  1.000 

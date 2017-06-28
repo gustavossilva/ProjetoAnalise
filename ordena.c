@@ -151,36 +151,8 @@ void quick(int *vetor, int inicio, int fim){
     if(i < fim) quick(vetor, i, fim);
 }
 
-void radix(int *vetor, int tamanho){
-    int i;
-    int *b;
-    int maior = vetor[0];
-    int exp = 1;
-
-    b = (int *)calloc(tamanho, sizeof(int));
-
-    for (i = 0; i < tamanho; i++) {
-        if (vetor[i] > maior)
-            maior = vetor[i];
-    }
-
-    while (maior/exp > 0) {
-        int bucket[10] = { 0 };
-        for (i = 0; i < tamanho; i++)
-            bucket[(vetor[i] / exp) % 10]++;
-        for (i = 1; i < 10; i++)
-            bucket[i] += bucket[i - 1];
-        for (i = tamanho - 1; i >= 0; i--)
-            b[--bucket[(vetor[i] / exp) % 10]] = vetor[i];
-        for (i = 0; i < tamanho; i++)
-            vetor[i] = b[i];
-        exp *= 10;
-    }
-    free(b);
-}
-
 void coutingsort(int *A, int tamanho){
-    int k = tamanho;
+    int k = 10;
     int aux;
     int *C = (int*)calloc(k+1,sizeof(int));
     int *B = (int*)malloc(tamanho*sizeof(int));
@@ -198,6 +170,45 @@ void coutingsort(int *A, int tamanho){
     for(int i=0;i<tamanho;i++){
         A[i] = B[i];
     }
+}
+
+int pegaMax(int *arr, int n) //pegar o maior valor no array;
+{
+    int mx = arr[0];
+    for (int i = 1; i < n; i++)
+        if (arr[i] > mx)
+            mx = arr[i];
+    return mx;
+}
+
+void couting_radix(int *A, int tamanho, int exp){ //couting adaptado para ir de digito a digito
+    int k = tamanho;
+    int aux;
+    int *C = (int*)calloc(k+1,sizeof(int));
+    int *B = (int*)malloc(tamanho*sizeof(int));
+    
+    for(int j = 0;j<tamanho;j++){
+        C[(A[j]/exp)%10]++;
+    }
+    for(int i=1;i<=k;i++){
+        C[i] = C[i] + C[i-1];
+    }
+    for(int j=tamanho-1;j>=0;j--){
+        B[C[ (A[j]/exp)%10]-1] = A[j];
+        C[(A[j]/exp)%10]--;
+    }
+    for(int i=0;i<tamanho;i++){
+        A[i] = B[i];
+    }
+}
+
+void radixsort(int *arr, int n)
+{
+    // Encontrar o nro máximo nos valores
+    int m = pegaMax(arr, n);
+    //For do radix ir digito a digito
+    for (int exp = 1; m/exp > 0; exp *= 10)
+        couting_radix(arr, n, exp);
 }
 
 void insertiondouble(double *v, int tam)

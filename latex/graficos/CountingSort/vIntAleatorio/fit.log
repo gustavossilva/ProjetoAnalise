@@ -47,3 +47,39 @@ correlation matrix of the fit parameters:
 a               1.000 
 b              -0.961  1.000 
 c               0.455 -0.566  1.000 
+
+
+*******************************************************************************
+Tue Jun 27 23:09:02 2017
+
+
+FIT:    data read from 'vIntAleatorio.dat' using 1:2
+        format = x:z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+	t(x) = a*x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 2.5339829099e+10   0.00e+00  4.03e+03    1.000000e+00   1.000000e+00
+   7 4.4494900676e+08  -1.54e-07  4.03e-04    9.637382e+00  -3.420502e+03
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 4.44949e+08
+rel. change during last iteration : -1.53543e-12
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7031.27
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.94388e+07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.63738          +/- 0.4357       (4.521%)
+b               = -3420.5          +/- 2485         (72.66%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.522  1.000 

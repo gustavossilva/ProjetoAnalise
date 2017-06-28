@@ -1,8 +1,102 @@
 \select@language {brazil}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Gr\IeC {\'a}fico Insertion Sort - Vetor Aleatorio\relax }}{32}{figure.caption.6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Gr\IeC {\'a}fico Insertion Sort - Vetor Crescente\relax }}{33}{figure.caption.8}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Gr\IeC {\'a}fico Insertion Sort - Vetor Crescente P10\relax }}{34}{figure.caption.10}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Gr\IeC {\'a}fico Insertion Sort - Vetor Crescente P20\relax }}{35}{figure.caption.12}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Gr\IeC {\'a}fico Insertion Sort - Vetor Crescente P30\relax }}{36}{figure.caption.14}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Gr\IeC {\'a}fico Insertion Sort - Vetor Crescente P40\relax }}{37}{figure.caption.16}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Gr\IeC {\'a}fico Insertion Sort - Vetor Crescente P50\relax }}{38}{figure.caption.18}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Gr\IeC {\'a}fico Insertion Sort - Vetor Decrescente\relax }}{39}{figure.caption.20}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Gr\IeC {\'a}fico Insertion Sort - Vetor Decrescente P10\relax }}{40}{figure.caption.22}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Gr\IeC {\'a}fico Insertion Sort - Vetor Decrescente P20\relax }}{41}{figure.caption.24}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Gr\IeC {\'a}fico Insertion Sort - Vetor Decrescente P30\relax }}{42}{figure.caption.26}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Gr\IeC {\'a}fico Insertion Sort - Vetor Decrescente P40\relax }}{43}{figure.caption.28}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Gr\IeC {\'a}fico Insertion Sort - Vetor Decrescente P50\relax }}{44}{figure.caption.30}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Gr\IeC {\'a}fico Insertion Sort - Vetor Aleatorio\relax }}{24}{figure.caption.6}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Gr\IeC {\'a}fico Insertion Sort - Vetor Crescente\relax }}{25}{figure.caption.8}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Gr\IeC {\'a}fico Merge Sort - Vetor Aleat\IeC {\'o}rio\relax }}{46}{figure.caption.32}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Gr\IeC {\'a}fico Merge Sort - Vetor Crescente\relax }}{47}{figure.caption.34}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Gr\IeC {\'a}fico Merge Sort - Vetor Crescente P10\relax }}{48}{figure.caption.36}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Gr\IeC {\'a}fico Merge Sort - Vetor Crescente P20\relax }}{49}{figure.caption.38}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Gr\IeC {\'a}fico Merge Sort - Vetor Crescente P30\relax }}{50}{figure.caption.40}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Gr\IeC {\'a}fico Merge Sort - Vetor Crescente P40\relax }}{51}{figure.caption.42}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Gr\IeC {\'a}fico Merge Sort - Vetor Crescente P50\relax }}{52}{figure.caption.44}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Gr\IeC {\'a}fico Merge Sort - Vetor Decrescente\relax }}{53}{figure.caption.46}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Gr\IeC {\'a}fico Merge Sort - Vetor Decrescente P10\relax }}{54}{figure.caption.48}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Gr\IeC {\'a}fico Merge Sort - Vetor Decrescente P20\relax }}{55}{figure.caption.50}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Gr\IeC {\'a}fico Merge Sort - Vetor Decrescente P30\relax }}{56}{figure.caption.52}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Gr\IeC {\'a}fico Merge Sort - Vetor Decrescente P40\relax }}{57}{figure.caption.54}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Gr\IeC {\'a}fico Merge Sort - Vetor Decrescente P50\relax }}{58}{figure.caption.56}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Gr\IeC {\'a}fico Heap Sort - Vetor Aleat\IeC {\'o}rio\relax }}{60}{figure.caption.58}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Gr\IeC {\'a}fico Heap Sort - Vetor Crescente\relax }}{61}{figure.caption.60}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Gr\IeC {\'a}fico Heap Sort - Vetor Crescente P10\relax }}{62}{figure.caption.62}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Gr\IeC {\'a}fico Heap Sort - Vetor Crescente P20\relax }}{63}{figure.caption.64}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Gr\IeC {\'a}fico Heap Sort - Vetor Crescente P30\relax }}{64}{figure.caption.66}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Gr\IeC {\'a}fico Heap Sort - Vetor Crescente P40\relax }}{65}{figure.caption.68}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Gr\IeC {\'a}fico Heap Sort - Vetor Crescente P50\relax }}{66}{figure.caption.70}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Gr\IeC {\'a}fico Heap Sort - Vetor Decrescente\relax }}{67}{figure.caption.72}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Gr\IeC {\'a}fico Heap Sort - Vetor Decrescente P10\relax }}{68}{figure.caption.74}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Gr\IeC {\'a}fico Heap Sort - Vetor Decrescente P20\relax }}{69}{figure.caption.76}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Gr\IeC {\'a}fico Heap Sort - Vetor Decrescente P30\relax }}{70}{figure.caption.78}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Gr\IeC {\'a}fico Heap Sort - Vetor Decrescente P40\relax }}{71}{figure.caption.80}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Gr\IeC {\'a}fico Heap Sort - Vetor Decrescente P50\relax }}{72}{figure.caption.82}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Gr\IeC {\'a}fico Quick Sort - Vetor Aleat\IeC {\'o}rio\relax }}{74}{figure.caption.84}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Gr\IeC {\'a}fico Quick Sort - Vetor Crescente\relax }}{75}{figure.caption.86}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Gr\IeC {\'a}fico Quick Sort - Vetor Crescente P10\relax }}{76}{figure.caption.88}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Gr\IeC {\'a}fico Quick Sort - Vetor Crescente P20\relax }}{77}{figure.caption.90}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Gr\IeC {\'a}fico Quick Sort - Vetor Crescente P30\relax }}{78}{figure.caption.92}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Gr\IeC {\'a}fico Quick Sort - Vetor Crescente P40\relax }}{79}{figure.caption.94}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Gr\IeC {\'a}fico Quick Sort - Vetor Crescente P50\relax }}{80}{figure.caption.96}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Gr\IeC {\'a}fico Quick Sort - Vetor Decrescente\relax }}{81}{figure.caption.98}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Gr\IeC {\'a}fico Quick Sort - Vetor Decrescente P10\relax }}{82}{figure.caption.100}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Gr\IeC {\'a}fico Quick Sort - Vetor Decrescente P20\relax }}{83}{figure.caption.102}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Gr\IeC {\'a}fico Quick Sort - Vetor Decrescente P30\relax }}{84}{figure.caption.104}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Gr\IeC {\'a}fico Quick Sort - Vetor Decrescente P40\relax }}{85}{figure.caption.106}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Gr\IeC {\'a}fico Quick Sort - Vetor Decrescente P50\relax }}{86}{figure.caption.108}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Gr\IeC {\'a}fico Counting Sort - Vetor Aleat\IeC {\'o}rio\relax }}{88}{figure.caption.110}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Gr\IeC {\'a}fico Counting Sort - Vetor Crescente\relax }}{89}{figure.caption.112}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Gr\IeC {\'a}fico Counting Sort - Vetor Crescente P10\relax }}{90}{figure.caption.114}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Gr\IeC {\'a}fico Counting Sort - Vetor Crescente P20\relax }}{91}{figure.caption.116}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Gr\IeC {\'a}fico Counting Sort - Vetor Crescente P30\relax }}{92}{figure.caption.118}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Gr\IeC {\'a}fico Counting Sort - Vetor Crescente P40\relax }}{93}{figure.caption.120}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Gr\IeC {\'a}fico Counting Sort - Vetor Crescente P50\relax }}{94}{figure.caption.122}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Gr\IeC {\'a}fico Counting Sort - Vetor Decrescente\relax }}{95}{figure.caption.124}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Gr\IeC {\'a}fico Counting Sort - Vetor Decrescente P10\relax }}{96}{figure.caption.126}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Gr\IeC {\'a}fico Counting Sort - Vetor Decrescente P20\relax }}{97}{figure.caption.128}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Gr\IeC {\'a}fico Counting Sort - Vetor Decrescente P30\relax }}{98}{figure.caption.130}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Gr\IeC {\'a}fico Counting Sort - Vetor Decrescente P40\relax }}{99}{figure.caption.132}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Gr\IeC {\'a}fico Counting Sort - Vetor Decrescente P50\relax }}{100}{figure.caption.134}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Gr\IeC {\'a}fico Radix Sort - Vetor Aleat\IeC {\'o}rio\relax }}{102}{figure.caption.136}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Gr\IeC {\'a}fico Radix Sort - Vetor Crescente\relax }}{103}{figure.caption.138}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Gr\IeC {\'a}fico Radix Sort - Vetor Crescente P10\relax }}{104}{figure.caption.140}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Gr\IeC {\'a}fico Radix Sort - Vetor Crescente P20\relax }}{105}{figure.caption.142}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Gr\IeC {\'a}fico Radix Sort - Vetor Crescente P30\relax }}{106}{figure.caption.144}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Gr\IeC {\'a}fico Radix Sort - Vetor Crescente P40\relax }}{107}{figure.caption.146}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Gr\IeC {\'a}fico Radix Sort - Vetor Crescente P50\relax }}{108}{figure.caption.148}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Gr\IeC {\'a}fico Radix Sort - Vetor Decrescente\relax }}{109}{figure.caption.150}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Gr\IeC {\'a}fico Radix Sort - Vetor Decrescente P10\relax }}{110}{figure.caption.152}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Gr\IeC {\'a}fico Radix Sort - Vetor Decrescente P20\relax }}{111}{figure.caption.154}
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Gr\IeC {\'a}fico Radix Sort - Vetor Decrescente P30\relax }}{112}{figure.caption.156}
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Gr\IeC {\'a}fico Radix Sort - Vetor Decrescente P40\relax }}{113}{figure.caption.158}
+\contentsline {figure}{\numberline {7.13}{\ignorespaces Gr\IeC {\'a}fico Radix Sort - Vetor Decrescente P50\relax }}{114}{figure.caption.160}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Gr\IeC {\'a}fico Bucket sort - Vetor Aleatorio\relax }}{116}{figure.caption.162}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Gr\IeC {\'a}fico Bucket sort - Vetor Crescente\relax }}{117}{figure.caption.164}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Gr\IeC {\'a}fico Bucket sort - Vetor Crescente P10\relax }}{118}{figure.caption.166}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Gr\IeC {\'a}fico Bucket sort - Vetor Crescente P20\relax }}{119}{figure.caption.168}
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Gr\IeC {\'a}fico Bucket sort - Vetor Crescente P30\relax }}{120}{figure.caption.170}
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Gr\IeC {\'a}fico Bucket sort - Vetor Crescente P40\relax }}{121}{figure.caption.172}
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Gr\IeC {\'a}fico Bucket sort - Vetor Crescente P50\relax }}{122}{figure.caption.174}
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Gr\IeC {\'a}fico Bucket sort - Vetor Decrescente\relax }}{123}{figure.caption.176}
+\contentsline {figure}{\numberline {8.9}{\ignorespaces Gr\IeC {\'a}fico Bucket sort - Vetor Decrescente P10\relax }}{124}{figure.caption.178}
+\contentsline {figure}{\numberline {8.10}{\ignorespaces Gr\IeC {\'a}fico Bucket sort - Vetor Decrescente P20\relax }}{125}{figure.caption.180}
+\contentsline {figure}{\numberline {8.11}{\ignorespaces Gr\IeC {\'a}fico Bucket sort - Vetor Decrescente P30\relax }}{126}{figure.caption.182}
+\contentsline {figure}{\numberline {8.12}{\ignorespaces Gr\IeC {\'a}fico Bucket sort - Vetor Decrescente P40\relax }}{127}{figure.caption.184}
+\contentsline {figure}{\numberline {8.13}{\ignorespaces Gr\IeC {\'a}fico Bucket sort - Vetor Decrescente P50\relax }}{128}{figure.caption.186}
 \addvspace {10\p@ }
 \contentsfinish 

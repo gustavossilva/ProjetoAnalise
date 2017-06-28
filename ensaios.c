@@ -16,7 +16,7 @@
 
 #define CRONOMETRA(funcao,vetor,n) {                          \
    clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &inicio);          \
-   funcao(vetor,0,n);                                           \
+   funcao(vetor,n);                                           \
    clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &fim);             \
    tempo_de_cpu_aux = BILHAO * (fim.tv_sec - inicio.tv_sec) +     \
                   fim.tv_nsec - inicio.tv_nsec;               \
@@ -123,7 +123,7 @@ int main(int argc, char *argv[]){
         //ordena_por_bolha(v,n);
         insertion(v,tamanho);
         fim = clock();*/
-	CRONOMETRA(ordena_intercala, v, tamanho-1);
+	CRONOMETRA(radixsort, v,tamanho);
         //tempo_de_cpu += ((double) (fim - inicio)) / CLOCKS_PER_SEC;
 	tempo_de_cpu += tempo_de_cpu_aux;
     }

@@ -47,3 +47,39 @@ correlation matrix of the fit parameters:
 a               1.000 
 b              -0.961  1.000 
 c               0.455 -0.566  1.000 
+
+
+*******************************************************************************
+Tue Jun 27 23:18:49 2017
+
+
+FIT:    data read from 'vIntCrescenteP10.dat' using 1:2
+        format = x:z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+	t(x) = a*x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 2.3579657700e+10   0.00e+00  4.03e+03    1.000000e+00   1.000000e+00
+   7 4.5423375430e+07  -2.77e-07  4.03e-04    9.240352e+00  -1.468272e+03
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 4.54234e+07
+rel. change during last iteration : -2.77301e-12
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 2246.56
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.04704e+06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.24035          +/- 0.1392       (1.507%)
+b               = -1468.27         +/- 794.1        (54.09%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.522  1.000 

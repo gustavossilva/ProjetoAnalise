@@ -1,0 +1,36 @@
+
+
+*******************************************************************************
+Wed Jun 28 01:06:44 2017
+
+
+FIT:    data read from 'vIntCrescente.dat' using 1:2
+        format = x:z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+	t(x) = a*x*log(x) + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 2.3565064612e+10   0.00e+00  3.83e+04    1.000000e+00   1.000000e+00
+   3 1.0757690189e+08  -9.09e-03  3.83e+01    1.853586e+00   9.985274e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 1.07577e+08
+rel. change during last iteration : -9.09324e-08
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3457.31
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.1953e+07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1.85359          +/- 0.02219      (1.197%)
+b               = 0.998527         +/- 1201         (1.202e+05%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.496  1.000 

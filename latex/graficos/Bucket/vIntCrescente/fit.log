@@ -1,7 +1,7 @@
 
 
 *******************************************************************************
-Tue Jun 27 21:01:26 2017
+Wed Jun 28 00:54:11 2017
 
 
 FIT:    data read from 'vIntCrescente.dat' using 1:2
@@ -10,47 +10,15 @@ FIT:    data read from 'vIntCrescente.dat' using 1:2
         residuals are weighted equally (unit weight)
 
 function used for fitting: t(x)
+	t(x) = a*x + b
 fitted parameters initialized with current variable values
 
-
-
- Iteration 0
- WSSR        : 7.67389e+16       delta(WSSR)/WSSR   : 0
- delta(WSSR) : 0                 limit for stopping : 1e-05
- lambda	  : 4.82611e+07
-
-initial set of free parameter values
-
-a               = 1
-b               = 1
-c               = 1
-
-After 11 iterations the fit converged.
-final sum of squares of residuals : 1.08992e+08
-rel. change during last iteration : -2.9821e-12
-
-degrees of freedom    (FIT_NDF)                        : 8
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3691.07
-variance of residuals (reduced chisquare) = WSSR/ndf   : 1.3624e+07
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-
-a               = 0.000100785      +/- 5.234e-05    (51.93%)
-b               = 11.6074          +/- 0.8283       (7.136%)
-c               = 703.536          +/- 1465         (208.3%)
-
-
-correlation matrix of the fit parameters:
-
-               a      b      c      
-a               1.000 
-b              -0.961  1.000 
-c               0.455 -0.566  1.000 
-
+iter      chisq       delta/lim  lambda   a             b             c            
+   0 5.2452640295e+10   0.00e+00  3.29e+03    1.000000e+00   1.000000e+00   1.000000e+00
+BREAK: Singular matrix in Invert_RtR
 
 *******************************************************************************
-Tue Jun 27 21:03:21 2017
+Wed Jun 28 00:54:35 2017
 
 
 FIT:    data read from 'vIntCrescente.dat' using 1:2
@@ -59,19 +27,12 @@ FIT:    data read from 'vIntCrescente.dat' using 1:2
         residuals are weighted equally (unit weight)
 
 function used for fitting: t(x)
+	t(x) = a*x + b
 fitted parameters initialized with current variable values
 
-
-
- Iteration 0
- WSSR        : 5.24526e+10       delta(WSSR)/WSSR   : 0
- delta(WSSR) : 0                 limit for stopping : 1e-05
- lambda	  : 4033.46
-
-initial set of free parameter values
-
-a               = 1
-b               = 1
+iter      chisq       delta/lim  lambda   a             b            
+   0 5.2452640295e+10   0.00e+00  4.03e+03    1.000000e+00   1.000000e+00
+   6 1.5950987977e+08  -3.01e-01  4.03e-03    1.314039e+01  -5.814606e+02
 
 After 6 iterations the fit converged.
 final sum of squares of residuals : 1.5951e+08
@@ -83,111 +44,10 @@ variance of residuals (reduced chisquare) = WSSR/ndf   : 1.77233e+07
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-
 a               = 13.1404          +/- 0.2609       (1.985%)
 b               = -581.461         +/- 1488         (255.9%)
 
-
 correlation matrix of the fit parameters:
-
-               a      b      
+                a      b      
 a               1.000 
 b              -0.522  1.000 
-
-
-*******************************************************************************
-Tue Jun 27 21:04:00 2017
-
-
-FIT:    data read from 'vIntCrescente.dat' using 1:2
-        format = x:z
-        #datapoints = 11
-        residuals are weighted equally (unit weight)
-
-function used for fitting: t(x)
-fitted parameters initialized with current variable values
-
-
-
- Iteration 0
- WSSR        : 7.67389e+16       delta(WSSR)/WSSR   : 0
- delta(WSSR) : 0                 limit for stopping : 1e-05
- lambda	  : 4.82611e+07
-
-initial set of free parameter values
-
-a               = 1
-b               = 1
-c               = 1
-
-After 11 iterations the fit converged.
-final sum of squares of residuals : 1.08992e+08
-rel. change during last iteration : -2.9821e-12
-
-degrees of freedom    (FIT_NDF)                        : 8
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3691.07
-variance of residuals (reduced chisquare) = WSSR/ndf   : 1.3624e+07
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-
-a               = 0.000100785      +/- 5.234e-05    (51.93%)
-b               = 11.6074          +/- 0.8283       (7.136%)
-c               = 703.536          +/- 1465         (208.3%)
-
-
-correlation matrix of the fit parameters:
-
-               a      b      c      
-a               1.000 
-b              -0.961  1.000 
-c               0.455 -0.566  1.000 
-
-
-*******************************************************************************
-Tue Jun 27 21:14:21 2017
-
-
-FIT:    data read from 'vIntCrescente.dat' using 1:2
-        format = x:z
-        #datapoints = 11
-        residuals are weighted equally (unit weight)
-
-function used for fitting: t(x)
-fitted parameters initialized with current variable values
-
-
-
- Iteration 0
- WSSR        : 7.67389e+16       delta(WSSR)/WSSR   : 0
- delta(WSSR) : 0                 limit for stopping : 1e-05
- lambda	  : 4.82611e+07
-
-initial set of free parameter values
-
-a               = 1
-b               = 1
-c               = 1
-
-After 11 iterations the fit converged.
-final sum of squares of residuals : 1.08992e+08
-rel. change during last iteration : -2.9821e-12
-
-degrees of freedom    (FIT_NDF)                        : 8
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3691.07
-variance of residuals (reduced chisquare) = WSSR/ndf   : 1.3624e+07
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-
-a               = 0.000100785      +/- 5.234e-05    (51.93%)
-b               = 11.6074          +/- 0.8283       (7.136%)
-c               = 703.536          +/- 1465         (208.3%)
-
-
-correlation matrix of the fit parameters:
-
-               a      b      c      
-a               1.000 
-b              -0.961  1.000 
-c               0.455 -0.566  1.000 
