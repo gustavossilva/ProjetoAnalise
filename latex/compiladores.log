@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.16)  27 JUN 2017 22:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.16)  27 JUN 2017 22:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -992,21 +992,31 @@ Package babel Info: Redefining portuges shorthand "|
 \openout6 = `compiladores.lot'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 204.
+(babel)             in language  on input line 199.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 204.
+(babel)             in language  on input line 199.
  [3
 
 ]
-(./compiladores.toc)
-\tf@toc=\write7
-\openout7 = `compiladores.toc'.
+(./compiladores.lol)
+\tf@lol=\write7
+\openout7 = `compiladores.lol'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 204.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 204.
+ [4
+
+] (./compiladores.toc)
+\tf@toc=\write8
+\openout8 = `compiladores.toc'.
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 214.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 214.
- [4
+ [5
 
 ]
 Cap\'{\i }tulo 1.
@@ -1014,59 +1024,29 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 214.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 217.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 220.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 220.
-[5
-
-]
-Cap\'{\i }tulo 2.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 220.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 223.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 223.
-[6
-
-]
-Cap\'{\i }tulo 3.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 223.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 226.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 249.
-
-<graficos/Insertion/vIntAleatorio/vIntAleatorio.png, id=99, 642.4pt x 481.8pt>
-File: graficos/Insertion/vIntAleatorio/vIntAleatorio.png Graphic file (type png
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 219.
 
-<use graficos/Insertion/vIntAleatorio/vIntAleatorio.png>
-Package pdftex.def Info: graficos/Insertion/vIntAleatorio/vIntAleatorio.png use
-d on input line 252.
-(pdftex.def)             Requested size: 327.83136pt x 245.87648pt.
+Overfull \hbox (6.0pt too wide) in paragraph at lines 219--219
+[][][][][][][] 
+ []
+
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 219.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) (../vetor.c
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 1.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 255.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 255.
- [7
+(babel)             in language  on input line 29.
+ [6
 
 ]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 257.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 281.
-
-<graficos/Insertion/vIntCrescente/vIntCrescente.png, id=107, 642.4pt x 481.8pt>
-File: graficos/Insertion/vIntCrescente/vIntCrescente.png Graphic file (type png
-)
-<use graficos/Insertion/vIntCrescente/vIntCrescente.png>
-Package pdftex.def Info: graficos/Insertion/vIntCrescente/vIntCrescente.png use
-d on input line 284.
-(pdftex.def)             Requested size: 327.83136pt x 245.87648pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1074,59 +1054,204 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 287.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 287.
-[8 <./graficos/Insertion/vIntAleatorio/vIntAleatorio.png>]
+(babel)             in language  on input line 84.
+[7]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 287.
+(babel)             in language  on input line 139.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 287.
- [9 <./graficos/Insertion/vIntCrescente/vIntCrescente.png>]
-Cap\'{\i }tulo 4.
+(babel)             in language  on input line 139.
+ [8]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 287.
+(babel)             in language  on input line 198.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 198.
+ [9]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 254.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 254.
+ [10])
+Overfull \hbox (6.0pt too wide) in paragraph at lines 222--222
+[][][][][][][] 
+ []
 
-Package caption Warning: Unused \captionsetup[lstlisting] on input line 171.
-See the caption package documentation for explanation.
+(../gera_vets.c
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 7.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 7.
+ [11]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 66.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 66.
+ [12])
+Overfull \hbox (6.0pt too wide) in paragraph at lines 225--225
+[][][][][][][] 
+ []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
+(../ordena.c
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 41.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 301.
-[10
+(babel)             in language  on input line 41.
+ [13]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 100.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 100.
+ [14]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 160.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 160.
+ [15]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 218.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 218.
+ [16])
+Overfull \hbox (6.0pt too wide) in paragraph at lines 228--228
+[][][][][][][] 
+ []
+
+(../ensaios.c
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 15.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 15.
+ [17]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 68.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 68.
+ [18]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 119.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 119.
+ [19]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 166.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 166.
+ [20])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 230.
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 259.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 259.
+ [21]
+Cap\'{\i }tulo 2.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 259.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 262.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 262.
+[22
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
+Cap\'{\i }tulo 3.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 262.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 265.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 288.
+
+<graficos/Insertion/vIntAleatorio/vIntAleatorio.png, id=1018, 642.4pt x 481.8pt
+>
+File: graficos/Insertion/vIntAleatorio/vIntAleatorio.png Graphic file (type png
+)
+ <use graficos/Insertion/vIntAleatorio/vIntAleatorio.png>
+Package pdftex.def Info: graficos/Insertion/vIntAleatorio/vIntAleatorio.png use
+d on input line 291.
+(pdftex.def)             Requested size: 327.83136pt x 245.87648pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 294.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 294.
+ [23
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 296.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 320.
+
+<graficos/Insertion/vIntCrescente/vIntCrescente.png, id=1025, 642.4pt x 481.8pt
+>
+File: graficos/Insertion/vIntCrescente/vIntCrescente.png Graphic file (type png
+)
+ <use graficos/Insertion/vIntCrescente/vIntCrescente.png>
+Package pdftex.def Info: graficos/Insertion/vIntCrescente/vIntCrescente.png use
+d on input line 323.
+(pdftex.def)             Requested size: 327.83136pt x 245.87648pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 326.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 326.
+ [24 <./graficos/Insertion/vIntAleatorio/vIntAleatorio.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 326.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 326.
+ [25 <./graficos/Insertion/vIntCrescente/vIntCrescente.png>]
+Cap\'{\i }tulo 4.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 326.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 340.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 340.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 340.
+[26
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 340.
  (./compiladores.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 301.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 340.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 340.
 Package rerunfilecheck Info: File `compiladores.out' has not changed.
-(rerunfilecheck)             Checksum: 1D2D192D1CF3B443990B9FA13B460560;730.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 301.
+(rerunfilecheck)             Checksum: AAB24C077261A17B9FA44DD2A8EC7648;791.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 340.
  ) 
 Here is how much of TeX's memory you used:
- 12299 strings out of 494929
- 179579 string characters out of 6180142
- 312861 words of memory out of 5000000
- 15345 multiletter control sequences out of 15000+600000
- 17900 words of font info for 44 fonts, out of 8000000 for 9000
+ 13982 strings out of 494929
+ 201975 string characters out of 6180142
+ 537861 words of memory out of 5000000
+ 16149 multiletter control sequences out of 15000+600000
+ 21674 words of font info for 52 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 36i,11n,58p,388b,375s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/gustavovm/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </ho
-me/gustavovm/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </home/gust
-avovm/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/gustavovm/.
-texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/gustavovm/.texmf-v
-ar/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/gustavovm/.texmf-var/font
-s/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/gustavovm/.texmf-var/fonts/pk/lj
-four/jknappen/ec/ecbx2488.600pk> </home/gustavovm/.texmf-var/fonts/pk/ljfour/jk
-nappen/ec/ecrm1440.600pk> </home/gustavovm/.texmf-var/fonts/pk/ljfour/jknappen/
-ec/ecrm2074.600pk>
-Output written on compiladores.pdf (10 pages, 110186 bytes).
+ 36i,12n,58p,388b,1990s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/gustavovm/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </ho
+me/gustavovm/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/gust
+avovm/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk>{/usr/share/texlive
+/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/gustavovm/.texmf-var/fonts/pk/l
+jfour/jknappen/ec/ecrm0600.600pk> </home/gustavovm/.texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecbx1000.600pk> </home/gustavovm/.texmf-var/fonts/pk/ljfour/jknappen
+/ec/ecbx1728.600pk> </home/gustavovm/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecb
+x1200.600pk> </home/gustavovm/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.6
+00pk> </home/gustavovm/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> <
+/home/gustavovm/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/g
+ustavovm/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on compiladores.pdf (26 pages, 221465 bytes).
 PDF statistics:
- 422 PDF objects out of 1000 (max. 8388607)
- 144 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 99 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1578 PDF objects out of 1728 (max. 8388607)
+ 1219 compressed objects within 13 object streams
+ 873 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 

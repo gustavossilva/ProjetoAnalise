@@ -1,0 +1,24 @@
+#   n   Tempo(ns)
+    16	1067
+    32	1239
+    64	1729
+   128	4055
+   256	7638
+   512	14448
+  1024	40589
+  2048	75895
+  4096	165973
+  8192	330023
+ 16384	830598
+
+Tempo do vetor Decrescente tamanho 16: 1067
+Tempo do vetor Decrescente tamanho 32: 1239
+Tempo do vetor Decrescente tamanho 64: 1729
+Tempo do vetor Decrescente tamanho 128: 4055
+Tempo do vetor Decrescente tamanho 256: 7638
+Tempo do vetor Decrescente tamanho 512: 14448
+Tempo do vetor Decrescente tamanho 1024: 40589
+Tempo do vetor Decrescente tamanho 2048: 75895
+Tempo do vetor Decrescente tamanho 4096: 165973
+Tempo do vetor Decrescente tamanho 8192: 330023
+Tempo do vetor Decrescente tamanho 16384: 830598

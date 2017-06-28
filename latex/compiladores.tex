@@ -196,7 +196,7 @@ Universidade Federal de Uberlândia
 % Listas de figuras, tabelas e códigos criadas automaticamente
 \listoffigures            
 \listoftables            
-%\lstlistoflistings
+\lstlistoflistings
 % -------------------------------------------------------------------- %
 
 % -------------------------------------------------------------------- %
@@ -212,10 +212,49 @@ Universidade Federal de Uberlândia
 \setlength{\parskip}{0.15in} % espaçamento entre paragráfos
 
 \chapter{Introdução}
-Pequena intro sobre o trabalho
+Este relatŕio tem como objetivo fazer a análise de diversos algoritmos já conhecidos de ordenação. O intúito desde trabalho é comprovar que as provas matemáticas realmente acontecem em um ambiente real de execução.
 
 \section{Codificação}
-Todas os métodos de ordenação está códificados no arquivo ordena.c.
+O arquivo vetor.c mantém todas as funções a respeito do vetor, como geração, preenchimento, etc.
+\lstinputlisting[label={arq:vetor.c}, language=C, caption={Arquivo referente ao vetor}]{../vetor.c}
+
+Este arquivo serve para gerar os vetores e salva-los em arquivos.
+\lstinputlisting[label={arq:gera_vets.c}, language=C, caption={Geração dos vetores}]{../gera_vets.c}
+
+Este arquivo contém os algoritmos de ordenação pedidos.
+\lstinputlisting[label={arq:ordena.c}, language=C, caption={Métodos de ordenação}]{../ordena.c}
+
+O arquivo ensaios.c serve para automatizar e calcular os tempos de cada método de ordenação.
+\lstinputlisting[label={arq:ensaios.c}, language=C, caption={Automatização dos experimentos}]{../ensaios.c}
+
+\subsection{Comandos}
+Os seguintes passos devem ser seguidos para criação dos vetores que serão utilizados no experimento:
+1 - Compilar o arquivo vetor.c;
+\begin{terminal}
+    > gcc -O3 -c vetor.c
+\end{terminal}
+2 - Compilar o programar que gera os vetores e os coloca no diretório determinado;
+\begin{terminal}
+    > gcc -O3 vetor.o gera_vets.c -o gera_vets.exe
+\end{terminal}
+3 - Para usá-lo digite
+\begin{terminal}
+    > ./gera_vets.exe
+\end{terminal}
+
+Os passos a seguir são para execução do experimento>
+1 - Verifique a existência do diretório contendo os vetores, e então digite o seguinte comando:
+\begin{terminal}
+    > gcc -O3 -c ordena.c
+\end{terminal}
+2 - Agora é necessário compilar o arquivo de ensaio e tudo que será utilizado
+\begin{terminal}
+    > gcc -O3 vetor.o ordena.o ensaios.c -o ensaios.exe
+\end{terminal}
+3 - Para executar digite:
+\begin{terminal}
+    > ./ensaios.exe
+\end{terminal}
 
 \chapter{Gráficos de Funções Matemáticas}
 Colocar os gráficos de n nlogn e talz.
