@@ -1,0 +1,24 @@
+#   n   Tempo(ns)
+    16	573
+    32	359
+    64	366
+   128	441
+   256	653
+   512	1151
+  1024	1616
+  2048	3006
+  4096	5551
+  8192	11105
+ 16384	21993
+
+Tempo do vetor Crescente P10 tamanho 16: 573
+Tempo do vetor Crescente P10 tamanho 32: 792
+Tempo do vetor Crescente P10 tamanho 64: 1669
+Tempo do vetor Crescente P10 tamanho 128: 3719
+Tempo do vetor Crescente P10 tamanho 256: 9700
+Tempo do vetor Crescente P10 tamanho 512: 25058
+Tempo do vetor Crescente P10 tamanho 1024: 55952
+Tempo do vetor Crescente P10 tamanho 2048: 121179
+Tempo do vetor Crescente P10 tamanho 4096: 238053
+Tempo do vetor Crescente P10 tamanho 8192: 451335
+Tempo do vetor Crescente P10 tamanho 16384: 946165

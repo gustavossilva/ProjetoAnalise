@@ -1,0 +1,49 @@
+
+
+*******************************************************************************
+Tue Jun 27 21:53:37 2017
+
+
+FIT:    data read from 'CrescenteP40.dat' using 1:2
+        format = x:z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 7.68053e+16       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 4.82611e+07
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+c               = 1
+
+After 10 iterations the fit converged.
+final sum of squares of residuals : 3.3859e+08
+rel. change during last iteration : -1.94554e-06
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6505.67
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.23237e+07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -0.000217505     +/- 9.225e-05    (42.41%)
+b               = 9.88282          +/- 1.46         (14.77%)
+c               = 368.105          +/- 2583         (701.7%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      c      
+a               1.000 
+b              -0.961  1.000 
+c               0.455 -0.566  1.000 

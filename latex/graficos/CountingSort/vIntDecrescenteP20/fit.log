@@ -1,0 +1,49 @@
+
+
+*******************************************************************************
+Tue Jun 27 21:54:06 2017
+
+
+FIT:    data read from 'vIntDecrescenteP20.dat' using 1:2
+        format = x:z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 7.68103e+16       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 4.82611e+07
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+c               = 1
+
+After 10 iterations the fit converged.
+final sum of squares of residuals : 1.52067e+08
+rel. change during last iteration : -8.11693e-06
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4359.86
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.90084e+07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -8.6598e-05      +/- 6.182e-05    (71.39%)
+b               = 7.38001          +/- 0.9784       (13.26%)
+c               = 503.511          +/- 1731         (343.8%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      c      
+a               1.000 
+b              -0.961  1.000 
+c               0.455 -0.566  1.000 

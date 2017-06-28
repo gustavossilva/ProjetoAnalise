@@ -19,6 +19,7 @@
 \usepackage[usenames,svgnames,dvipsnames]{xcolor}
 \usepackage[a4paper,top=2.54cm,bottom=2.0cm,left=2.0cm,right=2.54cm]{geometry} % margens
 \usepackage{amsmath} 
+\usepackage{float}
 
 \usepackage[pdftex,plainpages=false,pdfpagelabels,pagebackref,colorlinks=true,citecolor=DarkGreen,
 linkcolor=NavyBlue,urlcolor=DarkRed,filecolor=green,bookmarksopen=true]{hyperref} % links coloridos
@@ -181,7 +182,7 @@ literate={â}{{\^{a}}}1  % para formatar corretamente os acentos do Português a
 
 \title{Análise de Algoritmos - Ordenação}
 \date{}
-\author{Gustavo de Souza Silva \\ Guilherme de Souza Silva \\ Arthur Xavier \\ Shumaiquer Souto \\
+\author{Gustavo de Souza Silva \\ Guilherme de Souza Silva \\ Arthur Xavier \\ Schumaiquer Souto \\
 \vspace{1cm} \\
 Faculdade de Computação \\
 Universidade Federal de Uberlândia
@@ -193,9 +194,9 @@ Universidade Federal de Uberlândia
   \maketitle
 % -------------------------------------------------------------------- %
 % Listas de figuras, tabelas e códigos criadas automaticamente
-%\listoffigures            
-%\listoftables            
-\lstlistoflistings
+\listoffigures            
+\listoftables            
+%\lstlistoflistings
 % -------------------------------------------------------------------- %
 
 % -------------------------------------------------------------------- %
@@ -211,176 +212,90 @@ Universidade Federal de Uberlândia
 \setlength{\parskip}{0.15in} % espaçamento entre paragráfos
 
 \chapter{Introdução}
-Este documento foi escrito como relatório de uma tarefa com objetivo de aumentar minhas experiências de uso da linguagem fonte MiniC, possibilitar uma compreensão mais aprofundada dos códigos Assembly da plataforma LLVM (Low Level Virtual Machine) e desenvolver habilidade de uso das ferrramentas para a plataforma LLVM.
+Pequena intro sobre o trabalho
 
-\section{LLVM}
-Desenvolvida para otimizar em tempo de compilação, ligação(linker) e execução de programas escritos em várias linguagems de programação, LLVM (Low Level Virtual Machine) é uma infraescrutura de compilador escrita em C++. Inicialmente foi feita para C e C++, porém foi expandida para Java, Python, Ruby, Haskell e muitas outra linguagens.
+\section{Codificação}
+Todas os métodos de ordenação está códificados no arquivo ordena.c.
 
-\section{LLVM IR}
-LLVM IR (LLVM Intermediate Representation) É o aspecto mais importante de um projeto, ele é a forma como é representado o código no compilador. Ele é o código intermediário do compilador, foi projetado para analisar e otimizar o código que foi compilado.
+\chapter{Gráficos de Funções Matemáticas}
+Colocar os gráficos de n nlogn e talz.
 
-\section{Instalação}
-Alguns pacotes devem ser instalados no linux Ubuntu para que seja feita a compilação e geração do código Assembly da LLVM.
+\chapter{Insertion Sort}
+Texto sobre o insertion
 
-\begin{terminal}
-> sudo apt-get install llvm
-> sudo apt-get install clang
-\end{terminal}
+\section{Insertion Sort - Vetor Aleatório}
+Um pequeno texto falando sobre o vetor totalmente aleatório e o insertion.
+\begin{table}[H]
+\centering
+\caption{Insertion Sort com Vetor aleatório}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
+16 & 592 \\ \hline
+32 & 623 \\ \hline
+64 & 1330 \\ \hline
+128 & 3921 \\ \hline
+256 & 13475 \\ \hline
+512 & 49717 \\ \hline
+1024 & 181720 \\ \hline
+2048 & 709142 \\ \hline
+4096 & 2818906 \\ \hline
+8192 & 11332358 \\ \hline
+16384 & 44220895 \\ \hline
+\end{tabular}
+\end{table}
 
-Com o primeiro comando a llvm é instalada no sistema operacional, no segundo comando é instalada a interface clang, que faz o front-end do C para LLVM
 
-Agora, podemos também instalar o OCAML, linguagem que será utilizada para fazermos o compilador, para isto digite:
-\begin{terminal}
-> sudo apt-get install ocaml
-> sudo apt-get install rlwrap
-\end{terminal}
+\subsection{Gráfico Insertion sort - Vetor Aletório}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{graficos/Insertion/vIntAleatorio/vIntAleatorio.png}
+  \caption{Gráfico Insertion Sort - Vetor Aleatorio}
+\end{figure}
 
-O primeiro comando instala o ocaml no computador, já o segundo instala o rlwrap, que salva comandos executados no terminal e se faz muito útil neste documento.
 
-\section{Compilando C em LLVM-IR e execuntado}
-Para que seja feita a conversão de um código em linguagem C para LLVM-IR, deve ser feito o seguinte comando no terminal:
+\section{Insertion Sort - Vetor Crescente}
+Pequeno texto sobre o vetor
 
-\begin{terminal}
-> clang -S -emit-llvm nome.c -o nome.ll
-\end{terminal}
-Onde nome.c é o nome do arquivo c e nome.ll é o nome do arquivo de saída no código Assembly da LLVM.
+\begin{table}[H]
+\centering
+\caption{Insertion Sort com Vetor ordenado em ordem crescente}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
+16 & 330 \\ \hline
+32 & 359 \\ \hline
+64 & 366 \\ \hline
+128 & 441 \\ \hline
+256 & 653 \\ \hline
+512 & 1151 \\ \hline
+1024 & 1616 \\ \hline
+2048 & 3006 \\ \hline
+4096 & 5551 \\ \hline
+8192 & 11105 \\ \hline
+16384 & 21993 \\ \hline
+\end{tabular}
+\end{table}
 
-Para que seja feita a execução na LLVM, os seguintes comandos devem ser seguidos:
-\begin{terminal}
-> llvm-as nome.ll
-> lli nome.bc
-\end{terminal}
-Onde o primeiro comando cria o arquivo binário, e o segundo o executa na llvm.
+\subsection{Grafico Insertio sort - Vetor Crescente}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{graficos/Insertion/vIntCrescente/vIntCrescente.png}
+  \caption{Gráfico Insertion Sort - Vetor Crescente}
+\end{figure}
+\chapter{Merge Sort}
 
-Para criar o arquivo obj, utilizando o arquivo .bc do llvm, o seguinte comando é necessário:
-\begin{terminal}
-> llc -filetype=obj nome.bc
-\end{terminal}
-
-Após a criação do arquivo obj com o llc, o arquivo executável pode ser criado utilizando o GCC.
-\begin{terminal}
-> gcc nome.o
-> ./a.out
-\end{terminal}
-
-Como nota de observação, temos que podemos gerar um arquivo executavel em C diretamente pelo GCC utilizando os comandos:
-\begin{terminal}
-> gcc nome.c -o nome.o
-> ./nome
-\end{terminal}
-O primeiro comanda cria o arquivo .o (executavel) e o segundo faz sua execução.
-
-\chapter{Programas de Teste}
-
-A seguir, os programas em C, seguidos por sua tradução para Assembly da LLVM, no fim deste capítulo, é póssivel encontrar uma "tradução" para as intruções do assembly:
-
-\section{Nano Programas}
+%para ajuda
 %\lstinputlisting[label={arq:prog1.c}, language=C, caption={Módulo Mínimo C}]{codigos/MiniC/prog1.c}
-
-
-\section{Micro Programas}
-
-
-\section{Instruções Importantes}
-
-
-\subsection{Tipos do LLVM}
-Primitivos:\\
-i1,i2,...,i8,....,i16,...,i32\\
-label,void\\
-float e double\\
-\\
-Derivados\\
-Array: [40 x i32]\\
-Pointers: [4 x i8]*\\
-Structures: i32,(i32)*,i1\\
-Function - <tiporetorno>(<parametro>):i32(i32)
-
-\subsection{Condicionais}
-Operadores possíveis condicionais de icmp\\
-eq: Igual\\
-ne: Diferente\\
-ugt: unsigned Maior que\\
-uge: unsigned Maior ou igual\\
-ult: unsigned Menor que\\
-ule: unsigned Menor ou igual\\
-sgt: signed Maior que\\
-sge: signed Maior ou igual\\
-slt: signed Menor ou igual\\
-sle: signed less or equal\\
-\\
-\\
-Operadores possíveis condicionais de fcmp:\\
-false: Sempre retorna falso, não importanto a operação.\\
-true: Sempre retorna true, não importando a operação.\\
-oeq: retorna true se todos os operadores não são QNAN e op1 é igual a op2.\\
-ogt: retorna true se todos os operadores não são QNAN e op1 é maior que op2.\\
-oge: retorna true se todos os operadores não são QNAN e op1 é maior ou igual que op2.\\
-olt: retorna true se todos os operadores não são QNAN e op1 é menor que op2.\\
-ole: retorna true se todos os operadores não são QNAN e op1 é menor ou igual que op2.\\
-one: retorna true se todos os operadores não são QNAN e op1 é diferente de op2.\\
-ord: retorna true se todos os operadores não são QNAN.\\
-ueq: retrona true se qualquer operador é QNAN ou op1 é igual a op2.\\
-ugt: retrona true se qualquer operador é QNAN ou op1 é maior que op2.\\
-uge: retrona true se qualquer operador é QNAN ou op1 é maior ou igual que op2.\\
-ult: retrona true se qualquer operador é QNAN ou op1 é menor que op2.\\
-ule: retrona true se qualquer operador é QNAN ou op1 op1 é menor ou igual que op2.\\
-une: retrona true se qualquer operador é QNAN ou op1 é diferente de op2.\\
-uno: retrona true se qualquer operador é QNAN.\\
-
-\section{Programas Extras}
-Alguns programas extras para complementar a leitura.
-
 %\lstinputlisting[label={arq:prog4.c}, language=C, caption={Atribuição de uma soma de inteiros a uma variável C}]{codigos/MiniC/prog4.c}
+%\begin{terminal}
+%> sudo apt-get install llvm
+%> sudo apt-get install clang
+%\end{terminal}
 
-
-\chapter{Compilador}
-O Compilador é um programa que traduz um programa de entrada de uma linguagem fonte para uma linguagem que possa ser indentida pela máquina. Esse processo demanda na quebra do programa em várias partes, para que seja entendido sua estrutura e significado. Para isso temos o front-end do compilador que é responsável por vários tipos de análises.
-
-\textbf{Análise Léxica:}
-Quebra a entrada (o código) em palavras conhecidas como tokens.
-
-\textbf{Análise Sintática:}
-Analisa a saída do analisador léxico estruturalmente.
-
-\textbf{Análise Semântica:}
-Cálcula o significado do programa.
-
-Além desses passos o compilador ainda conta com geração de código intermediário, optimização de código e geraçãod de código final como fases do seu processo.
-
-\section{Analisador Léxico}
-O analisador léxico é responsável por separar uma sequencia de caracteres que representa o programa fonte em entidades ou tokens, estes que são símbolos básicos da linguagem. Durante a análise léxica, os tokens são classificados como palavras reservadas, identificadores, símbolos especiais, constantes de tipos básicos (int, float), entre outras. Ele lê o texto fonte, carácter por carácter identificando os elementos léxicos da linguagem (identificadores), ignorando comentários, brancos, e includes. Pode-se entende-lo  como uma forma de verificar determinado alfabeto e então, quando analisamos uma palavra, podemos definir através da análise léxica se existe ou não algum caracter que não faz parte do alfabeto da linguagem de programação.
-
-
-Para compilar, devem ser seguidos os comandos:
-\begin{terminal}
-> ocamllex lexico.mll
-> ocamlc -c lexico.ml
-\end{terminal}
-
-
-Para utiliza-lo, no terminal digite:
-\begin{terminal}
-> rlwrap ocaml
-> #use "carregador.ml";;
-\end{terminal}
-
-Pode-se utilizar qualquer código deste documento em C para realizar os devidos testes do analisador, para isso com o ocaml aberto e o carregador carregado faça:
-\begin{terminal}
-> lex "nomedoarquivo.c";;
-\end{terminal}
-
-Um exemplo de saída de arquivo C correto pode ser visto abaixo (neste caso o programa utilizado foi o da Listagem 2.5 desde arquivo:
-
-Lexico.tokens list =
-[Lexico.INTEIRO; Lexico.MAIN; Lexico.APAR; Lexico.FPAR; Lexico.ACHAVE;
- Lexico.INTEIRO; Lexico.ID "n"; Lexico.PONTOEV; Lexico.ID "n"; Lexico.ATRIB;
- Lexico.LITINT 0; Lexico.PONTOEV; Lexico.FCHAVE; Lexico.EOF]
-
-Segue abaixo alguns programas C que fazem o analisador ter como saída uma mensagem acusando determinado erro:
-
-\chapter{Referências}
-\href{http://llvm.org/releases/3.3/docs/LangRef.html}{LLVM Documentation}\\
-\href{https://groups.google.com/forum/#!forum/comp_ufu}{Trabalhos de outros alunos do curso}\\
-  
+%\chapter{Referências}
+%\href{http://llvm.org/releases/3.3/docs/LangRef.html}{LLVM Documentation}\\
+%\href{https://groups.google.com/forum/#!forum/comp_ufu}{Trabalhos de outros alunos do curso}\\
+%  
 \end{document} 

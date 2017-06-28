@@ -1,0 +1,49 @@
+
+
+*******************************************************************************
+Tue Jun 27 21:30:30 2017
+
+
+FIT:    data read from 'vIntAleatorio.dat' using 1:2
+        format = x:z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 7.58908e+16       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 4.82611e+07
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+c               = 1
+
+After 11 iterations the fit converged.
+final sum of squares of residuals : 9.6711e+07
+rel. change during last iteration : -1.57903e-10
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3476.91
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.20889e+07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 0.00178352       +/- 4.93e-05     (2.764%)
+b               = 70.9454          +/- 0.7802       (1.1%)
+c               = -4814.66         +/- 1380         (28.67%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      c      
+a               1.000 
+b              -0.961  1.000 
+c               0.455 -0.566  1.000 

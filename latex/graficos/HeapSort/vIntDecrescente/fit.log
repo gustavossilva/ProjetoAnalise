@@ -1,0 +1,141 @@
+
+
+*******************************************************************************
+Tue Jun 27 21:32:38 2017
+
+
+FIT:    data read from 'vIntDecrescente.dat' using 1:2
+        format = x:z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 7.6249e+16        delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 4.82611e+07
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+c               = 1
+
+After 11 iterations the fit converged.
+final sum of squares of residuals : 4.92704e+07
+rel. change during last iteration : -1.24464e-10
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 2481.69
+variance of residuals (reduced chisquare) = WSSR/ndf   : 6.1588e+06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 0.000260167      +/- 3.519e-05    (13.53%)
+b               = 58.297           +/- 0.5569       (0.9553%)
+c               = -3050.72         +/- 985.3        (32.3%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      c      
+a               1.000 
+b              -0.961  1.000 
+c               0.455 -0.566  1.000 
+
+
+*******************************************************************************
+Tue Jun 27 21:34:34 2017
+
+
+FIT:    data read from 'vIntDecrescente.dat' using 1:2
+        format = x:z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1.3182e+12        delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 4033.46
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 3.85906e+08
+rel. change during last iteration : -6.13846e-12
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6548.16
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.28784e+07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 62.2542          +/- 0.4058       (0.6518%)
+b               = -6367.83         +/- 2315         (36.35%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      
+a               1.000 
+b              -0.522  1.000 
+
+
+*******************************************************************************
+Tue Jun 27 21:42:56 2017
+
+
+FIT:    data read from 'vIntDecrescente.dat' using 1:2
+        format = x:z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1.3182e+12        delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 4033.46
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 3.85906e+08
+rel. change during last iteration : -6.13846e-12
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6548.16
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.28784e+07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 62.2542          +/- 0.4058       (0.6518%)
+b               = -6367.83         +/- 2315         (36.35%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      
+a               1.000 
+b              -0.522  1.000 
