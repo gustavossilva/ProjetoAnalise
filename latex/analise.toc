@@ -32,6 +32,7 @@
 \contentsline {subsection}{\numberline {2.12.1}Grafico Insertion Sort - Vetor Decrescente P40}{43}{subsection.2.12.1}
 \contentsline {section}{\numberline {2.13}Insertion Sort - Vetor Decrescente P50}{43}{section.2.13}
 \contentsline {subsection}{\numberline {2.13.1}Grafico Insertion Sort - Vetor Decrescente P50}{44}{subsection.2.13.1}
+\contentsline {section}{\numberline {2.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{44}{section.2.14}
 \contentsline {chapter}{\numberline {3}Merge Sort}{45}{chapter.3}
 \contentsline {section}{\numberline {3.1}Merge Sort - Vetor Aleat\IeC {\'o}rio}{45}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Gr\IeC {\'a}fico Merge Sort - Vetor Aleat\IeC {\'o}rio}{46}{subsection.3.1.1}
@@ -59,6 +60,7 @@
 \contentsline {subsection}{\numberline {3.12.1}Gr\IeC {\'a}fico Merge Sort - Vetor Decrescente P40}{57}{subsection.3.12.1}
 \contentsline {section}{\numberline {3.13}Merge Sort - Vetor Decrescente P50}{57}{section.3.13}
 \contentsline {subsection}{\numberline {3.13.1}Gr\IeC {\'a}fico Merge Sort - Vetor Decrescente P50}{58}{subsection.3.13.1}
+\contentsline {section}{\numberline {3.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{58}{section.3.14}
 \contentsline {chapter}{\numberline {4}Heap Sort}{59}{chapter.4}
 \contentsline {section}{\numberline {4.1}Heap Sort - Vetor Aleat\IeC {\'o}rio}{59}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Gr\IeC {\'a}fico Heap Sort - Vetor Aleat\IeC {\'o}rio}{60}{subsection.4.1.1}
@@ -86,6 +88,7 @@
 \contentsline {subsection}{\numberline {4.12.1}Gr\IeC {\'a}fico Heap Sort - Vetor Decrescente P40}{71}{subsection.4.12.1}
 \contentsline {section}{\numberline {4.13}Heap Sort - Vetor Decrescente P50}{71}{section.4.13}
 \contentsline {subsection}{\numberline {4.13.1}Gr\IeC {\'a}fico Heap Sort - Vetor Decrescente P50}{72}{subsection.4.13.1}
+\contentsline {section}{\numberline {4.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{72}{section.4.14}
 \contentsline {chapter}{\numberline {5}Quick Sort}{73}{chapter.5}
 \contentsline {section}{\numberline {5.1}Quick Sort - Vetor Aleat\IeC {\'o}rio}{73}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Gr\IeC {\'a}fico Quick Sort - Vetor Aleat\IeC {\'o}rio}{74}{subsection.5.1.1}
@@ -113,6 +116,7 @@
 \contentsline {subsection}{\numberline {5.12.1}Gr\IeC {\'a}fico Quick Sort - Vetor Decrescente P40}{85}{subsection.5.12.1}
 \contentsline {section}{\numberline {5.13}Quick Sort - Vetor Decrescente P50}{85}{section.5.13}
 \contentsline {subsection}{\numberline {5.13.1}Gr\IeC {\'a}fico Quick Sort - Vetor Decrescente P50}{86}{subsection.5.13.1}
+\contentsline {section}{\numberline {5.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{86}{section.5.14}
 \contentsline {chapter}{\numberline {6}Counting Sort}{87}{chapter.6}
 \contentsline {section}{\numberline {6.1}Counting Sort - Vetor Aleat\IeC {\'o}rio}{87}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Gr\IeC {\'a}fico Counting Sort - Vetor Aleat\IeC {\'o}rio}{88}{subsection.6.1.1}
@@ -140,6 +144,7 @@
 \contentsline {subsection}{\numberline {6.12.1}Gr\IeC {\'a}fico Counting Sort - Vetor Decrescente P40}{99}{subsection.6.12.1}
 \contentsline {section}{\numberline {6.13}Counting Sort - Vetor Decrescente P50}{99}{section.6.13}
 \contentsline {subsection}{\numberline {6.13.1}Gr\IeC {\'a}fico Counting Sort - Vetor Decrescente P50}{100}{subsection.6.13.1}
+\contentsline {section}{\numberline {6.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{100}{section.6.14}
 \contentsline {chapter}{\numberline {7}Radix Sort}{101}{chapter.7}
 \contentsline {section}{\numberline {7.1}Radix Sort - Vetor Aleat\IeC {\'o}rio}{101}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Gr\IeC {\'a}fico Radix Sort - Vetor Aleat\IeC {\'o}rio}{102}{subsection.7.1.1}
@@ -167,6 +172,7 @@
 \contentsline {subsection}{\numberline {7.12.1}Gr\IeC {\'a}fico Radix Sort - Vetor Decrescente P40}{113}{subsection.7.12.1}
 \contentsline {section}{\numberline {7.13}Radix Sort - Vetor Decrescente P50}{113}{section.7.13}
 \contentsline {subsection}{\numberline {7.13.1}Gr\IeC {\'a}fico Radix Sort - Vetor Decrescente P50}{114}{subsection.7.13.1}
+\contentsline {section}{\numberline {7.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{114}{section.7.14}
 \contentsline {chapter}{\numberline {8}Bucket sort}{115}{chapter.8}
 \contentsline {section}{\numberline {8.1}Bucket sort - Vetor Aleat\IeC {\'o}rio}{115}{section.8.1}
 \contentsline {subsection}{\numberline {8.1.1}Gr\IeC {\'a}fico Bucket sort - Vetor Alet\IeC {\'o}rio}{116}{subsection.8.1.1}
@@ -194,5 +200,6 @@
 \contentsline {subsection}{\numberline {8.12.1}Grafico Bucket sort - Vetor Decrescente P40}{127}{subsection.8.12.1}
 \contentsline {section}{\numberline {8.13}Bucket sort - Vetor Decrescente P50}{127}{section.8.13}
 \contentsline {subsection}{\numberline {8.13.1}Grafico Bucket sort - Vetor Decrescente P50}{128}{subsection.8.13.1}
+\contentsline {section}{\numberline {8.14}Observa\IeC {\c c}\IeC {\~o}es Finais}{128}{section.8.14}
 \contentsline {chapter}{\numberline {9}Refer\IeC {\^e}ncias}{129}{chapter.9}
 \contentsfinish 

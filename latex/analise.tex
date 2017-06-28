@@ -676,6 +676,9 @@ Tabela gerada utilizando Insertion Sort com vetores de tamanho n, sendo = $(2^k)
   \caption{Gráfico Insertion Sort - Vetor Decrescente P50}
 \end{figure}
 
+\section{Observações Finais}
+Insertion em ordem decrescente com $2^k$ com k = 32 elementos: levaria aproximadamente 205 anos e 22 dias 
+
 \chapter{Merge Sort}
 O algoritmo de ordenação Merge Sort (Intercalação) ordena por comparações utilizando o conceito de dividir-para-conquistar.
 Basicamente o algoritmo divide o problema em vários sub-problemas e os resolve através de recursividade e conquista pegando o unindo todos os sub-problemas que foram resolvidos.
@@ -1070,6 +1073,8 @@ Tabela gerada utilizando Merge Sort com vetores de tamanho n, sendo n = $(2^k)$,
     \includegraphics[width=0.7\linewidth]{graficos/MergeSort/vIntDecrescenteP50/vIntDecrescenteP50.png}
   \caption{Gráfico Merge Sort - Vetor Decrescente P50}
 \end{figure}
+\section{Observações Finais}
+Merge sort com vetor de elementos totalmente aleatório levaria aproximadamente 2 horas e 49 minutos para processar um vetor de $2^k$ com k = 32 elementos nessas condições.
 
 \chapter{Heap Sort}
 O algoritmo de ordenação Heap Sort é um algoritmo não estável. Ele faz uso de uma estrutura chamadas heap e ordena os elementos a medida que insere na estrutura, assim ao terminar as inserções, os elementos podem ser removidos da raíz sucessivamente na ordem desejada, mantendo a propriedade de max-heap(ou min-heap).
@@ -1465,6 +1470,8 @@ Tabela gerada utilizando Heap Sort com vetores de tamanho n, sendo n = $(2^k)$, 
     \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntDecrescenteP50/vIntDecrescenteP50.png}
   \caption{Gráfico Heap Sort - Vetor Decrescente P50}
 \end{figure}
+\section{Observações Finais}
+heap sort com vetor em ordem decrescente com 10\% dos elementos ordenados levaria aproximadamente 10 minutos para processar um vetor de $2^k$ com k = 32 elementos.
 
 \chapter{Quick Sort}
 QuickSort adota a estratégia de divisão e conquista, basicamente ele trabalha escolhendo um pivo, ele rearranja a lista da forma que os maiores que pivo ficam a direita e menores a esquerda, ele faz isso recursivamente até que tenha uma lista ordenada.
@@ -1859,6 +1866,8 @@ Tabela gerada utilizando Quick Sort com vetores de tamanho n, sendo n = $(2^k)$,
     \includegraphics[width=0.7\linewidth]{graficos/QuickSort/vIntDecrescenteP50/vIntDecrescenteP50.png}
   \caption{Gráfico Quick Sort - Vetor Decrescente P50}
 \end{figure}
+\section{Observações Finais}
+quick sort com vetor de elementos totalmente aleatório levaria aproximadamente 12 minutos para processar um vetor de $2^k$ com k = 32 elementos nessas condições.
 
 \chapter{Counting Sort}
 O algoritmo de ordenação Counting Sort é um algoritmo estável. Basicamente ele determina para cada entrada X, o número de elementos menor que ele, e utilizando essa informação, ele coloca o elemento x diretamente na posição correta no vetor de saída.
@@ -2253,6 +2262,8 @@ Tabela gerada utilizando Counting Sort com vetores de tamanho n, sendo n = $(2^k
     \includegraphics[width=0.7\linewidth]{graficos/CountingSort/vIntDecrescenteP50/vIntDecrescenteP50.png}
   \caption{Gráfico Counting Sort - Vetor Decrescente P50}
 \end{figure}
+\section{Observações Finais}
+couting sort com vetor de elementos totalmente aleatório levaria aproximadamente 49 segundos para processar um vetor de $2^k$ com k = 32 elementos nessas condições.
 
 \chapter{Radix Sort}
 O algoritmo de ordenação Radix Sort é um algoritmo estável. Ele ordena itens que são identificados por chaves únicas. Cada chave é uma cadeia de caracteres ou número, o radix ordena as chaves. Ele ordena inteiros processando digitos indivíduais.
@@ -2647,6 +2658,8 @@ Tabela gerada utilizando Radix Sort com vetores de tamanho n, sendo n = $(2^k)$,
     \includegraphics[width=0.7\linewidth]{graficos/RadixSort/vIntDecrescenteP50/vIntDecrescenteP50.png}
   \caption{Gráfico Radix Sort - Vetor Decrescente P50}
 \end{figure}
+\section{Observações Finais}
+hadix sort com vetor totalmente decrescente levaria aproximadamente 4 minutos e 34 segundos para processar um vetor de $2^k$ com k = 32 elementos.
 
 \chapter{Bucket sort}
 Bucket sort é um algoritmo de ordenação que funciona dividindo um vetor em um número finito de recipientes. Cada recipiente é então ordenado individualmente, seja usando um algoritmo de ordenação diferente, ou usando o algoritmo bucket sort recursivamente. Complexidade no pior caso O$(n^2)$ e no melhor caso caso O(n+k).
@@ -3059,6 +3072,8 @@ Tabela gerada utilizando Bucket sort com vetores de tamanho n, sendo = $(2^k)$, 
     \includegraphics[width=0.7\linewidth]{graficos/Bucket/vIntDecrescenteP50/vIntDecrescenteP50.png}
   \caption{Gráfico Bucket sort - Vetor Decrescente P50}
 \end{figure}
+\section{Observações Finais}
+Bucket sort com vetor em ordem aleatória com $2^k$ com k = 32 elementos levaria aproximadamente 287 anos 2 meses e 30 dias para processar nessas condições.
 
 %para ajuda
 %\lstinputlisting[label={arq:prog1.c}, language=C, caption={Módulo Mínimo C}]{codigos/MiniC/prog1.c}
