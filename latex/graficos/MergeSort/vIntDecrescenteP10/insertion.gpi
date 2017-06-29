@@ -14,7 +14,7 @@ t(x) = a*x*log(x) + b
 fit t(x) 'vIntDecrescenteP10.dat' using 1:2 via a, b
 
 titulo = sprintf("T(n) = %.4gn*log(n) + %.4g",a,b)
-titulo = sprintf("Método Merge Sort com vetor decrescente 10%% ordenado\n%s", titulo)
+titulo = sprintf("Método Merge Sort com vetor decrescente 10%% desordenado\n%s", titulo)
 set title titulo
 
 plot 'vIntDecrescenteP10.dat' title "medições" with points pt 7 ps 1.2 , \

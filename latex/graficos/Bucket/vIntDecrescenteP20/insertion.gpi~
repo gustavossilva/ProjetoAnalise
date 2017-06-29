@@ -14,8 +14,8 @@ t(x) = a*x**2 + b*x + c
 fit t(x) 'vIntDecrescenteP20.dat' using 1:2 via a, b, c
 
 titulo = sprintf("T(n) = %.4gn**2 + %.4gn + %.4g",a,b,c)
-titulo = sprintf("Método bucket sort com vetor em ordem decrescente 20%% ordenado\n%s", titulo)
+titulo = sprintf("Método bucket sort com vetor em ordem decrescente 20%% desordenado\n%s", titulo)
 set title titulo
 
-plot 'vIntCrescente.dat' title "medições" with points pt 7 ps 1.2 , \
+plot 'vIntDecrescenteP20.dat' title "medições" with points pt 7 ps 1.2 , \
      t(x) title "T(n)" lt 1 lc 3

@@ -1,8 +1,0 @@
-cmake_minimum_required(VERSION 3.7)
-project(ProjetoAnalise)
-
-set(CMAKE_C_STANDARD 99)
-
-set(SOURCE_FILES main.c algs.c gerador.h gerador.c main.h algs.h)
-
-add_executable(ProjetoAnalise ${SOURCE_FILES})

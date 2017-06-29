@@ -45,39 +45,52 @@ void ordena_por_shell(int *A, int n){
   }
 }
 
+
 void ordena_intercala(int * v,int p,int r)
 {
     int q;
     if (p < r) {
-        q = floor ((p + r) / 2); // retorna o chão dessa operação
+        q = (p + r) / 2; // retorna o chão dessa operação
         ordena_intercala (v, p, q);
         ordena_intercala(v, q + 1, r);
         intercala(v, p, q, r);
     }
 }
 
-void intercala(int * v,int p, int q, int r)
-{
-    int *B = calloc((r+1),sizeof(int));
-    int i,k,j;
-    for (i = p; i<=q; i++)
-        B[i] = v[i];
-    for (j = (q + 1); j<= r;j++) {
-        B[(r + q + 1 - j)] = v[j];
+
+void intercala(int *V, int p, int q, int r) {
+  int inicio1 = p ;
+  int inicio2 = q+1 ;
+  int aux = 0;
+  int B[r-p+1];
+  
+  while(inicio1<=q && inicio2<=r){
+    if(V[inicio2] >= V[inicio1]){
+      B[aux] = V[inicio1];
+      inicio1++;
+    }else{
+      B[aux] = V[inicio2];
+      inicio2++;
     }
-    i = p;
-    j = r;
-    for(k = p; k<=r; k++) {
-            if (B[i] <= B[j]) {
-                v[k] = B[i];
-                i++;
-            } else {
-                v[k] = B[j];
-                j--;
-            }
-    }
-	free(B);
+    aux++;
+  }
+  
+  while(inicio1<=q){  
+    B[aux] = V[inicio1];
+    aux++;
+	inicio1++;
+  }
+  
+  while(inicio2<=r){   
+    B[aux] = V[inicio2];
+    aux++;
+	inicio2++;
+  }
+  
+  for(aux=p;aux<=r;aux++)
+    V[aux] = B[aux-p];
 }
+
 
 void insertion(int *v, int tam)
 {

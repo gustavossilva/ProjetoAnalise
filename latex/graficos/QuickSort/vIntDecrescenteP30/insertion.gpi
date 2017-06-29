@@ -14,7 +14,7 @@ t(x) = a*x*log(x) + b
 fit t(x) 'vIntDecrescenteP30.dat' using 1:2 via a, b
 
 titulo = sprintf("T(n) = %.4gn*log(n) + %.4g",a,b)
-titulo = sprintf("Método QuickSort com vetor decrescente 30%% ordenado\n%s", titulo)
+titulo = sprintf("Método QuickSort com vetor decrescente 30%% desordenado\n%s", titulo)
 set title titulo
 
 plot 'vIntDecrescenteP30.dat' title "medições" with points pt 7 ps 1.2 , \

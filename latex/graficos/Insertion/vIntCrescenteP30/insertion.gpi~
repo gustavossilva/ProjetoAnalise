@@ -14,7 +14,7 @@ t(x) = a*x**2 + b*x + c
 fit t(x) 'CrescenteP30.dat' using 1:2 via a, b, c
 
 titulo = sprintf("T(n) = %.4gn**2 + %.4gn + %.4g",a,b,c)
-titulo = sprintf("Método insertion sort com vetor crescente 30 ordenado\n%s", titulo)
+titulo = sprintf("Método insertion sort com vetor crescente 30%% ordenado\n%s", titulo)
 set title titulo
 
 plot 'CrescenteP30.dat' title "medições" with points pt 7 ps 1.2 , \

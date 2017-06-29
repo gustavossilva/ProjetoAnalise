@@ -1,3 +1,0 @@
-/home/gustavovm/CLionProjects/ProjetoAnalise/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/gustavovm/CLionProjects/ProjetoAnalise/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/gustavovm/CLionProjects/ProjetoAnalise/cmake-build-debug/CMakeFiles/ProjetoAnalise.dir

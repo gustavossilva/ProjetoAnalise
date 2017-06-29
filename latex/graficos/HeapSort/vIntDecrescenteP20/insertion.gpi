@@ -14,7 +14,7 @@ t(x) = a*x*log(x) + b
 fit t(x) 'vIntDecrescenteP20.dat' using 1:2 via a, b
 
 titulo = sprintf("T(n) = %.4gn*log(n) + %.4g",a,b)
-titulo = sprintf("Método Heap Sort com vetor decrescente 20%% ordenado\n%s", titulo)
+titulo = sprintf("Método Heap Sort com vetor decrescente 20%% desordenado\n%s", titulo)
 set title titulo
 
 plot 'vIntDecrescenteP20.dat' title "medições" with points pt 7 ps 1.2 , \

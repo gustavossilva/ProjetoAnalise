@@ -10,11 +10,11 @@ set ytics nomirror
 set key Left 
 set key left top
 
-t(x) = a*x**2 + b*x + c
-fit t(x) 'vIntDecrescenteP10.dat' using 1:2 via a, b, c
+t(x) = a*x + b
+fit t(x) 'vIntDecrescenteP10.dat' using 1:2 via a, b
 
-titulo = sprintf("T(n) = %.4gn**2 + %.4gn + %.4g",a,b,c)
-titulo = sprintf("Método Counting Sort com vetor decrescente 10%% ordenado\n%s", titulo)
+titulo = sprintf("T(n) = %.4gn + %.4g",a,b)
+titulo = sprintf("Método Radix Sort com vetor decrescente 10%% ordenado\n%s", titulo)
 set title titulo
 
 plot 'vIntDecrescenteP10.dat' title "medições" with points pt 7 ps 1.2 , \
