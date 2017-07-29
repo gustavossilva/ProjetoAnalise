@@ -10,12 +10,13 @@
 #include <unistd.h>
 
 #include "grafo.h"
+#include "opgrafo.h"
 
 #define BILHAO 1000000000L
 
-#define CRONOMETRA(funcao,vetor,n) {                          \
+#define CRONOMETRA(funcao,grafo,n) {                          \
    clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &inicio);          \
-   funcao(vetor,0,n-1);                                           \
+   funcao(grafo,n);                                           \
    clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &fim);             \
    tempo_de_cpu_aux = BILHAO * (fim.tv_sec - inicio.tv_sec) +     \
                   fim.tv_nsec - inicio.tv_nsec;               \
@@ -59,12 +60,14 @@ int main(int argc, char *argv[]){
         //ordena_por_bolha(v,n);
         //insertion(v,tamanho);
         //fim = clock();
-	    //CRONOMETRA(ordena_intercala, v,tamanho);
+	    CRONOMETRA(BuscaEmLargura, grafo,tamanho);
         //tempo_de_cpu += ((double) (fim - inicio)) / CLOCKS_PER_SEC;
-	//tempo_de_cpu += tempo_de_cpu_aux;
+	    //tempo_de_cpu += tempo_de_cpu_aux;
         }
         //PrintAdjList(grafo,tamanho);
         //clearList(grafo,tamanho);
+        //printf("Tamanho %d ", tamanho);
+        //printf("Tempo %ld\n",tempo_de_cpu);
     }
   //imprime_vetor_int(v,16384);
     exit(0);

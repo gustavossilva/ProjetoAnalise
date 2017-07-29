@@ -37,7 +37,6 @@ Node** CriaListAdj(Node **node, char *arq)
     node = initial(nv);
     int v1,v2;
     Node *ptr;
-    printf("tamanho %d",nv);
     while(fscanf(fp,"%d %d",&v1,&v2)!=EOF){
         ptr = (Node *)malloc(sizeof(Node));
         ptr->vertex = v2;
@@ -62,8 +61,7 @@ int getTamanho(char *arq){
     FILE *fp = NULL;
     int nv;
     fp = fopen(arq,"r");
-    if(fscanf(fp,"%d",&nv))
-        printf("ok!");
+    if(fscanf(fp,"%d",&nv));
     return nv;
 }
 
