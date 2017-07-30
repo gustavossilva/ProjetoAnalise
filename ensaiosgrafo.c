@@ -62,12 +62,12 @@ int main(int argc, char *argv[]){
         //fim = clock();
 	    CRONOMETRA(BuscaEmLargura, grafo,tamanho);
         //tempo_de_cpu += ((double) (fim - inicio)) / CLOCKS_PER_SEC;
-	    //tempo_de_cpu += tempo_de_cpu_aux;
+	    tempo_de_cpu += tempo_de_cpu_aux;
         }
         //PrintAdjList(grafo,tamanho);
         //clearList(grafo,tamanho);
-        //printf("Tamanho %d ", tamanho);
-        //printf("Tempo %ld\n",tempo_de_cpu);
+        printf("Tamanho %d ", tamanho);
+        printf("Tempo %ld\n",tempo_de_cpu);
     }
   //imprime_vetor_int(v,16384);
     exit(0);

@@ -17,7 +17,8 @@ void VisitaEmProfundidade(Node** G, int u, int* cor,int *r,int tempo){
 		aux = aux->next;
 	}
 	cor[u] = 0;
-
+	tempo = tempo+1;
+    //f[u] = tempo;
 }
 
 
@@ -42,9 +43,14 @@ void BuscaEmProfundidade(Node **G, int u){
 }
 
 void BuscaEmLargura(Node** G ,int tam){
+    Node* fila[1024];
+    int front = 0;
+    int rear = -1;
+    int itemCount = 0;
+
     int source = 1;
 	int cor[tam],r[tam];
-	Fila* f = NULL;
+	//Fila* Q = (Fila*)malloc(sizeof(Fila));
 	Node *aux;
 	Node *tmp;
 	for(int i=1;i<=tam;i++){
@@ -56,52 +62,57 @@ void BuscaEmLargura(Node** G ,int tam){
 	cor[source] = 1;
 	//d[source] = 0;
 	r[source] = source;
-	//InsereNaFila(&f, G[source]);
-	/*while(f != NULL){
-		//aux = RemoveDaFila(f);
+	InsereNaFila(fila,G[source],&itemCount,&rear);
+	while(isEmpty(itemCount) != 1){
+		aux = RemoveDaFila(fila,&itemCount,&front);
 		tmp = aux;
 		while(tmp!=NULL){
-			tmp = tmp->next;
 			if(cor[tmp->vertex] == 2){
 				cor[tmp->vertex] = 1;
 				//d[tmp->vertex] = d[aux->vertex] + 1
 				r[tmp->vertex] = aux->vertex;
-				//InsereNaFila(f,tmp);
+				InsereNaFila(fila,G[tmp->vertex],&itemCount,&rear);
 			}
+			tmp = tmp->next;
 		}
 		cor[aux->vertex] = 0;
-	}*/
+	}
 }
 
-void InsereNaFila(Fila **fila, Node *a){
-	Fila *aux = (Fila*)malloc(sizeof(Fila));
-	aux->dado = a;
-	aux->next = (*fila);
-	(*fila) = aux;
-	/*if(!aux->dado){
-		fila->dado = a;
-		fila->next = NULL;
-	}else{
-		while(!aux->next){
-			aux = aux->next;
-		}
-		Fila *nova = (Fila*)malloc(sizeof(Fila));
-		aux->next = nova;
-		nova->dado = a;
-		nova->next = NULL;
-	}*/
+Node* topoDaFila(Node**fila,int front){
+    return fila[front];
+}
+
+int isFull(int itemCount){
+    if(itemCount == 1024)
+        return 1;
+    else
+        return 0;
+}
+
+int isEmpty(int itemCount){
+    if(itemCount == 0)
+        return 1;
+    else
+        return 0;
+}
+
+void InsereNaFila(Node** fila,Node* no,int* itemCount,int* rear){
+    if(!isFull(*itemCount)){
+        if(*rear == 1024-1){
+            *rear = -1;
+        }
+        fila[++(*rear)] = no;
+        (*itemCount)++;
+    }
+}
+
+Node* RemoveDaFila(Node** fila,int *itemCount,int *front) {
+   Node* data = fila[(*front)++];
 	
+   if((*front) == 1024) {
+      (*front) = 0;
+   }
+   (*itemCount)--;
+   return data;  
 }
-
-Node * RemoveDaFila(Fila *fila){
-	Node* no;
-	if(!fila){
-		no = fila->dado;
-		fila = fila->next;
-		return no;
-	}
-	else{
-		return NULL;
-	}
-}
-
