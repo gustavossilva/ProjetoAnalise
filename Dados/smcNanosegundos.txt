@@ -1,0 +1,12 @@
+Tamanho 16 Tempo 7047
+Tamanho 32 Tempo 12406
+Tamanho 64 Tempo 23325
+Tamanho 128 Tempo 53892
+Tamanho 256 Tempo 111991
+Tamanho 512 Tempo 181464
+Tamanho 1024 Tempo 356165
+Tamanho 2048 Tempo 708123
+Tamanho 4096 Tempo 1434151
+Tamanho 8192 Tempo 3129872
+Tamanho 16384 Tempo 6078938
+

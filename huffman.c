@@ -10,11 +10,13 @@
 #include <sys/stat.h>
 #include <stdint.h>
 
+#include "final.h"
+
 #define BILHAO 1000000000L
 
-#define CRONOMETRA(funcao,palavras,freq,n) {                          \
+#define CRONOMETRA(funcao,palavras,palavra2,n1,n2) {                          \
    clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &inicio);          \
-   funcao(palavras,freq,n);                                           \
+   funcao(palavras,palavra2,n1,n2);                                           \
    clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &fim);             \
    tempo_de_cpu_aux = BILHAO * (fim.tv_sec - inicio.tv_sec) +     \
                   fim.tv_nsec - inicio.tv_nsec;               \
@@ -277,6 +279,7 @@ int main(){
 	char *caracteres = "abcdefghijklmnopqrstuvwxyz";
     char* teste[11];
     int tamanho[11];
+    int j=11;
     int** freq = (int**)malloc(11*sizeof(int*));
     for(int i=0;i<26;i++){
         freq[i] = (int*)calloc(26,sizeof(int));
@@ -286,9 +289,10 @@ int main(){
         teste[i] = gera_string(tamanho[i]);
         freq[i] = getFrequencias(teste[i],freq[i],tamanho[i]);
     }
-        for(int i=0;i<11;i++){
-            for(int j=0;j<3;j++){
-                CRONOMETRA(HuffmanCodes, teste[i],freq[i],tamanho[i]);
+        for(int i=0;i<2;i++){
+            for(int j=0;j<1;j++){
+                //CRONOMETRA(HuffmanCodes, teste[i],freq[i],tamanho[i]);
+                //CRONOMETRA(scm_recursiva,teste[i],teste[j],tamanho[i],tamanho[j]);
                 tempo_de_cpu += tempo_de_cpu_aux;
                 //printf("Tempo antes da divisao: %ld\n",tempo_de_cpu);
                 //HuffmanCodes(teste[i],freq[i],tamanho[i]);
@@ -298,6 +302,7 @@ int main(){
             printf("Tempo %ld\n",tempo_de_cpu/3);
             tempo_de_cpu = 0;
             tempo_de_cpu_aux = 0;
+            j--;
         }
     //for(int i=0;i<11;i++){
     //    for(int j=0;j<26;j++){
