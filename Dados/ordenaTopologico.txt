@@ -1,0 +1,11 @@
+Esparso
+Tamanho 128 Tempo 13549
+Tamanho 256 Tempo 15347
+Tamanho 512 Tempo 30745
+Tamanho 1024 Tempo 57293
+Denso
+Tamanho 128 Tempo 93864
+Tamanho 256 Tempo 349061
+Tamanho 512 Tempo 1344655
+Tamanho 1024 Tempo 4865168
+

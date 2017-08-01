@@ -60,7 +60,7 @@ int main(int argc, char *argv[]){
         //ordena_por_bolha(v,n);
         //insertion(v,tamanho);
         //fim = clock();
-	    CRONOMETRA(BuscaEmLargura, grafo,tamanho);
+	    CRONOMETRA(OrdenaTopologico, grafo,tamanho);
         //tempo_de_cpu += ((double) (fim - inicio)) / CLOCKS_PER_SEC;
 	    tempo_de_cpu += tempo_de_cpu_aux;
         }

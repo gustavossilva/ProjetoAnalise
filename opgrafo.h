@@ -13,4 +13,6 @@ Node * RemoveDaFila(Node**,int*,int*);
 int isEmpty(int);
 int isFull(int);
 void BuscaEmLargura(Node** G ,int tam);
+void VisitaEmProfundidadeTop(Node** G, int u, int* cor,int *r,int tempo,int *d, int *f,Node **fila, int* rear, int *itemCount);
+void OrdenaTopologico(Node **G, int u);
 #endif

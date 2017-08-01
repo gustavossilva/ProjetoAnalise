@@ -105,6 +105,7 @@ void InsereNaFila(Node** fila,Node* no,int* itemCount,int* rear){
         fila[++(*rear)] = no;
         (*itemCount)++;
     }
+    //printf("Elemento inserido %d \n", no->vertex);
 }
 
 Node* RemoveDaFila(Node** fila,int *itemCount,int *front) {
@@ -115,4 +116,50 @@ Node* RemoveDaFila(Node** fila,int *itemCount,int *front) {
    }
    (*itemCount)--;
    return data;  
+}
+
+
+void VisitaEmProfundidadeTop(Node** G, int u, int* cor,int *r,int tempo,int *d, int *f,Node **fila, int* rear, int *itemCount){
+	cor[u] = 1;	// 1: CINZA
+	tempo = tempo + 1;
+	d[u] = tempo;
+	Node* aux = G[u]->next;
+	while(aux != NULL){
+		if(cor[aux->vertex] == 2){
+			r[aux->vertex] = u;
+			VisitaEmProfundidadeTop(G,aux->vertex,cor,r,tempo,d,f,fila,rear,itemCount);
+		}
+		aux = aux->next;
+	}
+	cor[u] = 0;
+	tempo = tempo+1;
+    f[u] = tempo; 
+    //printf("Aresta %d tempo %d",u,f[u]);
+    InsereNaFila(fila,G[u],itemCount,rear);
+}
+
+
+void OrdenaTopologico(Node **G, int u){
+    Node* fila[1025];
+    int front = 0;
+    int rear = -1;
+    int itemCount = 0;
+	int cor[u];
+	int r[u];
+	int d[u];
+	int f[u];
+	int tempo;
+	int i;
+
+	for(i = 1; i<=u ; i++)
+		cor[i] = 2; 	//	2: Branco
+	tempo = 0;
+	for(int i=1;i<=u;i++){
+		if(cor[i] == 2){
+			VisitaEmProfundidadeTop(G,i,cor, r,tempo,d,f, fila, &rear,&itemCount);
+		}
+	}
+	//for(int i=(u-1);i>0;i--){
+	//    printf("%d, ",fila[i]->vertex);
+	//}
 }
