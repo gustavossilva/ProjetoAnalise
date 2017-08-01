@@ -369,7 +369,7 @@ Tabela gerada utilizando Busca em Profundidade com um Grafo Denso, sendo n = $(2
 
 \section{Ordenação Topologica}
 
-blabalblalbalbalb
+ É uma ordem linear de seus nós em que cada nó vem antes de todos nós para os quais este tenha arestas de saída. Cada DAG tem uma ou mais ordenações topológicas.
 
 \section{Ordenação Topologica - Grafo Esparso}
 Tabela gerada utilizando Ordenação Topologica com um Grafo Esparso, sendo n = $(2^k)$, de k = 4..14.
@@ -419,12 +419,11 @@ Tabela gerada utilizando Ordenação Topologica com um Grafo Denso, sendo n = $(
 
 \chapter{Guloso}
 
- blablabla
+Algoritmo guloso ou míope é técnica de projeto de algoritmos que tenta resolver o problema fazendo a escolha localmente ótima em cada fase com a esperança de encontrar um ótimo global.
 
 \section{Huffman}
 
-blabalbal Vetor de string aleatorias com frequencias aleatorias
-Tempo (Onlgn)
+A codificação de Huffman é um método de compressão que usa as probabilidades de ocorrência dos símbolos no conjunto de dados a ser comprimido para determinar códigos de tamanho variável para cada símbolo.
 
 \subsection{Vetor aleatorio}
 Tabela gerada utilizando Huffman com vetor de string aleatorias com frequencias em tempo O(nlogn) de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos aleatóriamente.
@@ -458,7 +457,8 @@ Tabela gerada utilizando Huffman com vetor de string aleatorias com frequencias 
 
 \section{Seleção de Atividade Interativo}
 
-blabalbal 
+É um problema onde dado um conjunto S de atividades, encontrar o maior subconjunto de S com
+atividades mutuamente compatíveis.
 
 \subsection{Vetor crescente}
 Tabela gerada utilizando Seleção de Atividade Interativo com vetor de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos crescente.
@@ -493,7 +493,8 @@ Tabela gerada utilizando Seleção de Atividade Interativo com vetor de tamanho 
 
 \section{Seleção de Atividade Bottom Up}
 
-blabalbal 
+É um problema onde dado um conjunto S de atividades, encontrar o maior subconjunto de S com
+atividades mutuamente compatíveis.
 
 \subsection{Vetor crescente}
 Tabela gerada utilizando Seleção de Atividade Bottom Up com vetor de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos crescente.
@@ -528,16 +529,16 @@ Tabela gerada utilizando Seleção de Atividade Bottom Up com vetor de tamanho n
 
 \chapter{Programação Dinâmica}
 
-Programação dinamica blablabla
+Programação dinâmica é um método para a construção de algoritmos para a resolução de problemas computacionais, em especial os de otimização combinatória. Ela é aplicável a problemas nos quais a solução ótima pode ser computada a partir da solução ótima previamente calculada e memorizada.
+
 \section{Corte Haste}
-Falar sobre corte de hastes comum
-+dados
-falar o que deu errado.
-Será resolvido utilizando programação dinâmica.
+
+O problema consiste em dada uma haste de npolegadas de comprimento, e uma tabela de preços pi, para i= 1,2,...,n, determinar qual a receita máxima que se pode obter cortando a haste e vendendo os seus pedaços, considerando que os comprimentos são sempre números inteiros de polegadas.
+
 
 \section{Corte Haste Bottom Up}
 
-falar um pouco sobre bottomup (n muito).
+É uma aproximação do problema de Corte de Haste utilizando a arvore de Bottom Up.
 
 \subsection{Vetor aleatorio}
 Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos aleatóriamente.
@@ -567,7 +568,6 @@ Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n
     \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
   \caption{Corte Haste Bottom Up - Vetor Aleatório}
 \end{figure}
-
 
 \subsection{Vetor Crescente}
 Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos de forma crescente.
@@ -599,8 +599,6 @@ Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n
 \end{figure}
 
 
-
-
 \subsection{Vetor Crescente P10}
 Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos de forma crescente P10.
 \begin{table}[H]
@@ -629,9 +627,6 @@ Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n
     \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
   \caption{Corte Haste Bottom Up - Vetor Crescente P10}
 \end{figure}
-
-
-
 
 
 \subsection{Vetor Crescente P20}
@@ -957,13 +952,11 @@ Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n
   \caption{Corte Haste Bottom Up - Vetor Decrescente P50}
 \end{figure}
 
-
-
-
 \section{Corte Haste Comum}
 
-blablabal
+Refere ao problema já mencionado anteriormente.
 
+\section(Vetor Comum)
 Tabela gerada utilizando Corte Haste Comum com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos aleatóriamente, crescente, crescente P10, crescente P20, crescente P30, decrescente, decrescente P10, decrescente P20, decrescenteP30.
 \begin{table}[H]
 \centering
@@ -991,14 +984,9 @@ Tabela gerada utilizando Corte Haste Comum com vetores de tamanho n, sendo n = $
 \end{figure}
 
 
-
-
-
-
-
 \section{Corte Haste Memoizada}
 
-blablbablabla
+É uma aproximação do algoritmo utilizando a arvore Top DowN.
 
 \subsection{Vetor aleatorio}
 Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos aleatóriamente.
@@ -1224,8 +1212,6 @@ Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n
 \end{figure}
 
 
-
-
 \subsection{Vetor Decrescente}
 Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos de forma decrescente.
 \begin{table}[H]
@@ -1256,7 +1242,6 @@ Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n
 \end{figure}
 
 
-
 \subsection{Vetor Decrescente P10}
 Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos de forma decrescente P10.
 \begin{table}[H]
@@ -1285,10 +1270,6 @@ Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n
     \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
   \caption{Corte Haste Memoizada - Vetor Decrescente P10}
 \end{figure}
-
-
-
-
 
 \subsection{Vetor Decrescente P20}
 Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos de forma decrescente P20.
@@ -1383,9 +1364,6 @@ Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n
 \end{figure}
 
 
-
-
-
 \subsection{Vetor Decrescente P50}
 Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos de forma decrescente P50.
 \begin{table}[H]
@@ -1415,11 +1393,71 @@ Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n
   \caption{Corte Haste Memoizada - Vetor Decrescente P50}
 \end{figure}
 
+\section{SCM}
+
+Suponha que A[1..n] é uma sequência de números naturais. Uma subsequência de A[1..n] é o que sobra depois que um conjunto arbitrário de termos é apagado.  (Não confunda subsequência com segmento: um segmento de A[1..n] é o que sobra depois que apagamos um número arbitrário de termos no início de A e um número arbitrário de termos no fim de A).
+
+\subsection{Vetor caracteres}
+Tabela gerada utilizando SCM com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14.
+\begin{table}[H]
+\centering
+\caption{SCM com vetor de caracteres}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
+16 & 7047 \\ \hline
+32 & 12406 \\ \hline
+64 & 23325 \\ \hline
+128 & 53892 \\ \hline
+256 & 111991 \\ \hline
+512 & 181464 \\ \hline
+1024 & 356165 \\ \hline
+2048 & 708123 \\ \hline
+4096 & 1434151 \\ \hline
+8192 & 3129872 \\ \hline
+16384 & 6078938 \\ \hline
+
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+  \caption{SCM - Vetor caracteres}
+\end{figure}
+
+
+\section{SCM Recursivo}
+
+Problema já comentado anteriormente.
+
+\subsection{Vetor caracteres}
+Tabela gerada utilizando SCM Recursivo com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14.
+\begin{table}[H]
+\centering
+\caption{SCM Recursivo com vetor de caracteres}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
+10 & 1235274 \\ \hline
+20 & 1273575975 \\ \hline
+30 & 1080524745749 \\ \hline
+
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+  \caption{SCM Recursivo - Vetor caracteres}
+\end{figure}
 
 
 \section{Parentização Bottom Up}
 
-bLABLABALBALBAL
+A forma com a qual a parentizamos uma cadeia de matrizes afeta dramaticamente o custo de calcular o produto. Problema resolvido com uma arvore Bottom Up.
 
 \subsection{Vetor aleatorio}
 Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos aleatóriamente.
@@ -1530,8 +1568,6 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
 \end{figure}
 
 
-
-
 \subsection{Vetor Crescente P30}
 Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P30.
 \begin{table}[H]
@@ -1556,8 +1592,6 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
     \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
   \caption{Parentização Bottom Up - Vetor Crescente P30}
 \end{figure}
-
-
 
 \subsection{Vetor Crescente P40}
 Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P40.
@@ -1584,9 +1618,6 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
   \caption{Parentização Bottom Up - Vetor Crescente P40}
 \end{figure}
 
-
-
-
 \subsection{Vetor Crescente P50}
 Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P50.
 \begin{table}[H]
@@ -1611,12 +1642,6 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
     \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
   \caption{Parentização Bottom Up - Vetor Crescente P50}
 \end{figure}
-
-
-
-
-
-
 
 \subsection{Vetor Decrescente}
 Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente.
@@ -1643,9 +1668,6 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
   \caption{Parentização Bottom Up - Vetor Decrescente}
 \end{figure}
 
-
-
-
 \subsection{Vetor Decrescente P10}
 Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P10.
 \begin{table}[H]
@@ -1670,9 +1692,6 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
     \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
   \caption{Parentização Bottom Up - Vetor Decrescente P10}
 \end{figure}
-
-
-
 
 
 \subsection{Vetor Decrescente P20}
@@ -1701,8 +1720,6 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
 \end{figure}
 
 
-
-
 \subsection{Vetor Decrescente P30}
 Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P30.
 \begin{table}[H]
@@ -1727,9 +1744,6 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
     \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
   \caption{Parentização Bottom Up - Vetor Decrescente P30}
 \end{figure}
-
-
-
 
 
 \subsection{Vetor Decrescente P40}
@@ -1783,15 +1797,11 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
   \caption{Parentização Bottom Up - Vetor Decrescente P50}
 \end{figure}
 
-
-
-
-
-
 \section{Parentização Recursiva}
 
-bLABLABALBALBAL
+Problema já comentado anteriormente.
 
+\subsection{Vetor}
 Tabela gerada utilizando Parentização Recursiva com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos aleatóriamente, crescente, crescente P10, crescente P20, crescente P30, crescente P40, crescente P50, decrescente, decrescente P10, decrescente P20, decrescente P30, decrescente P40, decrescente P50.
 \begin{table}[H]
 \centering
@@ -1822,28 +1832,11 @@ Tabela gerada utilizando Parentização Recursiva com vetores de tamanho n, send
   \caption{Parentização Recursiva}
 \end{figure}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 \chapter{Estatísticas de Ordem}
-
-Programação dinamica blablabla
-
+A iesima estatística de ordem de um conjunto com n elemento é o iesimo menor elemento desse conjunto.
 \section{Min}
 
-falar um pouco sobre
+Mínimo é a primeira estatística de ordem, com i = 1.
 
 \subsection{Vetor aleatorio}
 Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos aleatóriamente.
@@ -1873,8 +1866,6 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
     \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
   \caption{Min - Vetor Aleatório}
 \end{figure}
-
-
 
 \subsection{Vetor Crescente}
 Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente.
@@ -1936,8 +1927,6 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
 \end{figure}
 
 
-
-
 \subsection{Vetor Crescente P20}
 Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P20.
 \begin{table}[H]
@@ -1966,10 +1955,6 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
     \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
   \caption{Min - Vetor Crescente P20}
 \end{figure}
-
-
-
-
 
 \subsection{Vetor Crescente P30}
 Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P30.
@@ -2000,10 +1985,6 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
   \caption{Min - Vetor Crescente P30}
 \end{figure}
 
-
-
-
-
 \subsection{Vetor Crescente P40}
 Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P40.
 \begin{table}[H]
@@ -2032,11 +2013,6 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
     \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
   \caption{Min - Vetor Crescente P40}
 \end{figure}
-
-
-
-
-
 
 \subsection{Vetor Crescente P50}
 Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P50.
@@ -2067,9 +2043,6 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
   \caption{Min - Vetor Crescente P50}
 \end{figure}
 
-
-
-
 \subsection{Vetor Decrescente}
 Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente.
 \begin{table}[H]
@@ -2098,9 +2071,6 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
     \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
   \caption{Min - Vetor Decrescente}
 \end{figure}
-
-
-
 
 \subsection{Vetor Decrescente P10}
 Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P10.
@@ -2131,8 +2101,6 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
   \caption{Min - Vetor Decrescente P10}
 \end{figure}
 
-
-
 \subsection{Vetor Decrescente P20}
 Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P20.
 \begin{table}[H]
@@ -2161,8 +2129,6 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
     \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
   \caption{Min - Vetor Decrescente P20}
 \end{figure}
-
-
 
 \subsection{Vetor Decrescente P30}
 Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P30.
@@ -2193,9 +2159,6 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
   \caption{Min - Vetor Decrescente P30}
 \end{figure}
 
-
-
-
 \subsection{Vetor Decrescente P40}
 Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P40.
 \begin{table}[H]
@@ -2224,9 +2187,6 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
     \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
   \caption{Min - Vetor Decrescente P40}
 \end{figure}
-
-
-
 
 \subsection{Vetor Decrescente P50}
 Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P50.
@@ -2262,7 +2222,8 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
 
 \section{MinMax}
 
-falar um pouco sobre
+Mínimo é a primeira estatística de ordem, com i = 1.
+Máximo é a n ésima estatística de ordem, com i = n.
 
 \subsection{Vetor aleatorio}
 Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos aleatóriamente.
@@ -2293,9 +2254,6 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
   \caption{MinMax - Vetor Aleatório}
 \end{figure}
 
-
-
-
 \subsection{Vetor Crescente}
 Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente.
 \begin{table}[H]
@@ -2324,9 +2282,6 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
     \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
   \caption{MinMax - Vetor Crescente}
 \end{figure}
-
-
-
 
 \subsection{Vetor Crescente P10}
 Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P10.
@@ -2357,10 +2312,6 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
   \caption{MinMax - Vetor Crescente P10}
 \end{figure}
 
-
-
-
-
 \subsection{Vetor Crescente P20}
 Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P20.
 \begin{table}[H]
@@ -2389,9 +2340,6 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
     \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
   \caption{MinMax - Vetor Crescente P20}
 \end{figure}
-
-
-
 
 \subsection{Vetor Crescente P30}
 Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P30.
@@ -2422,10 +2370,6 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
   \caption{MinMax - Vetor Crescente P30}
 \end{figure}
 
-
-
-
-
 \subsection{Vetor Crescente P40}
 Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P40.
 \begin{table}[H]
@@ -2454,9 +2398,6 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
     \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
   \caption{MinMax - Vetor Crescente P40}
 \end{figure}
-
-
-
 
 \subsection{Vetor Crescente P50}
 Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P50.
@@ -2487,10 +2428,6 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
   \caption{MinMax - Vetor Crescente P50}
 \end{figure}
 
-
-
-
-
 \subsection{Vetor Decrescente}
 Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente.
 \begin{table}[H]
@@ -2519,8 +2456,6 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
     \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
   \caption{MinMax - Vetor Decrescente}
 \end{figure}
-
-
 
 \subsection{Vetor Decrescente P10}
 Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P10.
@@ -2551,9 +2486,6 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
   \caption{MinMax - Vetor Decrescente P10}
 \end{figure}
 
-
-
-
 \subsection{Vetor Decrescente P20}
 Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P20.
 \begin{table}[H]
@@ -2582,8 +2514,6 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
     \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
   \caption{MinMax - Vetor Decrescente P20}
 \end{figure}
-
-
 
 \subsection{Vetor Decrescente P30}
 Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P30.
@@ -2614,10 +2544,6 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
   \caption{MinMax - Vetor Decrescente P30}
 \end{figure}
 
-
-
-
-
 \subsection{Vetor Decrescente P40}
 Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P40.
 \begin{table}[H]
@@ -2647,10 +2573,6 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
   \caption{MinMax - Vetor Decrescente P40}
 \end{figure}
 
-
-
-
-
 \subsection{Vetor Decrescente P50}
 Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P50.
 \begin{table}[H]
@@ -2679,7 +2601,6 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
     \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
   \caption{MinMax - Vetor Decrescente P50}
 \end{figure}
-
 
 %para ajuda
 %\lstinputlisting[label={arq:prog1.c}, language=C, caption={Módulo Mínimo C}]{codigos/MiniC/prog1.c}
