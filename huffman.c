@@ -286,13 +286,19 @@ int main(){
         teste[i] = gera_string(tamanho[i]);
         freq[i] = getFrequencias(teste[i],freq[i],tamanho[i]);
     }
-    for(int i=0;i<11;i++){
-        CRONOMETRA(HuffmanCodes, teste[i],freq[i],tamanho[i]);
-        tempo_de_cpu += tempo_de_cpu_aux;
-        printf("Tamanho %d ", tamanho[i]);
-        printf("Tempo %ld\n",tempo_de_cpu);
-        //HuffmanCodes(teste[i],freq[i],tamanho[i]);
-    }
+        for(int i=0;i<11;i++){
+            for(int j=0;j<3;j++){
+                CRONOMETRA(HuffmanCodes, teste[i],freq[i],tamanho[i]);
+                tempo_de_cpu += tempo_de_cpu_aux;
+                //printf("Tempo antes da divisao: %ld\n",tempo_de_cpu);
+                //HuffmanCodes(teste[i],freq[i],tamanho[i]);
+            }
+            //printf("Tempo antes da divisao: %ld\n",tempo_de_cpu);
+            printf("Tamanho %d ", tamanho[i]);
+            printf("Tempo %ld\n",tempo_de_cpu/3);
+            tempo_de_cpu = 0;
+            tempo_de_cpu_aux = 0;
+        }
     //for(int i=0;i<11;i++){
     //    for(int j=0;j<26;j++){
     //        printf("Letra %c, freq: %d\n",caracteres[j],freq[i][j]);
