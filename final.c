@@ -3,9 +3,7 @@
 #include "vetor.h"
 #include <math.h>
 #include<limits.h>
-int corte_haste_memorizado(int *p, int n);
-int corte_haste_memorizado_aux(int *p,int n,int * r);
-
+#include "final.h"
 int min(int A[],int n){
 	int min = A[0];
 	for(int i = 1; i < n; i++)
@@ -16,7 +14,7 @@ int min(int A[],int n){
 	return min;
 }
 
-int * min_max(int *A, int n){
+int * min_max(int A[], int n){
 	int min = A[0];
 	int max = A[0];
 	int *resultado = (int*) malloc(2*sizeof(int));
@@ -37,7 +35,7 @@ int * min_max(int *A, int n){
     return first > second ? first : second;
 }
 
-int corte_haste(int * p,int n){
+int corte_haste(int  *p,int n){
 	int i;
 	if (n <= 0)
 		return 0;
@@ -54,7 +52,6 @@ int corte_haste_memorizado(int *p, int n){
 	for(int i=0;i<n;i++)
 		r[i] = INT_MIN;
 	int i;
-
 	return corte_haste_memorizado_aux(p,n,r);
 }
 
@@ -79,8 +76,6 @@ int corte_haste_bottom_up(int *p, int n){
    val[0] = 0;
    int i, j;
  
-   // Build the table val[] in bottom up manner and return the last entry
-   // from the table
    for (i = 1; i<=n; i++)
    {
        int max_val = INT_MIN;
@@ -109,7 +104,6 @@ int parentizacao_recursiva(int p[], int i, int j)
         if (count < min)
             min = count;
     }
- 
  
     return min;
 }
@@ -173,7 +167,30 @@ int scm( char *X, char *Y, int m, int n )
    return L[m][n];
 }
 
-int main(int argc, char **argv){
-	int p[11] = {1,5,8,9,10,17,17,20,24,30};
-	printf("%d",corte_haste_memorizado(p,10));
+void seletorgulosoativades(int s[], int f[], int n) //Iterativo
+{
+    int i, j;
+    i = 0;
+    //A primeira é selecionada
+    for (j = 1; j < n; j++)
+    {
+      if (s[j] >= f[i])
+      {
+          //selecionou a atividade j
+          i = j;
+      }
+    }
 }
+int SeletorRecursivoAtividades(int s[],int f[],int k,int n) //Recursivo
+{
+int m = k + 1;
+while (m <= n && s[m] < f[k]) // Encontre a primeira atividade em Sk a terminar
+	m = m + 1;
+if (m <= n)
+	return SeletorRecursivoAtividades(s, f, m, n); // teria que gerar um conjunto, porém farei retornar 0 é śo para rodar o código;
+else 
+	return 0;
+}
+
+
+

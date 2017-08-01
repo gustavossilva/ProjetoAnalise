@@ -1,0 +1,11 @@
+Tempo do vetor Crescente tamanho 16: 615
+Tempo do vetor Crescente tamanho 32: 680
+Tempo do vetor Crescente tamanho 64: 769
+Tempo do vetor Crescente tamanho 128: 802
+Tempo do vetor Crescente tamanho 256: 764
+Tempo do vetor Crescente tamanho 512: 836
+Tempo do vetor Crescente tamanho 1024: 1058
+Tempo do vetor Crescente tamanho 2048: 1294
+Tempo do vetor Crescente tamanho 4096: 1685
+Tempo do vetor Crescente tamanho 8192: 2594
+Tempo do vetor Crescente tamanho 16384: 4578

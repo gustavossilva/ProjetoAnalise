@@ -1,0 +1,8 @@
+Tempo do vetor aleatorio tamanho 16: 535410
+Tempo do vetor Crescente tamanho 16: 538372
+Tempo do vetor Crescente P10 tamanho 16: 539477
+Tempo do vetor Crescente P20 tamanho 16: 529753
+Tempo do vetor Crescente P30 tamanho 16: 541344
+
+Explicar: Por causa do gasto de memória não foi possível realizar operações em mais do que 16 elementos,
+o tempo foi o mesmo independente da ordenação do vetor, variando apenas caso o vetor fosse maior
