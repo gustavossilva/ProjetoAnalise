@@ -1,0 +1,15 @@
+Tamanho 16 Tempo 8092
+Tamanho 32 Tempo 16402
+Tamanho 64 Tempo 40416
+Tamanho 128 Tempo 102754
+Tamanho 256 Tempo 201412
+Tamanho 512 Tempo 374289
+Tamanho 1024 Tempo 828912
+Tamanho 2048 Tempo 1838755
+Tamanho 4096 Tempo 4159102
+Tamanho 8192 Tempo 9365205
+Tamanho 16384 Tempo 19631158
+
+Vetor de string aleatorias com frequencias aleatorias
+Tempo (Onlgn)
+
