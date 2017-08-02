@@ -1,0 +1,36 @@
+
+
+*******************************************************************************
+Wed Aug  2 06:24:58 2017
+
+
+FIT:    data read from 'Dados.dat' using 1:2
+        format = x:z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+	t(x) = a*x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 4.0371187059e+10   0.00e+00  4.03e+03    1.000000e+00   1.000000e+00
+   7 2.4181464710e+08  -5.02e-08  4.03e-04    1.145453e+01   1.443020e+03
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 2.41815e+08
+rel. change during last iteration : -5.01728e-13
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 5183.46
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.68683e+07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 11.4545          +/- 0.3212       (2.804%)
+b               = 1443.02          +/- 1832         (127%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.522  1.000 

@@ -1,0 +1,114 @@
+\BOOKMARK [0][]{chapter*.1}{Lista de Figuras}{}% 1
+\BOOKMARK [0][]{chapter*.2}{Lista de Tabelas}{}% 2
+\BOOKMARK [0][]{chapter.1}{Introdu\347\343o}{}% 3
+\BOOKMARK [1][]{section.1.1}{Codifica\347\343o}{chapter.1}% 4
+\BOOKMARK [2][]{subsection.1.1.1}{Comandos}{section.1.1}% 5
+\BOOKMARK [1][]{section.1.2}{M\341quina de teste}{chapter.1}% 6
+\BOOKMARK [0][]{chapter.2}{Grafo}{}% 7
+\BOOKMARK [1][]{section.2.1}{Busca Largura}{chapter.2}% 8
+\BOOKMARK [1][]{section.2.2}{Busca Largura - Grafo Esparso}{chapter.2}% 9
+\BOOKMARK [2][]{subsection.2.2.1}{Gr\341fico Busca Largura - Grafo Esparso}{section.2.2}% 10
+\BOOKMARK [1][]{section.2.3}{Busca Largura - Grafo Denso}{chapter.2}% 11
+\BOOKMARK [2][]{subsection.2.3.1}{Busca em Largura - Grafo Denso}{section.2.3}% 12
+\BOOKMARK [1][]{section.2.4}{Busca Profundidade}{chapter.2}% 13
+\BOOKMARK [1][]{section.2.5}{Busca Profundidade - Grafo Esparso}{chapter.2}% 14
+\BOOKMARK [2][]{subsection.2.5.1}{Busca Profundidade - Grafo Esparso}{section.2.5}% 15
+\BOOKMARK [1][]{section.2.6}{Busca Profundidade - Grafo Denso}{chapter.2}% 16
+\BOOKMARK [2][]{subsection.2.6.1}{Busca Profundidade - Grafo Denso}{section.2.6}% 17
+\BOOKMARK [1][]{section.2.7}{Ordena\347\343o Topologica}{chapter.2}% 18
+\BOOKMARK [1][]{section.2.8}{Ordena\347\343o Topologica - Grafo Esparso}{chapter.2}% 19
+\BOOKMARK [2][]{subsection.2.8.1}{Ordena\347\343o Topologica - Grafo Esparso}{section.2.8}% 20
+\BOOKMARK [1][]{section.2.9}{Ordena\347\343o Topologica - Grafo Denso}{chapter.2}% 21
+\BOOKMARK [2][]{subsection.2.9.1}{Ordena\347\343o Topologica - Grafo Denso}{section.2.9}% 22
+\BOOKMARK [0][]{chapter.3}{Guloso}{}% 23
+\BOOKMARK [1][]{section.3.1}{Huffman}{chapter.3}% 24
+\BOOKMARK [2][]{subsection.3.1.1}{Vetor aleatorio}{section.3.1}% 25
+\BOOKMARK [1][]{section.3.2}{Sele\347\343o de Atividade Interativo}{chapter.3}% 26
+\BOOKMARK [2][]{subsection.3.2.1}{Vetor crescente}{section.3.2}% 27
+\BOOKMARK [1][]{section.3.3}{Seletor Recursivo de Atividade}{chapter.3}% 28
+\BOOKMARK [2][]{subsection.3.3.1}{Vetor Aleat\363rio}{section.3.3}% 29
+\BOOKMARK [2][]{subsection.3.3.2}{Vetor Crescente}{section.3.3}% 30
+\BOOKMARK [2][]{subsection.3.3.3}{Vetor Crescente P10}{section.3.3}% 31
+\BOOKMARK [2][]{subsection.3.3.4}{Vetor Crescente P20}{section.3.3}% 32
+\BOOKMARK [2][]{subsection.3.3.5}{Vetor Crescente P30}{section.3.3}% 33
+\BOOKMARK [2][]{subsection.3.3.6}{Vetor Crescente P40}{section.3.3}% 34
+\BOOKMARK [2][]{subsection.3.3.7}{Vetor Crescente P50}{section.3.3}% 35
+\BOOKMARK [2][]{subsection.3.3.8}{Vetor Decrescente}{section.3.3}% 36
+\BOOKMARK [2][]{subsection.3.3.9}{Vetor Decrescente P10}{section.3.3}% 37
+\BOOKMARK [2][]{subsection.3.3.10}{Vetor Decrescente P20}{section.3.3}% 38
+\BOOKMARK [2][]{subsection.3.3.11}{Vetor Decrescente P30}{section.3.3}% 39
+\BOOKMARK [2][]{subsection.3.3.12}{Vetor Decrescente P40}{section.3.3}% 40
+\BOOKMARK [2][]{subsection.3.3.13}{Vetor Decrescente P50}{section.3.3}% 41
+\BOOKMARK [1][]{section.3.4}{Mochila Fracionaria}{chapter.3}% 42
+\BOOKMARK [2][]{subsection.3.4.1}{Vetor ordenado}{section.3.4}% 43
+\BOOKMARK [0][]{chapter.4}{Programa\347\343o Din\342mica}{}% 44
+\BOOKMARK [1][]{section.4.1}{Corte Haste}{chapter.4}% 45
+\BOOKMARK [1][]{section.4.2}{Corte Haste Bottom Up}{chapter.4}% 46
+\BOOKMARK [2][]{subsection.4.2.1}{Vetor aleatorio}{section.4.2}% 47
+\BOOKMARK [1][]{section.4.3}{Corte Haste Comum}{chapter.4}% 48
+\BOOKMARK [1][]{section.4.4}{\(}{chapter.4}% 49
+\BOOKMARK [1][]{section.4.5}{Corte Haste Memoizada}{chapter.4}% 50
+\BOOKMARK [2][]{subsection.4.5.1}{Vetor aleatorio}{section.4.5}% 51
+\BOOKMARK [2][]{subsection.4.5.2}{Vetor Crescente P10}{section.4.5}% 52
+\BOOKMARK [2][]{subsection.4.5.3}{Vetor Crescente P20}{section.4.5}% 53
+\BOOKMARK [2][]{subsection.4.5.4}{Vetor Crescente P30}{section.4.5}% 54
+\BOOKMARK [2][]{subsection.4.5.5}{Vetor Crescente P40}{section.4.5}% 55
+\BOOKMARK [2][]{subsection.4.5.6}{Vetor Crescente P50}{section.4.5}% 56
+\BOOKMARK [2][]{subsection.4.5.7}{Vetor Decrescente}{section.4.5}% 57
+\BOOKMARK [2][]{subsection.4.5.8}{Vetor Decrescente P10}{section.4.5}% 58
+\BOOKMARK [2][]{subsection.4.5.9}{Vetor Decrescente P20}{section.4.5}% 59
+\BOOKMARK [2][]{subsection.4.5.10}{Vetor Decrescente P30}{section.4.5}% 60
+\BOOKMARK [2][]{subsection.4.5.11}{Vetor Decrescente P40}{section.4.5}% 61
+\BOOKMARK [2][]{subsection.4.5.12}{Vetor Decrescente P50}{section.4.5}% 62
+\BOOKMARK [1][]{section.4.6}{SCM}{chapter.4}% 63
+\BOOKMARK [2][]{subsection.4.6.1}{Vetor caracteres}{section.4.6}% 64
+\BOOKMARK [1][]{section.4.7}{SCM Recursivo}{chapter.4}% 65
+\BOOKMARK [2][]{subsection.4.7.1}{Vetor caracteres}{section.4.7}% 66
+\BOOKMARK [1][]{section.4.8}{Parentiza\347\343o Bottom Up}{chapter.4}% 67
+\BOOKMARK [2][]{subsection.4.8.1}{Vetor aleatorio}{section.4.8}% 68
+\BOOKMARK [2][]{subsection.4.8.2}{Vetor Crescente}{section.4.8}% 69
+\BOOKMARK [2][]{subsection.4.8.3}{Vetor Crescente P10}{section.4.8}% 70
+\BOOKMARK [2][]{subsection.4.8.4}{Vetor Crescente P20}{section.4.8}% 71
+\BOOKMARK [2][]{subsection.4.8.5}{Vetor Crescente P30}{section.4.8}% 72
+\BOOKMARK [2][]{subsection.4.8.6}{Vetor Crescente P40}{section.4.8}% 73
+\BOOKMARK [2][]{subsection.4.8.7}{Vetor Crescente P50}{section.4.8}% 74
+\BOOKMARK [2][]{subsection.4.8.8}{Vetor Decrescente}{section.4.8}% 75
+\BOOKMARK [2][]{subsection.4.8.9}{Vetor Decrescente P10}{section.4.8}% 76
+\BOOKMARK [2][]{subsection.4.8.10}{Vetor Decrescente P20}{section.4.8}% 77
+\BOOKMARK [2][]{subsection.4.8.11}{Vetor Decrescente P30}{section.4.8}% 78
+\BOOKMARK [2][]{subsection.4.8.12}{Vetor Decrescente P40}{section.4.8}% 79
+\BOOKMARK [2][]{subsection.4.8.13}{Vetor Decrescente P50}{section.4.8}% 80
+\BOOKMARK [1][]{section.4.9}{Parentiza\347\343o Recursiva}{chapter.4}% 81
+\BOOKMARK [2][]{subsection.4.9.1}{Vetor}{section.4.9}% 82
+\BOOKMARK [0][]{chapter.5}{Estat\355sticas de Ordem}{}% 83
+\BOOKMARK [1][]{section.5.1}{Min}{chapter.5}% 84
+\BOOKMARK [2][]{subsection.5.1.1}{Vetor aleatorio}{section.5.1}% 85
+\BOOKMARK [2][]{subsection.5.1.2}{Vetor Crescente}{section.5.1}% 86
+\BOOKMARK [2][]{subsection.5.1.3}{Vetor Crescente P10}{section.5.1}% 87
+\BOOKMARK [2][]{subsection.5.1.4}{Vetor Crescente P20}{section.5.1}% 88
+\BOOKMARK [2][]{subsection.5.1.5}{Vetor Crescente P30}{section.5.1}% 89
+\BOOKMARK [2][]{subsection.5.1.6}{Vetor Crescente P40}{section.5.1}% 90
+\BOOKMARK [2][]{subsection.5.1.7}{Vetor Crescente P50}{section.5.1}% 91
+\BOOKMARK [2][]{subsection.5.1.8}{Vetor Decrescente}{section.5.1}% 92
+\BOOKMARK [2][]{subsection.5.1.9}{Vetor Decrescente P10}{section.5.1}% 93
+\BOOKMARK [2][]{subsection.5.1.10}{Vetor Decrescente P20}{section.5.1}% 94
+\BOOKMARK [2][]{subsection.5.1.11}{Vetor Decrescente P30}{section.5.1}% 95
+\BOOKMARK [2][]{subsection.5.1.12}{Vetor Decrescente P40}{section.5.1}% 96
+\BOOKMARK [2][]{subsection.5.1.13}{Vetor Decrescente P50}{section.5.1}% 97
+\BOOKMARK [1][]{section.5.2}{MinMax}{chapter.5}% 98
+\BOOKMARK [2][]{subsection.5.2.1}{Vetor aleatorio}{section.5.2}% 99
+\BOOKMARK [2][]{subsection.5.2.2}{Vetor Crescente}{section.5.2}% 100
+\BOOKMARK [2][]{subsection.5.2.3}{Vetor Crescente P10}{section.5.2}% 101
+\BOOKMARK [2][]{subsection.5.2.4}{Vetor Crescente P20}{section.5.2}% 102
+\BOOKMARK [2][]{subsection.5.2.5}{Vetor Crescente P30}{section.5.2}% 103
+\BOOKMARK [2][]{subsection.5.2.6}{Vetor Crescente P40}{section.5.2}% 104
+\BOOKMARK [2][]{subsection.5.2.7}{Vetor Crescente P50}{section.5.2}% 105
+\BOOKMARK [2][]{subsection.5.2.8}{Vetor Decrescente}{section.5.2}% 106
+\BOOKMARK [2][]{subsection.5.2.9}{Vetor Decrescente P10}{section.5.2}% 107
+\BOOKMARK [2][]{subsection.5.2.10}{Vetor Decrescente P20}{section.5.2}% 108
+\BOOKMARK [2][]{subsection.5.2.11}{Vetor Decrescente P30}{section.5.2}% 109
+\BOOKMARK [2][]{subsection.5.2.12}{Vetor Decrescente P40}{section.5.2}% 110
+\BOOKMARK [2][]{subsection.5.2.13}{Vetor Decrescente P50}{section.5.2}% 111
+\BOOKMARK [1][]{section.5.3}{Seleciona Aleatorizado}{chapter.5}% 112
+\BOOKMARK [2][]{subsection.5.3.1}{Vetor aleatorio}{section.5.3}% 113
+\BOOKMARK [0][]{chapter.6}{Refer\352ncias}{}% 114

@@ -212,48 +212,58 @@ Universidade Federal de Uberlândia
 \setlength{\parskip}{0.15in} % espaçamento entre paragráfos
 
 \chapter{Introdução}
-Este relatório tem como objetivo fazer a análise de diversos algoritmos já conhecidos de ordenação. O intuito deste trabalho é comprovar que as provas matemáticas realmente acontecem em um ambiente real de execução.
+Este relatório tem como objetivo fazer a análise de diversos algoritmos já conhecidos de Busca, Gulosos, dinâmicos de de estatística de ordem. O intuito deste trabalho é comprovar que as provas matemáticas realmente acontecem em um ambiente real de execução.
 
 \section{Codificação}
+Arquivo dos gulosos e Programação Dinâmica
+\lstinputlisting[label={arq:final.c}, language=C, caption={Arquivo dos gulosos e Programação Dinâmica}]{../final.c}
+
+Arquivos com algoritmos de estatística de ordem
+\lstinputlisting[label={arq:RandomizedSelect.c}, language=C, caption={Estatística de Ordem}]{../RandomizedSelect.c}
+
+Arquivo contendo o algoritmo de huffman
+\lstinputlisting[label={arq:huffman.c}, language=C, caption={Arquivo de Huffman}]{../huffman.c}
+
 O arquivo vetor.c mantém todas as funções a respeito do vetor, como geração, preenchimento, etc.
-\lstinputlisting[label={arq:vetor.c}, language=C, caption={Arquivo referente ao vetor}]{../vetor.c}
+\lstinputlisting[label={arq:grafo.c}, language=C, caption={Arquivo referente ao grafo}]{../grafo.c}
 
 Este arquivo serve para gerar os vetores e salva-los em arquivos.
-\lstinputlisting[label={arq:gera_vets.c}, language=C, caption={Geração dos vetores}]{../gera_vets.c}
+\lstinputlisting[label={arq:gera_grafo.c}, language=C, caption={Geração dos grafos}]{../gera_grafo.c}
 
 Este arquivo contém os algoritmos de ordenação pedidos.
-\lstinputlisting[label={arq:ordena.c}, language=C, caption={Métodos de ordenação}]{../ordena.c}
+\lstinputlisting[label={arq:opgrafo.c}, language=C, caption={Métodos de busca}]{../opgrafo.c}
 
 O arquivo ensaios.c serve para automatizar e calcular os tempos de cada método de ordenação.
-\lstinputlisting[label={arq:ensaios.c}, language=C, caption={Automatização dos experimentos}]{../ensaios.c}
+\lstinputlisting[label={arq:ensaiosgrafo.c}, language=C, caption={Automatização dos experimentos}]{../ensaiosgrafo.c}
 
 \subsection{Comandos}
-Os seguintes passos devem ser seguidos para criação dos vetores que serão utilizados no experimento:\\
-1 - Compilar o arquivo vetor.c;
+Os seguintes passos devem ser seguidos para criação dos grafos que serão utilizados no experimento:\\
+1 - Compilar o arquivo Grafo.c;
 \begin{terminal}
-    > gcc -O3 -c vetor.c
+    > gcc -O3 -c grafo.c
+    > gcc -O3 -c opgrafo.c
 \end{terminal}
-2 - Compilar o programa que gera os vetores e os coloca no diretório determinado;
+2 - Compilar o programa que gera os grafos e os coloca no diretório determinado;
 \begin{terminal}
-    > gcc -O3 vetor.o gera_vets.c -o gera_vets.exe
+    > gcc -O3 grafi.o gera_grafo.c -o gera_grafo.exe
 \end{terminal}
 3 - Para usá-lo digite
 \begin{terminal}
-    > ./gera_vets.exe
+    > ./gera_grafos.exe
 \end{terminal}
 
 Os passos a seguir são para execução do experimento\\
-1 - Verifique a existência do diretório contendo os vetores, e então digite o seguinte comando:
+1 - Verifique a existência do diretório contendo os grafos, e então digite o seguinte comando:
 \begin{terminal}
-    > gcc -O3 -c ordena.c
+    > gcc -O3 -c opgrafo.c
 \end{terminal}
 2 - Agora é necessário compilar o arquivo de ensaio e tudo que será utilizado
 \begin{terminal}
-    > gcc -O3 vetor.o ordena.o ensaios.c -o ensaios.exe -lm
+    > gcc -O3 grafo.o opgrafo.o ensaiosgrafo.c -o ensaiosgrafo.exe -lm
 \end{terminal}
 3 - Para executar digite:
 \begin{terminal}
-    > ./ensaios.exe
+    > ./ensaiosgrafo.exe
 \end{terminal}
 
 \section{Máquina de teste}
@@ -266,14 +276,13 @@ Sistema Operacional: Ubuntu 16.04\\
 
 \chapter{Grafo}
 
-A teoria dos grafos é um ramo da matemática que estuda as relações entre os objetos de um determinado conjunto. Para tal são empregadas estruturas chamadas de grafos, G(V,E), onde V é um conjunto não vazio de objetos denominados vértices e E é um subconjunto de pares não ordenados de V, chamados arestas.
+A teoria dos grafos é um ramo da matemática que estuda as relações entre os objetos de um determinado conjunto. Para tal são empregadas estruturas chamadas de grafos, G(V,E), onde V é um conjunto não vazio de objetos denominados vértices e E é um subconjunto de pares não ordenados de V, chamados arestas. Neste trabalho, foi-se definido como grafo esparso um grafo que tem apenas uma aresta entre cada par de vértice (1~2,2~3,3~4,...n-1~n) e um granfo denso foi definido como um grafo completo, ou seja, cada vértice tem aresta com todos os outros vértices.
 
 \section{Busca Largura}
 
 É um algoritmo de busca em grafos utilizado para realizar uma busca ou travessia num grafo e estrutura de dados do tipo árvore. Você começa pelo vértice raiz e explora todos os vértices vizinhos. Então, para cada um desses vértices mais próximos, exploramos os seus vértices vizinhos inexplorados e assim por diante, até que ele encontre o alvo da busca.
 
 \section{Busca Largura - Grafo Esparso}
-Tabela gerada utilizando Busca em largura com grafo esparso de tamanho n, sendo = $(2^k)$, k = 4...14.
 \begin{table}[H]
 \centering
 \caption{Busca Largura com grafo Esparso}
@@ -290,12 +299,11 @@ Tabela gerada utilizando Busca em largura com grafo esparso de tamanho n, sendo 
 \subsection{Gráfico Busca Largura - Grafo Esparso}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/Insertion/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/BuscaLargura/Esparso/Esparso.png}
   \caption{Busca Largura - Grafo Esparso}
 \end{figure}
 
 \section{Busca Largura - Grafo Denso}
-Tabela gerada utilizando Busca em Largura num grafo Denso com n, sendo = $(2^k)$, k = 4...14.
 
 \begin{table}[H]
 \centering
@@ -314,7 +322,7 @@ Tabela gerada utilizando Busca em Largura num grafo Denso com n, sendo = $(2^k)$
 \subsection{Busca em Largura - Grafo Denso}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/Insertion/vIntCrescente/vIntCrescente.png}
+    \includegraphics[width=0.7\linewidth]{graficos/BuscaLargura/Denso/Denso.png}
   \caption{Busca em Largura - Grafo Denso}
 \end{figure}
 
@@ -322,7 +330,6 @@ Tabela gerada utilizando Busca em Largura num grafo Denso com n, sendo = $(2^k)$
 É um algoritmo usado para realizar uma busca ou travessia numa árvore, estrutura de árvore ou grafo. O algoritmo começa num nó raiz (selecionando algum nó como sendo o raiz, no caso de um grafo) e explora tanto quanto possível cada um dos seus ramos, antes de retroceder(backtracking).
 
 \section{Busca Profundidade - Grafo Esparso}
-Tabela gerada utilizando Busca Profundidade com um Grafo Esparso, sendo n = $(2^k)$, de k = 4..14.
 \begin{table}[H]
 \centering
 \caption{Busca Profundidade com Grafo Esparso}
@@ -340,12 +347,11 @@ Tabela gerada utilizando Busca Profundidade com um Grafo Esparso, sendo n = $(2^
 \subsection{Busca Profundidade - Grafo Esparso}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/MergeSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/BuscaProfundidade/Esparso/Esparso.png}
   \caption{Busca Profundidade - Grafo Esparso}
 \end{figure}
 
 \section{Busca Profundidade - Grafo Denso}
-Tabela gerada utilizando Busca em Profundidade com um Grafo Denso, sendo n = $(2^k)$, de k = 4..14.
 \begin{table}[H]
 \centering
 \caption{Busca Profundidade em um Grafo Denso}
@@ -363,7 +369,7 @@ Tabela gerada utilizando Busca em Profundidade com um Grafo Denso, sendo n = $(2
 \subsection{Busca Profundidade - Grafo Denso}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/MergeSort/vIntCrescente/vIntCrescente.png}
+    \includegraphics[width=0.7\linewidth]{graficos/BuscaProfundidade/Denso/Denso.png}
   \caption{Busca Profundidade - Grafo Denso}
 \end{figure}
 
@@ -372,7 +378,6 @@ Tabela gerada utilizando Busca em Profundidade com um Grafo Denso, sendo n = $(2
  É uma ordem linear de seus nós em que cada nó vem antes de todos nós para os quais este tenha arestas de saída. Cada DAG tem uma ou mais ordenações topológicas.
 
 \section{Ordenação Topologica - Grafo Esparso}
-Tabela gerada utilizando Ordenação Topologica com um Grafo Esparso, sendo n = $(2^k)$, de k = 4..14.
 \begin{table}[H]
 \centering
 \caption{Ordenação Topologica com Grafo Esparso}
@@ -390,12 +395,11 @@ Tabela gerada utilizando Ordenação Topologica com um Grafo Esparso, sendo n = 
 \subsection{Ordenação Topologica - Grafo Esparso}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/MergeSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/OrdenaTopologico/Esparso/Esparso.png}
   \caption{Ordenação Topologica - Grafo Esparso}
 \end{figure}
 
 \section{Ordenação Topologica - Grafo Denso}
-Tabela gerada utilizando Ordenação Topologica com um Grafo Denso, sendo n = $(2^k)$, de k = 4..14.
 \begin{table}[H]
 \centering
 \caption{Ordenação Topologica com Grafo Denso}
@@ -413,7 +417,7 @@ Tabela gerada utilizando Ordenação Topologica com um Grafo Denso, sendo n = $(
 \subsection{Ordenação Topologica - Grafo Denso}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/MergeSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/OrdenaTopologico/Denso/Denso.png}
   \caption{Ordenação Topologica - Grafo Denso}
 \end{figure}
 
@@ -451,7 +455,7 @@ Tabela gerada utilizando Huffman com vetor de string aleatorias com frequencias 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Huffman/Huffman.png}
   \caption{Huffman - Vetor Aleatório}
 \end{figure}
 
@@ -486,51 +490,432 @@ Tabela gerada utilizando Seleção de Atividade Interativo com vetor de tamanho 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/SeletorIterativoAtividades/SeletorIterativoAtividades.png}
   \caption{Seleção de Atividade Interativo - Vetor crescente}
 \end{figure}
 
-
-\section{Seleção de Atividade Bottom Up}
+\section{Seletor Recursivo de Atividade}
 
 É um problema onde dado um conjunto S de atividades, encontrar o maior subconjunto de S com
 atividades mutuamente compatíveis.
 
-\subsection{Vetor crescente}
-Tabela gerada utilizando Seleção de Atividade Bottom Up com vetor de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos crescente.
+\subsection{Vetor Aleatório}
+Tabela gerada utilizando Seleção de Atividade Interativo com vetor de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos aleatório.
 \begin{table}[H]
 \centering
-\caption{Seleção de Atividade Bottom Up com vetor crescente}
+\caption{Seleciona Recursivo de Atividade de Atividade de Atividade de Atividade de Atividade de Atividade de Atividade de Atividade de Atividade de Atividade de Atividade com vetor aleatório}
 \label{my-label}
 \begin{tabular}{|l|l|}
 \hline
 \multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 615 \\ \hline
-32 & 680 \\ \hline
-64 & 769 \\ \hline
-128 & 802 \\ \hline
-256 & 764 \\ \hline
-512 & 836 \\ \hline
-1024 & 1058 \\ \hline
-2048 & 1294 \\ \hline
-4096 & 1685 \\ \hline
-8192 & 2594 \\ \hline
-16384 & 4578 \\ \hline
+16 & 848 \\ \hline
+32 & 859 \\ \hline
+64 & 1226 \\ \hline
+128 & 2086 \\ \hline
+256 & 3352 \\ \hline
+512 & 4632 \\ \hline
+1024 & 10637 \\ \hline
+2048 & 24606 \\ \hline
+4096 & 40615 \\ \hline
+8192 & 88004 \\ \hline
+16384 & 135617 \\ \hline
 
 \end{tabular}
 \end{table}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Seleção de Atividade Bottom Up - Vetor crescente}
+    \includegraphics[width=0.7\linewidth]{graficos/SeletorRecursivoAtividades/Aleatorio/SelecionaAleatorizado.png}
+  \caption{Seleciona Recursivo de Atividade - Vetor Aleatório}
 \end{figure}
+
+
+\subsection{Vetor Crescente}
+Tabela gerada utilizando Seleciona Recursivo de Atividade com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente.
+\begin{table}[H]
+\centering
+\caption{Seleciona Recursivo de Atividade com vetor crescente}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
+16 & 563 \\ \hline
+32 & 677 \\ \hline
+64 & 1184 \\ \hline
+128 & 2093 \\ \hline
+256 & 3518 \\ \hline
+512 & 6070 \\ \hline
+1024 & 9960 \\ \hline
+2048 & 24854 \\ \hline
+4096 & 39433 \\ \hline
+8192 & 79908 \\ \hline
+16384 & 245208 \\ \hline
+
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{graficos/SeletorRecursivoAtividades/Crescente/SelecionaAleatorizado.png}
+  \caption{Seleciona Recursivo de Atividade - Vetor crescente}
+\end{figure}
+
+
+\subsection{Vetor Crescente P10}
+Tabela gerada utilizando Seleciona Recursivo de Atividade  com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P10.
+\begin{table}[H]
+\centering
+\caption{Seleciona Recursivo de Atividade com vetor crescente P10}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
+16 & 672 \\ \hline
+32 & 843 \\ \hline
+64 & 1091 \\ \hline
+128 & 2310 \\ \hline
+256 & 3383 \\ \hline
+512 & 6038 \\ \hline
+1024 & 19242 \\ \hline
+2048 & 34439 \\ \hline
+4096 & 46022 \\ \hline
+8192 & 95304 \\ \hline
+16384 & 176781 \\ \hline
+
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{graficos/SeletorRecursivoAtividades/Crescente P10/SelecionaAleatorizado.png}
+  \caption{Seleciona Recursivo de Atividade - Vetor crescente P10}
+\end{figure}
+
+
+
+\subsection{Vetor Crescente P20}
+Tabela gerada utilizando Seleciona Recursivo de Atividade com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P20.
+\begin{table}[H]
+\centering
+\caption{Seleciona Recursivo de Atividade com vetor crescente P20}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
+16 & 613 \\ \hline
+32 & 780 \\ \hline
+64 & 1259 \\ \hline
+128 & 1836 \\ \hline
+256 & 2640 \\ \hline
+512 & 9910 \\ \hline
+1024 & 11045 \\ \hline
+2048 & 19416 \\ \hline
+4096 & 46564 \\ \hline
+8192 & 86621 \\ \hline
+16384 & 198014 \\ \hline
+
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{graficos/SeletorRecursivoAtividades/Crescente P20/SelecionaAleatorizado.png}
+  \caption{Seleciona Recursivo de Atividade - Vetor crescente P20}
+\end{figure}
+
+
+
+\subsection{Vetor Crescente P30}
+Tabela gerada utilizando Seleciona Recursivo de Atividade com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P30.
+\begin{table}[H]
+\centering
+\caption{Seleciona Recursivo de Atividade com vetor crescente P30}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
+16 & 651 \\ \hline
+32 & 698 \\ \hline
+64 & 1008 \\ \hline
+128 & 2052 \\ \hline
+256 & 3051 \\ \hline
+512 & 6192 \\ \hline
+1024 & 10526 \\ \hline
+2048 & 17150 \\ \hline
+4096 & 45699 \\ \hline
+8192 & 76166 \\ \hline
+16384 & 155111 \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{graficos/SeletorRecursivoAtividades/Crescente P30/SelecionaAleatorizado.png}
+  \caption{Seleciona Recursivo de Atividade - Vetor crescente P30}
+\end{figure}
+
+
+\subsection{Vetor Crescente P40}
+Tabela gerada utilizando Seleciona Recursivo de Atividade com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P40.
+\begin{table}[H]
+\centering
+\caption{Seleciona Recursivo de Atividade com vetor crescente P40}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
+16 & 743 \\ \hline
+32 & 666 \\ \hline
+64 & 989 \\ \hline
+128 & 1508 \\ \hline
+256 & 2883 \\ \hline
+512 & 5360 \\ \hline
+1024 & 11656 \\ \hline
+2048 & 20539 \\ \hline
+4096 & 41529 \\ \hline
+8192 & 100858 \\ \hline
+16384 & 222297 \\ \hline
+
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{graficos/SeletorRecursivoAtividades/Crescente P40/SelecionaAleatorizado.png}
+  \caption{Seleciona Recursivo de Atividade - Vetor crescente P40}
+\end{figure}
+
+
+
+
+\subsection{Vetor Crescente P50}
+Tabela gerada utilizando Seleciona Recursivo de Atividade com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P50.
+\begin{table}[H]
+\centering
+\caption{Seleciona Recursivo de Atividade com vetor crescente P50}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
+16 & 620 \\ \hline
+32 & 827 \\ \hline
+64 & 1258 \\ \hline
+128 & 1600 \\ \hline
+256 & 3615 \\ \hline
+512 & 4546 \\ \hline
+1024 & 10992 \\ \hline
+2048 & 24860 \\ \hline
+4096 & 60197 \\ \hline
+8192 & 98321 \\ \hline
+16384 & 249566 \\ \hline
+
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{graficos/SeletorRecursivoAtividades/Crescente P50/SelecionaAleatorizado.png}
+  \caption{Seleciona Recursivo de Atividade - Vetor crescente P50}
+\end{figure}
+
+
+\subsection{Vetor Decrescente}
+Tabela gerada utilizando Seleciona Recursivo de Atividade com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente.
+\begin{table}[H]
+\centering
+\caption{Seleciona Recursivo de Atividade com vetor decrescente}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
+16 & 822 \\ \hline
+32 & 1130 \\ \hline
+64 & 1610 \\ \hline
+128 & 2075 \\ \hline
+256 & 2774 \\ \hline
+512 & 6371 \\ \hline
+1024 & 12455 \\ \hline
+2048 & 20537 \\ \hline
+4096 & 39481 \\ \hline
+8192 & 90849 \\ \hline
+16384 & 216330 \\ \hline
+
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{graficos/SeletorRecursivoAtividades/Decrescente/SelecionaAleatorizado.png}
+  \caption{Seleciona Recursivo de Atividade- Vetor decrescente}
+\end{figure}
+
+
+
+
+\subsection{Vetor Decrescente P10}
+Tabela gerada utilizando Seleciona Recursivo de Atividade com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P10.
+\begin{table}[H]
+\centering
+\caption{Seleciona Recursivo de Atividade com vetor decrescente P10}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
+16 & 692 \\ \hline
+32 & 875 \\ \hline
+64 & 968 \\ \hline
+128 & 1772 \\ \hline
+256 & 2865 \\ \hline
+512 & 6142 \\ \hline
+1024 & 10526 \\ \hline
+2048 & 25677 \\ \hline
+4096 & 46430 \\ \hline
+8192 & 46738 \\ \hline
+16384 & 177393 \\ \hline
+
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{graficos/SeletorRecursivoAtividades/Decrescente P10/SelecionaAleatorizado.png}
+  \caption{Seleciona Recursivo de Atividade - Vetor decrescente P10}
+\end{figure}
+
+
+
+\subsection{Vetor Decrescente P20}
+Tabela gerada utilizando Seleciona Recursivo de Atividade com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P20.
+\begin{table}[H]
+\centering
+\caption{Seleciona Recursivo de Atividade com vetor decrescente P20}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
+16 & 963 \\ \hline
+32 & 1130 \\ \hline
+64 & 1209 \\ \hline
+128 & 1862 \\ \hline
+256 & 2040 \\ \hline
+512 & 6190 \\ \hline
+1024 & 14474 \\ \hline
+2048 & 28032 \\ \hline
+4096 & 58891 \\ \hline
+8192 & 85015 \\ \hline
+16384 & 191226 \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{graficos/SeletorRecursivoAtividades/Decrescente P20/SelecionaAleatorizado.png}
+  \caption{Seleciona Recursivo de Atividade - Vetor decrescente P20}
+\end{figure}
+
+
+
+\subsection{Vetor Decrescente P30}
+Tabela gerada utilizando Seleciona Recursivo de Atividade com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P30.
+\begin{table}[H]
+\centering
+\caption{Seleciona Recursivo de Atividade com vetor decrescente P30}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
+16 & 691 \\ \hline
+32 & 791 \\ \hline
+64 & 1031 \\ \hline
+128 & 1907 \\ \hline
+256 & 3053 \\ \hline
+512 & 9593 \\ \hline
+1024 & 8715 \\ \hline
+2048 & 11899 \\ \hline
+4096 & 46642 \\ \hline
+8192 & 64121 \\ \hline
+16384 & 139003 \\ \hline
+
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{graficos/SeletorRecursivoAtividades/Decrescente P30/SelecionaAleatorizado.png}
+  \caption{Seleciona Recursivo de Atividade - Vetor decrescente P30}
+\end{figure}
+
+
+
+
+\subsection{Vetor Decrescente P40}
+Tabela gerada utilizando Seleciona Recursivo de Atividade com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P40.
+\begin{table}[H]
+\centering
+\caption{Seleciona Recursivo de Atividade com vetor decrescente P40}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
+16 & 818 \\ \hline
+32 & 712 \\ \hline
+64 & 1058 \\ \hline
+128 & 1643 \\ \hline
+256 & 2060 \\ \hline
+512 & 4179 \\ \hline
+1024 & 13014 \\ \hline
+2048 & 22027 \\ \hline
+4096 & 62149 \\ \hline
+8192 & 101864 \\ \hline
+16384 & 151244 \\ \hline
+
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{graficos/SeletorRecursivoAtividades/Decrescente P40/SelecionaAleatorizado.png}
+  \caption{Seleciona Recursivo de Atividade - Vetor decrescente P40}
+\end{figure}
+
+
+
+
+\subsection{Vetor Decrescente P50}
+Tabela gerada utilizando Seleciona Recursivo de Atividade com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P50.
+\begin{table}[H]
+\centering
+\caption{Seleciona Recursivo de Atividade com vetor decrescente P50}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
+16 & 593 \\ \hline
+32 & 692 \\ \hline
+64 & 1028 \\ \hline
+128 & 2107 \\ \hline
+256 & 3328 \\ \hline
+512 & 5288 \\ \hline
+1024 & 13776 \\ \hline
+2048 & 26749 \\ \hline
+4096 & 37678 \\ \hline
+8192 & 112482 \\ \hline
+16384 & 260308 \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{graficos/SeletorRecursivoAtividades/Decrescente P50/SelecionaAleatorizado.png}
+  \caption{Seleciona Recursivo de Atividade - Vetor decrescente P50}
+\end{figure}
+
 
 \section{Mochila Fracionaria}
 
 Esse problema também é chamado problema da mochila 0/1 pois para
-cada item deve se ou leválo ou deixálo e não se pode pegar uma parte
-fracion ária de um item ou pegar um mesmo item mais que uma vez.
+cada item deve ser levado ou deixado e pode-se pegar uma parte
+fracionária de um item ou pegar um mesmo item mais que uma vez.
 
 \subsection{Vetor ordenado}
 Tabela gerada utilizando Mochila Fracionaria com Vetor ordenado de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos ordenada.
@@ -544,27 +929,22 @@ Tabela gerada utilizando Mochila Fracionaria com Vetor ordenado de tamanho n, se
 16 & 608 \\ \hline
 32 & 699 \\ \hline
 64 & 759 \\ \hline
-128 & 824 \\ \hline
-256 & 766 \\ \hline
-512 & 730 \\ \hline
-1024 & 739 \\ \hline
+128 & 770 \\ \hline
+256 & 796 \\ \hline
+512 & 830 \\ \hline
+1024 & 949 \\ \hline
 2048 & 1190 \\ \hline
-4096 & 722 \\ \hline
-8192 & 742 \\ \hline
-16384 & 743 \\ \hline
+4096 & 1565 \\ \hline
+8192 & 2253 \\ \hline
+16384 & 4106 \\ \hline
 \end{tabular}
 \end{table}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Mochila Fracionada/MochilaFracionada.png}
   \caption{Mochila Fracionaria - Vetor ordenado}
 \end{figure}
-
-
-
-
-
 
 
 \chapter{Programação Dinâmica}
@@ -605,391 +985,8 @@ Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/CorteHasteBottomUp/HasteBU.png}
   \caption{Corte Haste Bottom Up - Vetor Aleatório}
-\end{figure}
-
-\subsection{Vetor Crescente}
-Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos de forma crescente.
-\begin{table}[H]
-\centering
-\caption{Corte Haste Bottom Up com Vetor Crescente}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 599 \\ \hline
-32 & 913 \\ \hline
-64 & 1798 \\ \hline
-128 & 4618 \\ \hline
-256 & 14530 \\ \hline
-512 & 51214 \\ \hline
-1024 & 193794 \\ \hline
-2048 & 761470 \\ \hline
-4096 & 2965012 \\ \hline
-8192 & 12774326 \\ \hline
-16384 & 48066532 \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Corte Haste Bottom Up - Vetor Crescente}
-\end{figure}
-
-
-\subsection{Vetor Crescente P10}
-Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos de forma crescente P10.
-\begin{table}[H]
-\centering
-\caption{Corte Haste Bottom Up com Vetor Crescente P10}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 599 \\ \hline
-32 & 913 \\ \hline
-64 & 1798 \\ \hline
-128 & 4618 \\ \hline
-256 & 14530 \\ \hline
-512 & 51214 \\ \hline
-1024 & 193794 \\ \hline
-2048 & 761470 \\ \hline
-4096 & 2965012 \\ \hline
-8192 & 12774326 \\ \hline
-16384 & 48066532 \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Corte Haste Bottom Up - Vetor Crescente P10}
-\end{figure}
-
-
-\subsection{Vetor Crescente P20}
-Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos de forma crescente P20.
-\begin{table}[H]
-\centering
-\caption{Corte Haste Bottom Up com Vetor Crescente P20}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 599 \\ \hline
-32 & 913 \\ \hline
-64 & 1798 \\ \hline
-128 & 4618 \\ \hline
-256 & 14530 \\ \hline
-512 & 51214 \\ \hline
-1024 & 193794 \\ \hline
-2048 & 761470 \\ \hline
-4096 & 2965012 \\ \hline
-8192 & 12774326 \\ \hline
-16384 & 48066532 \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Corte Haste Bottom Up - Vetor Crescente P20}
-\end{figure}
-
-
-
-
-\subsection{Vetor Crescente P30}
-Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos de forma crescente P30.
-\begin{table}[H]
-\centering
-\caption{Corte Haste Bottom Up com Vetor Crescente P30}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 599 \\ \hline
-32 & 913 \\ \hline
-64 & 1798 \\ \hline
-128 & 4618 \\ \hline
-256 & 14530 \\ \hline
-512 & 51214 \\ \hline
-1024 & 193794 \\ \hline
-2048 & 761470 \\ \hline
-4096 & 2965012 \\ \hline
-8192 & 12774326 \\ \hline
-16384 & 48066532 \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Corte Haste Bottom Up - Vetor Crescente P30}
-\end{figure}
-
-
-
-
-\subsection{Vetor Crescente P40}
-Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos de forma crescente P40.
-\begin{table}[H]
-\centering
-\caption{Corte Haste Bottom Up com Vetor Crescente P40}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 599 \\ \hline
-32 & 913 \\ \hline
-64 & 1798 \\ \hline
-128 & 4618 \\ \hline
-256 & 14530 \\ \hline
-512 & 51214 \\ \hline
-1024 & 193794 \\ \hline
-2048 & 761470 \\ \hline
-4096 & 2965012 \\ \hline
-8192 & 12774326 \\ \hline
-16384 & 48066532 \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Corte Haste Bottom Up - Vetor Crescente P40}
-\end{figure}
-
-
-
-
-\subsection{Vetor Crescente P50}
-Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos de forma crescente P50.
-\begin{table}[H]
-\centering
-\caption{Corte Haste Bottom Up com Vetor Crescente P50}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 599 \\ \hline
-32 & 913 \\ \hline
-64 & 1798 \\ \hline
-128 & 4618 \\ \hline
-256 & 14530 \\ \hline
-512 & 51214 \\ \hline
-1024 & 193794 \\ \hline
-2048 & 761470 \\ \hline
-4096 & 2965012 \\ \hline
-8192 & 12774326 \\ \hline
-16384 & 48066532 \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Corte Haste Bottom Up - Vetor Crescente P50}
-\end{figure}
-
-
-
-
-
-
-
-\subsection{Vetor Decrescente}
-Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos de forma decrescente.
-\begin{table}[H]
-\centering
-\caption{Corte Haste Bottom Up com Vetor Decrescente}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 599 \\ \hline
-32 & 913 \\ \hline
-64 & 1798 \\ \hline
-128 & 4618 \\ \hline
-256 & 14530 \\ \hline
-512 & 51214 \\ \hline
-1024 & 193794 \\ \hline
-2048 & 761470 \\ \hline
-4096 & 2965012 \\ \hline
-8192 & 12774326 \\ \hline
-16384 & 48066532 \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Corte Haste Bottom Up - Vetor Decrescente}
-\end{figure}
-
-
-
-
-
-\subsection{Vetor Decrescente P10}
-Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos de forma decrescente P10.
-\begin{table}[H]
-\centering
-\caption{Corte Haste Bottom Up com Vetor Decrescente P10}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 599 \\ \hline
-32 & 913 \\ \hline
-64 & 1798 \\ \hline
-128 & 4618 \\ \hline
-256 & 14530 \\ \hline
-512 & 51214 \\ \hline
-1024 & 193794 \\ \hline
-2048 & 761470 \\ \hline
-4096 & 2965012 \\ \hline
-8192 & 12774326 \\ \hline
-16384 & 48066532 \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Corte Haste Bottom Up - Vetor Decrescente P10}
-\end{figure}
-
-
-
-
-\subsection{Vetor Decrescente P20}
-Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos de forma decrescente P20.
-\begin{table}[H]
-\centering
-\caption{Corte Haste Bottom Up com Vetor Decrescente P20}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 599 \\ \hline
-32 & 913 \\ \hline
-64 & 1798 \\ \hline
-128 & 4618 \\ \hline
-256 & 14530 \\ \hline
-512 & 51214 \\ \hline
-1024 & 193794 \\ \hline
-2048 & 761470 \\ \hline
-4096 & 2965012 \\ \hline
-8192 & 12774326 \\ \hline
-16384 & 48066532 \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Corte Haste Bottom Up - Vetor Decrescente P20}
-\end{figure}
-
-
-
-
-\subsection{Vetor Decrescente P30}
-Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos de forma decrescente P30.
-\begin{table}[H]
-\centering
-\caption{Corte Haste Bottom Up com Vetor Decrescente P30}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 599 \\ \hline
-32 & 913 \\ \hline
-64 & 1798 \\ \hline
-128 & 4618 \\ \hline
-256 & 14530 \\ \hline
-512 & 51214 \\ \hline
-1024 & 193794 \\ \hline
-2048 & 761470 \\ \hline
-4096 & 2965012 \\ \hline
-8192 & 12774326 \\ \hline
-16384 & 48066532 \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Corte Haste Bottom Up - Vetor Decrescente P30}
-\end{figure}
-
-
-
-
-
-\subsection{Vetor Decrescente P40}
-Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos de forma decrescente P40.
-\begin{table}[H]
-\centering
-\caption{Corte Haste Bottom Up com Vetor Decrescente P40}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 599 \\ \hline
-32 & 913 \\ \hline
-64 & 1798 \\ \hline
-128 & 4618 \\ \hline
-256 & 14530 \\ \hline
-512 & 51214 \\ \hline
-1024 & 193794 \\ \hline
-2048 & 761470 \\ \hline
-4096 & 2965012 \\ \hline
-8192 & 12774326 \\ \hline
-16384 & 48066532 \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Corte Haste Bottom Up - Vetor Decrescente P40}
-\end{figure}
-
-
-
-
-
-\subsection{Vetor Decrescente P50}
-Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos de forma decrescente P50.
-\begin{table}[H]
-\centering
-\caption{Corte Haste Bottom Up com Vetor Decrescente P50}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 599 \\ \hline
-32 & 913 \\ \hline
-64 & 1798 \\ \hline
-128 & 4618 \\ \hline
-256 & 14530 \\ \hline
-512 & 51214 \\ \hline
-1024 & 193794 \\ \hline
-2048 & 761470 \\ \hline
-4096 & 2965012 \\ \hline
-8192 & 12774326 \\ \hline
-16384 & 48066532 \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Corte Haste Bottom Up - Vetor Decrescente P50}
 \end{figure}
 
 \section{Corte Haste Comum}
@@ -997,7 +994,7 @@ Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n
 Refere ao problema já mencionado anteriormente.
 
 \section(Vetor Comum)
-Tabela gerada utilizando Corte Haste Comum com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos aleatóriamente, crescente, crescente P10, crescente P20, crescente P30, decrescente, decrescente P10, decrescente P20, decrescenteP30.
+Não foi possível tirar conclusões devido a estouro de memória (algoritmo consume muito espaço).
 \begin{table}[H]
 \centering
 \caption{Corte Haste Bottom Up com vetor aleatório}
@@ -1017,12 +1014,6 @@ Tabela gerada utilizando Corte Haste Comum com vetores de tamanho n, sendo n = $
 \end{tabular}
 \end{table}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Corte Haste Comum}
-\end{figure}
-
 
 \section{Corte Haste Memoizada}
 
@@ -1037,8 +1028,8 @@ Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n
 \begin{tabular}{|l|l|}
 \hline
 \multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 1093 \\ \hline
-32 & 293 \\ \hline
+16 & 1285 \\ \hline
+32 & 323 \\ \hline
 64 & 325 \\ \hline
 128 & 296 \\ \hline
 256 & 334 \\ \hline
@@ -1047,45 +1038,14 @@ Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n
 2048 & 1325 \\ \hline
 4096 & 2331 \\ \hline
 8192 & 3844 \\ \hline
-16384 & 10469 \\ \hline
+16384 & 15475 \\ \hline
 \end{tabular}
 \end{table}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/CorteHasteMemorizado/Aleatorio/HasteMemo.png}
   \caption{Corte Haste Memoizada - Vetor Aleatório}
-\end{figure}
-
-
-
-\subsection{Vetor Crescente}
-Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos de forma crescente.
-\begin{table}[H]
-\centering
-\caption{Corte Haste Memoizada com Vetor Crescente}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 397 \\ \hline
-32 & 292 \\ \hline
-64 & 341 \\ \hline
-128 & 349 \\ \hline
-256 & 386 \\ \hline
-512 & 593 \\ \hline
-1024 & 618 \\ \hline
-2048 & 1250 \\ \hline
-4096 & 2243 \\ \hline
-8192 & 2658 \\ \hline
-16384 & 3259 \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Corte Haste Memoizada - Vetor Crescente}
 \end{figure}
 
 \subsection{Vetor Crescente P10}
@@ -1097,23 +1057,23 @@ Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n
 \begin{tabular}{|l|l|}
 \hline
 \multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 335 \\ \hline
-32 & 331 \\ \hline
-64 & 345 \\ \hline
-128 & 377 \\ \hline
-256 & 487 \\ \hline
-512 & 674 \\ \hline
-1024 & 800 \\ \hline
-2048 & 3093 \\ \hline
-4096 & 3495 \\ \hline
-8192 & 2105 \\ \hline
-16384 & 3700 \\ \hline
+16 & 1398 \\ \hline
+32 & 3456 \\ \hline
+64 & 6795 \\ \hline
+128 & 12053 \\ \hline
+256 & 24546 \\ \hline
+512 & 48256 \\ \hline
+1024 & 90413 \\ \hline
+2048 & 180521 \\ \hline
+4096 & 360512 \\ \hline
+8192 & 808256 \\ \hline
+16384 & 6200211 \\ \hline
 \end{tabular}
 \end{table}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/CorteHasteMemorizado/Crescente P10/HasteMemo.png}
   \caption{Corte Haste Memoizada - Vetor Crescente P10}
 \end{figure}
 
@@ -1143,7 +1103,7 @@ Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/CorteHasteMemorizado/Crescente P20/HasteMemo.png}
   \caption{Corte Haste Memoizada - Vetor Crescente P20}
 \end{figure}
 
@@ -1174,7 +1134,7 @@ Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/CorteHasteMemorizado/Crescente P30/HasteMemo.png}
   \caption{Corte Haste Memoizada - Vetor Crescente P30}
 \end{figure}
 
@@ -1207,7 +1167,7 @@ Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/CorteHasteMemorizado/Crescente40/HasteMemo.png}
   \caption{Corte Haste Memoizada - Vetor Crescente P40}
 \end{figure}
 
@@ -1239,7 +1199,7 @@ Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/CorteHasteMemorizado/Crescente50/HasteMemo.png}
   \caption{Corte Haste Memoizada - Vetor Crescente P50}
 \end{figure}
 
@@ -1253,23 +1213,23 @@ Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n
 \begin{tabular}{|l|l|}
 \hline
 \multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 734 \\ \hline
-32 & 915 \\ \hline
-64 & 915 \\ \hline
-128 & 1001 \\ \hline
-256 & 425 \\ \hline
-512 & 351 \\ \hline
-1024 & 478 \\ \hline
-2048 & 935 \\ \hline
-4096 & 1153 \\ \hline
-8192 & 2191 \\ \hline
-16384 & 3648 \\ \hline
+16 & 1598 \\ \hline
+32 & 3256 \\ \hline
+64 & 5795 \\ \hline
+128 & 12196 \\ \hline
+256 & 24649 \\ \hline
+512 & 48146 \\ \hline
+1024 & 91564 \\ \hline
+2048 & 183545 \\ \hline
+4096 & 335949 \\ \hline
+8192 & 815698 \\ \hline
+16384 & 6198565 \\ \hline
 \end{tabular}
 \end{table}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/CorteHasteMemorizado/Decrescente/HasteMemo.png}
   \caption{Corte Haste Memoizada - Vetor Decrescente}
 \end{figure}
 
@@ -1283,24 +1243,24 @@ Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n
 \begin{tabular}{|l|l|}
 \hline
 \multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 450 \\ \hline
-32 & 854 \\ \hline
-64 & 716 \\ \hline
-128 & 364 \\ \hline
-256 & 822 \\ \hline
-512 & 857 \\ \hline
-1024 & 572 \\ \hline
-2048 & 729 \\ \hline
-4096 & 1108 \\ \hline
-8192 & 2230 \\ \hline
-16384 & 3597 \\ \hline
+16 & 1398 \\ \hline
+32 & 2956 \\ \hline
+64 & 5465 \\ \hline
+128 & 13196 \\ \hline
+256 & 25697 \\ \hline
+512 & 50154 \\ \hline
+1024 & 93484 \\ \hline
+2048 & 183654 \\ \hline
+4096 & 315169 \\ \hline
+8192 & 835495 \\ \hline
+16384 & 1588859 \\ \hline
 
 \end{tabular}
 \end{table}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/CorteHasteMemorizado/Decrescente P10/HasteMemo.png}
   \caption{Corte Haste Memoizada - Vetor Decrescente P10}
 \end{figure}
 
@@ -1330,7 +1290,7 @@ Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/CorteHasteMemorizado/Decrescente P20/HasteMemo.png}
   \caption{Corte Haste Memoizada - Vetor Decrescente P20}
 \end{figure}
 
@@ -1362,7 +1322,7 @@ Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/CorteHasteMemorizado/Decrescente P30/HasteMemo.png}
   \caption{Corte Haste Memoizada - Vetor Decrescente P30}
 \end{figure}
 
@@ -1388,14 +1348,14 @@ Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n
 2048 & 604 \\ \hline
 4096 & 1085 \\ \hline
 8192 & 13662 \\ \hline
-16384 & 6253 \\ \hline
+16384 & 16253 \\ \hline
 
 \end{tabular}
 \end{table}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/CorteHasteMemorizado/Decrescente P40/HasteMemo.png}
   \caption{Corte Haste Memoizada - Vetor Decrescente P40}
 \end{figure}
 
@@ -1409,23 +1369,23 @@ Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n
 \begin{tabular}{|l|l|}
 \hline
 \multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 1204 \\ \hline
-32 & 1063 \\ \hline
-64 & 1041 \\ \hline
-128 & 912 \\ \hline
-256 & 1074 \\ \hline
-512 & 835 \\ \hline
-1024 & 1446 \\ \hline
-2048 & 2082 \\ \hline
-4096 & 1550 \\ \hline
-8192 & 2571 \\ \hline
-16384 & 5184 \\ \hline
+16 & 372 \\ \hline
+32 & 650 \\ \hline
+64 & 1251 \\ \hline
+128 & 2654 \\ \hline
+256 & 5659 \\ \hline
+512 & 11256 \\ \hline
+1024 & 20265 \\ \hline
+2048 & 35654 \\ \hline
+4096 & 71565 \\ \hline
+8192 & 156984 \\ \hline
+16384 & 305465 \\ \hline
 \end{tabular}
 \end{table}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/CorteHasteMemorizado/Decrescente P50/HasteMemo.png}
   \caption{Corte Haste Memoizada - Vetor Decrescente P50}
 \end{figure}
 
@@ -1459,7 +1419,7 @@ Tabela gerada utilizando SCM com vetores de tamanho n, sendo n = $(2^k)$, de k =
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/SMC Nanosegundos/SMCNanosegundos.png}
   \caption{SCM - Vetor caracteres}
 \end{figure}
 
@@ -1470,6 +1430,7 @@ Problema já comentado anteriormente.
 
 \subsection{Vetor caracteres}
 Tabela gerada utilizando SCM Recursivo com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14.
+Não foi possível retirar conclusões, pois estoura a pilha.
 \begin{table}[H]
 \centering
 \caption{SCM Recursivo com vetor de caracteres}
@@ -1480,16 +1441,8 @@ Tabela gerada utilizando SCM Recursivo com vetores de tamanho n, sendo n = $(2^k
 10 & 1235274 \\ \hline
 20 & 1273575975 \\ \hline
 30 & 1080524745749 \\ \hline
-
 \end{tabular}
 \end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{SCM Recursivo - Vetor caracteres}
-\end{figure}
-
 
 \section{Parentização Bottom Up}
 
@@ -1515,7 +1468,7 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Parentizacao BottomUp/Aleatorio/ParentizacaoBottomUp.png}
   \caption{Parentização Bottom Up - Vetor Aleatório}
 \end{figure}
 
@@ -1541,7 +1494,7 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Parentizacao BottomUp/Crescente/ParentizacaoBottomUp.png}
   \caption{Parentização Bottom Up - Vetor Crescente}
 \end{figure}
 
@@ -1566,7 +1519,7 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Parentizacao BottomUp/Crescente P10/ParentizacaoBottomUp.png}
   \caption{Parentização Bottom Up - Vetor Crescente P10}
 \end{figure}
 
@@ -1593,7 +1546,7 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Parentizacao BottomUp/Crescente P20/ParentizacaoBottomUp.png}
   \caption{Parentização Bottom Up - Vetor Crescente P20}
 \end{figure}
 
@@ -1618,7 +1571,7 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Parentizacao BottomUp/Crescente P30/ParentizacaoBottomUp.png}
   \caption{Parentização Bottom Up - Vetor Crescente P30}
 \end{figure}
 
@@ -1643,7 +1596,7 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Parentizacao BottomUp/Crescente P40/ParentizacaoBottomUp.png}
   \caption{Parentização Bottom Up - Vetor Crescente P40}
 \end{figure}
 
@@ -1667,7 +1620,7 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Parentizacao BottomUp/Crescente P50/ParentizacaoBottomUp.png}
   \caption{Parentização Bottom Up - Vetor Crescente P50}
 \end{figure}
 
@@ -1691,7 +1644,7 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Parentizacao BottomUp/Decrescente/ParentizacaoBottomUp.png}
   \caption{Parentização Bottom Up - Vetor Decrescente}
 \end{figure}
 
@@ -1716,7 +1669,7 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Parentizacao BottomUp/Decrescente P10/ParentizacaoBottomUp.png}
   \caption{Parentização Bottom Up - Vetor Decrescente P10}
 \end{figure}
 
@@ -1741,7 +1694,7 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Parentizacao BottomUp/Decrescente P20/ParentizacaoBottomUp.png}
   \caption{Parentização Bottom Up - Vetor Decrescente P20}
 \end{figure}
 
@@ -1766,7 +1719,7 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Parentizacao BottomUp/Decrescente P30/ParentizacaoBottomUp.png}
   \caption{Parentização Bottom Up - Vetor Decrescente P30}
 \end{figure}
 
@@ -1791,7 +1744,7 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Parentizacao BottomUp/Decrescente P40/ParentizacaoBottomUp.png}
   \caption{Parentização Bottom Up - Vetor Decrescente P40}
 \end{figure}
 
@@ -1816,7 +1769,7 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Parentizacao BottomUp/Decrescente P50/ParentizacaoBottomUp.png}
   \caption{Parentização Bottom Up - Vetor Decrescente P50}
 \end{figure}
 
@@ -1825,7 +1778,7 @@ Tabela gerada utilizando Parentização Bottom Up com vetores de tamanho n, send
 Problema já comentado anteriormente.
 
 \subsection{Vetor}
-Tabela gerada utilizando Parentização Recursiva com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos aleatóriamente, crescente, crescente P10, crescente P20, crescente P30, crescente P40, crescente P50, decrescente, decrescente P10, decrescente P20, decrescente P30, decrescente P40, decrescente P50.
+Tabela gerada utilizando Parentização Recursiva com vetores de tamanho n, sendo n = $(2^k)$, de k = 4, pois após isso há um estouro de memória, logo não é possível extrair um gráfico.
 \begin{table}[H]
 \centering
 \caption{Parentização Recursiva}
@@ -1849,15 +1802,9 @@ Tabela gerada utilizando Parentização Recursiva com vetores de tamanho n, send
 \end{tabular}
 \end{table}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Parentização Recursiva}
-\end{figure}
-
 \chapter{Estatísticas de Ordem}
 
-A iesima estatística de ordem de um conjunto com n elementos ́eh o iesimo menor elemento desse conjunto.
+A iesima estatística de ordem de um conjunto com n elementos é o iesimo menor elemento desse conjunto.
 
 \section{Min}
 
@@ -1889,7 +1836,7 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min/Aleatorio/Min.png}
   \caption{Min - Vetor Aleatório}
 \end{figure}
 
@@ -1919,7 +1866,7 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min/Crescente/Min.png}
   \caption{Min - Vetor Crescente}
 \end{figure}
 
@@ -1950,7 +1897,7 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min/Crescente P10/Min.png}
   \caption{Min - Vetor Crescente P10}
 \end{figure}
 
@@ -1980,7 +1927,7 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min/Crescente P20/Min.png}
   \caption{Min - Vetor Crescente P20}
 \end{figure}
 
@@ -2010,7 +1957,7 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min/Crescente P30/Min.png}
   \caption{Min - Vetor Crescente P30}
 \end{figure}
 
@@ -2040,7 +1987,7 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min/Crescente P40/Min.png}
   \caption{Min - Vetor Crescente P40}
 \end{figure}
 
@@ -2070,7 +2017,7 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min/Crescente P50/Min.png}
   \caption{Min - Vetor Crescente P50}
 \end{figure}
 
@@ -2100,7 +2047,7 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min/Decrescente/Min.png}
   \caption{Min - Vetor Decrescente}
 \end{figure}
 
@@ -2130,7 +2077,7 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min/Decrescente P10/Min.png}
   \caption{Min - Vetor Decrescente P10}
 \end{figure}
 
@@ -2160,7 +2107,7 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min/Decrescente P20/Min.png}
   \caption{Min - Vetor Decrescente P20}
 \end{figure}
 
@@ -2190,7 +2137,7 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min/Decrescente P30/Min.png}
   \caption{Min - Vetor Decrescente P30}
 \end{figure}
 
@@ -2220,7 +2167,7 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min/Decrescente P40/Min.png}
   \caption{Min - Vetor Decrescente P40}
 \end{figure}
 
@@ -2249,7 +2196,7 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min/Decrescente P50/Min.png}
   \caption{Min - Vetor Decrescente P50}
 \end{figure}
 
@@ -2258,8 +2205,8 @@ Tabela gerada utilizando Min com vetores de tamanho n, sendo n = $(2^k)$, de k =
 
 \section{MinMax}
 
-Mínimo  ́e a primeira estatística de ordem, com i = 1.
-Máximo  ́e a n ésima estatística de ordem, com i = n.
+Mínimo é a primeira estatística de ordem, com i = 1.
+Máximo é a n ésima estatística de ordem, com i = n.
 
 \subsection{Vetor aleatorio}
 Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos aleatóriamente.
@@ -2286,7 +2233,7 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min Max/Aleatorio/MinMax.png}
   \caption{MinMax - Vetor Aleatório}
 \end{figure}
 
@@ -2315,7 +2262,7 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min Max/Crescente/MinMax.png}
   \caption{MinMax - Vetor Crescente}
 \end{figure}
 
@@ -2344,7 +2291,7 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min Max/Crescente P10/MinMax.png}
   \caption{MinMax - Vetor Crescente P10}
 \end{figure}
 
@@ -2373,7 +2320,7 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min Max/Crescente P20/MinMax.png}
   \caption{MinMax - Vetor Crescente P20}
 \end{figure}
 
@@ -2402,7 +2349,7 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min Max/Crescente P30/MinMax.png}
   \caption{MinMax - Vetor Crescente P30}
 \end{figure}
 
@@ -2431,7 +2378,7 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min Max/Crescente P40/MinMax.png}
   \caption{MinMax - Vetor Crescente P40}
 \end{figure}
 
@@ -2460,7 +2407,7 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min Max/Crescente P50/MinMax.png}
   \caption{MinMax - Vetor Crescente P50}
 \end{figure}
 
@@ -2489,7 +2436,7 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min Max/Decrescente/MinMax.png}
   \caption{MinMax - Vetor Decrescente}
 \end{figure}
 
@@ -2518,7 +2465,7 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min Max/Decrescente P10/MinMax.png}
   \caption{MinMax - Vetor Decrescente P10}
 \end{figure}
 
@@ -2547,7 +2494,7 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min Max/Decrescente P20/MinMax.png}
   \caption{MinMax - Vetor Decrescente P20}
 \end{figure}
 
@@ -2576,7 +2523,7 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min Max/Decrescente P30/MinMax.png}
   \caption{MinMax - Vetor Decrescente P30}
 \end{figure}
 
@@ -2605,7 +2552,7 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min Max/Decrescente P40/MinMax.png}
   \caption{MinMax - Vetor Decrescente P40}
 \end{figure}
 
@@ -2634,14 +2581,12 @@ Tabela gerada utilizando MinMax com vetores de tamanho n, sendo n = $(2^k)$, de 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/Min Max/Decrescente P50/MinMax.png}
   \caption{MinMax - Vetor Decrescente P50}
 \end{figure}
 
 \section{Seleciona Aleatorizado}
-
 Algoritmo inspirado no Quicksort que resolve o problema da seleção.
-
 \subsection{Vetor aleatorio}
 Tabela gerada utilizando Seleciona Aleatorizado com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos aleatóriamente.
 \begin{table}[H]
@@ -2651,407 +2596,25 @@ Tabela gerada utilizando Seleciona Aleatorizado com vetores de tamanho n, sendo 
 \begin{tabular}{|l|l|}
 \hline
 \multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 848 \\ \hline
-32 & 859 \\ \hline
-64 & 1226 \\ \hline
-128 & 2086 \\ \hline
-256 & 3352 \\ \hline
-512 & 4632 \\ \hline
-1024 & 10637 \\ \hline
-2048 & 24606 \\ \hline
-4096 & 40615 \\ \hline
-8192 & 88004 \\ \hline
-16384 & 135617 \\ \hline
+16 & 631 \\ \hline
+32 & 664 \\ \hline
+64 & 732 \\ \hline
+128 & 764 \\ \hline
+256 & 968 \\ \hline
+512 & 1068 \\ \hline
+1024 & 1332 \\ \hline
+2048 & 2044 \\ \hline
+4096 & 3555 \\ \hline
+8192 & 6672 \\ \hline
+16384 & 12553 \\ \hline
 
 \end{tabular}
 \end{table}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
+    \includegraphics[width=0.7\linewidth]{graficos/SelecionaAleatorizado/SeletorRecursivoAtividades.png}
   \caption{Seleciona Aleatorizado - Vetor Aleatório}
-\end{figure}
-
-
-\subsection{Vetor Crescente}
-Tabela gerada utilizando Seleciona Aleatorizado com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente.
-\begin{table}[H]
-\centering
-\caption{Seleciona Aleatorizado com vetor crescente}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 563 \\ \hline
-32 & 677 \\ \hline
-64 & 1184 \\ \hline
-128 & 2093 \\ \hline
-256 & 3518 \\ \hline
-512 & 6070 \\ \hline
-1024 & 9960 \\ \hline
-2048 & 24854 \\ \hline
-4096 & 39433 \\ \hline
-8192 & 79908 \\ \hline
-16384 & 245208 \\ \hline
-
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Seleciona Aleatorizado - Vetor crescente}
-\end{figure}
-
-
-
-\subsection{Vetor Crescente P10}
-Tabela gerada utilizando Seleciona Aleatorizado com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P10.
-\begin{table}[H]
-\centering
-\caption{Seleciona Aleatorizado com vetor crescente P10}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 672 \\ \hline
-32 & 843 \\ \hline
-64 & 1091 \\ \hline
-128 & 2310 \\ \hline
-256 & 3383 \\ \hline
-512 & 6038 \\ \hline
-1024 & 19242 \\ \hline
-2048 & 34439 \\ \hline
-4096 & 46022 \\ \hline
-8192 & 95304 \\ \hline
-16384 & 176781 \\ \hline
-
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Seleciona Aleatorizado - Vetor crescente P10}
-\end{figure}
-
-
-
-\subsection{Vetor Crescente P20}
-Tabela gerada utilizando Seleciona Aleatorizado com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P20.
-\begin{table}[H]
-\centering
-\caption{Seleciona Aleatorizado com vetor crescente P20}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 613 \\ \hline
-32 & 780 \\ \hline
-64 & 1259 \\ \hline
-128 & 1836 \\ \hline
-256 & 2640 \\ \hline
-512 & 9910 \\ \hline
-1024 & 11045 \\ \hline
-2048 & 19416 \\ \hline
-4096 & 46564 \\ \hline
-8192 & 86621 \\ \hline
-16384 & 198014 \\ \hline
-
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Seleciona Aleatorizado - Vetor crescente P20}
-\end{figure}
-
-
-
-\subsection{Vetor Crescente P30}
-Tabela gerada utilizando Seleciona Aleatorizado com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P30.
-\begin{table}[H]
-\centering
-\caption{Seleciona Aleatorizado com vetor crescente P30}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 651 \\ \hline
-32 & 698 \\ \hline
-64 & 1008 \\ \hline
-128 & 2052 \\ \hline
-256 & 3051 \\ \hline
-512 & 6192 \\ \hline
-1024 & 10526 \\ \hline
-2048 & 17150 \\ \hline
-4096 & 45699 \\ \hline
-8192 & 76166 \\ \hline
-16384 & 155111 \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Seleciona Aleatorizado - Vetor crescente P30}
-\end{figure}
-
-
-\subsection{Vetor Crescente P40}
-Tabela gerada utilizando Seleciona Aleatorizado com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P40.
-\begin{table}[H]
-\centering
-\caption{Seleciona Aleatorizado com vetor crescente P40}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 743 \\ \hline
-32 & 666 \\ \hline
-64 & 989 \\ \hline
-128 & 1508 \\ \hline
-256 & 2883 \\ \hline
-512 & 5360 \\ \hline
-1024 & 11656 \\ \hline
-2048 & 20539 \\ \hline
-4096 & 41529 \\ \hline
-8192 & 100858 \\ \hline
-16384 & 222297 \\ \hline
-
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Seleciona Aleatorizado - Vetor crescente P40}
-\end{figure}
-
-
-
-
-\subsection{Vetor Crescente P50}
-Tabela gerada utilizando Seleciona Aleatorizado com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Crescente P50.
-\begin{table}[H]
-\centering
-\caption{Seleciona Aleatorizado com vetor crescente P50}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 620 \\ \hline
-32 & 827 \\ \hline
-64 & 1258 \\ \hline
-128 & 1600 \\ \hline
-256 & 3615 \\ \hline
-512 & 4546 \\ \hline
-1024 & 10992 \\ \hline
-2048 & 24860 \\ \hline
-4096 & 60197 \\ \hline
-8192 & 98321 \\ \hline
-16384 & 249566 \\ \hline
-
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Seleciona Aleatorizado - Vetor crescente P50}
-\end{figure}
-
-
-\subsection{Vetor Decrescente}
-Tabela gerada utilizando Seleciona Aleatorizado com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente.
-\begin{table}[H]
-\centering
-\caption{Seleciona Aleatorizado com vetor decrescente}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 822 \\ \hline
-32 & 1130 \\ \hline
-64 & 1610 \\ \hline
-128 & 2075 \\ \hline
-256 & 2774 \\ \hline
-512 & 6371 \\ \hline
-1024 & 12455 \\ \hline
-2048 & 20537 \\ \hline
-4096 & 39481 \\ \hline
-8192 & 90849 \\ \hline
-16384 & 216330 \\ \hline
-
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Seleciona Aleatorizado - Vetor decrescente}
-\end{figure}
-
-
-
-
-\subsection{Vetor Decrescente P10}
-Tabela gerada utilizando Seleciona Aleatorizado com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P10.
-\begin{table}[H]
-\centering
-\caption{Seleciona Aleatorizado com vetor decrescente P10}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 692 \\ \hline
-32 & 875 \\ \hline
-64 & 968 \\ \hline
-128 & 1772 \\ \hline
-256 & 2865 \\ \hline
-512 & 6142 \\ \hline
-1024 & 10526 \\ \hline
-2048 & 25677 \\ \hline
-4096 & 46430 \\ \hline
-8192 & 46738 \\ \hline
-16384 & 177393 \\ \hline
-
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Seleciona Aleatorizado - Vetor decrescente P10}
-\end{figure}
-
-
-
-\subsection{Vetor Decrescente P20}
-Tabela gerada utilizando Seleciona Aleatorizado com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P20.
-\begin{table}[H]
-\centering
-\caption{Seleciona Aleatorizado com vetor decrescente P20}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 963 \\ \hline
-32 & 1130 \\ \hline
-64 & 1209 \\ \hline
-128 & 1862 \\ \hline
-256 & 2040 \\ \hline
-512 & 6190 \\ \hline
-1024 & 14474 \\ \hline
-2048 & 28032 \\ \hline
-4096 & 58891 \\ \hline
-8192 & 85015 \\ \hline
-16384 & 191226 \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Seleciona Aleatorizado - Vetor decrescente P20}
-\end{figure}
-
-
-
-\subsection{Vetor Decrescente P30}
-Tabela gerada utilizando Seleciona Aleatorizado com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P30.
-\begin{table}[H]
-\centering
-\caption{Seleciona Aleatorizado com vetor decrescente P30}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 691 \\ \hline
-32 & 791 \\ \hline
-64 & 1031 \\ \hline
-128 & 1907 \\ \hline
-256 & 3053 \\ \hline
-512 & 9593 \\ \hline
-1024 & 8715 \\ \hline
-2048 & 11899 \\ \hline
-4096 & 46642 \\ \hline
-8192 & 64121 \\ \hline
-16384 & 139003 \\ \hline
-
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Seleciona Aleatorizado - Vetor decrescente P30}
-\end{figure}
-
-
-
-
-\subsection{Vetor Decrescente P40}
-Tabela gerada utilizando Seleciona Aleatorizado com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P40.
-\begin{table}[H]
-\centering
-\caption{Seleciona Aleatorizado com vetor decrescente P40}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 818 \\ \hline
-32 & 712 \\ \hline
-64 & 1058 \\ \hline
-128 & 1643 \\ \hline
-256 & 2060 \\ \hline
-512 & 4179 \\ \hline
-1024 & 13014 \\ \hline
-2048 & 22027 \\ \hline
-4096 & 62149 \\ \hline
-8192 & 101864 \\ \hline
-16384 & 151244 \\ \hline
-
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Seleciona Aleatorizado - Vetor decrescente P40}
-\end{figure}
-
-
-
-
-\subsection{Vetor Decrescente P50}
-Tabela gerada utilizando Seleciona Aleatorizado com vetores de tamanho n, sendo n = $(2^k)$, de k = 4..14 e inseridos Decrescente P50.
-\begin{table}[H]
-\centering
-\caption{Seleciona Aleatorizado com vetor decrescente P50}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
-16 & 593 \\ \hline
-32 & 692 \\ \hline
-64 & 1028 \\ \hline
-128 & 2107 \\ \hline
-256 & 3328 \\ \hline
-512 & 5288 \\ \hline
-1024 & 13776 \\ \hline
-2048 & 26749 \\ \hline
-4096 & 37678 \\ \hline
-8192 & 112482 \\ \hline
-16384 & 260308 \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{graficos/HeapSort/vIntAleatorio/vIntAleatorio.png}
-  \caption{Seleciona Aleatorizado - Vetor decrescente P50}
 \end{figure}
 
 %para ajuda

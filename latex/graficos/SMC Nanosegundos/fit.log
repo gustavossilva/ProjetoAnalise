@@ -1,0 +1,66 @@
+
+
+*******************************************************************************
+Wed Aug  2 05:40:05 2017
+
+
+FIT:    data read from 'Dados.dat' using 1:2
+        format = x:z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+	t(x) = a*x + b*z
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Wed Aug  2 05:40:17 2017
+
+
+FIT:    data read from 'Dados.dat' using 1:2
+        format = x:z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+	t(x) = a*x + b*y
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Wed Aug  2 05:40:31 2017
+
+
+FIT:    data read from 'Dados.dat' using 1:2
+        format = x:z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+	t(x) = a*x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 4.9218009764e+13   0.00e+00  4.03e+03    1.000000e+00   1.000000e+00
+   6 1.8186007716e+10  -7.46e-01  4.03e-03    3.726534e+02  -9.797356e+03
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 1.8186e+10
+rel. change during last iteration : -7.46039e-06
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 44951.8
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.02067e+09
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 372.653          +/- 2.786        (0.7475%)
+b               = -9797.36         +/- 1.589e+04    (162.2%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.522  1.000 
