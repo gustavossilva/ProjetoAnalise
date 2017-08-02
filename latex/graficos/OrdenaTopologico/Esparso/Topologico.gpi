@@ -13,7 +13,7 @@ set key left top
 t(x) = a*x + b*x/2
 fit t(x) 'Esparso.dat' using 1:2 via a, b
 
-titulo = sprintf("T(n) = %.4gn + %.4gn",a,b)
+titulo = sprintf("T(n) = %.4gn + %.4g",a,b)
 titulo = sprintf("Busca Profundidade Esparso\n%s", titulo)
 set title titulo
 

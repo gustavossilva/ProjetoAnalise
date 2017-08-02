@@ -44,3 +44,49 @@ correlation matrix of the fit parameters:
                a      b      
 a               1.000 
 b              -1.000  1.000 
+
+
+*******************************************************************************
+Wed Aug  2 10:06:20 2017
+
+
+FIT:    data read from 'Esparso.dat' using 1:2
+        format = x:z
+        #datapoints = 4
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 4.40976e+09       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 466.476
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 4.29184e+07
+rel. change during last iteration : -1.95783e-06
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4632.41
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.14592e+07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 45.7976          +/- 5.763e+16    (1.258e+17%)
+b               = 23.3988          +/- 1.153e+17    (4.925e+17%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      
+a               1.000 
+b              -1.000  1.000 
