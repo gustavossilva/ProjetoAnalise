@@ -19,4 +19,5 @@ int scm( char *X, char *Y, int m, int n );
 //Gulosos
 void seletorgulosoativades(int s[], int f[], int n);
 int SeletorRecursivoAtividades(int s[],int f[],int k,int n);
+void mochila(int quantidades[], int valores[],int n);
 #endif

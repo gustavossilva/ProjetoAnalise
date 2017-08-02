@@ -16,7 +16,7 @@
 
 #define CRONOMETRA(funcao,vetor,vetor2,n) {                          \
    clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &inicio);          \
-   funcao(vetor,vetor2,n);                                           \
+   funcao(vetor,vetor2,0,n);                                           \
    clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &fim);             \
    tempo_de_cpu_aux = BILHAO * (fim.tv_sec - inicio.tv_sec) +     \
                   fim.tv_nsec - inicio.tv_nsec;               \
@@ -49,74 +49,74 @@ int main(int argc, char *argv[]){
   for(int i=0;i<16;i++){
   if(i == 0){
 	s[0] = 0;
-        f[0] = rand();}
+        f[0] = s[0] + rand()%(i+1);}
   else{
-      s[i] = f[i-1] + 1;
-      f[i] = rand();}
+      s[i] = f[i-1] + rand()%i;
+      f[i] = s[i] + rand()%i;}
 }
   for(int i=0;i<32;i++){
   if(i == 0){
 	s1[0] = 0;
-        f1[0] = rand();}
+        f1[0] = s1[0] + rand()%(i+1);}
   else{
-      s1[i] = f1[i-1] + 1;
-      f1[i] = rand();}
+      s1[i] = f1[i-1] + rand()%i;
+      f1[i] = s1[i] + rand()%i;}
 }
   for(int i=0;i<64;i++){
   if(i == 0){
 	s2[0] = 0;
-        f2[0] = rand();}
+        f2[0] = + s2[0] + rand()%(i+1);}
   else{
-      s2[i] = f2[i-1] + 1;
-      f2[i] = rand();}
+      s2[i] = f2[i-1] + rand()%i;
+      f2[i] = s2[0] + rand()%i;}
 }
   for(int i=0;i<128;i++){
   if(i == 0){
 	s3[0] = 0;
-        f3[0] = rand();}
+        f3[0] = s3[0] + rand()%(i+1);}
   else{
-      s3[i] = f3[i-1] + 1;
-      f3[i] = rand();}
+      s3[i] = f3[i-1] + rand()%i;
+      f3[i] = s3[i] + rand()%i;}
 }
   for(int i=0;i<256;i++){
   if(i == 0){
 	s4[0] = 0;
-        f4[0] = rand();}
+        f4[0] = s4[0] + rand()%(i+1);}
   else{
-      s4[i] = f4[i-1] + 1;
-      f4[i] = rand();}
+      s4[i] = f4[i-1] + rand()%i;
+      f4[i] = s4[i] + rand()%i;}
 }
   for(int i=0;i<512;i++){
   if(i == 0){
 	s5[0] = 0;
-        f5[0] = rand();}
+        f5[0] = s5[0] + rand()%(i+1);}
   else{
-      s5[i] = f5[i-1] + 1;
-      f5[i] = rand();}
+      s5[i] = f5[i-1] + rand()%i;
+      f5[i] = s5[i] + rand()%i;}
 }
   for(int i=0;i<1024;i++){
   if(i == 0){
 	s6[0] = 0;
-        f6[0] = rand();}
+        f6[0] = s6[0] + rand()%(i+1);}
   else{
-      s6[i] = f6[i-1] + 1;
-      f6[i] = rand();}
+      s6[i] = f6[i-1] + rand()%i;
+      f6[i] = s6[i]+ rand()%i;}
 }
   for(int i=0;i<2048;i++){
   if(i == 0){
 	s7[0] = 0;
-        f7[0] = rand();}
+        f7[0] = s7[0]+ rand()%(i+1);}
   else{
-      s7[i] = f7[i-1] + 1;
-      f7[i] = rand();}
+      s7[i] = f7[i-1] + rand()%i;
+      f7[i] = s7[i]+ rand()%i;}
 }
   for(int i=0;i<4096;i++){
   if(i == 0){
 	s8[0] = 0;
-        f8[0] = rand();}
+        f8[0] = s8[0] + rand()%(i+1);}
   else{
-      s8[i] = f8[i-1] + 1;
-      f8[i] = rand();}
+      s8[i] = f8[i-1] + rand()%i;
+      f8[i] = s8[i]+ rand()%i;}
 }
     tempo_de_cpu = 0.0;
     if(h > 10){
@@ -125,10 +125,10 @@ int main(int argc, char *argv[]){
   for(int i=0;i<8192;i++){
   if(i == 0){
 	s9[0] = 0;
-        f9[0] = rand();}
+        f9[0] = s9[0] + rand()%(i+1);}
   else{
-      s9[i] = f9[i-1] + 1;
-      f9[i] = rand();}
+      s9[i] = f9[i-1] + rand()%i;
+      f9[i] = s9[i]+ rand()%i;}
 }
     tempo_de_cpu = 0.0;
     if(h > 10){
@@ -137,10 +137,10 @@ int main(int argc, char *argv[]){
   for(int i=0;i<16384;i++){
   if(i == 0){
 	s10[0] = 0;
-        f10[0] = rand();}
+        f10[0] = s10[0] + rand()%(i+1);}
   else{
-      s10[i] = f10[i-1] + 1;
-      f10[i] = rand();}
+      s10[i] = f10[i-1] + rand()%i;
+      f10[i] = s10[i]+ rand()%i;}
 }
     tempo_de_cpu = 0.0;
     if(h > 10){
@@ -154,7 +154,7 @@ int main(int argc, char *argv[]){
         //ordena_por_bolha(v,n);
         insertion(v,tamanho);
         fim = clock();*/
-	CRONOMETRA(seletorgulosoativades, s10,f10,tamanho);
+	CRONOMETRA(SeletorRecursivoAtividades, s10,f10,tamanho);
         //tempo_de_cpu += ((double) (fim - inicio)) / CLOCKS_PER_SEC;
 	tempo_de_cpu += tempo_de_cpu_aux;
 

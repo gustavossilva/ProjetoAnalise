@@ -1,36 +1,84 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
+#include<string.h>
+#include<time.h>
 #include <stdint.h>
-#include <time.h>
-#include <float.h>
-#include <math.h>
+#include<math.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
-
 #include "vetor.h"
-#include "final.h"
+#include "ordena.h"
 
 #define BILHAO 1000000000L
 
-#define CRONOMETRA(funcao,vetor,n) {                          \
+#define CRONOMETRA(funcao,vetor,p,r,max) {                          \
    clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &inicio);          \
-   funcao(vetor,n);                                           \
+   funcao(vetor,p,r,max);                                           \
    clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &fim);             \
    tempo_de_cpu_aux = BILHAO * (fim.tv_sec - inicio.tv_sec) +     \
                   fim.tv_nsec - inicio.tv_nsec;               \
    }
 
-int main(int argc, char *argv[]){
-  int * v = NULL;
-  int n = 0;
-  uint64_t tempo_de_cpu_aux = 0;
-  int tamanho = 0,count = 0;
-  //clock_t inicio, fim;
-  struct timespec inicio, fim;
-  uint64_t tempo_de_cpu = 0.0;
-  char msg[256];
+
+int partition(int a[], int p, int r){
+    int x = a[r];
+    int i = p-1;
+    int aux;
+    for(int j = p; j < r; j++){
+        if(a[j] <= x){
+            i++;
+            aux = a[i];
+	    a[i] = a[j];
+	    a[j] = aux;
+        }
+    }
+    aux = a[i+1];
+    a[i+1] = a[r];
+    a[r] = aux;
+    return i+1;
+}
+
+
+int particao_aleatoria(int a[], int p, int r){
+    int i = rand() % r + 1; 
+     int aux = a[i];
+     a[i] = a[r];
+     a[r] = aux;
+    return partition(a, p, r);
+}
+
+int particao_mediana(int a[], int p, int r){
+    int i = rand() % r + 1; 
+     int aux = a[i];
+     a[i] = a[r];
+     a[r] = aux;
+    return partition(a, p, r);
+}
+
+
+int selecao_aleatoria(int a[], int p, int r, int i)
+{
+    if(p==r)
+        return a[p];
+    int q = particao_aleatoria(a,p,r);
+    int k = q-p+1;
+    if(i == k)
+        return a[q];
+    else if(i < k)
+        return selecao_aleatoria(a, p, q-1, i);
+    else return selecao_aleatoria(a, q+1, r, i-k);
+}
+
+int main(){
+ int r = 0;
+ int * v = NULL;
+struct timespec inicio, fim;
+uint64_t tempo_de_cpu = 0.0;
+uint64_t tempo_de_cpu_aux = 0;
+srand(time(NULL));
+int tamanho = 0;
+int count = 0;
   char nome_do_arquivo[128];
   char **arquivos;
   int k=0,h = 0;
@@ -38,8 +86,8 @@ int main(int argc, char *argv[]){
   for(int i=0;i<200;i++){
     arquivos[i] = (char*)malloc(128*sizeof(char));
   }
-  
-  for(int i=0;i<11;i++){
+
+for(int i=0;i<11;i++){
     sprintf(nome_do_arquivo,"vetores/vIntAleatorio_%d.dat",(int)pow(2,i+4%15));
     strcpy(arquivos[k], nome_do_arquivo);
     k++;
@@ -106,31 +154,27 @@ int main(int argc, char *argv[]){
     strcpy(arquivos[k], nome_do_arquivo);
     k++;
   }
-    printf("%d\n",k);
-  //strcpy(nome_do_arquivo, "vetores/vIntCrescente_131072.dat");
-  // Leia o vetor a partir do arquivo
-  //v = leia_vetor_int(nome_do_arquivo, &n);
-  //printf("%s\n",arquivos[11]);
-  for(int i=0;i<k;i++){
-    tempo_de_cpu = 0.0;
-    if(h > 10){
+
+for(int n = 0; n <= k; n++)
+{
+if(h > 10){
         h = 0;
     }
-    for(int j=0;j<3;j++){
-        v = leia_vetor_int(arquivos[i],&n);
-        tamanho = (int)pow(2,h+4%15);
-        /*inicio = clock();
-        //ordena_por_bolha(v,n);
-        insertion(v,tamanho);
-        fim = clock();*/
-	CRONOMETRA(min_max, v,tamanho);
-        //tempo_de_cpu += ((double) (fim - inicio)) / CLOCKS_PER_SEC;
+tempo_de_cpu = 0.0;
+
+
+for(int j = 0; j<3; j++){
+	v = leia_vetor_int(arquivos[n],&r);
+	tamanho = (int)pow(2,h+4%15);
+	int A[tamanho];
+	 for(int i =0; i<tamanho; i++)
+	 	A[i] = rand()%20000;
+	CRONOMETRA(selecao_aleatoria, A,0,tamanho-1,rand()%tamanho + 1);
 	tempo_de_cpu += tempo_de_cpu_aux;
-    }
-    if(count < 11){
-        printf("Tempo do vetor aleatorio tamanho %d: %llu\n",tamanho,(long long unsigned int)tempo_de_cpu/(uint64_t) 3);
-    }
-    else if(count < 22){
+	}
+	if(count < 11)
+		printf("Tempo do vetor aleatorio tamanho %d: %llu\n",tamanho,(long long unsigned int)tempo_de_cpu/(uint64_t) 3);
+            else if(count < 22){
         printf("Tempo do vetor Crescente tamanho %d: %llu\n",tamanho,(long long unsigned int)tempo_de_cpu/(uint64_t) 3);
     }
     else if(count < 33){
@@ -166,12 +210,11 @@ int main(int argc, char *argv[]){
     else {
         printf("Tempo do vetor Decrescente P50 tamanho %d: %llu\n",tamanho,(long long unsigned int)tempo_de_cpu/(uint64_t) 3);
      }
-
-    h++;
-    count++;
-  }
-  //imprime_vetor_int(v,16384);
-  free(v);
-  exit(0);
+	h++;
+	count++;
 }
+free(v);
+
+}
+
 
