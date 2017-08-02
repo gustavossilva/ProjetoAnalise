@@ -4,6 +4,7 @@
 #include <math.h>
 #include<limits.h>
 #include "final.h"
+
 int min(int A[],int n){
 	int min = A[0];
 	for(int i = 1; i < n; i++)
