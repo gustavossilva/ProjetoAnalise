@@ -1,0 +1,212 @@
+
+
+*******************************************************************************
+Tue Aug  1 20:03:25 2017
+
+
+FIT:    data read from 'Esparso.dat' using 1:2
+        format = x:z
+        #datapoints = 4
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1.30093e+09       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 340.667
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+c               = 1
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 1.0805e+07
+rel. change during last iteration : -1.8156e-09
+
+degrees of freedom    (FIT_NDF)                        : 1
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3287.1
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.0805e+07
+
+BREAK:          Singular matrix in Invert_RtR
+
+
+
+*******************************************************************************
+Tue Aug  1 20:04:04 2017
+
+
+FIT:    data read from 'Esparso.dat' using 1:2
+        format = x:z
+        #datapoints = 4
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1.30093e+09       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 340.667
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+c               = 1
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 1.0805e+07
+rel. change during last iteration : -1.8156e-09
+
+degrees of freedom    (FIT_NDF)                        : 1
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3287.1
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.0805e+07
+
+BREAK:          Singular matrix in Invert_RtR
+
+
+
+*******************************************************************************
+Tue Aug  1 20:04:31 2017
+
+
+FIT:    data read from 'Esparso.dat' using 1:2
+        format = x:z
+        #datapoints = 4
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1.30093e+09       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 417.23
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 1.0805e+07
+rel. change during last iteration : -9.13001e-09
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 2324.33
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.4025e+06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 28.6325          +/- 3.387        (11.83%)
+b               = 1989.13          +/- 1998         (100.5%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      
+a               1.000 
+b              -0.813  1.000 
+
+
+*******************************************************************************
+Tue Aug  1 20:04:59 2017
+
+
+FIT:    data read from 'Esparso.dat' using 1:2
+        format = x:z
+        #datapoints = 4
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1.21785e+09       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 590.051
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 1.61581e+07
+rel. change during last iteration : -1.43104e-06
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 2842.37
+variance of residuals (reduced chisquare) = WSSR/ndf   : 8.07905e+06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 15.6875          +/- 1e+17        (6.375e+17%)
+b               = 15.6875          +/- 1e+17        (6.375e+17%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      
+a               1.000 
+b              -1.000  1.000 
+
+
+*******************************************************************************
+Tue Aug  1 20:05:59 2017
+
+
+FIT:    data read from 'Esparso.dat' using 1:2
+        format = x:z
+        #datapoints = 4
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1.2591e+09        delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 466.476
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 1.61581e+07
+rel. change during last iteration : -1.48017e-06
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 2842.37
+variance of residuals (reduced chisquare) = WSSR/ndf   : 8.07905e+06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 24.8999          +/- 2.5e+16      (1.004e+17%)
+b               = 12.95            +/- 5e+16        (3.861e+17%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      
+a               1.000 
+b              -1.000  1.000 

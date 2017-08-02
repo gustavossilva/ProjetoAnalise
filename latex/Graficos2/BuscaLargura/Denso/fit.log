@@ -1,0 +1,200 @@
+
+
+*******************************************************************************
+Tue Aug  1 19:54:56 2017
+
+
+FIT:    data read from 'Denso.dat' using 1:2
+        format = x:z
+BREAK:          No data to fit 
+
+
+
+*******************************************************************************
+Tue Aug  1 19:56:15 2017
+
+
+FIT:    data read from 'Denso.dat' using 1:2
+        format = x:z
+        #datapoints = 4
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 2.20624e+13       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 590.051
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 1.53728e+12
+rel. change during last iteration : -2.56911e-07
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 876721
+variance of residuals (reduced chisquare) = WSSR/ndf   : 7.6864e+11
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 1920.52          +/- 7.481e+18    (3.896e+17%)
+b               = 1920.52          +/- 7.481e+18    (3.896e+17%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      
+a               1.000 
+b              -1.000  1.000 
+
+
+*******************************************************************************
+Tue Aug  1 19:57:34 2017
+
+
+FIT:    data read from 'Denso.dat' using 1:2
+        format = x:z
+        #datapoints = 4
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 2.20624e+13       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 590.051
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 1.53728e+12
+rel. change during last iteration : -2.56911e-07
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 876721
+variance of residuals (reduced chisquare) = WSSR/ndf   : 7.6864e+11
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 1920.52          +/- 7.481e+18    (3.896e+17%)
+b               = 1920.52          +/- 7.481e+18    (3.896e+17%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      
+a               1.000 
+b              -1.000  1.000 
+
+
+*******************************************************************************
+Tue Aug  1 19:58:54 2017
+
+
+FIT:    data read from 'Denso.dat' using 1:2
+        format = x:z
+        #datapoints = 4
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1.30718e+13       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 312623
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+c               = 1
+
+After 10 iterations the fit converged.
+final sum of squares of residuals : 1.5572e+07
+rel. change during last iteration : -1.24399e-14
+
+degrees of freedom    (FIT_NDF)                        : 1
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3946.14
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.5572e+07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 3.88044          +/- 0.02445      (0.6301%)
+b               = 509.518          +/- 29.55        (5.799%)
+c               = -63042.5         +/- 6377         (10.11%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      c      
+a               1.000 
+b              -0.981  1.000 
+c               0.847 -0.915  1.000 
+
+
+*******************************************************************************
+Tue Aug  1 20:01:06 2017
+
+
+FIT:    data read from 'Denso.dat' using 1:2
+        format = x:z
+        #datapoints = 4
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1.30718e+13       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 312623
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+c               = 1
+
+After 10 iterations the fit converged.
+final sum of squares of residuals : 1.5572e+07
+rel. change during last iteration : -1.24399e-14
+
+degrees of freedom    (FIT_NDF)                        : 1
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3946.14
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.5572e+07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 3.88044          +/- 0.02445      (0.6301%)
+b               = 509.518          +/- 29.55        (5.799%)
+c               = -63042.5         +/- 6377         (10.11%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      c      
+a               1.000 
+b              -0.981  1.000 
+c               0.847 -0.915  1.000 
