@@ -993,8 +993,8 @@ Tabela gerada utilizando Corte Haste Bottom Up com vetores de tamanho n, sendo n
 
 Refere ao problema já mencionado anteriormente.
 
-\section{Vetor Comum}
-Não foi possível tirar conclusões devido a estouro de memória (algoritmo consume muito espaço).
+\subsection{Vetor Comum}
+Vetores menores devido a estouro de memória.
 \begin{table}[H]
 \centering
 \caption{Corte Haste Bottom Up com vetor aleatório}
@@ -1002,18 +1002,26 @@ Não foi possível tirar conclusões devido a estouro de memória (algoritmo con
 \begin{tabular}{|l|l|}
 \hline
 \multicolumn{1}{|c|}{\textbf{Número de Elementos}} & \multicolumn{1}{c|}{\textbf{Tempo de execução em nanosegundos}} \\ \hline
+1 & 130 \\ \hline
+2 & 261 \\ \hline
+3 & 522 \\ \hline
+4 & 1045 \\ \hline
+5 & 2091 \\ \hline
+6 & 4182 \\ \hline
+7 & 8365 \\ \hline
+8 & 16731 \\ \hline
+9 & 33463 \\ \hline
+10 & 66926 \\ \hline
+11 & 133852 \\ \hline
+12 & 267705 \\ \hline
 16 & 535410 \\ \hline
-16 & 538372 \\ \hline
-16 & 539477 \\ \hline
-16 & 529753 \\ \hline
-16 & 541344 \\ \hline
-16 & 538372 \\ \hline
-16 & 539477 \\ \hline
-16 & 529753 \\ \hline
-16 & 541344 \\ \hline
 \end{tabular}
 \end{table}
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{graficos/CorteHasteComum/HasteBU.png}
+  \caption{Corte Haste Comum - Vetor Aleatório}
+\end{figure}
 
 \section{Corte Haste Memoizada}
 
@@ -1167,7 +1175,7 @@ Tabela gerada utilizando Corte Haste Memoizada com vetores de tamanho n, sendo n
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{graficos/CorteHasteMemorizado/Crescente40/HasteMemo.png}
+    \includegraphics[width=0.7\linewidth]{graficos/CorteHasteMemorizado/CrescenteP40/HasteMemo.png}
   \caption{Corte Haste Memoizada - Vetor Crescente P40}
 \end{figure}
 

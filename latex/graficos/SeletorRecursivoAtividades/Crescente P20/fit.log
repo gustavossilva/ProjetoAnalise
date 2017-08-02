@@ -34,3 +34,39 @@ correlation matrix of the fit parameters:
                 a      b      
 a               1.000 
 b              -0.522  1.000 
+
+
+*******************************************************************************
+Wed Aug  2 12:24:26 2017
+
+
+FIT:    data read from 'Dados.dat' using 1:2
+        format = x:z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+	t(x) = a*x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 4.1444739011e+10   0.00e+00  4.03e+03    1.000000e+00   1.000000e+00
+   6 1.5990130974e+08  -4.65e-01  4.03e-03    1.180587e+01  -7.243528e+02
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 1.59901e+08
+rel. change during last iteration : -4.64983e-06
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4215.07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.77668e+07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 11.8059          +/- 0.2612       (2.213%)
+b               = -724.353         +/- 1490         (205.7%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.522  1.000 

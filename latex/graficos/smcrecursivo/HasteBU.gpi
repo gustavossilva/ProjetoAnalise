@@ -1,5 +1,5 @@
 set term png
-set output 'SelecionaAleatorizado.png'
+set output 'HasteBU.png'
 set encoding utf8
 
 set xlabel "n (quantidade de vertices)"
@@ -10,11 +10,11 @@ set ytics nomirror
 set key Left 
 set key left top
 
-t(x) = a*x + b
-fit t(x) 'Dados.dat' using 1:2 via a, b
+t(x) = a**x + b*x + c
+fit t(x) 'Dados.dat' using 1:2 via a, b, c
 
-titulo = sprintf("T(n) = %.4gn + %.4g",a,b)
-titulo = sprintf("SeletorRecursivoAtividades\n%s", titulo)
+titulo = sprintf("T(n) = %.4gn**2 + %.4gn + %.4g",a,b,c)
+titulo = sprintf("SMC Recursivo\n%s", titulo)
 set title titulo
 
 plot 'Dados.dat' title "medições" with points pt 7 ps 1.2 , \

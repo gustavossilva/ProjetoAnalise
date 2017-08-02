@@ -289,10 +289,10 @@ int main(){
         teste[i] = gera_string(tamanho[i]);
         freq[i] = getFrequencias(teste[i],freq[i],tamanho[i]);
     }
-        for(int i=0;i<2;i++){
-            for(int j=0;j<1;j++){
+        for(int i=0;i<11;i++){
+            for(int j=0;j<3;j++){
                 //CRONOMETRA(HuffmanCodes, teste[i],freq[i],tamanho[i]);
-                //CRONOMETRA(scm_recursiva,teste[i],teste[j],tamanho[i],tamanho[j]);
+                //CRONOMETRA(scm_recursiva,teste[i],teste[2],tamanho[i],tamanho[2]);
                 tempo_de_cpu += tempo_de_cpu_aux;
                 //printf("Tempo antes da divisao: %ld\n",tempo_de_cpu);
                 //HuffmanCodes(teste[i],freq[i],tamanho[i]);

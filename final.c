@@ -188,7 +188,7 @@ int m = k + 1;
 while (m <= n && s[m] < f[k]) // Encontre a primeira atividade em Sk a terminar
 	m = m + 1;
 if (m <= n)
-	return SeletorRecursivoAtividades(s, f, m, n); // teria que gerar um conjunto, porém farei retornar 0 é śo para rodar o código;
+	return SeletorRecursivoAtividades(s, f, m, n);
 else 
 	return 0;
 }

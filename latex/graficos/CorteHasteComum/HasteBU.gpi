@@ -10,7 +10,7 @@ set ytics nomirror
 set key Left 
 set key left top
 
-t(x) = a*x**2 + b*x + c
+t(x) = a**x + b*x + c
 fit t(x) 'Dados.dat' using 1:2 via a, b, c
 
 titulo = sprintf("T(n) = %.4gn**2 + %.4gn + %.4g",a,b,c)
